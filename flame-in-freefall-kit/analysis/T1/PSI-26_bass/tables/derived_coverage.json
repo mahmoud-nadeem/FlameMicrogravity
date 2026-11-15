@@ -1,0 +1,13 @@
+{
+  "records": 121,
+  "oxygen_nonmissing": 121,
+  "sample_labels_repeated": 25,
+  "rows_with_repeated_labels": 106,
+  "date_flags": {
+    "consistent": 112,
+    "date_inferred_gmt_provisional": 6,
+    "format_normalized": 1,
+    "gmt_corrected_high_confidence": 1,
+    "year_typo_corrected": 1
+  }
+}

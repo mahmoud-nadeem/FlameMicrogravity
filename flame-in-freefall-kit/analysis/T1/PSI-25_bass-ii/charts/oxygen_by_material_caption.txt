@@ -1,0 +1,1 @@
+Recorded oxygen conditions, not flammability thresholds. Group sizes are run rows, not independent samples. See tables/material_oxygen_coverage.csv.

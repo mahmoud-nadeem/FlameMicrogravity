@@ -1,0 +1,25 @@
+{
+  "id": "PSI-26",
+  "title": "Burning and Suppression of Solids",
+  "fuel_type": "solid",
+  "hardware_family": "ISS Microgravity Science Glovebox",
+  "conditions": {
+    "oxygen_pct_observed": [
+      15.9,
+      22.721982701616103
+    ],
+    "gravity": [
+      "microgravity"
+    ]
+  },
+  "tests": {
+    "run_records": 121
+  },
+  "data_readiness": "processed-table",
+  "limitations": [
+    "No validated common outcome",
+    "Repeated sample labels",
+    "Some dates provisional",
+    "Raw videos not analysed"
+  ]
+}

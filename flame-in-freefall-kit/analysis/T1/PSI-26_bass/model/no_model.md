@@ -1,0 +1,1 @@
+No predictive model: no validated common outcome label. Descriptive oxygen baseline only; no causal or safety ranking.

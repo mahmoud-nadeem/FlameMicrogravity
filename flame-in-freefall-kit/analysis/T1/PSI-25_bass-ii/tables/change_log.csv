@@ -1,0 +1,1285 @@
+file,row,column,before,after,reason,script and line
+PSI-25_BASS-II_raw.csv,2,material,100 micron PMMA film   2 cm wide,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,2,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,2,Calibrated final O2 % by vol,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,2,Initial CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,2,Final CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,2,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,2,Final CO (ppm),6,6.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,2,Air display,5,5.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,2,date,2/19/2014,2014-02-19,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,2,source_row,2,2,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,3,material,200 micron PMMA film   2 cm wide,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,3,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,3,Calibrated final O2 % by vol,1.6,1.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,3,Initial CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,3,Initial CO (ppm),6,6.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,3,Air display,5,5.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,3,date,2/19/2014,2014-02-19,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,3,source_row,3,3,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,4,material,100 micron film   2 cm wide,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,4,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,4,Calibrated final O2 % by vol,21.8,21.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,4,Initial CO2 % by vol,0.43,0.43,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,4,Final CO2 % by vol,0.49,0.49,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,4,Initial CO (ppm),12,12.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,4,Final CO (ppm),19,19.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,4,Air display,2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,4,date,2/19/2014,2014-02-19,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,4,source_row,4,4,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,5,material,300 micron PMMA film   2 cm wide,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,5,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,5,Calibrated final O2 % by vol,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,5,Initial CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,5,Final CO2 % by vol,0.51,0.51,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,5,Initial CO (ppm),-1,-1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,5,Final CO (ppm),10,10.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,5,Air display,5,5.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,5,date,2/19/2014,2014-02-19,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,5,source_row,5,5,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,6,material,200 micron  2 cm wide,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,6,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,6,Calibrated final O2 % by vol,21.9,21.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,6,Initial CO2 % by vol,0.43,0.43,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,6,Final CO2 % by vol,0.43,0.43,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,6,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,6,Final CO (ppm),12,12.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,6,Air display,5,5.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,6,date,2/19/2014,2014-02-19,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,6,source_row,6,6,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,7,material,2 cm 0.1 mm PMMA film,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,7,Calibrated  initial O2 % by vol ,21.0,21.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,7,Calibrated final O2 % by vol,20.9,20.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,7,Initial CO2 % by vol,0.33,0.33,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,7,Final CO2 % by vol,0.41,0.41,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,7,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,7,Final CO (ppm),0.3,0.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,7,Air display,3   5   approaching 10,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,7,date,7/7/2014,2014-07-07,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,7,source_row,7,7,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,8,material,400 micron film   2 cm wide,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,8,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,8,Calibrated final O2 % by vol,22.1,22.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,8,Initial CO2 % by vol,0.45,0.45,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,8,Final CO2 % by vol,0.51,0.51,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,8,Initial CO (ppm),1,1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,8,Final CO (ppm),17,17.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,8,Air display,2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,8,date,2/19/2014,2014-02-19,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,8,source_row,8,8,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,9,material,2 cm   0.2 mm PMMA film,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,9,Calibrated  initial O2 % by vol ,21.0,21.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,9,Calibrated final O2 % by vol,20.5,20.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,9,Initial CO2 % by vol,0.33,0.33,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,9,Final CO2 % by vol,0.58,0.58,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,9,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,9,Final CO (ppm),131,131.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,9,Air display,10   max,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,9,date,7/7/2014,2014-07-07,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,9,source_row,9,9,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,10,material,2 cm   0.1 mm PMMA film,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,10,Calibrated  initial O2 % by vol ,21.0,21.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,10,Calibrated final O2 % by vol,20.9,20.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,10,Initial CO2 % by vol,0.33,0.33,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,10,Final CO2 % by vol,0.35,0.35,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,10,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,10,Final CO (ppm),10,10.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,10,Air display,2   <1,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,10,date,7/7/2014,2014-07-07,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,10,source_row,10,10,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,11,material,1 cm   0.2 mm PMMA film,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,11,Calibrated  initial O2 % by vol ,21.0,21.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,11,Calibrated final O2 % by vol,20.8,20.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,11,Initial CO2 % by vol,0.33,0.33,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,11,Final CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,11,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,11,Final CO (ppm),23,23.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,11,Air display,5  4  3  2  1,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,11,date,7/7/2014,2014-07-07,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,11,source_row,11,11,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,12,material,2 cm   0.2 mm PMMA film,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,12,Calibrated  initial O2 % by vol ,21.0,21.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,12,Calibrated final O2 % by vol,20.7,20.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,12,Initial CO2 % by vol,0.33,0.33,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,12,Final CO2 % by vol,0.47,0.47,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,12,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,12,Final CO (ppm),46,46.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,12,Air display,5   3   1   <1,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,12,date,7/7/2014,2014-07-07,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,12,source_row,12,12,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,13,material,300 micron film   2 cm wide,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,13,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,13,Calibrated final O2 % by vol,22.1,22.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,13,Initial CO2 % by vol,0.51,0.51,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,13,Final CO2 % by vol,0.56,0.56,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,13,Initial CO (ppm),17,17.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,13,Final CO (ppm),33,33.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,13,Air display,2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,13,date,2/19/2014,2014-02-19,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,13,source_row,13,13,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,14,material,2 cm   0.4 mm thick film,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,14,Calibrated  initial O2 % by vol ,21.0,21.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,14,Calibrated final O2 % by vol,20.5,20.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,14,Initial CO2 % by vol,0.33,0.33,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,14,Final CO2 % by vol,0.65,0.65,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,14,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,14,Final CO (ppm),61,61.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,14,Air display,10   5  4  3  2  1,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,14,date,7/7/2014,2014-07-07,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,14,source_row,14,14,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,15,material,1 cm wide 200 micron thick PMMA,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,15,Calibrated  initial O2 % by vol ,15.0,15.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,15,Calibrated final O2 % by vol,none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,15,Initial CO2 % by vol,0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,15,Final CO2 % by vol,none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,15,Initial CO (ppm),0.2,0.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,15,Final CO (ppm),none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,15,Air display,5  3  2   ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,15,date,7/2/2014,2014-07-02,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,15,source_row,15,15,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,16,material,2 cm   0.1 mm PMMA film,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,16,Calibrated  initial O2 % by vol ,21.0,21.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,16,Calibrated final O2 % by vol,20.8,20.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,16,Initial CO2 % by vol,0.33,0.33,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,16,Final CO2 % by vol,0.43,0.43,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,16,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,16,Final CO (ppm),22,22.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,16,Air display,10   max,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,16,date,7/7/2014,2014-07-07,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,16,source_row,16,16,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,17,material,2 cm 100 micron thick PMMA,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,17,Calibrated  initial O2 % by vol ,17.3,17.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,17,Calibrated final O2 % by vol,17.2,17.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,17,Initial CO2 % by vol,0.47,0.47,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,17,Final CO2 % by vol,0.51,0.51,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,17,Initial CO (ppm),103,103.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,17,Final CO (ppm),119,119.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,17,Air display,3  0.5 pot   0.4 pot,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,17,date,7/2/2014,2014-07-02,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,17,source_row,17,17,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,18,material,1 cm wide 200 micron thick PMMA,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,18,Calibrated  initial O2 % by vol ,17.5,17.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,18,Calibrated final O2 % by vol,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,18,Initial CO2 % by vol,0.2,0.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,18,Final CO2 % by vol,0.34,0.34,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,18,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,18,Final CO (ppm),47,47.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,18,Air display,5   3    pot 0.4,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,18,date,7/2/2014,2014-07-02,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,18,source_row,18,18,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,19,material,1 cm wide 200 micron thick PMMA,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,19,Calibrated  initial O2 % by vol ,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,19,Calibrated final O2 % by vol,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,19,Initial CO2 % by vol,0.34,0.34,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,19,Final CO2 % by vol,0.42,0.42,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,19,Initial CO (ppm),47,47.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,19,Final CO (ppm),78,78.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,19,Air display,10   blowoff,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,19,date,7/2/2014,2014-07-02,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,19,source_row,19,19,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,20,material,2 cm 100 micron thick PMMA,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,20,Calibrated  initial O2 % by vol ,17.3,17.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,20,Calibrated final O2 % by vol,17.2,17.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,20,Initial CO2 % by vol,0.51,0.51,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,20,Final CO2 % by vol,0.57,0.57,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,20,Initial CO (ppm),119,119.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,20,Final CO (ppm),131,131.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,20,Air display,10   blowoff,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,20,date,7/2/2014,2014-07-02,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,20,source_row,20,20,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,21,material,2 cm 100 micron thick PMMA,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,21,Calibrated  initial O2 % by vol ,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,21,Calibrated final O2 % by vol,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,21,Initial CO2 % by vol,0.42,0.42,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,21,Final CO2 % by vol,0.47,0.47,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,21,Initial CO (ppm),78,78.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,21,Final CO (ppm),103,103.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,21,Air display,5   3      pot 0.5,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,21,date,7/2/2014,2014-07-02,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,21,source_row,21,21,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,22,material,1 cm wide 200 micron thick PMMA,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,22,Calibrated  initial O2 % by vol ,20.8,20.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,22,Calibrated final O2 % by vol,20.6,20.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,22,Initial CO2 % by vol,0.36,0.36,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,22,Final CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,22,Initial CO (ppm),-1,-1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,22,Final CO (ppm),18,18.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,22,Air display,5 down to ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,22,date,8/4/2014,2014-08-04,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,22,source_row,22,22,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,23,material,1 cm wide 200 micron thick PMMA,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,23,Calibrated  initial O2 % by vol ,20.7,20.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,23,Calibrated final O2 % by vol,20.5,20.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,23,Initial CO2 % by vol,0.41,0.41,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,23,Final CO2 % by vol,0.47,0.47,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,23,Initial CO (ppm),-1,-1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,23,Final CO (ppm),10,10.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,23,Air display,5   2   0,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,23,date,8/4/2014,2014-08-04,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,23,source_row,23,23,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,24,material,Nomex natural (nomex III),Nomex,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,24,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,24,Calibrated final O2 % by vol,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,24,Initial CO2 % by vol,0.46,0.46,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,24,Final CO2 % by vol,0.45,0.45,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,24,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,24,Final CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,24,Air display,9.5,9.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,24,date,2/19/2014,2014-02-19,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,24,source_row,24,24,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,25,material,Nomex natural (nomex III),Nomex,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,25,Calibrated  initial O2 % by vol ,21.0,21.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,25,Calibrated final O2 % by vol,21,21.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,25,Initial CO2 % by vol,0.37,0.37,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,25,Final CO2 % by vol,0.39,0.39,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,25,Initial CO (ppm),105,105.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,25,Final CO (ppm),82,82.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,25,Air display,15,15.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,25,date,7/28/2014,2014-07-28,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,25,source_row,25,25,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,26,material,Nomex natural (nomex III),Nomex,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,26,Calibrated  initial O2 % by vol ,21.7,21.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,26,Calibrated final O2 % by vol,none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,26,Initial CO2 % by vol,0.36,0.36,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,26,Final CO2 % by vol,none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,26,Initial CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,26,Final CO (ppm),none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,26,Air display,8,8.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,26,date,8/1/2014,2014-08-01,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,26,source_row,26,26,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,27,material,Japan Wax candle,Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,27,Calibrated  initial O2 % by vol ,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,27,Calibrated final O2 % by vol,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,27,Initial CO2 % by vol,0.38,0.38,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,27,Final CO2 % by vol,0.48,0.48,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,27,Initial CO (ppm),22,22.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,27,Final CO (ppm),56,56.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,27,Air display,3 ign,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,27,date,6/24/2014,2014-06-24,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,27,source_row,27,27,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,28,material,1 mm thick PMMA   1 sided   2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,28,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,28,Calibrated final O2 % by vol,21.9,21.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,28,Initial CO2 % by vol,0.45,0.45,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,28,Final CO2 % by vol,0.61,0.61,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,28,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,28,Final CO (ppm),60,60.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,28,Air display,10  8,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,28,date,2/20/2014,2014-02-20,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,28,source_row,28,28,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,29,material,3 mm thick PMMA 1 sided    2 cm wide,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,29,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,29,Calibrated final O2 % by vol,21.2,21.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,29,Initial CO2 % by vol,0.46,0.46,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,29,Final CO2 % by vol,1.33,1.33,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,29,Initial CO (ppm),12,12.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,29,Final CO (ppm),325,325.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,29,Air display,20  15  13   14,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,29,date,2/20/2014,2014-02-20,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,29,source_row,29,29,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,30,material,2 cm wide   5 mm thick 1 sided PMMA,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,30,Calibrated  initial O2 % by vol ,20.8,20.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,30,Calibrated final O2 % by vol,19.7,19.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,30,Initial CO2 % by vol,0.33,0.33,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,30,Final CO2 % by vol,1.18,1.18,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,30,Initial CO (ppm),11,11.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,30,Final CO (ppm),300,300.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,30,Air display,10   20  18,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,30,date,7/11/2014,2014-07-11,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,30,source_row,30,30,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,31,material,5 mm thick PMMA   2 cm wide,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,31,Calibrated  initial O2 % by vol ,21.8,21.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,31,Calibrated final O2 % by vol,19.8,19.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,31,Initial CO2 % by vol,0.42,0.42,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,31,Final CO2 % by vol,2.15,2.15,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,31,Initial CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,31,Final CO (ppm),561,561.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,31,Air display,5   4   3,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,31,date,7/31/2014,2014-07-31,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,31,source_row,31,31,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,32,material,3 mm thick PMMA   2 sided   2 cm thick,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,32,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,32,Calibrated final O2 % by vol,19,19.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,32,Initial CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,32,Final CO2 % by vol,3.22,3.22,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,32,Initial CO (ppm),9,9.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,32,Final CO (ppm),>500,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,32,Air display,20  13  10  8  5,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,32,date,2/20/2014,2014-02-20,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,32,source_row,32,32,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,33,material,1 mm thick PMMA   2 cm wide,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,33,Calibrated  initial O2 % by vol ,21.8,21.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,33,Calibrated final O2 % by vol,20.7,20.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,33,Initial CO2 % by vol,0.38,0.38,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,33,Final CO2 % by vol,1.27,1.27,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,33,Initial CO (ppm),1,1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,33,Final CO (ppm),345,345.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,33,Air display,10   5   3   0,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,33,date,7/31/2014,2014-07-31,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,33,source_row,33,33,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,34,material,1 cm wide PMMA 1 mm thick,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,34,Calibrated  initial O2 % by vol ,18.9,18.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,34,Calibrated final O2 % by vol,18.4,18.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,34,Initial CO2 % by vol,1.42,1.42,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,34,Final CO2 % by vol,1.84,1.84,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,34,Initial CO (ppm),398,398.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,34,Final CO (ppm),612,612.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,34,Air display,10   6  5  4.5  4  3,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,34,date,7/11/2014,2014-07-11,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,34,source_row,34,34,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,35,material,1 cm wide PMMA 2 mm thick,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,35,Calibrated  initial O2 % by vol ,19.1,19.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,35,Calibrated final O2 % by vol,18.2,18.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,35,Initial CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,35,Final CO2 % by vol,1.28,1.28,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,35,Initial CO (ppm),52,52.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,35,Final CO (ppm),467,467.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,35,Air display,10   5>7  5 decr,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,35,date,7/11/2014,2014-07-11,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,35,source_row,35,35,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,36,material,1 cm wide PMMA 3 mm thick,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,36,Calibrated  initial O2 % by vol ,18.0,18.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,36,Calibrated final O2 % by vol,17.6,17.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,36,Initial CO2 % by vol,0.26,0.26,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,36,Final CO2 % by vol,0.54,0.54,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,36,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,36,Final CO (ppm),191,191.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,36,Air display,10   14,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,36,date,7/11/2014,2014-07-11,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,36,source_row,36,36,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,37,material,4 mm thick   1 cm wide PMMA slab,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,37,Calibrated  initial O2 % by vol ,20.1,20.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,37,Calibrated final O2 % by vol,18.6,18.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,37,Initial CO2 % by vol,0.36,0.36,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,37,Final CO2 % by vol,1.59,1.59,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,37,Initial CO (ppm),-1,-1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,37,Final CO (ppm),536,536.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,37,Air display,10  17  14  10  8,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,37,date,7/23/2014,2014-07-23,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,37,source_row,37,37,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,38,material,1 cm wide PMMA 5 mm thick,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,38,Calibrated  initial O2 % by vol ,20.0,20.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,38,Calibrated final O2 % by vol,18.5,18.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,38,Initial CO2 % by vol,0.58,0.58,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,38,Final CO2 % by vol,1.68,1.68,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,38,Initial CO (ppm),46,46.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,38,Final CO (ppm),577,577.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,38,Air display,10   20   15  12,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,38,date,7/11/2014,2014-07-11,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,38,source_row,38,38,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,39,material,2 mm thick PMMA   2 cm wide,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,39,Calibrated  initial O2 % by vol ,21.7,21.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,39,Calibrated final O2 % by vol,20.4,20.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,39,Initial CO2 % by vol,0.42,0.42,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,39,Final CO2 % by vol,1.42,1.42,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,39,Initial CO (ppm),15,15.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,39,Final CO (ppm),443,443.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,39,Air display,<1,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,39,date,7/31/2014,2014-07-31,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,39,source_row,39,39,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,40,material,4 mm thick PMMA   2 cm wide,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,40,Calibrated  initial O2 % by vol ,20.8,20.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,40,Calibrated final O2 % by vol,19,19.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,40,Initial CO2 % by vol,0.36,0.36,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,40,Final CO2 % by vol,1.75,1.75,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,40,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,40,Final CO (ppm),487,487.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,40,Air display,6   5   4,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,40,date,7/31/2014,2014-07-31,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,40,source_row,40,40,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,41,material,2mm thick PMMA   1 sided   2 cm wide,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,41,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,41,Calibrated final O2 % by vol,21.6,21.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,41,Initial CO2 % by vol,0.45,0.45,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,41,Final CO2 % by vol,0.98,0.98,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,41,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,41,Final CO (ppm),198,198.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,41,Air display,10   ~8,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,41,date,2/20/2014,2014-02-20,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,41,source_row,41,41,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,42,material,2 cm   4 mm 1 sided PMMA slab,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,42,Calibrated  initial O2 % by vol ,21.0,21.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,42,Calibrated final O2 % by vol,20,20.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,42,Initial CO2 % by vol,0.37,0.37,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,42,Final CO2 % by vol,1.1,1.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,42,Initial CO (ppm),1,1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,42,Final CO (ppm),220,220.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,42,Air display,10   8  7  8  10  20  18  16  15,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,42,date,7/7/2014,2014-07-07,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,42,source_row,42,42,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,43,material,1 mm thick PMMA   2 cm wide,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,43,Calibrated  initial O2 % by vol ,19.2,19.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,43,Calibrated final O2 % by vol,18.7,18.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,43,Initial CO2 % by vol,0.95,0.95,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,43,Final CO2 % by vol,1.75,1.75,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,43,Initial CO (ppm),118,118.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,43,Final CO (ppm),421,421.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,43,Air display,10  6  3  2  1  10,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,43,date,7/23/2014,2014-07-23,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,43,source_row,43,43,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,44,material,2 cm wide PMMA 2 mm thick,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,44,Calibrated  initial O2 % by vol ,18.8,18.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,44,Calibrated final O2 % by vol,17.1,17.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,44,Initial CO2 % by vol,0.35,0.35,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,44,Final CO2 % by vol,1.7,1.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,44,Initial CO (ppm),4,4.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,44,Final CO (ppm),485,485.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,44,Air display,10   5   3   0ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,44,date,7/15/2014,2014-07-15,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,44,source_row,44,44,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,45,material,2 cm wide PMMA 3 mm thick,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,45,Calibrated  initial O2 % by vol ,17.9,17.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,45,Calibrated final O2 % by vol,16.8,16.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,45,Initial CO2 % by vol,0.32,0.32,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,45,Final CO2 % by vol,1.31,1.31,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,45,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,45,Final CO (ppm),335,335.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,45,Air display,10   15 (brief)   10   8,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,45,date,7/15/2014,2014-07-15,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,45,source_row,45,45,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,46,material,4 mm thick   2 cm 2ide PMMA slab,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,46,Calibrated  initial O2 % by vol ,19.0,19.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,46,Calibrated final O2 % by vol,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,46,Initial CO2 % by vol,0.35,0.35,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,46,Final CO2 % by vol,1.6,1.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,46,Initial CO (ppm),3,3.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,46,Final CO (ppm),357,357.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,46,Air display,10  17  14  10  7  5,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,46,date,7/23/2014,2014-07-23,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,46,source_row,46,46,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,47,material,5 mm thick PMMA   2 cm wide,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,47,Calibrated  initial O2 % by vol ,18.0,18.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,47,Calibrated final O2 % by vol,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,47,Initial CO2 % by vol,0.3,0.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,47,Final CO2 % by vol,0.75,0.75,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,47,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,47,Final CO (ppm),157,157.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,47,Air display,10  8,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,47,date,8/1/2014,2014-08-01,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,47,source_row,47,47,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,48,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,48,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,48,Calibrated final O2 % by vol,21.7,21.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,48,Initial CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,48,Final CO2 % by vol,0.85,0.85,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,48,Initial CO (ppm),-1,-1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,48,Final CO (ppm),51,51.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,48,Air display,20  10  5  2  1,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,48,date,2/18/2014,2014-02-18,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,48,source_row,48,48,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,49,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,49,Calibrated  initial O2 % by vol ,22.2,22.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,49,Calibrated final O2 % by vol,21.9,21.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,49,Initial CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,49,Final CO2 % by vol,0.59,0.59,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,49,Initial CO (ppm),-1,-1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,49,Final CO (ppm),23,23.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,49,Air display,0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,49,date,2/18/2014,2014-02-18,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,49,source_row,49,49,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,50,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,50,Calibrated  initial O2 % by vol ,18.0,18.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,50,Calibrated final O2 % by vol,18,18.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,50,Initial CO2 % by vol,0.25,0.25,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,50,Final CO2 % by vol,0.28,0.28,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,50,Initial CO (ppm),16,16.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,50,Final CO (ppm),22,22.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,50,Air display,5  3,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,50,date,6/13/2014,2014-06-13,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,50,source_row,50,50,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,51,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,51,Calibrated  initial O2 % by vol ,18.0,18.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,51,Calibrated final O2 % by vol,17.7,17.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,51,Initial CO2 % by vol,0.28,0.28,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,51,Final CO2 % by vol,0.53,0.53,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,51,Initial CO (ppm),22,22.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,51,Final CO (ppm),116,116.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,51,Air display,5  3  2  1  low,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,51,date,6/13/2014,2014-06-13,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,51,source_row,51,51,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,52,material,"3/8""clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,52,Calibrated  initial O2 % by vol ,14.8,14.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,52,Calibrated final O2 % by vol,13.6,13.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,52,Initial CO2 % by vol,0.72,0.72,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,52,Final CO2 % by vol,1.72,1.72,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,52,Initial CO (ppm),290,290.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,52,Final CO (ppm),OR,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,52,Air display,5   down to ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,52,date,7/8/2014,2014-07-08,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,52,source_row,52,52,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,53,material,"1/2"" clear PMMA rod",PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,53,Calibrated  initial O2 % by vol ,15.1,15.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,53,Calibrated final O2 % by vol,14.2,14.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,53,Initial CO2 % by vol,0.25,0.25,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,53,Final CO2 % by vol,1.05,1.05,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,53,Initial CO (ppm),-2,-2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,53,Final CO (ppm),496,496.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,53,Air display,5  10  5   2   0 (49   62   49   44   42),,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,53,date,7/21/2014,2014-07-21,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,53,source_row,53,53,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,54,material,"1/2"" clear PMMA rod",PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,54,Calibrated  initial O2 % by vol ,14.2,14.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,54,Calibrated final O2 % by vol,14.1,14.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,54,Initial CO2 % by vol,1.05,1.05,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,54,Final CO2 % by vol,1.14,1.14,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,54,Initial CO (ppm),496,496.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,54,Final CO (ppm),590,590.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,54,Air display,49   5 cm/s,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,54,date,7/21/2014,2014-07-21,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,54,source_row,54,54,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,55,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,55,Calibrated  initial O2 % by vol ,16.7,16.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,55,Calibrated final O2 % by vol,16,16.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,55,Initial CO2 % by vol,0.32,0.32,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,55,Final CO2 % by vol,0.74,0.74,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,55,Initial CO (ppm),1,1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,55,Final CO (ppm),232,232.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,55,Air display,see fan,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,55,date,6/26/2014,2014-06-26,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,55,source_row,55,55,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,56,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,56,Calibrated  initial O2 % by vol ,16.0,16.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,56,Calibrated final O2 % by vol,15.5,15.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,56,Initial CO2 % by vol,0.74,0.74,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,56,Final CO2 % by vol,1.27,1.27,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,56,Initial CO (ppm),232,232.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,56,Final CO (ppm),512,512.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,56,date,6/26/2014,2014-06-26,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,56,source_row,56,56,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,57,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,57,Calibrated  initial O2 % by vol ,15.7,15.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,57,Calibrated final O2 % by vol,15.3,15.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,57,Initial CO2 % by vol,1.23,1.23,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,57,Final CO2 % by vol,1.44,1.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,57,Initial CO (ppm),436,436.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,57,Final CO (ppm),536,536.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,57,date,6/26/2014,2014-06-26,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,57,source_row,57,57,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,58,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,58,Calibrated  initial O2 % by vol ,15.5,15.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,58,Calibrated final O2 % by vol,15.2,15.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,58,Initial CO2 % by vol,1.44,1.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,58,Final CO2 % by vol,1.74,1.74,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,58,Initial CO (ppm),536,536.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,58,Final CO (ppm),660,660.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,58,date,6/26/2014,2014-06-26,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,58,source_row,58,58,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,59,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,59,Calibrated  initial O2 % by vol ,15.0,15.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,59,Calibrated final O2 % by vol,14.8,14.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,59,Initial CO2 % by vol,1.74,1.74,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,59,Final CO2 % by vol,1.96,1.96,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,59,Initial CO (ppm),660,660.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,59,Final CO (ppm),794,794.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,59,date,6/26/2014,2014-06-26,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,59,source_row,59,59,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,60,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,60,Calibrated  initial O2 % by vol ,16.7,16.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,60,Calibrated final O2 % by vol,16.1,16.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,60,Initial CO2 % by vol,1.61,1.61,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,60,Final CO2 % by vol,2.1,2.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,60,Initial CO (ppm),94,94.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,60,Final CO (ppm),287,287.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,60,Air display,5  2   0   max,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,60,date,7/22/2014,2014-07-22,gmt_inferred_provisional,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,60,source_row,60,60,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,61,material,"1/4"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,61,Calibrated  initial O2 % by vol ,15.4,15.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,61,Calibrated final O2 % by vol,14.8,14.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,61,Initial CO2 % by vol,0.27,0.27,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,61,Final CO2 % by vol,0.72,0.72,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,61,Initial CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,61,Final CO (ppm),290,290.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,61,Air display,5   down then blowoff,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,61,date,7/8/2014,2014-07-08,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,61,source_row,61,61,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,62,material,"3/8"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,62,Calibrated  initial O2 % by vol ,13.6,13.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,62,Calibrated final O2 % by vol,13.5,13.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,62,Initial CO2 % by vol,1.72,1.72,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,62,Final CO2 % by vol,1.71,1.71,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,62,Initial CO (ppm),OR,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,62,Final CO (ppm),OR,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,62,Air display,no ign at any flow,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,62,date,7/8/2014,2014-07-08,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,62,source_row,62,62,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,63,material,"1/2"" clear PMMA rod",PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,63,Calibrated  initial O2 % by vol ,15.9,15.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,63,Calibrated final O2 % by vol,14.6,14.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,63,Initial CO2 % by vol,0.91,0.91,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,63,Final CO2 % by vol,1.85,1.85,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,63,Initial CO (ppm),389,389.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,63,Final CO (ppm),950,950.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,63,Air display,49  44  42  41  41  40.5 (5   2   0),,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,63,date,7/21/2014,2014-07-21,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,63,source_row,63,63,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,64,material,"1/2"" clear PMMA rod",PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,64,Calibrated  initial O2 % by vol ,14.6,14.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,64,Calibrated final O2 % by vol,14.4,14.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,64,Initial CO2 % by vol,1.85,1.85,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,64,Final CO2 % by vol,2.09,2.09,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,64,Initial CO (ppm),950,950.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,64,Final CO (ppm),over,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,64,Air display,7   4? (49   ?),,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,64,date,7/21/2014,2014-07-21,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,64,source_row,64,64,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,65,material,"1/4"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,65,Calibrated  initial O2 % by vol ,16.3,16.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,65,Calibrated final O2 % by vol,15.3,15.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,65,Initial CO2 % by vol,0.29,0.29,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,65,Final CO2 % by vol,0.86,0.86,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,65,Initial CO (ppm),4,4.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,65,Final CO (ppm),352,352.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,65,Air display,5 down to ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,65,date,8/1/2014,2014-08-01,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,65,source_row,65,65,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,66,material,"3/8"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,66,Calibrated  initial O2 % by vol ,17.1,17.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,66,Calibrated final O2 % by vol,16.7,16.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,66,Initial CO2 % by vol,0.27,0.27,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,66,Final CO2 % by vol,0.62,0.62,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,66,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,66,Final CO (ppm),176,176.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,66,Air display,5  0,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,66,date,7/28/2014,2014-07-28,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,66,source_row,66,66,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,67,material,"3/8"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,67,Calibrated  initial O2 % by vol ,16.7,16.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,67,Calibrated final O2 % by vol,15.6,15.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,67,Initial CO2 % by vol,0.62,0.62,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,67,Final CO2 % by vol,1.63,1.63,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,67,Initial CO (ppm),176,176.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,67,Final CO (ppm),751,751.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,67,Air display,5   0,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,67,date,7/28/2014,2014-07-28,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,67,source_row,67,67,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,68,material,"3/8""clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,68,Calibrated  initial O2 % by vol ,14.5,14.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,68,Calibrated final O2 % by vol,14.5,14.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,68,Initial CO2 % by vol,0.27,0.27,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,68,Final CO2 % by vol,0.32,0.32,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,68,Initial CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,68,Final CO (ppm),33,33.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,68,Air display,5,5.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,68,date,7/29/2014,2014-07-29,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,68,source_row,68,68,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,69,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,69,Calibrated  initial O2 % by vol ,15.1,15.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,69,Calibrated final O2 % by vol,14.3,14.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,69,Initial CO2 % by vol,0.31,0.31,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,69,Final CO2 % by vol,0.9,0.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,69,Initial CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,69,Final CO (ppm),377,377.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,69,Air display,3   0   11,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,69,date,7/22/2014,2014-07-22,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,69,source_row,69,69,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,70,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,70,Calibrated  initial O2 % by vol ,15.2,15.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,70,Calibrated final O2 % by vol,14.5,14.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,70,Initial CO2 % by vol,1.45,1.45,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,70,Final CO2 % by vol,1.94,1.94,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,70,Initial CO (ppm),523,523.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,70,Final CO (ppm),816,816.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,70,Air display,5  2  0  11  2  11  2  0,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,70,date,7/28/2014,2014-07-28,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,70,source_row,70,70,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,71,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,71,Calibrated  initial O2 % by vol ,15.3,15.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,71,Calibrated final O2 % by vol,14.6,14.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,71,Initial CO2 % by vol,0.86,0.86,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,71,Final CO2 % by vol,1.51,1.51,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,71,Initial CO (ppm),352,352.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,71,Final CO (ppm),686,686.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,71,Air display,5 down to ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,71,date,8/1/2014,2014-08-01,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,71,source_row,71,71,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,72,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,72,Calibrated  initial O2 % by vol ,16.5,16.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,72,Calibrated final O2 % by vol,15.9,15.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,72,Initial CO2 % by vol,0.2,0.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,72,Final CO2 % by vol,0.57,0.57,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,72,Initial CO (ppm),-3,-3.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,72,Final CO (ppm),57,57.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,72,Air display,5   8    incr to max 38.5,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,72,date,2/26/2016,2016-02-26,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,72,source_row,72,72,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,73,material,"3/8"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,73,Calibrated  initial O2 % by vol ,15.9,15.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,73,Calibrated final O2 % by vol,15.4,15.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,73,Initial CO2 % by vol,0.53,0.53,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,73,Final CO2 % by vol,0.95,0.95,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,73,Initial CO (ppm),52,52.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,73,Final CO (ppm),187,187.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,73,Air display,incr to 28,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,73,date,2/26/2016,2016-02-26,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,73,source_row,73,73,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,74,material,"1/2"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,74,Calibrated  initial O2 % by vol ,15.4,15.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,74,Calibrated final O2 % by vol,14.9,14.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,74,Initial CO2 % by vol,0.92,0.92,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,74,Final CO2 % by vol,1.33,1.33,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,74,Initial CO (ppm),185,185.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,74,Final CO (ppm),322,322.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,74,Air display,4 incr to 26.5,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,74,date,2/26/2016,2016-02-26,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,74,source_row,74,74,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,75,material,"1/4"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,75,Calibrated  initial O2 % by vol ,17.7,17.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,75,Calibrated final O2 % by vol,17.5,17.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,75,Initial CO2 % by vol,0.27,0.27,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,75,Final CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,75,Initial CO (ppm),1,1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,75,Final CO (ppm),14,14.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,75,Air display,5  2   slow decr to ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,75,date,6/16/2014,2014-06-16,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,75,source_row,75,75,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,76,material,"1/4"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,76,Calibrated  initial O2 % by vol ,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,76,Calibrated final O2 % by vol,17.2,17.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,76,Initial CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,76,Final CO2 % by vol,0.66,0.66,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,76,Initial CO (ppm),14,14.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,76,Final CO (ppm),26,26.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,76,Air display,5   2.5   2 (pot .9   .5   .35.  .33),,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,76,date,6/16/2014,2014-06-16,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,76,source_row,76,76,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,77,material,"1/4"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,77,Calibrated  initial O2 % by vol ,17.7,17.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,77,Calibrated final O2 % by vol,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,77,Initial CO2 % by vol,0.27,0.27,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,77,Final CO2 % by vol,0.51,0.51,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,77,Initial CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,77,Final CO (ppm),33,33.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,77,Air display,5   2.5 (1.15   .5   .35   .33. .32   .315   .31   .3),,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,77,date,6/16/2014,2014-06-16,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,77,source_row,77,77,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,78,material,1/4 clear rod,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,78,Calibrated  initial O2 % by vol ,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,78,Calibrated final O2 % by vol,16.8,16.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,78,Initial CO2 % by vol,0.51,0.51,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,78,Final CO2 % by vol,none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,78,Initial CO (ppm),33,33.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,78,Final CO (ppm),79,79.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,78,Air display,5   very low (0.85   0.32   0.31   0.305   0.30   0.295),,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,78,date,6/16/2014,2014-06-16,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,78,source_row,78,78,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,79,material,"3/8"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,79,Calibrated  initial O2 % by vol ,18.5,18.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,79,Calibrated final O2 % by vol,17.1,17.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,79,Initial CO2 % by vol,0.62,0.62,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,79,Final CO2 % by vol,1.8,1.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,79,Initial CO (ppm),64,64.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,79,Final CO (ppm),493,493.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,79,Air display,5   pots 0.4   0.36   0.32   0.308   .3   off,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,79,date,7/3/2014,2014-07-03,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,79,source_row,79,79,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,80,material,"0.5"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,80,Calibrated  initial O2 % by vol ,19.3,19.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,80,Calibrated final O2 % by vol,17.6,17.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,80,Initial CO2 % by vol,0.32,0.32,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,80,Final CO2 % by vol,1.67,1.67,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,80,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,80,Final CO (ppm),525,525.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,80,Air display,5 down to ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,80,date,7/14/2014,2014-07-14,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,80,source_row,80,80,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,81,material,"1/4"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,81,Calibrated  initial O2 % by vol ,18.9,18.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,81,Calibrated final O2 % by vol,18.5,18.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,81,Initial CO2 % by vol,0.3,0.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,81,Final CO2 % by vol,0.62,0.62,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,81,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,81,Final CO (ppm),64,64.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,81,Air display,5   pots 0.4   0.36   0.32   0.31   off,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,81,date,7/3/2014,2014-07-03,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,81,source_row,81,81,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,82,material,"3/8"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,82,Calibrated  initial O2 % by vol ,16.4,16.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,82,Calibrated final O2 % by vol,16.3,16.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,82,Initial CO2 % by vol,0.72,0.72,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,82,Final CO2 % by vol,0.81,0.81,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,82,Initial CO (ppm),44,44.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,82,Final CO (ppm),69,69.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,82,Air display,5   would not stay lit   10   15 ibid,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,82,date,7/3/2014,2014-07-03,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,82,source_row,82,82,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,83,material,"0.5"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,83,Calibrated  initial O2 % by vol ,17.6,17.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,83,Calibrated final O2 % by vol,17.1,17.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,83,Initial CO2 % by vol,1.67,1.67,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,83,Final CO2 % by vol,2.1,2.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,83,Initial CO (ppm),525,525.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,83,Final CO (ppm),535,535.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,83,Air display,5 down to ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,83,date,7/14/2014,2014-07-14,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,83,source_row,83,83,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,84,material,"1/4"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,84,Calibrated  initial O2 % by vol ,17.0,17.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,84,Calibrated final O2 % by vol,16.4,16.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,84,Initial CO2 % by vol,0.29,0.29,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,84,Final CO2 % by vol,0.72,0.72,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,84,Initial CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,84,Final CO (ppm),44,44.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,84,Air display,5   pots 0.4   0.36   0.32   0.31   0.30 extinguished,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,84,date,7/3/2014,2014-07-03,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,84,source_row,84,84,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,85,material,"3/8"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,85,Calibrated  initial O2 % by vol ,17.5,17.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,85,Calibrated final O2 % by vol,16.8,16.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,85,Initial CO2 % by vol,0.29,0.29,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,85,Final CO2 % by vol,0.95,0.95,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,85,Initial CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,85,Final CO (ppm),57,57.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,85,Air display,5   3  2  1   0.5   lower,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,85,date,7/29/2014,2014-07-29,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,85,source_row,85,85,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,86,material,"0.5"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,86,Calibrated  initial O2 % by vol ,20.7,20.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,86,Calibrated final O2 % by vol,19.1,19.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,86,Initial CO2 % by vol,0.36,0.36,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,86,Final CO2 % by vol,1.63,1.63,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,86,Initial CO (ppm),38,38.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,86,Final CO (ppm),450,450.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,86,Air display,5 down to ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,86,date,7/14/2014,2014-07-14,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,86,source_row,86,86,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,87,material,"0.5"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,87,Calibrated  initial O2 % by vol ,20.6,20.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,87,Calibrated final O2 % by vol,20.2,20.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,87,Initial CO2 % by vol,0.41,0.41,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,87,Final CO2 % by vol,0.62,0.62,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,87,Initial CO (ppm),5,5.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,87,Final CO (ppm),72,72.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,87,Air display,5 down to ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,87,date,7/14/2014,2014-07-14,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,87,source_row,87,87,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,88,material,1/4 blac rod,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,88,Calibrated  initial O2 % by vol ,18.4,18.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,88,Calibrated final O2 % by vol,18,18.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,88,Initial CO2 % by vol,0.34,0.34,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,88,Final CO2 % by vol,0.62,0.62,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,88,Initial CO (ppm),3,3.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,88,Final CO (ppm),90,90.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,88,Air display,5   low (.85   .4   .32),,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,88,date,6/23/2014,2014-06-23,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,88,source_row,88,88,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,89,material,1/4 black rod,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,89,Calibrated  initial O2 % by vol ,18.0,18.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,89,Calibrated final O2 % by vol,17.5,17.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,89,Initial CO2 % by vol,0.62,0.62,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,89,Final CO2 % by vol,1.11,1.11,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,89,Initial CO (ppm),90,90.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,89,Final CO (ppm),108,108.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,89,Air display,5   (0.36),,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,89,date,6/23/2014,2014-06-23,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,89,source_row,89,89,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,90,material,"1/4"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,90,Calibrated  initial O2 % by vol ,18.2,18.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,90,Calibrated final O2 % by vol,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,90,Initial CO2 % by vol,0.3,0.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,90,Final CO2 % by vol,0.92,0.92,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,90,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,90,Final CO (ppm),56,56.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,90,Air display,5  8  2  low,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,90,date,7/22/2014,2014-07-22,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,90,source_row,90,90,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,91,material,"1/4""  black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,91,Calibrated  initial O2 % by vol ,16.8,16.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,91,Calibrated final O2 % by vol,16.5,16.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,91,Initial CO2 % by vol,0.95,0.95,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,91,Final CO2 % by vol,1.34,1.34,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,91,Initial CO (ppm),57,57.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,91,Final CO (ppm),68,68.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,91,Air display,5   3   2   22   2   low,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,91,date,7/29/2014,2014-07-29,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,91,source_row,91,91,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,92,material,"1/4"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,92,Calibrated  initial O2 % by vol ,20.0,20.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,92,Calibrated final O2 % by vol,19,19.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,92,Initial CO2 % by vol,0.34,0.34,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,92,Final CO2 % by vol,1.2,1.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,92,Initial CO (ppm),1,1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,92,Final CO (ppm),26,26.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,92,Air display,2  0  2  0  etc,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,92,date,7/30/2014,2014-07-30,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,92,source_row,92,92,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,93,material,"1/4"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,93,Calibrated  initial O2 % by vol ,17.5,17.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,93,Calibrated final O2 % by vol,16.7,16.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,93,Initial CO2 % by vol,0.9,0.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,93,Final CO2 % by vol,1.61,1.61,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,93,Initial CO (ppm),54,54.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,93,Final CO (ppm),94,94.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,93,Air display,5  8  2  max   0,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,93,date,7/22/2014,2014-07-22,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,93,source_row,93,93,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,94,material,"1/4"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,94,Calibrated  initial O2 % by vol ,19.0,19.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,94,Calibrated final O2 % by vol,18.2,18.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,94,Initial CO2 % by vol,0.34,0.34,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,94,Final CO2 % by vol,1.05,1.05,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,94,Initial CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,94,Final CO (ppm),78,78.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,94,Air display,2  0  2  0  etc,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,94,date,7/30/2014,2014-07-30,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,94,source_row,94,94,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,95,material,1/4 black rod,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,95,Calibrated  initial O2 % by vol ,16.3,16.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,95,Calibrated final O2 % by vol,16.3,16.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,95,Initial CO2 % by vol,0.96,0.96,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,95,Final CO2 % by vol,1,1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,95,Initial CO (ppm),86,86.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,95,Final CO (ppm),94,94.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,95,Air display,5,5.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,95,date,6/23/2014,2014-06-23,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,95,source_row,95,95,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,96,material,"1/4"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,96,Calibrated  initial O2 % by vol ,16.3,16.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,96,Calibrated final O2 % by vol,16.3,16.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,96,Initial CO2 % by vol,1,1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,96,Final CO2 % by vol,1.03,1.03,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,96,Initial CO (ppm),94,94.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,96,Final CO (ppm),98,98.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,96,Air display,5,5.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,96,date,6/23/2014,2014-06-23,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,96,source_row,96,96,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,97,material,"3/8"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,97,Calibrated  initial O2 % by vol ,20.8,20.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,97,Calibrated final O2 % by vol,0.6,0.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,97,Initial CO2 % by vol,0.32,0.32,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,97,Final CO2 % by vol,none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,97,Initial CO (ppm),4,4.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,97,Final CO (ppm),none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,97,Air display,5   down to ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,97,date,7/8/2014,2014-07-08,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,97,source_row,97,97,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,98,material,"3/8"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,98,Calibrated  initial O2 % by vol ,20.0,20.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,98,Calibrated final O2 % by vol,39.1,39.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,98,Initial CO2 % by vol,none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,98,Final CO2 % by vol,1.09,1.09,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,98,Initial CO (ppm),none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,98,Final CO (ppm),239,239.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,98,Air display,5 down to ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,98,date,7/8/2014,2014-07-08,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,98,source_row,98,98,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,99,material,"3/8"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,99,Calibrated  initial O2 % by vol ,18.2,18.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,99,Calibrated final O2 % by vol,17,17.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,99,Initial CO2 % by vol,1.05,1.05,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,99,Final CO2 % by vol,2.08,2.08,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,99,Initial CO (ppm),78,78.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,99,Final CO (ppm),159,159.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,99,Air display,2  0  2  0  etc,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,99,date,7/30/2014,2014-07-30,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,99,source_row,99,99,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,100,material,"3/8"" black rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,100,Calibrated  initial O2 % by vol ,19.0,19.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,100,Calibrated final O2 % by vol,17.5,17.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,100,Initial CO2 % by vol,1.2,1.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,100,Final CO2 % by vol,2.24,2.24,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,100,Initial CO (ppm),26,26.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,100,Final CO (ppm),260,260.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,100,Air display,2  0  2  0  etc,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,100,date,7/30/2014,2014-07-30,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,100,source_row,100,100,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,101,material,"3/8"" clear rod",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,101,Calibrated  initial O2 % by vol ,20.9,20.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,101,Calibrated final O2 % by vol,20.2,20.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,101,Initial CO2 % by vol,0.38,0.38,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,101,Final CO2 % by vol,1,1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,101,Initial CO (ppm),43,43.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,101,Final CO (ppm),205,205.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,101,Air display,5 down to ext,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,101,date,7/8/2014,2014-07-08,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,101,source_row,101,101,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,102,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,102,Calibrated  initial O2 % by vol ,18.5,18.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,102,Calibrated final O2 % by vol,18.5,18.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,102,Initial CO2 % by vol,0.35,0.35,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,102,Final CO2 % by vol,0.41,0.41,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,102,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,102,Final CO (ppm),40,40.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,102,Air display,10,10.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,102,date,2/14/2014,2014-02-14,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,102,source_row,102,102,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,103,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,103,Calibrated  initial O2 % by vol ,18.5,18.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,103,Calibrated final O2 % by vol,18.5,18.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,103,Initial CO2 % by vol,0.41,0.41,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,103,Final CO2 % by vol,0.45,0.45,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,103,Initial CO (ppm),40,40.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,103,Final CO (ppm),78,78.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,103,Air display,9   5   4,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,103,date,2/14/2014,2014-02-14,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,103,source_row,103,103,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,104,material,4 cm spherical section,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,104,Calibrated  initial O2 % by vol ,17.2,17.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,104,Calibrated final O2 % by vol,16.8,16.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,104,Initial CO2 % by vol,0.42,0.42,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,104,Final CO2 % by vol,0.7,0.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,104,Initial CO (ppm),45,45.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,104,Final CO (ppm),113,113.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,104,Air display,10,10.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,104,date,6/27/2014,2014-06-27,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,104,source_row,104,104,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,105,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,105,Calibrated  initial O2 % by vol ,18.7,18.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,105,Calibrated final O2 % by vol,18.7,18.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,105,Initial CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,105,Final CO2 % by vol,0.45,0.45,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,105,Initial CO (ppm),59,59.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,105,Final CO (ppm),72,72.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,105,Air display,9  1,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,105,date,2/14/2014,2014-02-14,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,105,source_row,105,105,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,106,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,106,Calibrated  initial O2 % by vol ,18.8,18.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,106,Calibrated final O2 % by vol,18.9,18.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,106,Initial CO2 % by vol,0.2,0.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,106,Final CO2 % by vol,0.25,0.25,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,106,Initial CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,106,Final CO (ppm),41,41.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,106,Air display,10   2   1,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,106,date,4/10/2014,2014-04-10,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,106,source_row,106,106,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,107,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,107,Calibrated  initial O2 % by vol ,18.8,18.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,107,Calibrated final O2 % by vol,18.8,18.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,107,Initial CO2 % by vol,0.24,0.24,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,107,Final CO2 % by vol,0.28,0.28,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,107,Initial CO (ppm),39,39.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,107,Final CO (ppm),77,77.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,107,Air display,5  2  1   <1,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,107,date,4/10/2014,2014-04-10,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,107,source_row,107,107,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,108,material,4 cm spherical section,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,108,Calibrated  initial O2 % by vol ,17.3,17.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,108,Calibrated final O2 % by vol,17.1,17.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,108,Initial CO2 % by vol,0.32,0.32,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,108,Final CO2 % by vol,0.59,0.59,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,108,Initial CO (ppm),49,49.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,108,Final CO (ppm),140,140.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,108,Air display,10   5  3  1   decr,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,108,date,7/9/2014,2014-07-09,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,108,source_row,108,108,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,109,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,109,Calibrated  initial O2 % by vol ,16.4,16.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,109,Calibrated final O2 % by vol,16.4,16.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,109,Initial CO2 % by vol,0.3,0.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,109,Final CO2 % by vol,0.31,0.31,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,109,Initial CO (ppm),0,0.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,109,Final CO (ppm),9,9.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,109,Air display,10,10.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,109,date,6/24/2018,2014-06-24,year_inferred_from_sheet_header,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,109,source_row,109,109,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,110,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,110,Calibrated  initial O2 % by vol ,16.4,16.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,110,Calibrated final O2 % by vol,16.5,16.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,110,Initial CO2 % by vol,0.31,0.31,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,110,Final CO2 % by vol,0.33,0.33,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,110,Initial CO (ppm),9,9.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,110,Final CO (ppm),14,14.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,110,Air display,5,5.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,110,date,6/24/2014,2014-06-24,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,110,source_row,110,110,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,111,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,111,Calibrated  initial O2 % by vol ,17.1,17.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,111,Calibrated final O2 % by vol,17,17.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,111,Initial CO2 % by vol,0.35,0.35,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,111,Final CO2 % by vol,0.39,0.39,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,111,Initial CO (ppm),1,1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,111,Final CO (ppm),45,45.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,111,Air display,5,5.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,111,date,6/27/2014,2014-06-27,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,111,source_row,111,111,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,112,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,112,Calibrated  initial O2 % by vol ,16.8,16.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,112,Calibrated final O2 % by vol,16.9,16.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,112,Initial CO2 % by vol,0.7,0.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,112,Final CO2 % by vol,0.7,0.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,112,Initial CO (ppm),113,113.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,112,Final CO (ppm),117,117.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,112,Air display,5,5.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,112,date,6/27/2014,2014-06-27,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,112,source_row,112,112,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,113,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,113,Calibrated  initial O2 % by vol ,17.5,17.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,113,Calibrated final O2 % by vol,17.6,17.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,113,Initial CO2 % by vol,0.19,0.19,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,113,Final CO2 % by vol,0.2,0.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,113,Initial CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,113,Final CO (ppm),12,12.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,113,Air display,5  1,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,113,date,4/10/2014,2014-04-10,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,113,source_row,113,113,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,114,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,114,Calibrated  initial O2 % by vol ,16.9,16.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,114,Calibrated final O2 % by vol,16.9,16.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,114,Initial CO2 % by vol,0.7,0.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,114,Final CO2 % by vol,0.72,0.72,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,114,Initial CO (ppm),117,117.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,114,Final CO (ppm),152,152.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,114,Air display,5  3,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,114,date,6/27/2014,2014-06-27,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,114,source_row,114,114,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,115,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,115,Calibrated  initial O2 % by vol ,18.7,18.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,115,Calibrated final O2 % by vol,18.7,18.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,115,Initial CO2 % by vol,0.45,0.45,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,115,Final CO2 % by vol,0.51,0.51,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,115,Initial CO (ppm),72,72.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,115,Final CO (ppm),102,102.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,115,Air display,9   29,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,115,date,2/14/2014,2014-02-14,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,115,source_row,115,115,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,116,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,116,Calibrated  initial O2 % by vol ,17.6,17.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,116,Calibrated final O2 % by vol,17.5,17.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,116,Initial CO2 % by vol,0.21,0.21,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,116,Final CO2 % by vol,0.21,0.21,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,116,Initial CO (ppm),17,17.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,116,Final CO (ppm),41,41.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,116,Air display,5  3,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,116,date,4/10/2014,2014-04-10,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,116,source_row,116,116,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,117,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,117,Calibrated  initial O2 % by vol ,16.9,16.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,117,Calibrated final O2 % by vol,16.9,16.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,117,Initial CO2 % by vol,0.72,0.72,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,117,Final CO2 % by vol,0.75,0.75,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,117,Initial CO (ppm),152,152.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,117,Final CO (ppm),190,190.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,117,Air display,6   53,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,117,date,6/27/2014,2014-06-27,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,117,source_row,117,117,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,118,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,118,Calibrated  initial O2 % by vol ,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,118,Calibrated final O2 % by vol,17.4,17.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,118,Initial CO2 % by vol,0.36,0.36,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,118,Final CO2 % by vol,0.38,0.38,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,118,Initial CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,118,Final CO (ppm),22,22.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,118,Air display,5  2,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,118,date,6/24/2018,2014-06-24,year_inferred_from_sheet_header,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,118,source_row,118,118,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,119,material,1 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,119,Calibrated  initial O2 % by vol ,17.2,17.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,119,Calibrated final O2 % by vol,17.2,17.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,119,Initial CO2 % by vol,0.29,0.29,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,119,Final CO2 % by vol,0.31,0.31,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,119,Initial CO (ppm),1,1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,119,Final CO (ppm),20,20.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,119,Air display,11,11.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,119,date,7/9/2014,2014-07-09,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,119,source_row,119,119,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,120,material,1 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,120,Calibrated  initial O2 % by vol ,17.2,17.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,120,Calibrated final O2 % by vol,17.2,17.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,120,Initial CO2 % by vol,0.31,0.31,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,120,Final CO2 % by vol,0.31,0.31,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,120,Initial CO (ppm),20,20.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,120,Final CO (ppm),34,34.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,120,Air display,11   3,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,120,date,7/9/2014,2014-07-09,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,120,source_row,120,120,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,121,material,1 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,121,Calibrated  initial O2 % by vol ,17.2,17.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,121,Calibrated final O2 % by vol,17.2,17.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,121,Initial CO2 % by vol,0.31,0.31,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,121,Final CO2 % by vol,0.32,0.32,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,121,Initial CO (ppm),34,34.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,121,Final CO (ppm),45,45.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,121,Air display,11   max(47),,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,121,date,7/9/2014,2014-07-09,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,121,source_row,121,121,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,122,material,1 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,122,Calibrated  initial O2 % by vol ,17.1,17.1,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,122,Calibrated final O2 % by vol,17,17.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,122,Initial CO2 % by vol,0.59,0.59,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,122,Final CO2 % by vol,0.62,0.62,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,122,Initial CO (ppm),140,140.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,122,Final CO (ppm),162,162.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,122,Air display,10   5,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,122,date,7/9/2014,2014-07-09,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,122,source_row,122,122,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,123,material,2 cm Sibal   moved igniter,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,123,Calibrated  initial O2 % by vol ,17.2,17.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,123,Calibrated final O2 % by vol,17.3,17.3,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,123,Initial CO2 % by vol,0.32,0.32,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,123,Final CO2 % by vol,0.32,0.32,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,123,Initial CO (ppm),45,45.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,123,Final CO (ppm),49,49.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,123,Air display,10,10.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,123,date,7/9/2014,2014-07-09,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,123,source_row,123,123,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,124,material,1 cm SIBAL   top side ign,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,124,Calibrated  initial O2 % by vol ,18.2,18.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,124,Calibrated final O2 % by vol,18.2,18.2,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,124,Initial CO2 % by vol,0.51,0.51,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,124,Final CO2 % by vol,0.53,0.53,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,124,Initial CO (ppm),85,85.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,124,Final CO (ppm),107,107.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,124,Air display,10,10.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,124,date,7/9/2014,2014-07-09,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,124,source_row,124,124,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,125,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,125,Calibrated  initial O2 % by vol ,20.8,20.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,125,Calibrated final O2 % by vol,20.7,20.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,125,Initial CO2 % by vol,0.36,0.36,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,125,Final CO2 % by vol,0.39,0.39,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,125,Initial CO (ppm),-1,-1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,125,Final CO (ppm),17,17.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,125,Air display,5   2.5,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,125,date,8/4/2014,2014-08-04,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,125,source_row,125,125,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,126,material,2 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,126,Calibrated  initial O2 % by vol ,20.8,20.8,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,126,Calibrated final O2 % by vol,20.7,20.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,126,Initial CO2 % by vol,0.36,0.36,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,126,Final CO2 % by vol,0.43,0.43,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,126,Initial CO (ppm),-1,-1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,126,Final CO (ppm),24,24.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,126,Air display,5   2.5,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,126,date,8/4/2014,2014-08-04,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,126,source_row,126,126,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,127,material,1 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,127,Calibrated  initial O2 % by vol ,20.7,20.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,127,Calibrated final O2 % by vol,20.6,20.6,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,127,Initial CO2 % by vol,0.41,0.41,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,127,Final CO2 % by vol,0.42,0.42,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,127,Initial CO (ppm),-1,-1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,127,Final CO (ppm),9,9.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,127,Air display,5   2,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,127,date,8/4/2014,2014-08-04,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,127,source_row,127,127,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,128,material,1 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,128,Calibrated  initial O2 % by vol ,20.7,20.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,128,Calibrated final O2 % by vol,0.9,0.9,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,128,Initial CO2 % by vol,0.41,0.41,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,128,Final CO2 % by vol,none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,128,Initial CO (ppm),-1,-1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,128,Final CO (ppm),none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,128,Air display,5,5.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,128,date,8/4/2014,2014-08-04,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,128,source_row,128,128,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,129,material,1 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,129,Calibrated  initial O2 % by vol ,20.7,20.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,129,Calibrated final O2 % by vol,40.4,40.4,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,129,Initial CO2 % by vol,none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,129,Final CO2 % by vol,0.42,0.42,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,129,Initial CO (ppm),none,,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,129,Final CO (ppm),2,2.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,129,Air display,5,5.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,129,date,8/4/2014,2014-08-04,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,129,source_row,129,129,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+PSI-25_BASS-II_raw.csv,130,material,1 cm SIBAL,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+PSI-25_BASS-II_raw.csv,130,Calibrated  initial O2 % by vol ,20.7,20.7,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,130,Calibrated final O2 % by vol,20.5,20.5,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,130,Initial CO2 % by vol,0.41,0.41,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,130,Final CO2 % by vol,0.44,0.44,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,130,Initial CO (ppm),-1,-1.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,130,Final CO (ppm),10,10.0,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,130,Air display,5   2(?),,Strict scalar conversion; factor 1; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+PSI-25_BASS-II_raw.csv,130,date,8/4/2014,2014-08-04,consistent,bass_pipeline_v2.py:66
+PSI-25_BASS-II_raw.csv,130,source_row,130,130,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67

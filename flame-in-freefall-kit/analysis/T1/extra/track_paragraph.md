@@ -1,0 +1,1 @@
+T1 covers BASS and BASS-II solid-fuel combustion in microgravity. The package provides 250 traceable run records, descriptive oxygen and material analysis, and a date audit. It does not establish fire safety thresholds.

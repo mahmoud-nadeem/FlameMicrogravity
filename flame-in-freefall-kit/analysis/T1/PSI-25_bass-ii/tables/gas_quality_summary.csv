@@ -1,0 +1,13 @@
+field,status,records
+x_co_initial_status,numeric,113
+x_co_initial_status,out_of_physical_range,13
+x_co_initial_status,missing,2
+x_co_initial_status,right_censored,1
+x_co2_initial_status,numeric,127
+x_co2_initial_status,missing,2
+x_co_final_status,numeric,120
+x_co_final_status,missing,5
+x_co_final_status,right_censored,3
+x_co_final_status,overrange_unspecified,1
+x_co2_final_status,numeric,123
+x_co2_final_status,missing,6

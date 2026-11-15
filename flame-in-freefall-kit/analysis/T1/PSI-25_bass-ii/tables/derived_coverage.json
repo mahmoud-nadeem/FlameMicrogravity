@@ -1,0 +1,11 @@
+{
+  "records": 129,
+  "oxygen_nonmissing": 129,
+  "sample_labels_repeated": 20,
+  "rows_with_repeated_labels": 43,
+  "date_flags": {
+    "consistent": 126,
+    "year_inferred_from_sheet_header": 2,
+    "gmt_inferred_provisional": 1
+  }
+}

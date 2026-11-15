@@ -1,0 +1,616 @@
+file,row,column,before,after,reason,script and line
+BASS%20test%20matrix.xlsx,as run matrix!4,material,SIBAL 2 cm,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!4,O2 % by volume,0.221,22.1,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!4,"pressure, atm",0.97,98.28525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!4,date,3/30/2012,2012-03-30,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!4,source_row,as run matrix!4,4,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!5,material,PMMA sphere 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!5,O2 % by volume,0.221,22.1,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!5,"pressure, atm",0.97,98.28525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!5,date,3/30/2012,2012-03-30,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!5,source_row,as run matrix!5,5,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!6,material,PMMA sphere 1 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!6,O2 % by volume,0.221,22.1,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!6,"pressure, atm",0.97,98.28525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!6,date,3/30/2012,2012-03-30,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!6,source_row,as run matrix!6,6,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!7,material,SIBAL 2 cm,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!7,O2 % by volume,0.219,21.9,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!7,"pressure, atm",0.97,98.28525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!7,date,4/5/2012,2012-04-05,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!7,source_row,as run matrix!7,7,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!8,material,SIBAL 2 cm,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!8,O2 % by volume,0.219,21.9,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!8,"pressure, atm",0.97,98.28525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!8,date,4/5/2012,2012-04-05,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!8,source_row,as run matrix!8,8,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!9,material,PMMA sphere 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!9,O2 % by volume,0.217,21.7,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!9,"pressure, atm",0.98,99.2985,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!9,date,4/9/2012,2012-04-09,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!9,source_row,as run matrix!9,9,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!10,material,PMMA sphere 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!10,O2 % by volume,0.217,21.7,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!10,"pressure, atm",0.98,99.2985,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!10,date,4/9/2012,2012-04-09,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!10,source_row,as run matrix!10,10,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!11,material,PMMA sphere 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!11,O2 % by volume,0.217,21.7,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!11,"pressure, atm",0.98,99.2985,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!11,date,4/9/2012,2012-04-09,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!11,source_row,as run matrix!11,11,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!12,material,PMMA sphere 1 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!12,O2 % by volume,0.21887043189368768,21.887043189368768,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!12,"pressure, atm",0.9901315789473685,100.3250822368421,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!12,date,5/2/2012,2012-05-02,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!12,source_row,as run matrix!12,12,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!13,material,PMMA sphere 1 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!13,O2 % by volume,0.21887043189368768,21.887043189368768,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!13,"pressure, atm",0.9901315789473685,100.3250822368421,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!13,date,5/2/2012,2012-05-02,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!13,source_row,as run matrix!13,13,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!14,material,PMMA sphere 1 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!14,O2 % by volume,0.21887043189368768,21.887043189368768,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!14,"pressure, atm",0.9901315789473685,100.3250822368421,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!14,date,5/2/2012,2012-05-02,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!14,source_row,as run matrix!14,14,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!15,material,SIBAL 2 cm,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!15,O2 % by volume,0.21629213483146065,21.629213483146064,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!15,"pressure, atm",0.9836842105263158,99.67180263157896,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!15,date,5/10/2012,2012-05-10,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!15,source_row,as run matrix!15,15,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!16,material,SIBAL 1 cm,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!16,O2 % by volume,0.21629213483146065,21.629213483146064,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!16,"pressure, atm",0.9836842105263158,99.67180263157896,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!16,date,5/10/2012,2012-05-10,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!16,source_row,as run matrix!16,16,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!17,material,Nomex blend 2 cm,Nomex,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!17,O2 % by volume,0.21629213483146065,21.629213483146064,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!17,"pressure, atm",0.9836842105263158,99.67180263157896,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!17,date,5/10/2012,2012-05-10,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!17,source_row,as run matrix!17,17,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!18,material,PMMA 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!18,O2 % by volume,0.217,21.7,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!18,"pressure, atm",0.984,99.7038,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!18,date,5/11/2012,2012-05-11,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!18,source_row,as run matrix!18,18,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!19,material,PMMA 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!19,O2 % by volume,0.217,21.7,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!19,"pressure, atm",0.984,99.7038,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!19,date,5/11/2012,2012-05-11,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!19,source_row,as run matrix!19,19,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!20,material,PMMA 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!20,O2 % by volume,0.217,21.7,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!20,"pressure, atm",0.984,99.7038,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!20,date,5/11/2012,2012-05-11,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!20,source_row,as run matrix!20,20,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!21,material,PMMA 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!21,O2 % by volume,0.217,21.7,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!21,"pressure, atm",0.984,99.7038,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!21,date,5/11/2012,2012-05-11,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!21,source_row,as run matrix!21,21,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!22,material,PMMA 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!22,O2 % by volume,0.217,21.7,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!22,"pressure, atm",0.984,99.7038,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!22,date,5/11/2012,2012-05-11,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!22,source_row,as run matrix!22,22,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!23,material,PMMA 1 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!23,O2 % by volume,0.21172171088251218,21.17217108825122,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!23,"pressure, atm",0.9721052631578947,98.49856578947369,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!23,date,6/5/2012,2012-06-05,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!23,source_row,as run matrix!23,23,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!24,material,PMMA 1 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!24,O2 % by volume,0.21172171088251218,21.17217108825122,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!24,"pressure, atm",0.9721052631578947,98.49856578947369,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!24,date,6/5/2012,2012-06-05,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!24,source_row,as run matrix!24,24,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!25,material,PMMA 1 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!25,O2 % by volume,0.21172171088251218,21.17217108825122,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!25,"pressure, atm",0.9721052631578947,98.49856578947369,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!25,date,6/5/2012,2012-06-05,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!25,source_row,as run matrix!25,25,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!26,material,PMMA 1 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!26,O2 % by volume,0.21172171088251218,21.17217108825122,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!26,"pressure, atm",0.9721052631578947,98.49856578947369,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!26,date,6/5/2012,2012-06-05,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!26,source_row,as run matrix!26,26,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!27,material,Nomex blend 2 cm,Nomex,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!27,O2 % by volume,0.21172171088251218,21.17217108825122,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!27,"pressure, atm",0.9721052631578947,98.49856578947369,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!27,date,6/5/2012,2012-06-05,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!27,source_row,as run matrix!27,27,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!28,material,Nomex blend 2 cm,Nomex,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!28,O2 % by volume,0.21172171088251218,21.17217108825122,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!28,"pressure, atm",0.9721052631578947,98.49856578947369,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!28,date,6/5/2012,2012-06-05,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!28,source_row,as run matrix!28,28,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!29,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!29,O2 % by volume,0.21184054238011985,21.184054238011985,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!29,"pressure, atm",0.985907894736842,99.89711743421053,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!29,date,6/11/2012,2012-06-11,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!29,source_row,as run matrix!29,29,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!30,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!30,O2 % by volume,0.21184054238011985,21.184054238011985,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!30,"pressure, atm",0.985907894736842,99.89711743421053,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!30,date,6/11/2012,2012-06-11,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!30,source_row,as run matrix!30,30,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!31,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!31,O2 % by volume,0.21184054238011985,21.184054238011985,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!31,"pressure, atm",0.985907894736842,99.89711743421053,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!31,date,6/11/2012,2012-06-11,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!31,source_row,as run matrix!31,31,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!32,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!32,O2 % by volume,0.21184054238011985,21.184054238011985,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!32,"pressure, atm",0.985907894736842,99.89711743421053,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!32,date,6/11/2012,2012-06-11,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!32,source_row,as run matrix!32,32,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!33,material,1 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!33,O2 % by volume,0.20889599147689442,20.88959914768944,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!33,"pressure, atm",0.9880263157894736,100.11176644736842,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!33,date,6/14/2012,2012-06-14,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!33,source_row,as run matrix!33,33,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!34,material,1 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!34,O2 % by volume,0.20889599147689442,20.88959914768944,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!34,"pressure, atm",0.9880263157894736,100.11176644736842,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!34,date,6/14/2012,2012-06-14,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!34,source_row,as run matrix!34,34,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!35,material,1 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!35,O2 % by volume,0.20889599147689442,20.88959914768944,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!35,"pressure, atm",0.9880263157894736,100.11176644736842,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!35,date,6/14/2012,2012-06-14,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!35,source_row,as run matrix!35,35,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!36,material,1 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!36,O2 % by volume,0.20889599147689442,20.88959914768944,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!36,"pressure, atm",0.9880263157894736,100.11176644736842,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!36,date,6/14/2012,2012-06-14,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!36,source_row,as run matrix!36,36,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!37,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!37,O2 % by volume,0.21748625040439987,21.748625040439986,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!37,"pressure, atm",0.9761052631578948,98.9038657894737,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!37,date,6/18/2012,2012-06-18,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!37,source_row,as run matrix!37,37,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!38,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!38,O2 % by volume,0.21748625040439987,21.748625040439986,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!38,"pressure, atm",0.9761052631578948,98.9038657894737,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!38,date,6/18/2012,2012-06-18,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!38,source_row,as run matrix!38,38,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!39,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!39,O2 % by volume,0.21748625040439987,21.748625040439986,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!39,"pressure, atm",0.9761052631578948,98.9038657894737,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!39,date,6/18/2012,2012-06-18,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!39,source_row,as run matrix!39,39,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!40,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!40,O2 % by volume,0.21748625040439987,21.748625040439986,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!40,"pressure, atm",0.9761052631578948,98.9038657894737,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!40,date,6/18/2012,2012-06-18,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!40,source_row,as run matrix!40,40,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!41,material,SIBAL 2 cm,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!41,O2 % by volume,0.21983426531024727,21.983426531024726,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!41,"pressure, atm",0.9765131578947368,98.94519572368421,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!41,date,6/28/2012,2012-06-28,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!41,source_row,as run matrix!41,41,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!42,material,Nomex III Natural,Nomex,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!42,O2 % by volume,0.21983426531024727,21.983426531024726,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!42,"pressure, atm",0.9765131578947368,98.94519572368421,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!42,date,6/28/2012,2012-06-28,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!42,source_row,as run matrix!42,42,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!43,material,PMMA slab,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!43,O2 % by volume,0.21983426531024727,21.983426531024726,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!43,"pressure, atm",0.9765131578947368,98.94519572368421,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!43,date,6/28/2012,2012-06-28,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!43,source_row,as run matrix!43,43,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!44,material,PMMA slab,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!44,O2 % by volume,0.21983426531024727,21.983426531024726,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!44,"pressure, atm",0.9765131578947368,98.94519572368421,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!44,date,6/28/2012,2012-06-28,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!44,source_row,as run matrix!44,44,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!45,material,1 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!45,O2 % by volume,0.21894414078122915,21.894414078122914,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!45,"pressure, atm",0.9869736842105263,100.00510855263158,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!45,date,6/29/2012,2012-06-29,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!45,source_row,as run matrix!45,45,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!46,material,1 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!46,O2 % by volume,0.21894414078122915,21.894414078122914,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!46,"pressure, atm",0.9869736842105263,100.00510855263158,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!46,date,6/29/`12,2012-06-29,format_normalized,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!46,source_row,as run matrix!46,46,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!47,material,ultem sheet,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!47,O2 % by volume,0.21894414078122915,21.894414078122914,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!47,"pressure, atm",0.9869736842105263,100.00510855263158,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!47,date,6/29/2012,2012-06-29,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!47,source_row,as run matrix!47,47,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!48,material,"SIBAL 2 cm, opposed flow",SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!48,O2 % by volume,0.21894414078122915,21.894414078122914,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!48,"pressure, atm",0.9869736842105263,100.00510855263158,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!48,date,6/29/2012,2012-06-29,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!48,source_row,as run matrix!48,48,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!49,material,SIBAL 2 cm,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!49,O2 % by volume,0.2221985343104597,22.21985343104597,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!49,"pressure, atm",0.9875,100.05843750000001,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!49,date,7/3/2012,2012-07-03,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!49,source_row,as run matrix!49,49,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!50,material,candle,Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!50,O2 % by volume,0.2221985343104597,22.21985343104597,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!50,"pressure, atm",0.9875,100.05843750000001,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!50,date,7/3/2012,2012-07-03,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!50,source_row,as run matrix!50,50,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!51,material,candle,Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!51,O2 % by volume,0.2221985343104597,22.21985343104597,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!51,"pressure, atm",0.9875,100.05843750000001,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!51,date,7/3/2012,2012-07-03,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!51,source_row,as run matrix!51,51,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!52,material,candle,Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!52,O2 % by volume,0.2221985343104597,22.21985343104597,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!52,"pressure, atm",0.9875,100.05843750000001,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!52,date,7/3/2012,2012-07-03,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!52,source_row,as run matrix!52,52,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!53,material,pmma slab,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!53,O2 % by volume,0.2221985343104597,22.21985343104597,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!53,"pressure, atm",0.9875,100.05843750000001,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!53,date,7/3/2012,2012-07-03,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!53,source_row,as run matrix!53,53,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!54,material,pmma slab,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!54,O2 % by volume,0.22383806099347453,22.383806099347453,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!54,"pressure, atm",0.9880263157894736,100.11176644736842,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!54,date,7/12/2012,2012-07-12,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!54,source_row,as run matrix!54,54,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!55,material,"2 cm sphere, wake ign",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!55,O2 % by volume,0.22383806099347453,22.383806099347453,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!55,"pressure, atm",0.9880263157894736,100.11176644736842,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!55,date,7/12/2012,2012-07-12,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!55,source_row,as run matrix!55,55,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!56,material,"2 cm sphere, wake ign",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!56,O2 % by volume,0.22383806099347453,22.383806099347453,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!56,"pressure, atm",0.9880263157894736,100.11176644736842,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!56,date,7/12/2012,2012-07-12,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!56,source_row,as run matrix!56,56,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!57,material,"2 cm sphere, wake ign",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!57,O2 % by volume,0.22383806099347453,22.383806099347453,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!57,"pressure, atm",0.9880263157894736,100.11176644736842,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!57,date,7/12/2012,2012-07-12,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!57,source_row,as run matrix!57,57,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!58,material,SIBAL 2 cm,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!58,O2 % by volume,0.22721982701616103,22.721982701616103,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!58,"pressure, atm",0.9949210526315789,100.81037565789474,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!58,date,7/19/2012,2012-07-19,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!58,source_row,as run matrix!58,58,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!59,material,SIBAL 2 cm,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!59,O2 % by volume,0.22673656618610746,22.673656618610746,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!59,"pressure, atm",1.0039473684210527,101.72496710526316,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!59,date,7/19/2012,2012-07-19,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!59,source_row,as run matrix!59,59,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!60,material,nomex natural III,Nomex,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!60,O2 % by volume,0.225254635675111,22.5254635675111,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!60,"pressure, atm",1.0076315789473684,102.09826973684211,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!60,date,7/19/2012,2012-07-19,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!60,source_row,as run matrix!60,60,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!61,material,Nomex blend 2 cm,Nomex,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!61,O2 % by volume,0.225254635675111,22.5254635675111,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!61,"pressure, atm",1.0076315789473684,102.09826973684211,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!61,date,7/19/2012,2012-07-19,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!61,source_row,as run matrix!61,61,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!62,material,ultem sheet,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!62,O2 % by volume,0.225254635675111,22.5254635675111,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!62,"pressure, atm",1.0076315789473684,102.09826973684211,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!62,date,7/19/2012,2012-07-19,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!62,source_row,as run matrix!62,62,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!63,material,pmma sphere,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!63,O2 % by volume,0.22507182031862108,22.507182031862108,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!63,"pressure, atm",1.0076315789473684,102.09826973684211,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!63,date,7/19/2012,2012-07-19,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!63,source_row,as run matrix!63,63,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!64,material,PMMA sphere 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!64,O2 % by volume,0.22583548563825623,22.583548563825623,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!64,"pressure, atm",1.0087105263157894,102.20759407894737,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!64,date,7/23/2012,2012-07-23,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!64,source_row,as run matrix!64,64,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!65,material,PMMA sphere 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!65,O2 % by volume,0.22583548563825623,22.583548563825623,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!65,"pressure, atm",1.0087105263157894,102.20759407894737,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!65,date,7/23/2012,2012-07-23,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!65,source_row,as run matrix!65,65,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!66,material,PMMA sphere 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!66,O2 % by volume,0.22583548563825623,22.583548563825623,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!66,"pressure, atm",1.0087105263157894,102.20759407894737,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!66,date,7/23/2012,2012-07-23,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!66,source_row,as run matrix!66,66,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!67,material,PMMA sphere 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!67,O2 % by volume,0.22583548563825623,22.583548563825623,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!67,"pressure, atm",1.0087105263157894,102.20759407894737,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!67,date,7/23/2012,2012-07-23,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!67,source_row,as run matrix!67,67,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!68,material,PMMA sphere 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!68,O2 % by volume,0.22583548563825623,22.583548563825623,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!68,"pressure, atm",1.0087105263157894,102.20759407894737,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!68,date,7/23/2012,2012-07-23,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!68,source_row,as run matrix!68,68,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!69,record,"{'Actual Date  (for SPICE Display Date, add 1 for Leap Year)': '8/3/12', 'Approx Start Time ( with GMT)': 216, 'As run test no.': nan, 'Test no.': nan, 'Sample no.': nan, 'material': 'SOOT Cleaning', 'Igniter': nan, 'Flow restrictor': nan, 'Sample distance': nan, 'Fan display': nan, 'Air display': nan, 'Radiometer gain ( 1000, 250, 50, 10)': nan, 'Radiometer display': nan, 'GN2 Pot': nan, 'GN2 display': nan, 'Filter y/n': nan, 'Release Mode (CH/CL)': nan, 'Exposure Mode (M/A)': nan, 'Exposure compensation   (-#EV)': nan, 'Bracket frames and exposure bracket (#F/ 1.0)': nan, 'shutter speed (1/s)': nan, 'F stop': nan, 'ISO': nan, 'shutter hold s /cont': nan, 'SD card S/N': nan, 'total frames shot': nan, 'O2 % by volume': nan, 'pressure, atm': nan, 'CO2, mm Hg': nan, 'Test Observations and Anomalies (ignited, spread, extinguished, burn time, color, etc.) ': 'Joe completed the soot cleaning and we asked him how dirty things were and it did not sound as if there was much soot to remove.  None of the holes were blocked and the filter was relatively clean.  This follows the data, there is not much change in the calibration numbers.'}",,Excluded from run table: no valid run identifier; original retained,bass_pipeline_v2.py:46
+BASS%20test%20matrix.xlsx,as run matrix!70,material,SIBAL 1 cm,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!70,O2 % by volume,0.215162301439728,21.516230143972802,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!70,"pressure, atm",0.9906842105263157,100.38107763157895,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!70,date,8/9/2012,2012-08-09,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!70,source_row,as run matrix!70,70,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!71,material,SIBAL 2 cm,SIBAL,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!71,O2 % by volume,0.2157922698897596,21.57922698897596,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!71,"pressure, atm",0.9906578947368421,100.37841118421052,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!71,date,8/9/2012,2012-08-09,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!71,source_row,as run matrix!71,71,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!72,material,PMMA sphere 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!72,O2 % by volume,0.2157922698897596,21.57922698897596,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!72,"pressure, atm",0.9906578947368421,100.37841118421052,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!72,date,8/9/2012,2012-08-09,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!72,source_row,as run matrix!72,72,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!73,material,"Japan Wax Candle, wake",Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!73,O2 % by volume,0.2124492557510149,21.24492557510149,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!73,"pressure, atm",0.9723684210526315,98.5252302631579,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!73,date,8/16/2012,2012-08-16,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!73,source_row,as run matrix!73,73,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!74,material,"Japan Wax Candle, wake",Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!74,O2 % by volume,0.2124492557510149,21.24492557510149,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!74,"pressure, atm",0.9723684210526315,98.5252302631579,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!74,date,8/16/2012,2012-08-16,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!74,source_row,as run matrix!74,74,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!75,material,"Japan Wax Candle, wake",Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!75,O2 % by volume,0.2124492557510149,21.24492557510149,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!75,"pressure, atm",0.9723684210526315,98.5252302631579,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!75,date,8/16/2012,2012-08-16,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!75,source_row,as run matrix!75,75,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!76,material,"Japan Wax Candle, wake",Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!76,O2 % by volume,0.2124492557510149,21.24492557510149,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!76,"pressure, atm",0.9723684210526315,98.5252302631579,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!76,date,8/16/2012,2012-08-16,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!76,source_row,as run matrix!76,76,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!77,material,"Japan Wax Candle, wake",Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!77,O2 % by volume,0.2124492557510149,21.24492557510149,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!77,"pressure, atm",0.9723684210526315,98.5252302631579,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!77,date,8/16/2012,2012-08-16,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!77,source_row,as run matrix!77,77,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!78,material,"Japan Wax Candle, wake",Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!78,O2 % by volume,0.2124492557510149,21.24492557510149,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!78,"pressure, atm",0.9723684210526315,98.5252302631579,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!78,date,8/16/2012,2012-08-16,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!78,source_row,as run matrix!78,78,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!79,material,"Japan Wax Candle, wake",Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!79,O2 % by volume,0.2124492557510149,21.24492557510149,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!79,"pressure, atm",0.9723684210526315,98.5252302631579,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!79,date,8/16/2012,2012-08-16,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!79,source_row,as run matrix!79,79,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!80,material,"Japan Wax Candle, wake",Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!80,O2 % by volume,0.2124492557510149,21.24492557510149,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!80,"pressure, atm",0.9723684210526315,98.5252302631579,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!80,date,8/16/2012,2012-08-16,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!80,source_row,as run matrix!80,80,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!81,material,PMMA slab,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!81,O2 % by volume,0.2193393035902708,21.93393035902708,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!81,"pressure, atm",0.9726578947368422,98.55456118421054,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!81,date,8/21/2012,2012-08-21,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!81,source_row,as run matrix!81,81,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!82,material,PMMA slab,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!82,O2 % by volume,0.2193393035902708,21.93393035902708,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!82,"pressure, atm",0.9726578947368422,98.55456118421054,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!82,date,8/21/2012,2012-08-21,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!82,source_row,as run matrix!82,82,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!83,material,paraffin wax slab,Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!83,O2 % by volume,0.2193393035902708,21.93393035902708,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!83,"pressure, atm",0.9726578947368422,98.55456118421054,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!83,date,8/21/2012,2012-08-21,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!83,source_row,as run matrix!83,83,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!84,material,parrafin wax slab,Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!84,O2 % by volume,0.2193393035902708,21.93393035902708,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!84,"pressure, atm",0.9726578947368422,98.55456118421054,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!84,date,8/21/2012,2012-08-21,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!84,source_row,as run matrix!84,84,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!85,record,"{'Actual Date  (for SPICE Display Date, add 1 for Leap Year)': datetime.datetime(2012, 8, 24, 0, 0), 'Approx Start Time ( with GMT)': nan, 'As run test no.': 'STOW', 'Test no.': nan, 'Sample no.': nan, 'material': nan, 'Igniter': nan, 'Flow restrictor': nan, 'Sample distance': nan, 'Fan display': nan, 'Air display': nan, 'Radiometer gain ( 1000, 250, 50, 10)': nan, 'Radiometer display': nan, 'GN2 Pot': nan, 'GN2 display': nan, 'Filter y/n': nan, 'Release Mode (CH/CL)': nan, 'Exposure Mode (M/A)': nan, 'Exposure compensation   (-#EV)': nan, 'Bracket frames and exposure bracket (#F/ 1.0)': nan, 'shutter speed (1/s)': nan, 'F stop': nan, 'ISO': nan, 'shutter hold s /cont': nan, 'SD card S/N': nan, 'total frames shot': nan, 'O2 % by volume': nan, 'pressure, atm': nan, 'CO2, mm Hg': nan, 'Test Observations and Anomalies (ignited, spread, extinguished, burn time, color, etc.) ': nan}",,Excluded from run table: no valid run identifier; original retained,bass_pipeline_v2.py:46
+BASS%20test%20matrix.xlsx,as run matrix!86,record,"{'Actual Date  (for SPICE Display Date, add 1 for Leap Year)': nan, 'Approx Start Time ( with GMT)': nan, 'As run test no.': nan, 'Test no.': nan, 'Sample no.': nan, 'material': nan, 'Igniter': nan, 'Flow restrictor': nan, 'Sample distance': nan, 'Fan display': nan, 'Air display': nan, 'Radiometer gain ( 1000, 250, 50, 10)': nan, 'Radiometer display': nan, 'GN2 Pot': nan, 'GN2 display': nan, 'Filter y/n': nan, 'Release Mode (CH/CL)': nan, 'Exposure Mode (M/A)': nan, 'Exposure compensation   (-#EV)': nan, 'Bracket frames and exposure bracket (#F/ 1.0)': nan, 'shutter speed (1/s)': nan, 'F stop': nan, 'ISO': nan, 'shutter hold s /cont': nan, 'SD card S/N': nan, 'total frames shot': nan, 'O2 % by volume': nan, 'pressure, atm': nan, 'CO2, mm Hg': nan, 'Test Observations and Anomalies (ignited, spread, extinguished, burn time, color, etc.) ': nan}",,Excluded from run table: no valid run identifier; original retained,bass_pipeline_v2.py:46
+BASS%20test%20matrix.xlsx,as run matrix!87,record,"{'Actual Date  (for SPICE Display Date, add 1 for Leap Year)': datetime.datetime(2013, 4, 4, 0, 0), 'Approx Start Time ( with GMT)': '13-94:  15:45', 'As run test no.': 'SETUP', 'Test no.': nan, 'Sample no.': nan, 'material': nan, 'Igniter': 'unknown', 'Flow restrictor': 0.0, 'Sample distance': nan, 'Fan display': nan, 'Air display': nan, 'Radiometer gain ( 1000, 250, 50, 10)': nan, 'Radiometer display': nan, 'GN2 Pot': nan, 'GN2 display': nan, 'Filter y/n': nan, 'Release Mode (CH/CL)': nan, 'Exposure Mode (M/A)': nan, 'Exposure compensation   (-#EV)': nan, 'Bracket frames and exposure bracket (#F/ 1.0)': 'a number of random ones', 'shutter speed (1/s)': nan, 'F stop': nan, 'ISO': nan, 'shutter hold s /cont': nan, 'SD card S/N': 7.0, 'total frames shot': nan, 'O2 % by volume': 0.216, 'pressure, atm': 0.97, 'CO2, mm Hg': 3.2, 'Test Observations and Anomalies (ignited, spread, extinguished, burn time, color, etc.) ': 'Hardware install in the MSG.  Chris Cassidy doing ops.  He took 43 bracket images while working through procedures.  We need to reformat card tomorrow.  GN2 left on for overnight leak check.  Only had time for a no restrictor fan cal, and some of the early values were rushed.'}",,Excluded from run table: no valid run identifier; original retained,bass_pipeline_v2.py:46
+BASS%20test%20matrix.xlsx,as run matrix!88,record,"{'Actual Date  (for SPICE Display Date, add 1 for Leap Year)': datetime.datetime(2013, 4, 5, 0, 0), 'Approx Start Time ( with GMT)': '13-95 ', 'As run test no.': 'Dilution test with CSA-CP', 'Test no.': nan, 'Sample no.': nan, 'material': nan, 'Igniter': nan, 'Flow restrictor': nan, 'Sample distance': nan, 'Fan display': nan, 'Air display': nan, 'Radiometer gain ( 1000, 250, 50, 10)': nan, 'Radiometer display': nan, 'GN2 Pot': nan, 'GN2 display': nan, 'Filter y/n': nan, 'Release Mode (CH/CL)': nan, 'Exposure Mode (M/A)': nan, 'Exposure compensation   (-#EV)': nan, 'Bracket frames and exposure bracket (#F/ 1.0)': nan, 'shutter speed (1/s)': nan, 'F stop': nan, 'ISO': nan, 'shutter hold s /cont': nan, 'SD card S/N': nan, 'total frames shot': nan, 'O2 % by volume': 0.215, 'pressure, atm': 0.97, 'CO2, mm Hg': 3.1, 'Test Observations and Anomalies (ignited, spread, extinguished, burn time, color, etc.) ': 'initial reading 20.9% O2    fan on max 10 pot 122, 43 cm/s, N2 on max 10 pot - 493 cc/min at 10:03:15 msg time     19.9% O2 at 10:46 msg time still at 493 cc/min.   Fan 120 air 45.   17.6 at 11:20 GMT,  17.35% at 11:34 MSG.   16.9 % at both 11:40 GMT and 11:47:30 MSG.    Excellent data.'}",,Excluded from run table: no valid run identifier; original retained,bass_pipeline_v2.py:46
+BASS%20test%20matrix.xlsx,as run matrix!89,material,PMMA 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!89,O2 % by volume,0.1707,17.07,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!89,"pressure, atm",0.97,98.28525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!89,date,4/5/2013,2013-04-05,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!89,source_row,as run matrix!89,89,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!90,material,PMMA 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!90,O2 % by volume,0.1707,17.07,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!90,"pressure, atm",0.97,98.28525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!90,date,4/5/2013,2013-04-05,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!90,source_row,as run matrix!90,90,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!91,material,PMMA 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!91,O2 % by volume,0.211,21.099999999999998,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!91,"pressure, atm",0.982,99.50115,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!91,date,4/9/2013,2013-04-09,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!91,source_row,as run matrix!91,91,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!92,material,pmma 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!92,O2 % by volume,0.211,21.099999999999998,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!92,"pressure, atm",0.982,99.50115,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!92,date,4/9/2013,2013-04-09,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!92,source_row,as run matrix!92,92,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!93,material,pmma 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!93,O2 % by volume,0.211,21.099999999999998,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!93,"pressure, atm",0.982,99.50115,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!93,date,4/9/2013,2013-04-09,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!93,source_row,as run matrix!93,93,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!94,material,pmma 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!94,O2 % by volume,0.211,21.099999999999998,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!94,"pressure, atm",0.982,99.50115,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!94,date,4/9/2013,2013-04-09,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!94,source_row,as run matrix!94,94,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!95,material,pmma 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!95,O2 % by volume,0.211,21.099999999999998,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!95,"pressure, atm",0.982,99.50115,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!95,date,4/9/2013,2013-04-09,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!95,source_row,as run matrix!95,95,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!96,material,pmma 2 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!96,O2 % by volume,0.21111,21.111,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!96,"pressure, atm",0.98,99.2985,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!96,date,4/12/2013,2013-04-12,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!96,source_row,as run matrix!96,96,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!97,material,"candle,  paraffin, wake",Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!97,O2 % by volume,0.21111,21.111,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!97,"pressure, atm",0.98,99.2985,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!97,date,4/12/2013,2013-04-12,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!97,source_row,as run matrix!97,97,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!98,material,"candle,  paraffin, wake",Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!98,O2 % by volume,0.2113,21.13,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!98,"pressure, atm",0.98,99.2985,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!98,date,4/12/2013,2013-04-12,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!98,source_row,as run matrix!98,98,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!99,material,pmma 1 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!99,O2 % by volume,0.173,17.299999999999997,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!99,"pressure, atm",0.99,100.31175,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!99,date,4/16/2013,2013-04-16,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!99,source_row,as run matrix!99,99,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!100,material,pmma 1 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!100,O2 % by volume,0.171,17.1,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!100,"pressure, atm",0.99,100.31175,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!100,date,4/16/2013,2013-04-16,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!100,source_row,as run matrix!100,100,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!101,material,pmma 1 cm,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!101,O2 % by volume,0.171,17.1,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!101,"pressure, atm",0.99,100.31175,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!101,date,4/16/2013,2013-04-16,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!101,source_row,as run matrix!101,101,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!102,material,"candle, Japan wax",Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!102,O2 % by volume,0.159,15.9,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!102,"pressure, atm",0.97,98.28525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!102,date,4/23/2013,2013-04-23,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!102,source_row,as run matrix!102,102,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!103,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!103,O2 % by volume,0.1753,17.53,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!103,"pressure, atm",0.97,98.28525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!103,date,4/23/2013,2013-04-23,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!103,source_row,as run matrix!103,103,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!104,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!104,O2 % by volume,0.1753,17.53,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!104,"pressure, atm",0.97,98.28525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!104,date,4/23/2013,2013-04-23,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!104,source_row,as run matrix!104,104,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!105,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!105,O2 % by volume,0.205,20.5,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!105,"pressure, atm",0.97,98.28525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!105,date,4/23/2013,2013-04-23,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!105,source_row,as run matrix!105,105,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!106,material,"1 cm sphere, wake",Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!106,O2 % by volume,0.1667,16.669999999999998,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!106,"pressure, atm",0.976,98.89320000000001,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!106,date,4/26/2013,2013-04-26,gmt_corrected_high_confidence,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!106,source_row,as run matrix!106,106,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!107,material,1 cm wake sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!107,O2 % by volume,0.1667,16.669999999999998,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!107,"pressure, atm",0.976,98.89320000000001,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!107,date,4/26/2013,2013-04-26,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!107,source_row,as run matrix!107,107,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!108,material,1 cm wake sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!108,O2 % by volume,0.178,17.8,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!108,"pressure, atm",0.976,98.89320000000001,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!108,date,4/26/2013,2013-04-26,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!108,source_row,as run matrix!108,108,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!109,material,pmma slab opposed,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!109,O2 % by volume,0.21,21.0,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!109,"pressure, atm",0.976,98.89320000000001,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!109,date,4/26/2013,2013-04-26,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!109,source_row,as run matrix!109,109,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!110,material,"pmma slab, oppsed",PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!110,O2 % by volume,0.21,21.0,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!110,"pressure, atm",0.976,98.89320000000001,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!110,date,4/26/2013,2013-04-26,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!110,source_row,as run matrix!110,110,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!111,material,2 cm pmma sphere,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!111,O2 % by volume,0.1734,17.34,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!111,"pressure, atm",0.983,99.602475,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!111,date,4/29/2013,2013-04-29,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!111,source_row,as run matrix!111,111,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!112,material,2 cm pmma sphere,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!112,O2 % by volume,0.1734,17.34,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!112,"pressure, atm",0.983,99.602475,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!112,date,4/29/2013,2013-04-29,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!112,source_row,as run matrix!112,112,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!113,material,parrafin wax candle,Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!113,O2 % by volume,0.1605,16.05,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!113,"pressure, atm",0.982,99.50115,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!113,date,5/2/2013,2013-05-02,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!113,source_row,as run matrix!113,113,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!114,material,paraffin wax candle,Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!114,O2 % by volume,0.1605,16.05,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!114,"pressure, atm",0.982,99.50115,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!114,date,5/2/2013,2013-05-02,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!114,source_row,as run matrix!114,114,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!115,material,"candle, Japan wax",Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!115,O2 % by volume,0.163,16.3,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!115,"pressure, atm",0.982,99.50115,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!115,date,5/2/2013,2013-05-02,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!115,source_row,as run matrix!115,115,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!116,material,paraffin wax slab,Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!116,O2 % by volume,0.163,16.3,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!116,"pressure, atm",0.982,99.50115,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!116,date,5/2/2013,2013-05-02,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!116,source_row,as run matrix!116,116,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!117,material,2 cm pmma sphere,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!117,O2 % by volume,0.172,17.2,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!117,"pressure, atm",0.977,98.994525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!117,date,5/15/2103,2013-05-15,year_typo_corrected,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!117,source_row,as run matrix!117,117,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!118,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!118,O2 % by volume,0.172,17.2,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!118,"pressure, atm",0.977,98.994525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!118,date,5/15/2013,2013-05-15,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!118,source_row,as run matrix!118,118,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!119,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!119,O2 % by volume,0.171,17.1,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!119,"pressure, atm",0.977,98.994525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!119,date,5/15/2013,2013-05-15,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!119,source_row,as run matrix!119,119,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!120,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!120,O2 % by volume,0.1713,17.130000000000003,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!120,"pressure, atm",0.977,98.994525,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!120,date,5/15/2013,2013-05-15,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!120,source_row,as run matrix!120,120,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!121,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!121,O2 % by volume,0.1717,17.169999999999998,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!121,"pressure, atm",0.98,99.2985,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!121,date,5/17/2013,2013-05-17,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!121,source_row,as run matrix!121,121,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!122,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!122,O2 % by volume,0.1717,17.169999999999998,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!122,"pressure, atm",0.98,99.2985,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!122,date,5/17/2013,2013-05-17,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!122,source_row,as run matrix!122,122,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!123,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!123,O2 % by volume,0.1724,17.24,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!123,"pressure, atm",0.98,99.2985,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!123,date,5/17/2013,2013-05-17,consistent,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!123,source_row,as run matrix!123,123,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!124,material,2 cm sphere,Unclassified,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!124,O2 % by volume,0.1724,17.24,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!124,"pressure, atm",0.98,99.2985,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!124,date,6/1/2013,2013-05-17,date_inferred_gmt_provisional,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!124,source_row,as run matrix!124,124,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!125,material,flat wax slab,Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!125,O2 % by volume,0.174,17.4,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!125,"pressure, atm",0.9963,100.9500975,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!125,date,6/1/2013,2013-05-30,date_inferred_gmt_provisional,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!125,source_row,as run matrix!125,125,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!126,material,flat wax slab,Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!126,O2 % by volume,0.2118,21.18,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!126,"pressure, atm",0.9963,100.9500975,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!126,date,6/1/2013,2013-05-30,date_inferred_gmt_provisional,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!126,source_row,as run matrix!126,126,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!127,material,flat wax slab,Wax,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!127,O2 % by volume,0.2118,21.18,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!127,"pressure, atm",0.9963,100.9500975,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!127,date,6/1/2013,2013-05-30,date_inferred_gmt_provisional,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!127,source_row,as run matrix!127,127,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!128,material,pmma sphere,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!128,O2 % by volume,0.2118,21.18,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!128,"pressure, atm",0.9963,100.9500975,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!128,date,6/1/2013,2013-05-30,date_inferred_gmt_provisional,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!128,source_row,as run matrix!128,128,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!129,material,pmma sphere,PMMA,Explicit keyword family; no inferred composition,bass_pipeline_v2.py:50
+BASS%20test%20matrix.xlsx,as run matrix!129,O2 % by volume,0.2118,21.18,Strict scalar conversion; factor 100; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!129,"pressure, atm",0.9963,100.9500975,Strict scalar conversion; factor 101.325; nonnumeric/invalid stays blank,bass_pipeline_v2.py:56
+BASS%20test%20matrix.xlsx,as run matrix!129,date,6/1/2013,2013-05-30,date_inferred_gmt_provisional,bass_pipeline_v2.py:66
+BASS%20test%20matrix.xlsx,as run matrix!129,source_row,as run matrix!129,129,Numeric source row for team validator; sheet retained in x_source_sheet,bass_pipeline_v2.py:67
+BASS%20test%20matrix.xlsx,as run matrix!130,record,"{'Actual Date  (for SPICE Display Date, add 1 for Leap Year)': nan, 'Approx Start Time ( with GMT)': nan, 'As run test no.': ""remember to turn off auto iso when don't want it.  GMT 229 setup."", 'Test no.': nan, 'Sample no.': nan, 'material': nan, 'Igniter': nan, 'Flow restrictor': nan, 'Sample distance': nan, 'Fan display': nan, 'Air display': nan, 'Radiometer gain ( 1000, 250, 50, 10)': nan, 'Radiometer display': nan, 'GN2 Pot': nan, 'GN2 display': nan, 'Filter y/n': nan, 'Release Mode (CH/CL)': nan, 'Exposure Mode (M/A)': nan, 'Exposure compensation   (-#EV)': nan, 'Bracket frames and exposure bracket (#F/ 1.0)': nan, 'shutter speed (1/s)': nan, 'F stop': nan, 'ISO': nan, 'shutter hold s /cont': nan, 'SD card S/N': nan, 'total frames shot': nan, 'O2 % by volume': nan, 'pressure, atm': nan, 'CO2, mm Hg': nan, 'Test Observations and Anomalies (ignited, spread, extinguished, burn time, color, etc.) ': nan}",,Excluded from run table: no valid run identifier; original retained,bass_pipeline_v2.py:46
+BASS%20test%20matrix.xlsx,as run matrix!131,record,"{'Actual Date  (for SPICE Display Date, add 1 for Leap Year)': nan, 'Approx Start Time ( with GMT)': nan, 'As run test no.': 'still in this mode at end of ops on 234.', 'Test no.': nan, 'Sample no.': nan, 'material': nan, 'Igniter': nan, 'Flow restrictor': nan, 'Sample distance': nan, 'Fan display': nan, 'Air display': nan, 'Radiometer gain ( 1000, 250, 50, 10)': nan, 'Radiometer display': nan, 'GN2 Pot': nan, 'GN2 display': nan, 'Filter y/n': nan, 'Release Mode (CH/CL)': nan, 'Exposure Mode (M/A)': nan, 'Exposure compensation   (-#EV)': nan, 'Bracket frames and exposure bracket (#F/ 1.0)': nan, 'shutter speed (1/s)': nan, 'F stop': nan, 'ISO': nan, 'shutter hold s /cont': nan, 'SD card S/N': nan, 'total frames shot': nan, 'O2 % by volume': nan, 'pressure, atm': nan, 'CO2, mm Hg': nan, 'Test Observations and Anomalies (ignited, spread, extinguished, burn time, color, etc.) ': nan}",,Excluded from run table: no valid run identifier; original retained,bass_pipeline_v2.py:46
+BASS%20test%20matrix.xlsx,as run matrix!132,record,"{'Actual Date  (for SPICE Display Date, add 1 for Leap Year)': nan, 'Approx Start Time ( with GMT)': nan, 'As run test no.': 'actual data for 234 is const iso at 1000', 'Test no.': nan, 'Sample no.': nan, 'material': nan, 'Igniter': nan, 'Flow restrictor': nan, 'Sample distance': nan, 'Fan display': nan, 'Air display': nan, 'Radiometer gain ( 1000, 250, 50, 10)': nan, 'Radiometer display': nan, 'GN2 Pot': nan, 'GN2 display': nan, 'Filter y/n': nan, 'Release Mode (CH/CL)': nan, 'Exposure Mode (M/A)': nan, 'Exposure compensation   (-#EV)': nan, 'Bracket frames and exposure bracket (#F/ 1.0)': nan, 'shutter speed (1/s)': nan, 'F stop': nan, 'ISO': nan, 'shutter hold s /cont': nan, 'SD card S/N': nan, 'total frames shot': nan, 'O2 % by volume': nan, 'pressure, atm': nan, 'CO2, mm Hg': nan, 'Test Observations and Anomalies (ignited, spread, extinguished, burn time, color, etc.) ': nan}",,Excluded from run table: no valid run identifier; original retained,bass_pipeline_v2.py:46
+BASS%20test%20matrix.xlsx,as run matrix!133,record,"{'Actual Date  (for SPICE Display Date, add 1 for Leap Year)': nan, 'Approx Start Time ( with GMT)': nan, 'As run test no.': 'down to 1/3 s', 'Test no.': nan, 'Sample no.': nan, 'material': nan, 'Igniter': nan, 'Flow restrictor': nan, 'Sample distance': nan, 'Fan display': nan, 'Air display': nan, 'Radiometer gain ( 1000, 250, 50, 10)': nan, 'Radiometer display': nan, 'GN2 Pot': nan, 'GN2 display': nan, 'Filter y/n': nan, 'Release Mode (CH/CL)': nan, 'Exposure Mode (M/A)': nan, 'Exposure compensation   (-#EV)': nan, 'Bracket frames and exposure bracket (#F/ 1.0)': nan, 'shutter speed (1/s)': nan, 'F stop': nan, 'ISO': nan, 'shutter hold s /cont': nan, 'SD card S/N': nan, 'total frames shot': nan, 'O2 % by volume': nan, 'pressure, atm': nan, 'CO2, mm Hg': nan, 'Test Observations and Anomalies (ignited, spread, extinguished, burn time, color, etc.) ': nan}",,Excluded from run table: no valid run identifier; original retained,bass_pipeline_v2.py:46
+BASS%20test%20matrix.xlsx,as run matrix!134,record,"{'Actual Date  (for SPICE Display Date, add 1 for Leap Year)': nan, 'Approx Start Time ( with GMT)': nan, 'As run test no.': 'auto iso max iso 3200, min exposure 1/4 s', 'Test no.': nan, 'Sample no.': nan, 'material': nan, 'Igniter': nan, 'Flow restrictor': nan, 'Sample distance': nan, 'Fan display': nan, 'Air display': nan, 'Radiometer gain ( 1000, 250, 50, 10)': nan, 'Radiometer display': nan, 'GN2 Pot': nan, 'GN2 display': nan, 'Filter y/n': nan, 'Release Mode (CH/CL)': nan, 'Exposure Mode (M/A)': nan, 'Exposure compensation   (-#EV)': nan, 'Bracket frames and exposure bracket (#F/ 1.0)': nan, 'shutter speed (1/s)': nan, 'F stop': nan, 'ISO': nan, 'shutter hold s /cont': nan, 'SD card S/N': nan, 'total frames shot': nan, 'O2 % by volume': nan, 'pressure, atm': nan, 'CO2, mm Hg': nan, 'Test Observations and Anomalies (ignited, spread, extinguished, burn time, color, etc.) ': nan}",,Excluded from run table: no valid run identifier; original retained,bass_pipeline_v2.py:46
