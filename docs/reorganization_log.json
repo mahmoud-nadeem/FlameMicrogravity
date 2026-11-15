@@ -1,0 +1,702 @@
+[
+ {
+  "action": "extracted",
+  "path": "SAFFIRE_RAG_Corpora.zip",
+  "destination": "RAG/SAFFIRE_RAG_Corpora",
+  "reason": "T2 SAFFIRE RAG corpora (new contribution), unpacked into the corpus folder",
+  "sha256": "8bed0ebcb32d76d65b992f72e067a4db86f24e6b35343c3a626b6dc8ac09a23e"
+ },
+ {
+  "action": "deleted",
+  "path": "SAFFIRE_RAG_Corpora.zip",
+  "destination": "",
+  "reason": "verified redundant after extraction (every member byte-identical in RAG/SAFFIRE_RAG_Corpora/)",
+  "sha256": "8bed0ebcb32d76d65b992f72e067a4db86f24e6b35343c3a626b6dc8ac09a23e"
+ },
+ {
+  "action": "extracted",
+  "path": "CompleteTamerRAGChunks.zip",
+  "destination": "RAG",
+  "reason": "T4 complete RAG corpus (FLEX, FLEX-2, CFI, CFI-G), unpacked into the corpus folder",
+  "sha256": "0bd689033b9c9cfdffe16884b9e542d12ecaa947faf30f10d135856a3e990a10"
+ },
+ {
+  "action": "deleted",
+  "path": "CompleteTamerRAGChunks.zip",
+  "destination": "",
+  "reason": "verified redundant after extraction (every member byte-identical in RAG/CompleteTamerRAGChunks/)",
+  "sha256": "0bd689033b9c9cfdffe16884b9e542d12ecaa947faf30f10d135856a3e990a10"
+ },
+ {
+  "action": "extracted",
+  "path": "Morgan_RAG_Corpus_v6.zip",
+  "destination": "RAG/Morgan_RAG_Corpus_v6",
+  "reason": "T1 BASS v6 per-dataset RAG corpora (new contribution); the author marks these as the retrieval corpora",
+  "sha256": "02f1b5e45ccd70902bb36c67650e306854bb6758b64011485b5de273bb8674ca"
+ },
+ {
+  "action": "deleted",
+  "path": "Morgan_RAG_Corpus_v6.zip",
+  "destination": "",
+  "reason": "verified redundant after extraction (byte-identical in RAG/Morgan_RAG_Corpus_v6/ and inside BASS_Python_AmrProject_v6.zip)",
+  "sha256": "02f1b5e45ccd70902bb36c67650e306854bb6758b64011485b5de273bb8674ca"
+ },
+ {
+  "action": "deleted",
+  "path": "Amr_BASS_Deep_Analysis_v6_clean.txt",
+  "destination": "",
+  "reason": "verified redundant: byte-identical copy inside BASS_Python_AmrProject_v6.zip (and in flame-in-freefall-kit/analysis/T1/ after integration); the author states this combined file is an alternative to the two per-dataset corpora, not an additional corpus",
+  "sha256": "ff23b7551ce287625f6d7fbc3d1ebb2cdf9252d1324ffba70aa6c1ba6fb8f9cd"
+ },
+ {
+  "action": "moved",
+  "path": "BASS_Python_AmrProject_v6.zip",
+  "destination": "contributions/BASS_Python_AmrProject_v6.zip",
+  "reason": "T1 submission as received: pipeline code, raw tables and metadata are only here; its output/analysis/T1 is integrated into the kit",
+  "sha256": "8ecf5b0aa3fe8e80623b0e15bef559c4ebc5a2ff2d2f58dd431ed9137889f944"
+ },
+ {
+  "action": "moved",
+  "path": "RAG/Amr.txt",
+  "destination": "archive/superseded/RAG/Amr.txt",
+  "reason": "superseded by the T1 v6 corpora (all 283 chunk IDs are in v6; 1 wording change recorded as a conflict in docs/dataset_inventory.json); byte-identical to deep_analysis_original.txt in the BASS v6 project, which its author calls a historical input",
+  "sha256": "dcc03f204a0ee834ad6592c2c7ee5634d60430b2d485ec92fe9dad4210af60d3"
+ },
+ {
+  "action": "moved",
+  "path": "rag-map.json",
+  "destination": "RAG/rag-map.json",
+  "reason": "RAG configuration belongs with the corpora (no code referenced the old path)",
+  "sha256": "148f7ff963b5b315d6e0e667ff35fc7977f0ad62f0603a768b023a5916aef1c1"
+ },
+ {
+  "action": "moved",
+  "path": "NASA Space Apps Challenge.pdf",
+  "destination": "docs/NASA Space Apps Challenge.pdf",
+  "reason": "challenge brief (document)",
+  "sha256": "93510773a346e58e44bb2747d97a19ed2442f71c11dad7dd0898305d907b1cce"
+ },
+ {
+  "action": "moved",
+  "path": "reports",
+  "destination": "docs/reports",
+  "reason": "team status report and envelope figure (documents)",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "psi_member_assignments.csv",
+  "destination": "docs/psi_member_assignments.csv",
+  "reason": "assignment sheet (document)",
+  "sha256": "2b7677851030138846ce6a330d63f380e51f0c1be3ebc6adf1a2fa012ec34280"
+ },
+ {
+  "action": "moved",
+  "path": "psi_member_assignments_verified.csv",
+  "destination": "docs/psi_member_assignments_verified.csv",
+  "reason": "verified assignment sheet (document; used as an inventory source)",
+  "sha256": "d294be53d4bb2f78892f9f393480669864331c0559c33442fcf4938f9d266464"
+ },
+ {
+  "action": "moved",
+  "path": "fif-dashboard-cinematic-v4.zip",
+  "destination": "archive/snapshots/fif-dashboard-cinematic-v4.zip",
+  "reason": "older website snapshot (9 files differ from the current site); kept for reference",
+  "sha256": "4bb37233d84e026462b6417f73f963a40e211b1d51d66232c33b8e1e8bc6b0c5"
+ },
+ {
+  "action": "deleted",
+  "path": "fif-dashboard-cinematic-v5.zip",
+  "destination": "",
+  "reason": "generated output of the previous session, byte-identical to the current fif-dashboard/ (checked) and superseded by deliverables/fif-dashboard-v6.zip",
+  "sha256": "e8c72c1e8b7b3627014e11004479f9a7626bd1ef8db1d0d73859d6d6d816ef99"
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit_v4.zip",
+  "destination": "archive/snapshots/flame-in-freefall-kit_v4.zip",
+  "reason": "older kit snapshot (30 files differ from the current kit)",
+  "sha256": "fb32e372d0a406217f53f1294ebed1aeefe6228f97e45d8de6bbaa7c9e7ef1f4"
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit_v5.zip",
+  "destination": "archive/snapshots/flame-in-freefall-kit_v5.zip",
+  "reason": "older kit snapshot (27 files differ from the current kit)",
+  "sha256": "917c19e23a01657c0123c880da3b262ff1f74508d974122ea985880407c7c73e"
+ },
+ {
+  "action": "moved",
+  "path": "RAG_Corpus_by_Dataset.zip",
+  "destination": "archive/snapshots/RAG_Corpus_by_Dataset.zip",
+  "reason": "earlier RAG export by PSI ID from an unknown generator; superseded by deliverables/rag-corpora.zip",
+  "sha256": "49ca13cb0b5e76970400ba08b562e10c9b023a5503f748d6f21986856adb8906"
+ },
+ {
+  "action": "deleted",
+  "path": "rag-corpora.zip",
+  "destination": "",
+  "reason": "generated by tools/export_rag_corpora.py in the previous session; regenerated as deliverables/rag-corpora.zip from the complete inventory",
+  "sha256": "a2db9fa5d0c87b178fae7eb0ebff29dce11619a6c8dee18ab1502d1606d2d5ad"
+ },
+ {
+  "action": "deleted",
+  "path": "flame-in-freefall-kit/T3_nadeem_v2.zip",
+  "destination": "",
+  "reason": "verified redundant: all 61 members byte-identical to the unpacked files in flame-in-freefall-kit/",
+  "sha256": "60b2fb64721126aaaf64943c00a55b17fca4073b515fbee8ba344e692014a244"
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/T3_nadeem_v1.zip",
+  "destination": "archive/submissions/T3_nadeem_v1.zip",
+  "reason": "earlier T3 submission (15 files differ from the integrated v2)",
+  "sha256": "54cee3a8e0eebdea34fe22f430bc86c0fee2661a6a84150da1cb55d27fb2fbf4"
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/_dev_site_inputs.zip",
+  "destination": "archive/snapshots/_dev_site_inputs.zip",
+  "reason": "development snapshot of site inputs (19 files differ from the current kit)",
+  "sha256": "4db86e75511144de44a5f4b7c38de354a24b699a3cb612756a07a1f8073200ad"
+ },
+ {
+  "action": "moved",
+  "path": ".delivery-v2",
+  "destination": "archive/tool-artifacts/delivery-v2",
+  "reason": "file-transfer helpers left by another assistant; unreferenced. transfer.json holds signed download URLs and completion tokens that expired 2026-11-15 11:24. Recommended for deletion",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": ".delivery-v3",
+  "destination": "archive/tool-artifacts/delivery-v3",
+  "reason": "file-transfer helpers left by another assistant; unreferenced. transfer.json holds signed download URLs and completion tokens that expired 2026-11-15 11:24. Recommended for deletion",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": ".reference-review/__pycache__",
+  "destination": "",
+  "reason": "Python bytecode cache (reproducible)",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": ".reference-review",
+  "destination": "archive/tool-artifacts/reference-review",
+  "reason": "file-transfer helpers left by another assistant; unreferenced. transfer.json holds signed download URLs and completion tokens that expired 2026-11-15 11:24. Recommended for deletion",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": ".review-temp/__pycache__",
+  "destination": "",
+  "reason": "Python bytecode cache (reproducible)",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": ".review-temp",
+  "destination": "archive/tool-artifacts/review-temp",
+  "reason": "file-transfer helpers left by another assistant; unreferenced. transfer.json holds signed download URLs and completion tokens that expired 2026-11-15 11:24. Recommended for deletion",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "flame-in-freefall/pipeline/__pycache__",
+  "destination": "",
+  "reason": "cache (reproducible by Python/pytest)",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "flame-in-freefall/scripts/__pycache__",
+  "destination": "",
+  "reason": "cache (reproducible by Python/pytest)",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "flame-in-freefall/tests/__pycache__",
+  "destination": "",
+  "reason": "cache (reproducible by Python/pytest)",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "flame-in-freefall/tools/__pycache__",
+  "destination": "",
+  "reason": "cache (reproducible by Python/pytest)",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "flame-in-freefall-kit/analysis/T3/PSI-101_same-r/scripts/__pycache__",
+  "destination": "",
+  "reason": "cache (reproducible by Python/pytest)",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "flame-in-freefall-kit/pipeline/__pycache__",
+  "destination": "",
+  "reason": "cache (reproducible by Python/pytest)",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "flame-in-freefall-kit/scripts/__pycache__",
+  "destination": "",
+  "reason": "cache (reproducible by Python/pytest)",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "flame-in-freefall-kit/tests/__pycache__",
+  "destination": "",
+  "reason": "cache (reproducible by Python/pytest)",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "flame-in-freefall-kit/tools/__pycache__",
+  "destination": "",
+  "reason": "cache (reproducible by Python/pytest)",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "flame-in-freefall/.pytest_cache",
+  "destination": "",
+  "reason": "cache (reproducible by Python/pytest)",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "flame-in-freefall-kit/.pytest_cache",
+  "destination": "",
+  "reason": "cache (reproducible by Python/pytest)",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/analysis/T1",
+  "destination": "archive/superseded/kit-analysis-T1-template",
+  "reason": "unfilled T1 template (both records UNCONFIRMED, no findings), replaced by the T1 v6 package",
+  "sha256": ""
+ },
+ {
+  "action": "extracted",
+  "path": "contributions/BASS_Python_AmrProject_v6.zip (BASS_Python_Project/output/analysis/T1/)",
+  "destination": "flame-in-freefall-kit/analysis/T1",
+  "reason": "T1 v6 package integrated into the kit so the dashboard build reads it (91 files, verified byte-identical)",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "archive/tool-artifacts/",
+  "destination": "",
+  "reason": "confirmed disposable and approved by the user: 4 identical copies of two generic file-transfer scripts, 2 attribute stubs and 2 transfer receipts naming screen recordings not stored here (expired tokens); no project content or submission. Files: archive/tool-artifacts/delivery-v2/attributes.json, archive/tool-artifacts/delivery-v2/library_file_transfer.py, archive/tool-artifacts/delivery-v2/library_hosted_apps.py, archive/tool-artifacts/delivery-v3/attributes.json, archive/tool-artifacts/delivery-v3/library_file_transfer.py, archive/tool-artifacts/delivery-v3/library_hosted_apps.py, archive/tool-artifacts/reference-review/transfer.json, archive/tool-artifacts/reference-review/library_file_transfer.py, archive/tool-artifacts/reference-review/library_hosted_apps.py, archive/tool-artifacts/review-temp/transfer.json, archive/tool-artifacts/review-temp/library_file_transfer.py, archive/tool-artifacts/review-temp/library_hosted_apps.py",
+  "sha256": ""
+ },
+ {
+  "action": "extracted",
+  "path": "Khaled Adawi .zip > NASA_ACME_RAG_Corpora_By_Dataset.zip",
+  "destination": "RAG/NASA_ACME_RAG_Corpora_By_Dataset/",
+  "reason": "T5 ACME RAG corpora (PSI-10, PSI-20, PSI-22, PSI-23 + ACME shared, 116 chunks), verified byte-identical",
+  "sha256": "d8b87c32601781c6e2c3aaaa8134385486d26372ab4b0961f1c6ae7c406d6ca5"
+ },
+ {
+  "action": "extracted",
+  "path": "Khaled Adawi .zip > PSI-20_BRE_Task04C_final_interpretation.zip + PSI-20_BRE_Task05_EDA_visual_fix (1).zip (analysis/T5/PSI-20_BRE/)",
+  "destination": "flame-in-freefall-kit/analysis/T5/PSI-20_bre/",
+  "reason": "PSI-20 BRE analysis package (47 files) integrated into the kit, verified byte-identical; the kit names the record folder PSI-20_bre, the author PSI-20_BRE",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/analysis/T5/PSI-20_bre/data_log.md",
+  "destination": "archive/superseded/kit-analysis-T5-PSI-20-template/data_log.md",
+  "reason": "kit template file replaced by the author's version",
+  "sha256": ""
+ },
+ {
+  "action": "extracted",
+  "path": "Khaled Adawi .zip > 19056A2_data.csv, 19056A2_mfcSetpoints.csv",
+  "destination": "flame-in-freefall-kit/data/raw/PSI-20/inputs/",
+  "reason": "BRE raw run 19056A2 (inputs of the T5 scripts) in the kit download area (git-ignored); the original stays in contributions/",
+  "sha256": "9b90a1c2b0c227823df193ba0a070d07bb30e42077fb0534ca38bc47687dad49"
+ },
+ {
+  "action": "checked",
+  "path": "Khaled Adawi .zip > PSI-20_Experimental table_ACME BRE.csv",
+  "destination": "flame-in-freefall-kit/data/experimental_tables/PSI-20/",
+  "reason": "byte-identical to the kit's copy retrieved from the NASA PSI API (data/CHECKSUMS.csv); not copied again",
+  "sha256": "4aa5d3f98708ceacced5c620d46858b9965f8d4d941b203229f46467d53e5ab7"
+ },
+ {
+  "action": "extracted",
+  "path": "Khaled Adawi .zip > BRE_final_report_20220201.pdf",
+  "destination": "fif-dashboard/data/shorts/bre-final-report.pdf",
+  "reason": "NASA ACME/BRE Final Report (2022), identity checked from its page-1 text; added to the site's mission documents",
+  "sha256": "c2f22c914b38d9e6742709688a2d1d81d8306e3c901b47314faf3b6ab43cec60"
+ },
+ {
+  "action": "moved",
+  "path": "Khaled Adawi .zip",
+  "destination": "contributions/Khaled Adawi .zip",
+  "reason": "T5 submission as received (the raw run, the report and both task ZIPs live only here)",
+  "sha256": "8026fcca36c3ecd88e9323067fbe979db6828a7f344d7f2517c2ccbf1a13cedd"
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/analysis/T5/PSI-20_bre/findings.md",
+  "destination": "archive/superseded/kit-analysis-T5-PSI-20-template/findings.md",
+  "reason": "kit template replaced by the transcription of Khaled Adawi's EDA findings (team format; header states provenance)",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "flame-in-freefall-kit/analysis/T5/PSI-20_bre/tests/test_report_reconciliation.py",
+  "destination": "",
+  "reason": "two read_text() calls given encoding='utf-8' so the author's tests pass on Windows (51/51); the assertions are unchanged",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "deliverables/fif-dashboard-v6.zip",
+  "destination": "",
+  "reason": "generated output superseded by deliverables/fif-dashboard-v7.zip",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/analysis/T1",
+  "destination": "archive/superseded/kit-analysis-T1-v6",
+  "reason": "T1 v6 package superseded by v8",
+  "sha256": ""
+ },
+ {
+  "action": "extracted",
+  "path": "Important/BASS_Python_AmrProject_v8.zip (BASS_Python_Project/output/analysis/T1/)",
+  "destination": "flame-in-freefall-kit/analysis/T1",
+  "reason": "T1 v8 package (97 files), byte-identical",
+  "sha256": "84a8e21d4806a8c20f1c9761d5443b020d96e743c0df9467b84f4b7efff4accb"
+ },
+ {
+  "action": "moved",
+  "path": "RAG/Morgan_RAG_Corpus_v6",
+  "destination": "archive/superseded/RAG/Morgan_RAG_Corpus_v6",
+  "reason": "T1 v6 corpora superseded by v8 (compared chunk by chunk in docs/dataset_inventory.json)",
+  "sha256": ""
+ },
+ {
+  "action": "extracted",
+  "path": "Important/Morgan_RAG_Corpus_v8.zip",
+  "destination": "RAG/Morgan_RAG_Corpus_v8/",
+  "reason": "T1 v8 per-dataset corpora; byte-identical to the rag_corpus.txt files in the v8 project",
+  "sha256": "a64a8fd5ef3db0b46a8d0207e91940300349a38b4bad8ab192e7595f008eaf0a"
+ },
+ {
+  "action": "moved",
+  "path": "contributions/BASS_Python_AmrProject_v6.zip",
+  "destination": "archive/submissions/BASS_Python_AmrProject_v6.zip",
+  "reason": "T1 v6 submission superseded by v8",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "Important/BASS_Python_AmrProject_v8.zip",
+  "destination": "contributions/BASS_Python_AmrProject_v8.zip",
+  "reason": "T1 v8 submission as received (code, raw tables, metadata)",
+  "sha256": "84a8e21d4806a8c20f1c9761d5443b020d96e743c0df9467b84f4b7efff4accb"
+ },
+ {
+  "action": "deleted",
+  "path": "Important/Amr_BASS_Deep_Analysis_v8_clean.txt",
+  "destination": "",
+  "reason": "byte-identical to the copy in the v8 project (now flame-in-freefall-kit/analysis/T1/); the author's combined alternative to the two per-dataset corpora",
+  "sha256": "cb31940dbea6884ae56fe5904fab4b01c77346bdaf29cdc2cf4c39386b6788f5"
+ },
+ {
+  "action": "deleted",
+  "path": "Important/Morgan_RAG_Corpus_v8.zip",
+  "destination": "",
+  "reason": "verified redundant after extraction to RAG/Morgan_RAG_Corpus_v8/",
+  "sha256": "a64a8fd5ef3db0b46a8d0207e91940300349a38b4bad8ab192e7595f008eaf0a"
+ },
+ {
+  "action": "deleted",
+  "path": "Important/BASS_Python_AmrProject_v8.zip",
+  "destination": "",
+  "reason": "moved to contributions/ (byte-identical copy written and checked)",
+  "sha256": "84a8e21d4806a8c20f1c9761d5443b020d96e743c0df9467b84f4b7efff4accb"
+ },
+ {
+  "action": "deleted",
+  "path": "deliverables/fif-dashboard-v7.zip",
+  "destination": "",
+  "reason": "generated output superseded by deliverables/fif-dashboard-v8.zip",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "deliverables/fif-dashboard-v8.zip",
+  "destination": "",
+  "reason": "generated output superseded by deliverables/fif-dashboard-v9.zip",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/analysis/T2/PSI-100_saffire-iii/findings.md",
+  "destination": "archive/superseded/kit-findings-templates/T2/PSI-100_saffire-iii/findings.md",
+  "reason": "kit template replaced by Mohamed Shreif's findings.md (Findings/SAFFIRE_Findings.zip), copied as delivered",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/analysis/T2/PSI-98_saffire-i/findings.md",
+  "destination": "archive/superseded/kit-findings-templates/T2/PSI-98_saffire-i/findings.md",
+  "reason": "kit template replaced by Mohamed Shreif's findings.md (Findings/SAFFIRE_Findings.zip), copied as delivered",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/analysis/T2/PSI-99_saffire-ii/findings.md",
+  "destination": "archive/superseded/kit-findings-templates/T2/PSI-99_saffire-ii/findings.md",
+  "reason": "kit template replaced by Mohamed Shreif's findings.md (Findings/SAFFIRE_Findings.zip), copied as delivered",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/analysis/T4/PSI-69_flex/findings.md",
+  "destination": "archive/superseded/kit-findings-templates/T4/PSI-69_flex/findings.md",
+  "reason": "kit template replaced by the transcription of Mohammed Tamer's Findings/FLEX_analysis_findings.txt (team format; header states provenance)",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/analysis/T6/PSI-106_slice/findings.md",
+  "destination": "archive/superseded/kit-findings-templates/T6/PSI-106_slice/findings.md",
+  "reason": "kit template replaced by the transcription of Mohamed Gamal's Findings/findings_and_analysis.txt (team format; header states provenance)",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/analysis/T6/PSI-107_spice/findings.md",
+  "destination": "archive/superseded/kit-findings-templates/T6/PSI-107_spice/findings.md",
+  "reason": "kit template replaced by the transcription of Mohamed Gamal's Findings/findings_and_analysis.txt (team format; header states provenance)",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/analysis/T6/PSI-21_cld/findings.md",
+  "destination": "archive/superseded/kit-findings-templates/T6/PSI-21_cld/findings.md",
+  "reason": "kit template replaced by the transcription of Mohamed Gamal's Findings/findings_and_analysis.txt (team format; header states provenance)",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "fif-dashboard/assets/crew/originals/",
+  "destination": "crew-illustrations/",
+  "reason": "faces are no longer shown; the six illustrations are only measured for proportions by tools/crew_astronauts.py and are not shipped with the site (6 files, byte-identical, checked with cmp)",
+  "sha256": ""
+ },
+ {
+  "action": "created",
+  "path": "flame-in-freefall-kit/analysis/T2/extra/results_charts.json, T4/extra/results_charts.json, T6/extra/results_charts.json",
+  "destination": "",
+  "reason": "numbers transcribed from the T2/T4/T6 findings for the Results charts",
+  "sha256": ""
+ },
+ {
+  "action": "created",
+  "path": "flame-in-freefall-kit/analysis/T4/extra/limitations.md, T6/extra/limitations.md",
+  "destination": "",
+  "reason": "limitations from Tamer's FINDINGS 13-15 and Gamal's 'Limits and open questions'",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "flame-in-freefall-kit/analysis/T6/PSI-106_slice/card.json, PSI-107_spice/card.json, PSI-21_cld/card.json",
+  "destination": "",
+  "reason": "empty (TODO) 'approach' filled from the summary of Gamal's investigation cards; source recorded in x_approach_source",
+  "sha256": ""
+ },
+ {
+  "action": "deleted",
+  "path": "deliverables/fif-dashboard-v9.zip",
+  "destination": "",
+  "reason": "generated output superseded by deliverables/fif-dashboard-v10.zip",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/analysis/T6/PSI-60_spice-analysis",
+  "destination": "archive/removed/PSI-60/flame-in-freefall-kit/analysis/T6/PSI-60_spice-analysis",
+  "reason": "PSI-60 removed from the project at the leader's request (it was a metadata-only ground-analysis record)",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall-kit/data/psi_metadata/PSI-60.json",
+  "destination": "archive/removed/PSI-60/flame-in-freefall-kit/data/psi_metadata/PSI-60.json",
+  "reason": "PSI-60 removed from the project at the leader's request (it was a metadata-only ground-analysis record)",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "flame-in-freefall/content/investigations/PSI-60",
+  "destination": "archive/removed/PSI-60/flame-in-freefall/content/investigations/PSI-60",
+  "reason": "PSI-60 removed from the project at the leader's request (it was a metadata-only ground-analysis record)",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "fif-dashboard/build_site_data.py",
+  "destination": "",
+  "reason": "PSI-60 references removed",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "flame-in-freefall/tools/kitlib.py",
+  "destination": "",
+  "reason": "PSI-60 references removed",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "flame-in-freefall-kit/tools/kitlib.py",
+  "destination": "",
+  "reason": "PSI-60 references removed",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "flame-in-freefall/tools/START_HERE.md",
+  "destination": "",
+  "reason": "PSI-60 references removed",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "flame-in-freefall-kit/START_HERE.md",
+  "destination": "",
+  "reason": "PSI-60 references removed",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "flame-in-freefall-kit/analysis/T6/HANDOFF.md",
+  "destination": "",
+  "reason": "PSI-60 references removed",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "flame-in-freefall-kit/analysis/T6/references.md",
+  "destination": "",
+  "reason": "PSI-60 references removed",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "tools/export_rag_corpora.py",
+  "destination": "",
+  "reason": "PSI-60 references removed",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "tools/export_rag_corpora.py",
+  "destination": "",
+  "reason": "PSI-60 references removed",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "RAG/rag-map.json",
+  "destination": "",
+  "reason": "PSI-60 references removed",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "docs/psi_member_assignments.csv",
+  "destination": "",
+  "reason": "PSI-60 row removed (and the SPICE row's remark that cited it)",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "docs/psi_member_assignments_verified.csv",
+  "destination": "",
+  "reason": "PSI-60 row removed (and the SPICE row's remark that cited it)",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "README.md",
+  "destination": "",
+  "reason": "PSI-60 references removed",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "RAG/Flame in Freefall Backend and RAG Plan (FAISS).md",
+  "destination": "",
+  "reason": "PSI-60 references removed",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "docs/reports/FINDINGS_INTEGRATION_v10.md",
+  "destination": "",
+  "reason": "PSI-60 references removed",
+  "sha256": ""
+ },
+ {
+  "action": "moved",
+  "path": "rag_corpus_flex2.txt",
+  "destination": "fif-dashboard/rag/PSI-68_FLEX_II/rag_corpus_flex2.txt",
+  "reason": "Mohammed Tamer's FLEX-2 (PSI-68) RAG corpus, placed in the website's PSI-68 folder as requested (byte-identical)",
+  "sha256": "679ed9580858ac08"
+ },
+ {
+  "action": "renamed",
+  "path": "fif-dashboard/rag/PSI-68_FLEX-2",
+  "destination": "fif-dashboard/rag/PSI-68_FLEX_II",
+  "reason": "website RAG folder for PSI-68 named as requested (generated corpus.txt; DASH_FOLDER in tools/export_rag_corpora.py)",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "tools/export_rag_corpora.py, fif-dashboard/build_rag.py",
+  "destination": "",
+  "reason": "FLEX-2 corpus added as a T4 source (map_flex2), kept in place on re-export; build_rag reads its chunks once (from corpus.txt)",
+  "sha256": ""
+ },
+ {
+  "action": "edited",
+  "path": "docs/reports/flame_in_freefall_status.tex, docs/reports/flame_in_freefall_status.pdf",
+  "destination": "",
+  "reason": "three PSI-60 items removed; PDF recompiled with pdflatex (the report's 14 Nov run totals are left as recorded)",
+  "sha256": ""
+ },
+ {
+  "action": "regenerated",
+  "path": "flame-in-freefall/site_data/investigations.json",
+  "destination": "",
+  "reason": "pipeline export after removing PSI-60 (23 investigations; every other entry unchanged)",
+  "sha256": ""
+ },
+ {
+  "action": "merged",
+  "path": "Important/Khaled_T5_FINAL_INTEGRATION.zip (analysis/T5/)",
+  "destination": "flame-in-freefall-kit/analysis/T5/",
+  "reason": "Khaled Adawi's final T5 package: 24 kit files replaced (backed up in archive/superseded/kit-analysis-T5-pre-final/), 23 added; NASA tables, metadata, raw run and BRE report not copied (byte-identical to existing copies)",
+  "sha256": ""
+ }
+]
