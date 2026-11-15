@@ -147,3 +147,25 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# ---------------------------------------------------------------- Flame in Freefall
+# Python and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+
+# Kept on the team's computers, not published (see README "What is where"):
+# original submission ZIPs and packages (their content is integrated in the kit, RAG/ and the site)
+/contributions/
+/Important/
+/Findings/*.zip
+# older versions, backups and generated packages
+/archive/
+/deliverables/
+# original portraits and reference photos (the site uses the generated sprites in fif-dashboard/assets/)
+/crew-illustrations/
+/fif-dashboard/assets/bondoq/originals/
+# NASA downloads, re-created by flame-in-freefall-kit/scripts/psi_fetch.py
+/flame-in-freefall-kit/data/raw/
+/flame-in-freefall/data/raw/
