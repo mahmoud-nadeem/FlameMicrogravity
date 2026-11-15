@@ -1,4 +1,4 @@
-# Self-check: T5 (Khaled Adwi)
+# Self-check: T5 (Khaled Adawi)
 
 | # | Item | Result |
 | --- | --- | --- |
@@ -14,16 +14,26 @@
 | 10 | Anything unconfirmed is labelled unconfirmed | FAIL |
 
 **5. data_log.md covers changes; raw files unchanged: PASS**
-- analysis/T5/PSI-10_flame-design/data_log.md: table exists but no build_run_table section (built by hand? log every change)
+- analysis\T5\PSI-10_flame-design\data_log.md: table exists but no build_run_table section (built by hand? log every change)
 
 **7. si_log.md is up to date: PASS**
 - 3 entries; only you can confirm it is up to date
 
+**8. No file over 50 MB, no secrets, no raw video or image dumps: PASS**
+- analysis\T5\PSI-20_bre\eda\01_flames_by_day.png: image outside charts/
+- analysis\T5\PSI-20_bre\eda\02_day_count_distribution.png: image outside charts/
+- analysis\T5\PSI-20_bre\eda\03_fuel_categories.png: image outside charts/
+- analysis\T5\PSI-20_bre\eda\04_run_raw_signals.png: image outside charts/
+
 **9. Scripts re-run from scratch and reproduce outputs: MANUAL**
+- analysis\T5\PSI-20_bre\scripts\audit_experimental_table.py is not in the run order
+- analysis\T5\PSI-20_bre\scripts\audit_pipeline.py is not in the run order
+- analysis\T5\PSI-20_bre\scripts\build_run_inventory.py is not in the run order
+- analysis\T5\PSI-20_bre\scripts\reconcile_nasa_report.py is not in the run order
 - run every command of each scripts/README.md from a fresh copy and compare the outputs
 
 **10. Anything unconfirmed is labelled unconfirmed: FAIL**
-- analysis/T5/PSI-10_flame-design/card.json: not checked on the PSI page yet (fill verified_on and verified_by after checking every field, and write 'unconfirmed' where the page does not show it)
-- analysis/T5/PSI-20_bre/card.json: not checked on the PSI page yet (fill verified_on and verified_by after checking every field, and write 'unconfirmed' where the page does not show it)
-- analysis/T5/PSI-22_e-field/card.json: not checked on the PSI page yet (fill verified_on and verified_by after checking every field, and write 'unconfirmed' where the page does not show it)
-- analysis/T5/PSI-23_s-flame/card.json: not checked on the PSI page yet (fill verified_on and verified_by after checking every field, and write 'unconfirmed' where the page does not show it)
+- analysis\T5\PSI-10_flame-design\card.json: not checked on the PSI page yet (fill verified_on and verified_by after checking every field, and write 'unconfirmed' where the page does not show it)
+- analysis\T5\PSI-20_bre\card.json: not checked on the PSI page yet (fill verified_on and verified_by after checking every field, and write 'unconfirmed' where the page does not show it)
+- analysis\T5\PSI-22_e-field\card.json: not checked on the PSI page yet (fill verified_on and verified_by after checking every field, and write 'unconfirmed' where the page does not show it)
+- analysis\T5\PSI-23_s-flame\card.json: not checked on the PSI page yet (fill verified_on and verified_by after checking every field, and write 'unconfirmed' where the page does not show it)
