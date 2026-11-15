@@ -1,0 +1,41 @@
+# Mapping for tools/build_run_table.py. You decide every line; the tool applies it and logs it.
+# Start with columns: {} to get a table with the identity columns and raw_ copies, then map step by step.
+# A constant (value:) needs a reason: say where you read it (PSI page section, document, page).
+investigation_id: PSI-69
+slug: flex
+sources:
+  - file: "PSI-69/Experimental table/PSI-69_Experimental table_FLEX.csv"
+    header_row: 1
+    # source columns (exact names):
+    #   - FLEX Test #
+    #   - FLEX Identifier
+    #   - Test Date
+    #   - Test GMT
+    #   - Fuel
+    #   - Ambient pressure; mmHg
+    #   - O initial ambient composition; mole fraction
+    #   - N initial ambient composition; mole fraction
+    #   - CO initial ambient composition; mole fraction
+    #   - He initial ambient composition; mole fraction
+    #   - Droplet initial diameter; mm
+    #   - Visible flame extinction diameter; mm
+    #   - Burning rate; mm
+    #   - Burn time; s
+    #   - Test end
+    # run_id: "<column>"            # or a list of columns; leave out to use r<source_row>
+    # run_id_prefix: ""              # e.g. N- / I- when two files share test numbers
+    keep_raw: true                   # copy every original column as raw_<name>
+    columns: {}
+    # columns:
+    #   material_or_fuel: {from: "<column>"}
+    #   gravity_level: {value: microgravity_ISS, reason: "<where you read it>"}   # microgravity_ISS | ground_1g | partial_gravity | unknown
+    #   oxygen_pct: {from: "<column>", convert: fraction_to_pct}     # none | fraction_to_pct
+    #   pressure_kpa: {from: "<column>", convert: atm_to_kpa}        # none | atm_to_kpa | bar_to_kpa | psi_to_kpa | mmhg_to_kpa | torr_to_kpa | mpa_to_kpa | pa_to_kpa
+    #   flow_speed_value: {from: "<column>"}
+    #   flow_speed_unit: {value: "cm/s", reason: "<where the unit is stated>"}
+    #   outcome_raw: {from: "<column>"}
+    #   notes: {from: "<column>"}
+    # outcome_map: {"<raw value>": "<your normalised value>"}    # your category mapping table
+    # extra:
+    #   x_<name>_<unit>: {from: "<column>"}
+    # partial_numbers: flag             # flag (default): '21.5 - 21.7' stays empty and is flagged; leading: keep 21.5 and log it

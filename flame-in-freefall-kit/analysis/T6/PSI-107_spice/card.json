@@ -1,0 +1,72 @@
+{
+  "investigation_id": "PSI-107",
+  "title": "Smoke Point In Co-flow Experiment",
+  "acronym": "SPICE",
+  "doi": "10.60555/9kbh-e962",
+  "license": "Creative Commons Zero v1.0 Universal",
+  "version": "unconfirmed",
+  "sub_research_area": "Fire Safety",
+  "related_investigations": [],
+  "size_on_page": "6,625 MB",
+  "file_types_and_counts": {
+    "zip": 101,
+    "xls": 27,
+    "pdf": 18,
+    "mp4": 18,
+    "ppt": 9,
+    "xlsx": 6,
+    "txt": 2,
+    "pptx": 2,
+    "csv": 1,
+    "nef": 1,
+    "docx": 1,
+    "avi": 1,
+    "doc": 1
+  },
+  "has_experiment_table": "yes",
+  "objectives": "TODO: 2 sentences in your own words (read Description on the PSI page)",
+  "approach": "TODO: 2 sentences in your own words",
+  "publications": [
+    {
+      "title": "Laminar Smoke Points in Coflow Measured Aboard the International Space Station",
+      "link": "https://doi.org/10.2514/6.2010-1105"
+    },
+    {
+      "title": "Scaling of Gas-Jet Flame Lengths in Elevated Gravity",
+      "link": "https://doi.org/10.1007/978-1-4020-8682-3_22"
+    },
+    {
+      "title": "The Microgravity Science Glovebox (MSG), a Resource for Gravity-Dependent Phenomena Research on the International Space Station (ISS)",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "The Microgravity Science Glovebox as a Platform for Exploration Research on the International Space Station",
+      "link": "https://doi.org/10.2514/6.2006-941"
+    },
+    {
+      "title": "A Combined Experimental and Computational Study of Soot Formation in Normal and Microgravity Conditions",
+      "link": "https://doi.org/10.1080/00102202.2022.2041621"
+    },
+    {
+      "title": "Shapes of nonbuoyant round hydrocarbon-fueled laminar-jet diffusion flames in still air",
+      "link": "https://doi.org/10.1016/j.combustflame.2004.12.009"
+    },
+    {
+      "title": "Shapes of nonbuoyant round luminous hydrocarbon/air laminar jet diffusion flames",
+      "link": "https://doi.org/10.1016/S0010-2180(98)00100-X"
+    },
+    {
+      "title": "Smoke Points of Microgravity and Normal Gravity Coflow Diffusion",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Laminar smoke points of coflowing flames in microgravity",
+      "link": "https://doi.org/10.1016/j.firesaf.2011.08.002"
+    }
+  ],
+  "verified_on": "",
+  "verified_by": "",
+  "x_prefilled_from": "NASA PSI API (investigation record and file listing), retrieved 2026-11-14; NOT yet checked on the page",
+  "x_psi_page": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+  "x_how_to_verify": "Open x_psi_page, compare every field, correct what differs, read the version from the page, then fill verified_on (date and time) and verified_by (your name). size_on_page uses 1 MB = 1,048,576 bytes, as the page does."
+}

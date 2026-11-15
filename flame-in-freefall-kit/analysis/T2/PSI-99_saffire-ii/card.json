@@ -1,0 +1,56 @@
+{
+  "investigation_id": "PSI-99",
+  "title": "Spacecraft Fire Experiment-II",
+  "acronym": "SAFFIRE-II",
+  "doi": "10.60555/2chp-m469",
+  "license": "Creative Commons Zero v1.0 Universal",
+  "version": "unconfirmed",
+  "sub_research_area": "Surface Combustion",
+  "related_investigations": [],
+  "size_on_page": "16,147 MB",
+  "file_types_and_counts": {
+    "zip": 190,
+    "xlsx": 11,
+    "docx": 10,
+    "pdf": 5,
+    "csv": 1
+  },
+  "has_experiment_table": "yes",
+  "objectives": "TODO: 2 sentences in your own words (read Description on the PSI page)",
+  "approach": "TODO: 2 sentences in your own words",
+  "publications": [
+    {
+      "title": "Buoyant Effects on the Flammability of Silicone Samples Planned for the Spacecraft Fire Experiment (Saffire), Conference: 45th International Conference on Environmental Systems ICES-2015-[293] 12-16 July 2015, Bellevue, Washington",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Flame spread: Effects of microgravity and scale",
+      "link": "https://doi.org/10.1016/j.combustflame.2018.10.012"
+    },
+    {
+      "title": "Buoyancy effects on concurrent flame spread over thick PMMA",
+      "link": "https://doi.org/10.1016/j.combustflame.2018.10.016"
+    },
+    {
+      "title": "Concurrent Flame Spread Over Two-Sided Thick PMMA Slabs in Microgravity",
+      "link": "https://doi.org/10.1007/s10694-019-00863-3"
+    },
+    {
+      "title": "Transient flame growth and spread processes over a large solid fabric in concurrent low-speed flows in microgravity – Model versus experiment",
+      "link": "https://doi.org/10.1016/j.proci.2018.05.168"
+    },
+    {
+      "title": "Evaluation of gas and particle sensors for detecting spacecraft-relevant fire emissions",
+      "link": "https://doi.org/10.1016/j.firesaf.2020.102977"
+    }
+  ],
+  "verified_on": "",
+  "verified_by": "",
+  "x_prefilled_from": "NASA PSI API (investigation record and file listing), retrieved 2026-11-14; NOT yet checked on the page",
+  "x_psi_page": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+  "x_how_to_verify": "Open x_psi_page, compare every field, correct what differs, read the version from the page, then fill verified_on (date and time) and verified_by (your name). size_on_page uses 1 MB = 1,048,576 bytes, as the page does."
+}

@@ -1,0 +1,237 @@
+{
+  "investigation_id": "PSI-69",
+  "title": "Flame Extinguishment Experiment",
+  "acronym": "FLEX",
+  "doi": "10.60555/mbq8-0451",
+  "license": "Creative Commons Zero v1.0 Universal",
+  "version": "unconfirmed",
+  "sub_research_area": "Spacecraft Fire Safety",
+  "related_investigations": [],
+  "size_on_page": "881,035 MB",
+  "file_types_and_counts": {
+    "txt": 4208,
+    "zip": 1420,
+    "pdf": 422,
+    "rtf": 271,
+    "mp4": 228,
+    "xls": 2,
+    "csv": 1,
+    "eps": 1,
+    "mpg": 1,
+    "docx": 1
+  },
+  "has_experiment_table": "yes",
+  "objectives": "TODO: 2 sentences in your own words (read Description on the PSI page)",
+  "approach": "TODO: 2 sentences in your own words",
+  "publications": [
+    {
+      "title": "Methanol Droplet Combustion in Oxygen-Inert Environments in Microgravity",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Methanol Droplet Extinction in Oxygen/Carbon-dioxide/Nitrogen Mixtures in Microgravity: Results from the International Space Station Experiments",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "A Numerical Study On The Extinction Characteristics Of Droplet Combustion Under Microgravity Conditions",
+      "link": "https://doi.org/10.2514/6.2012-1252"
+    },
+    {
+      "title": "Tethered methanol droplet combustion in carbon-dioxide enriched environment under microgravity conditions",
+      "link": "https://doi.org/10.1016/j.combustflame.2011.06.014"
+    },
+    {
+      "title": "FLEX: A Decisive Step Forward in NASA's Combustion Research Program",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Dynamics of Water Absorption and Evaporation During Methanol Droplet Combustion in Microgravity",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Activation energy asymptotics for methanol droplet extinction in microgravity",
+      "link": "https://doi.org/10.1016/j.combustflame.2013.05.011"
+    },
+    {
+      "title": "Experimental Study of Initial Diameter Effects on Convection-free Droplet Combustion in the Standard Atmosphere for n-Heptane, n-Octane, and n-Decane: International Space Station and Ground-based Experiments",
+      "link": "https://doi.org/10.2514/6.2014-1019"
+    },
+    {
+      "title": "Isolated n-heptane droplet combustion in microgravity: “Cool Flames” – Two-stage combustion",
+      "link": "https://doi.org/10.1016/j.combustflame.2013.09.011"
+    },
+    {
+      "title": "Theory of the propagation dynamics of spiral edges of diffusion flames in von Kármán swirling flows",
+      "link": "https://doi.org/10.1016/j.combustflame.2010.08.015"
+    },
+    {
+      "title": "Analysis of the melt phase of a rotating polymer disc supporting a diffusion flame",
+      "link": "https://doi.org/10.1017/jfm.2011.349"
+    },
+    {
+      "title": "Partial-Burning Regime for Quasi-Steady Droplet Combustion Supported by Cool Flames",
+      "link": "https://doi.org/10.2514/1.J054437"
+    },
+    {
+      "title": "Asymptotic analysis of quasi-steady n-heptane droplet combustion supported by cool-flame chemistry",
+      "link": "https://doi.org/10.1080/13647830.2016.1248494"
+    },
+    {
+      "title": "n-Butanol droplet combustion: Numerical modeling and reduced gravity experiments",
+      "link": "https://doi.org/10.1016/j.proci.2014.06.043"
+    },
+    {
+      "title": "Droplet Combustion Experiments Aboard the International Space Station",
+      "link": "https://doi.org/10.1007/s12217-014-9372-2"
+    },
+    {
+      "title": "Computational modeling of the effects of support fibers on evaporation of fiber-supported droplets in reduced gravity",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Oxygen Lewis Number Effects on Reduced Gravity Combustion of Methanol and n-Heptane Droplets",
+      "link": "https://doi.org/10.1080/00102202.2015.1072176"
+    },
+    {
+      "title": "ISS Droplet Combustion Experiments - Uncertainties in Droplet Sizes and Burning Rates",
+      "link": "https://doi.org/10.1007/s12217-014-9377-x"
+    },
+    {
+      "title": "Combustion of n-Butanol, Gasoline, and n-Butanol/Gasoline Mixture Droplets",
+      "link": "https://doi.org/10.1021/acs.energyfuels.5b00158"
+    },
+    {
+      "title": "Computational Modeling of Unsupported and Fiber-Supported n-Heptane Droplet Combustion in Reduced Gravity: A Study of Fiber Effects",
+      "link": "https://doi.org/10.1080/00102202.2014.971950"
+    },
+    {
+      "title": "The effect of support fibers on micro-convection in droplet combustion experiments",
+      "link": "https://doi.org/10.1016/j.proci.2014.07.022"
+    },
+    {
+      "title": "Cool-flame extinction during n-alkane droplet combustion in microgravity",
+      "link": "https://doi.org/10.1016/j.combustflame.2015.01.012"
+    },
+    {
+      "title": "A short mechanism for the low-temperature ignition of n-heptane at high pressures",
+      "link": "https://doi.org/10.1016/j.fuel.2014.08.063"
+    },
+    {
+      "title": "The role of cool-flame chemistry in quasi-steady combustion and extinction of n-heptane droplets",
+      "link": "https://doi.org/10.1080/13647830.2014.934296"
+    },
+    {
+      "title": "Combustion of Submillimeter Heptane/Methanol and Heptane/Ethanol Droplets in Reduced Gravity",
+      "link": "https://doi.org/10.1155/2013/154202"
+    },
+    {
+      "title": "Sub-millimeter sized methyl butanoate droplet combustion: Microgravity experiments and detailed numerical modeling",
+      "link": "https://doi.org/10.1016/j.proci.2012.07.074"
+    },
+    {
+      "title": "On the spherically symmetrical combustion of methyl decanoate droplets and comparisons with detailed numerical modeling",
+      "link": "https://doi.org/10.1016/j.combustflame.2012.11.006"
+    },
+    {
+      "title": "The spherically symmetric droplet burning characteristics of Jet-A and biofuels derived from camelina and tallow",
+      "link": "https://doi.org/10.1016/j.fuel.2013.02.025"
+    },
+    {
+      "title": "Spherically symmetric droplet combustion of three and four component miscible mixtures as surrogates for Jet-A",
+      "link": "https://doi.org/10.1016/j.proci.2012.05.065"
+    },
+    {
+      "title": "AUTOMATED DATA ANALYSIS FOR CONSECUTIVE IMAGES FROM DROPLET COMBUSTION EXPERIMENTS",
+      "link": "https://doi.org/10.5566/ias.v31.p137-148"
+    },
+    {
+      "title": "On the extinction characteristics of alcohol droplet combustion under microgravity conditions – A numerical study",
+      "link": "https://doi.org/10.1016/j.combustflame.2012.04.005"
+    },
+    {
+      "title": "A comparison of the spherical flame characteristics of sub-millimeter droplets of binary mixtures of n-heptane/iso-octane and n-heptane/toluene with a commercial unleaded gasoline",
+      "link": "https://doi.org/10.1016/j.combustflame.2011.08.015"
+    },
+    {
+      "title": "Comparison of the Burning Characteristics of Indolene and Commercial Grade Gasoline Droplets without Convection",
+      "link": "https://doi.org/10.1021/ef3007849"
+    },
+    {
+      "title": "Can cool flames support quasi-steady alkane droplet burning?",
+      "link": "https://doi.org/10.1016/j.combustflame.2012.07.012"
+    },
+    {
+      "title": "Experiments on Submillimeter Free Droplet Flame Extinction",
+      "link": "https://doi.org/10.1080/00102202.2012.759946"
+    },
+    {
+      "title": "Influences of support fibers on vaporizing fuel droplets",
+      "link": "https://doi.org/10.1016/j.compfluid.2013.02.005"
+    },
+    {
+      "title": "Numerical studies of flows over liquid droplets on cylindrical fibers",
+      "link": "https://doi.org/10.1016/j.compfluid.2013.02.011"
+    },
+    {
+      "title": "Interpretation of Backlit Droplet Images from ISS Droplet Combustion Experiments",
+      "link": "https://doi.org/10.2478/gsr-2014-0007"
+    },
+    {
+      "title": "Combustion of Methanol Droplets in Air-Diluent Environments with Reduced and Normal Gravity",
+      "link": "https://doi.org/10.1155/2012/587987"
+    },
+    {
+      "title": "Microgravity droplet combustion: effect of tethering fiber on burning rate and flame structure",
+      "link": "https://doi.org/10.1080/13647830.2010.547601"
+    },
+    {
+      "title": "Influence of Gravity and Ambient Pressure on Combustion and Flammability of n-Heptane and 1-Propanol Droplets in Air-Diluent Environments",
+      "link": "https://doi.org/10.1080/00102202.2010.498798"
+    },
+    {
+      "title": "Ignition and combustion of n-heptane droplets in carbon dioxide enriched environments",
+      "link": "https://doi.org/10.1016/j.icheatmasstransfer.2009.10.006"
+    },
+    {
+      "title": "Computational modeling of n-heptane droplet combustion in air–diluent environments under reduced-gravity",
+      "link": "https://doi.org/10.1016/j.ijheatmasstransfer.2010.08.005"
+    },
+    {
+      "title": "Numerical Simulation of Unsteady Flows and Shape Oscillations in Liquid Droplets Induced by Deployment Needle Retraction",
+      "link": "https://doi.org/10.1007/s12217-008-9096-2"
+    },
+    {
+      "title": "Nonane droplet combustion with and without buoyant convection: Flame structure, burning rate and extinction in air and helium",
+      "link": "https://doi.org/10.1016/j.proci.2008.06.221"
+    },
+    {
+      "title": "Temperature and fiber optic spectroscopy composition measurements of heated propanol–acetone droplets",
+      "link": "https://doi.org/10.1016/j.optlaseng.2009.05.004"
+    },
+    {
+      "title": "Laser-induced fluorescence imaging of acetone inside evaporating and burning fuel droplets",
+      "link": "https://doi.org/10.1016/j.optlaseng.2008.08.002"
+    },
+    {
+      "title": "Reduced Gravity Combustion of Propanol Droplets in Oxygen-Inert Environments",
+      "link": "https://doi.org/10.1080/00102200903190851"
+    },
+    {
+      "title": "PROPANOL DROPLET FLAMMABILITY AND COMBUSTION IN AIR-DILUENT ENVIRONMENTS UNDER NORMAL AND REDUCED GRAVITY",
+      "link": "https://doi.org/10.1080/00102200601057394"
+    },
+    {
+      "title": "Developing Surrogates for Liquid Transportation Fuels: The Role of Spherically Symmetric Droplet Combustion",
+      "link": "https://doi.org/10.1007/978-81-322-2211-8_16"
+    },
+    {
+      "title": "Detailed results from the flame extinugishment experiment (FLEX) - March 2009 to December 2011",
+      "link": "unconfirmed"
+    }
+  ],
+  "verified_on": "",
+  "verified_by": "",
+  "x_prefilled_from": "NASA PSI API (investigation record and file listing), retrieved 2026-11-14; NOT yet checked on the page",
+  "x_psi_page": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+  "x_how_to_verify": "Open x_psi_page, compare every field, correct what differs, read the version from the page, then fill verified_on (date and time) and verified_by (your name). size_on_page uses 1 MB = 1,048,576 bytes, as the page does."
+}
