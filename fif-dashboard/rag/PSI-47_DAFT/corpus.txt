@@ -1,0 +1,262 @@
+RAG CORPUS - DAFT / DAFT-2
+Dataset ID: PSI-47
+Title: Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2
+Names and aliases: DAFT / DAFT-2, DAFT and DAFT-2, DAFT
+Listed in: flame-in-freefall-kit/data/psi_metadata/PSI-47.json, flame-in-freefall/site_data/investigations.json, fif-dashboard/data/site-data.js (records), docs/psi_member_assignments_verified.csv, RAG/rag-map.json
+Crew: Mahmoud Nadeem (dashboard T3), Mahmoud Nadeem (assignment sheet, T3), Mahmoud Nadeem (rag-map key 'nadeem')
+Chunks: 28 (17 only about this dataset, 11 shared with other datasets)
+Chunk text is copied verbatim. Each chunk is preceded by a '>>>' line: source file, chunk ID, location, mapping rule,
+other datasets that share it, identical copies elsewhere. Each source file's header (source codes S1, S2 ..., evidence
+tags such as [SRC] [CALC] [INF] [FLAG] [DOC] [QA]) is repeated before its chunks because the chunks cite it.
+====================================================================================================
+
+##### SOURCE FILE: RAG/Mahmoud.txt (28 chunks)
+
+--- source-file header (context for citations; not a chunk) ---
+# SAME, SAME-R and DAFT (track T3: smoke and aerosol detection) - Deep Analysis Pack
+# Built for: RAG / chatbot / agent / dashboard ingestion. Track owner: Mahmoud Nadeem (T3), team Flame in Freefall.
+# Sources:
+#   S1 PSI-102 SAME record page, https://psi.nasa.gov/physci/repo/data/investigations/PSI-102 (version 4)
+#   S2 PSI-101 SAME-R record page, https://psi.nasa.gov/physci/repo/data/investigations/PSI-101 (version 4)
+#   S3 PSI-47 DAFT / DAFT-2 record page, https://psi.nasa.gov/physci/repo/data/investigations/PSI-47 (version 5)
+#   S4 PSI-102 experimental table, PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv
+#   S5 PSI-101 experimental table, PSI-101/Experimental table/PSI-101_Experimental table_SAME-R.csv
+#   S6 PSI-47 experimental table, PSI-47/Experimental table/PSI-47_Experimental table_DAFT.csv
+#   S7 SAME/SAME-R results workbook, PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx (sheet 'Reduced Data with ISS Det' unless stated)
+#   S8 SAME-R housekeeping time series, PSI-101/Raw Data/PSI-101_Raw Data_HKPData_*.csv (44 files, 1 Hz)
+#   S9 DAFT analyzed data, PSI-47/Analyzed Data/ (Retrieved Data Summary, flight data 063 TIMING, ISS_Daft_Aug21_06 sheets)
+#   S10 NASA DAFT 30-day post-flight report, PSI-47/Reports/PSI-47_Reports_DAFT_30Day.PostFlightReport.pdf
+#   S11 NASA DAFT fact sheet, PSI-47/Presentations/PSI-47_Presentations_Daft_FactSheet.pdf
+#   S12 NASA, What Is Microgravity? (Grades 5-8), https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/
+#   S13 T3 analysis scripts (same_results_analysis.py, hkp_time_series.py, daft_time_series.py) and their outputs in analysis/T3/*/tables
+# Splitting rule: split on lines beginning '### [CHUNK'. Every chunk is self-contained (names its experiment and source).
+# Confidence tags: [SRC] stated in a source | [CALC] computed from NASA data by the T3 scripts | [INF] our inference | [FLAG] needs verification
+# Finding labels (team standard): OBSERVED IN DATA, REPORTED BY NASA OR A PUBLICATION, OUR INFERENCE; confidence high/medium/low.
+# Rows: Excel row number for xls/xlsx (header row counted), line number for csv (header = 1).
+# Equations are LaTeX ($...$).
+# Generated 2026-11-15 09:05 UTC by analysis/T3/extra/build_rag_pack.py from the T3 package; regenerate after any change.
+--- end of header ---
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-00 | location: lines 24-30 | mapping: track-level T3 chunk (source: -) covering SAME, SAME-R and DAFT | SHARED with: PSI-101 (SAME-R), PSI-102 (SAME)
+### [CHUNK T3-00] How to use this file | source: - | tags: meta, schema
+Chunk ids: T3-00..T3-29 topic chunks; T3-F01..T3-F23 the 23 findings (one per chunk); T3-MAT-* per-material summaries;
+T3-TEST-* one chunk per flight test (SAME 2007, SAME-R 2010); T3-DAFT-* the 7 DAFT tests; T3-QA question set; T3-DASH dashboard use.
+For answers prefer [SRC] and [CALC] lines and cite the finding id (F-T3-n) or source id (S1..S13). Say so when a line is [INF] or [FLAG].
+Never pool SAME (2007) and SAME-R (2010) numbers: they used partly different instruments (F-T3-5).
+Units: particle diameters in micrometres (um) unless nm is stated (1 um = 1000 nm); air flow cm/s; times s; mass concentration mg/m3; particle counts per cm3 (pt/cc); detector signals volts; temperatures C.
+Out of scope of this track's data: oxygen level, cabin pressure, partial gravity, flaming fires, alarm thresholds (see T3-27).
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-01 | location: lines 32-38 | mapping: declared sources 'S1, S2, S3, S13' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R), PSI-102 (SAME)
+### [CHUNK T3-01] Track overview: what T3 covers | source: S1, S2, S3, S13 | tags: overview, track, smoke, detection
+Track T3 (owner Mahmoud Nadeem) covers three NASA PSI records about smoke from overheated spacecraft materials and the instruments that measure it: [SRC]
+- PSI-102 SAME, Smoke and Aerosol Measurement Experiment (ISS, flight tests in 2007). [SRC][CALC]
+- PSI-101 SAME-R, Smoke Aerosol Measurement Experiment-Reflight (ISS, flight tests 16 July - 9 September 2010). [SRC]
+- PSI-47 DAFT / DAFT-2, Dust and Aerosol Measurement Feasibility Test(s): checked on the ISS that a modified P-Trak particle counter works in microgravity before SAME used it (tests in 2005, plus a DAFT-3 series in 2006 in its files). [SRC][CALC]
+Why it matters: smoke detectors are how a crew learns that material is overheating; in microgravity smoke does not rise, so it may grow differently and reach detectors differently. [SRC S1 hypothesis]
+What the T3 package contains: 3 record cards checked against the PSI pages, 3 standard run tables (8, 109, 2 rows), an analysis of the SAME/SAME-R results workbook (154 flight tests), of 44 SAME-R housekeeping time series and of 7 DAFT instrument logs, 23 findings, 6 charts and a model card. [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-06 | location: lines 81-92 | mapping: PSI ID(s) in chunk header
+### [CHUNK T3-06] PSI-47 DAFT / DAFT-2 record metadata | source: S3 | tags: record, psi, metadata, citation
+- Name: Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2 (DAFT / DAFT-2). PSI ID: PSI-47. DOI: 10.60555/ztgj-d202. Page: https://psi.nasa.gov/physci/repo/data/investigations/PSI-47 [SRC]
+- Version 5; size on page 39.83 MB; licence CC0-1.0; sub-research area Spacecraft Fire Safety; related: PSI-102. [SRC]
+- Type: Microgravity Investigation; platform: International Space Station (ISS); managing centre: Glenn Research Center (GRC); investigation dates on PSI (month-day-year): 03-01-2003 to 06-01-2009. [SRC]
+- Hardware (as written on PSI): TSI P-Trak. [SRC]
+- People on PSI: David L Urban (NASA GRC, Principal Investigator (PI)); Claire Fortenberry (NASA GRC, Project Scientist). [SRC]
+- Keywords on PSI: DAFT, Condensate Nuclei Counter, Laser scattering aerosol device, Fire safety, Space hardware testing, P-Trak particulate counter, Capillary Fluid Motion, Combustion, Smoke, Fire prevention. [SRC]
+- File folders on PSI: Analyzed Data: 12 files, 3.3 MB; Engineering Documents: 6 files, 7.6 MB; Experimental table: 1 files, 0.0 MB; Presentations: 3 files, 14.4 MB; Raw Data: 6 files, 0.0 MB; Reports: 3 files, 13.3 MB; Representative Image(s): 1 files, 1.3 MB; metadata: 1 files, 0.0 MB. [SRC]
+- Publications listed on PSI: 2. [SRC]
+- Citation (PSI 'Cite this Investigation'): Urban DL, Fortenberry C. "Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2(DAFT / DAFT-2)", NASA PSI Data Repository, Version 5, http://doi.org/10.60555/ztgj-d202. [SRC]
+- Card checked field by field against the PSI page on 2026-11-15 01:50 (Alexandria). [CALC]
+- The record title names DAFT and DAFT-2; its analyzed files also contain a DAFT-3 series (tests 5-7, August 2006). [CALC] (F-T3-11)
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-07 | location: lines 94-99 | mapping: PSI ID(s) in chunk header
+### [CHUNK T3-07] PSI-47 DAFT: objectives, hypothesis, approach, impacts (NASA text) | source: S3 | tags: objectives, hypothesis, approach, impacts
+Objective [SRC]: The focus of DAFT / DAFT-2 was to mitigate the risk for the Smoke Aerosol Measurement Experiment (SAME). SAME relied on a commercially available condensate nuclei counter, the TSI P-Trak, to quantify smoke aerosols in a microgravity environment, however there were concerns that the P-Trak would not be reliable in microgravity as it relies on gravity to recycle isopropyl alcohol used in the measurement process. Summarized objectives: 1) Demonstrate the functionality of the modified TSI P-Trak in microgravity; 2) Compare the TSI P-Trak performance against the DustTrak control; 3) Create and analyze aerosol standards in microgravity; 4) Ensure the reliability of future aerosol experiments.
+Hypothesis [SRC]: The TSI P-Trak operates by condensing isopropanol around aerosol particulates that are subsequently laser counted. It was hypothesized that the P-Trak would not work in microgravity due to two potential failure modes: 1) the system would clog or become obscured by isopropanol, and 2) the internal air-flow dynamics of the optics chamber would cause an over counting of particulates. With the modification, the two hypotheses tested were: 1) the P-Trak, as modified for use in SAME, would function normally in microgravity; 2) the aerosol created and filtered per the experiment design would be within the measurement capabilities of the test devices.
+Approach [SRC]: 1) Modification of instrumentation: the TSI P-Trak was modified for use in microgravity by redesigning the condenser tube to use capillary forces for recycling isopropyl alcohol and removing the mercury switch responsible for detecting instrument orientation. 2) Aerosol generation: Arizona Red Dust (ARD) was chosen as an aerosol standard due to its ease of dispersion; the ARD was aerosolized with GN2 to create particle samples, contained within 15-liter Mylar bags. 3) On-orbit testing: the modified P-Trak counted aerosol particles and these data were compared to the DustTrak.
+Research impacts / Earth benefits [SRC]: Extended duration space flight missions with larger vessels will require fire detection systems with increased reliability and sensitivity. This research will impact the development of novel fire and smoke detection systems for the International Space Station and future spacecraft. The adaptation of the TSI P-Trak for microgravity can inform instruments for other challenging Earth environments, such as submarines or underwater laboratories.
+Team summary in plain words: Test whether a modified P-Trak particle counter can measure aerosol particles accurately in microgravity and confirm that it is reliable enough for the SAME experiments, since the stock instrument was not expected to work reliably without gravity. The modified P-Trak was operated in microgravity and its readings were compared with a DustTrak reference instrument, using different aerosol samples and standards.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-09 | location: lines 117-123 | mapping: declared sources 'S10, S11, S7, S8, S9' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R), PSI-102 (SAME)
+### [CHUNK T3-09] Instruments, ranges and limits | source: S10, S11, S7, S8, S9 | tags: instruments, limits, ptrak, dusttrak, detector, data-quality
+- P-Trak sees particles from 0.02 um to above 1 um (fact sheet p.1-2); particles above 2.5 um are above its measurement limit (report p.3); maximum count 500,000 pt/cc (report p.8). [SRC S10, S11]
+- DustTrak size range 0.1 to 10 um (fact sheet p.2; the unit extracts as '(mm)' but page 1 gives micrometres). [SRC S11][FLAG]
+- DAFT instrument clocks drift over time (report p.5), so logs cannot be aligned second by second. [SRC S10] (F-T3-20)
+- ISS smoke detector scatter channel: the raw housekeeping signal sits near -0.185 V before heating and goes negative with smoke; in 21 of 44 SAME-R tests it bottoms out between -6.275 and -6.243 V and stays there for 10-432 s (median 45 s). [CALC] Likely the end of its range [INF], to confirm in the engineering documents [FLAG]. (F-T3-6, F-T3-15)
+- The same detector's obscuration channel barely moves (median largest change -0.091 V) while scatter moves a median -5.945 V. [CALC] (F-T3-18)
+- Housekeeping column DustTrakAMeasurement(MgPerM3) is not a mass concentration: of 63,083 samples, every nonzero value lies between 10,009 and 22,997. Do not use it as mg/m3. [CALC] (F-T3-19)
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-10 | location: lines 125-129 | mapping: declared sources 'S4, S5, S6' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R), PSI-102 (SAME)
+### [CHUNK T3-10] Experimental tables (what PSI lists per test) | source: S4, S5, S6 | tags: experimental-table, test-matrix, data-dictionary
+- SAME table (S4): 8 rows; columns Sample #, Sample Material, Air Flow (cm/s), Weight loss rate (mg/min), Aging Duration (minutes). Rows 2-5: Teflon at 5 or 10 cm/s with 1 or 20 min aging; rows 6-9: Kapton, Silicone Rubber, Lampwick and Dibutyl Phthalate 'same conditions as 1-4' with the numbers left empty. [SRC]
+- SAME-R table (S5): 109 rows; columns Sample Type, SAME Test #, Description, Date, Inlet velocity (cm/s), Rt/R0, Duration (sec), Primary aging time (sec), Primary mixing time (sec), Net aging time (sec). Kapton 29 rows, Silicone 22, Lampwick 20, Pyrell 20, Teflon 18; inlet velocities 0, 1, 2, 8 and 8.1 cm/s; test numbers ending in 'a' are aged re-measurements. [SRC][CALC]
+- DAFT table (S6): 2 rows. D1 (GMT 54, 2005): modified P-Trak with alcohol wick and batteries, sampled air near EXPRESS rack 4. D2 (GMT 63, 2005): DustTrak and batteries, sampled separated Velcro and the air near Port rack 6 and in Node 1. Sample: Arizona Road Dust (ARD Fine) with ISS GN2. [SRC]
+- Standard run tables (team schema, 13 columns, exact source rows): analysis/T3/*/tables/*_runs_clean.csv. Oxygen and pressure columns are empty because the tables contain neither. [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-F11 | location: lines 215-220 | mapping: PSI ID(s) in chunk header
+### [CHUNK T3-F11] F-T3-11 (PSI-47) | source: PSI-47/Experimental table/PSI-47_Experimental table_DAFT.csv; PSI-47/Analyzed Data/PSI-47_Analyzed Data_DAFT Retrieved Data Summary.xls, sheet 'Headers' | tags: finding, observed-in-data
+Finding F-T3-11 about PSI-47: The experimental table lists one instrument per session (D1 the modified P-Trak, D2 the DustTrak), but NASA's retrieved-data summary shows both the P-Trak (serial 8525-03031002) and the DustTrak (serial 23757) logging in all 7 DAFT tests: tests 1-4 on 22 Feb and 4 Mar 2005 (DAFT-1,2) and tests 5-7 on 17 and 21 Aug 2006 (DAFT-3).
+Plain words: Both particle instruments logged in all seven DAFT tests, including a 2006 series the record title does not mention.
+Label: OBSERVED IN DATA. Confidence: high.
+Source file: PSI-47/Experimental table/PSI-47_Experimental table_DAFT.csv; PSI-47/Analyzed Data/PSI-47_Analyzed Data_DAFT Retrieved Data Summary.xls, sheet 'Headers'. Rows or page: table rows 2-3; Headers rows 1-20 (dates are Excel serials 38405, 38415, 38946, 38950).
+Caveat: The record title names DAFT and DAFT-2 only; the third flight series (DAFT-3) appears only in the analyzed files.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-F12 | location: lines 222-227 | mapping: PSI ID(s) in chunk header
+### [CHUNK T3-F12] F-T3-12 (PSI-47) | source: PSI-47/Analyzed Data/PSI-47_Analyzed Data_ISS_Daft_Aug21_0611zgy time hist.xls, sheet 'Data' | tags: finding, reported-by-nasa-or-a-publication
+Finding F-T3-12 about PSI-47: In the August 2006 bag tests the modified P-Trak averaged 17,314, 17,256 and 24,350 particles/cm3 for bags 1-3 while the DustTrak averaged 43.2, 34.1 and 63.2 mg/m3, and NASA's sheet derives from these an average particle diameter of 1.68, 1.56 and 1.70 um assuming a density of 1 g/cm3.
+Plain words: see the statement.
+Label: REPORTED BY NASA OR A PUBLICATION (PSI-47 analyzed workbook 'ISS_Daft_Aug21_06 time hist'). Confidence: medium.
+Source file: PSI-47/Analyzed Data/PSI-47_Analyzed Data_ISS_Daft_Aug21_0611zgy time hist.xls, sheet 'Data'. Rows or page: rows 23 and 25-28.
+Caveat: The readings were voice-downlinked (row 2), 12-16 readings per bag; the diameter depends on the assumed density.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-F13 | location: lines 229-234 | mapping: PSI ID(s) in chunk header
+### [CHUNK T3-F13] F-T3-13 (PSI-47) | source: PSI-47/Analyzed Data/PSI-47_Analyzed Data_ISS_Daft_Aug21_0611zgy time hist.xls, sheet 'Data' | tags: finding, observed-in-data
+Finding F-T3-13 about PSI-47: Within bag 3 the P-Trak particle count ranged from 11,400 to 36,500 per cm3 (a factor of 3.2) while the DustTrak mass reading stayed between 51.6 and 71.0 mg/m3 (a factor of 1.4).
+Plain words: In one bag the particle count changed by a factor of 3.2 while the mass reading changed by only 1.4.
+Label: OBSERVED IN DATA. Confidence: medium.
+Source file: PSI-47/Analyzed Data/PSI-47_Analyzed Data_ISS_Daft_Aug21_0611zgy time hist.xls, sheet 'Data'. Rows or page: rows 8-19, columns 'P-Trak n/cm3' and 'DustTrak mg/m3' of Bag#3.
+Caveat: Twelve hand-copied readings; it shows that a count-based and a mass-based instrument can tell different stories about the same aerosol, not which one is right.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-F14 | location: lines 236-241 | mapping: PSI ID(s) in chunk header
+### [CHUNK T3-F14] F-T3-14 (PSI-47) | source: https://psi.nasa.gov/physci/repo/data/investigations/PSI-47 | tags: finding, reported-by-nasa-or-a-publication
+Finding F-T3-14 about PSI-47: NASA reports that the stock P-Trak relies on gravity to recycle its isopropyl alcohol, so for DAFT its condenser was redesigned to use capillary forces and its mercury orientation switch was removed, before the same counter was used in SAME.
+Plain words: NASA reports the modified particle counter worked normally in microgravity; it cannot see particles above 2.5 um.
+Label: REPORTED BY NASA OR A PUBLICATION (PSI-47 page, Objectives and Approach). Confidence: high.
+Source file: https://psi.nasa.gov/physci/repo/data/investigations/PSI-47. Rows or page: page sections Objectives and Approach.
+Caveat: NASA's 30-day post-flight report states that in the velcro test the P-Trak readings rose and fell logically, stayed within its range and showed no anomalies, so the unit was functioning normally (PSI-47 Reports, DAFT_30Day.PostFlightReport.pdf, page 8); particles above 2.5 um are above its measurement limit (page 3).
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-F20 | location: lines 278-283 | mapping: PSI ID(s) in chunk header
+### [CHUNK T3-F20] F-T3-20 (PSI-47) | source: PSI-47/Analyzed Data/PSI-47_Analyzed Data_DAFT Retrieved Data Summary.xls, sheet 'Headers'; PSI-47/Analyzed Data/PSI-47_Analyzed Data_flight data 063_TIMING.xls | tags: finding, observed-in-data
+Finding F-T3-20 about PSI-47: The two instruments' own clocks cannot be used to line up their logs: in the four 2005 tests the DustTrak start time is 3036-3104 s (about 51 minutes) after the P-Trak start time, yet the video timing sheet puts the DustTrak log start 47 s before the P-Trak log start in test 2 (video seconds 1176 vs 1223), while the sheet's other test-2 events imply 53-72 s; in the three 2006 tests the logged offsets are -1033, -10 and -1005 s.
+Plain words: The two DAFT instruments' clocks drift, so their logs cannot be lined up second by second.
+Label: OBSERVED IN DATA. Confidence: high.
+Source file: PSI-47/Analyzed Data/PSI-47_Analyzed Data_DAFT Retrieved Data Summary.xls, sheet 'Headers'; PSI-47/Analyzed Data/PSI-47_Analyzed Data_flight data 063_TIMING.xls, sheet 'TIMING'. Rows or page: Headers rows 5 and 16 (columns B-E and G-I); TIMING rows 7-22.
+Caveat: NASA's 30-day post-flight report notes the units' coin-battery clocks drift over time (PSI-47 Reports, DAFT_30Day.PostFlightReport.pdf, page 5); a P-Trak versus DustTrak comparison needs the video timing, which this sheet gives only for tests 2 and 3 (test 3 events imply 36-56 s), so second-by-second alignment is uncertain by tens of seconds.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-F21 | location: lines 285-290 | mapping: PSI ID(s) in chunk header
+### [CHUNK T3-F21] F-T3-21 (PSI-47) | source: PSI-47/Analyzed Data/PSI-47_Analyzed Data_DAFT Retrieved Data Summary.xls, sheets 'Raw PTrak Data' and 'Raw DustTrak Data' (column set 2) | tags: finding, observed-in-data
+Finding F-T3-21 about PSI-47: In DAFT test 2 (velcro pulled apart on the ISS, 4 March 2005) the P-Trak count reached 45,400 pt/cc and was zero in 13% of its 724 one-second readings, while the DustTrak read zero in 85% of its 778 readings with a maximum of 0.79 mg/m3; lined up with the 47 s video offset, the 92 seconds in which both read above zero show no rank correlation (Spearman rho = -0.02, p = 0.82), and no offset from 30 to 80 s gives a positive one (rho between -0.28 and 0.04).
+Plain words: see the statement.
+Label: OBSERVED IN DATA. Confidence: medium.
+Source file: PSI-47/Analyzed Data/PSI-47_Analyzed Data_DAFT Retrieved Data Summary.xls, sheets 'Raw PTrak Data' and 'Raw DustTrak Data' (column set 2). Rows or page: P-Trak rows 2-725, DustTrak rows 2-779 (per-reading rows in tables/derived_daft_aligned.csv); P-Trak maximum on row 537.
+Caveat: NASA's report says the DustTrak responded well to the velcro dust but stayed below 10% of its capability (Reports, DAFT_30Day.PostFlightReport.pdf, page 8); with our alignment its peaks mostly fall outside the velcro windows. OUR INFERENCE: small particles raise a count far more than a mass reading. The per-test file 'flight data 063.xls' differs from this summary in one P-Trak reading (second 152) and has one more DustTrak reading.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-F22 | location: lines 292-297 | mapping: PSI ID(s) in chunk header
+### [CHUNK T3-F22] F-T3-22 (PSI-47) | source: PSI-47/Analyzed Data/PSI-47_Analyzed Data_DAFT Retrieved Data Summary.xls, sheet 'Raw PTrak Data' (column set 1); PSI-47 Reports, DAFT_30Day.PostFlightReport.pd | tags: finding, observed-in-data
+Finding F-T3-22 about PSI-47: In DAFT test 1 the P-Trak logged one reading of 524,291 pt/cc while its next highest reading in that test was 2,050 pt/cc, and NASA's report gives the P-Trak maximum count as 500,000 pt/cc.
+Plain words: see the statement.
+Label: OBSERVED IN DATA. Confidence: high.
+Source file: PSI-47/Analyzed Data/PSI-47_Analyzed Data_DAFT Retrieved Data Summary.xls, sheet 'Raw PTrak Data' (column set 1); PSI-47 Reports, DAFT_30Day.PostFlightReport.pdf. Rows or page: row 325; report page 8.
+Caveat: OUR INFERENCE: a value above the instrument's maximum is not a valid measurement; it is kept in the data and must be excluded or flagged in any average, peak or alarm calculation.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-21 | location: lines 384-397 | mapping: declared sources 'S9, S10, S13' (S-codes defined in the file header)
+### [CHUNK T3-21] DAFT: the seven tests and their logs | source: S9, S10, S13 | tags: daft, ptrak, dusttrak, time-series
+- Both instruments logged in all 7 tests: tests 1-4 on 22 Feb and 4 Mar 2005 (DAFT-1,2), tests 5-7 on 17 and 21 Aug 2006 (DAFT-3); 1 s logging. [CALC] (F-T3-11)
+- Test 1 (DAFT-1,2 (2005)): P-Trak 724 readings, 18% zero, max 524,291 pt/cc; dusttrak_readings 771, dusttrak_zero_share 0.943, dusttrak_max_mg_m3 6.273, dusttrak_minus_ptrak_clock_s 3104. [CALC]
+- Test 2 (DAFT-1,2 (2005)): P-Trak 724 readings, 13% zero, max 45,400 pt/cc; dusttrak_readings 778, dusttrak_zero_share 0.847, dusttrak_max_mg_m3 0.79, dusttrak_minus_ptrak_clock_s 3074. [CALC]
+- Test 3 (DAFT-1,2 (2005)): P-Trak 707 readings, 40% zero, max 10 pt/cc; dusttrak_readings 754, dusttrak_zero_share 0.958, dusttrak_max_mg_m3 1.024, dusttrak_minus_ptrak_clock_s 3079. [CALC]
+- Test 4 (DAFT-1,2 (2005)): P-Trak 455 readings, 70% zero, max 76 pt/cc; dusttrak_readings 545, dusttrak_zero_share 0.938, dusttrak_max_mg_m3 0.837, dusttrak_minus_ptrak_clock_s 3036. [CALC]
+- Test 5 (DAFT-3 (2006)): P-Trak 2330 readings, 36% zero, max 1,730 pt/cc; dusttrak_readings 2426, dusttrak_zero_share 0.986, dusttrak_max_mg_m3 0.031, dusttrak_minus_ptrak_clock_s -1033. [CALC]
+- Test 6 (DAFT-3 (2006)): P-Trak 1187 readings, 20% zero, max 232,000 pt/cc; dusttrak_readings 271, dusttrak_zero_share 0.199, dusttrak_max_mg_m3 200.042, dusttrak_minus_ptrak_clock_s -10. [CALC]
+- Test 7 (DAFT-3 (2006)): P-Trak 2292 readings, 26% zero, max 137,000 pt/cc; dusttrak_readings 2365, dusttrak_zero_share 0.501, dusttrak_max_mg_m3 273.571, dusttrak_minus_ptrak_clock_s -1005. [CALC]
+- Test 2 (Velcro pulled apart on the ISS, 4 March 2005): with the 47 s offset from the video timing sheet, the 92 seconds where both instruments read above zero show no rank correlation (rho -0.024, p 0.817); no offset from 30 to 80 s gives a positive correlation (largest |rho| 0.276). [CALC] (F-T3-21)
+- NASA's paired sheet for the August 2006 bags: Spearman between P-Trak and DustTrak readings 0.82 (bag 1, n 131), 0.044 (bag 2, n 516), 0.219 (bag 3, n 524); bag 1 DustTrak gaps were zero-filled by NASA (row 3 note, zeros excluded). [CALC]
+- Bag averages reported in NASA's time-history sheet: P-Trak 17,314, 17,256 and 24,350 pt/cc; DustTrak 43.2, 34.1 and 63.2 mg/m3; derived average particle diameter 1.68, 1.56 and 1.70 um assuming density 1 g/cm3. [SRC S9] (F-T3-12)
+- One test-1 P-Trak reading is 524,291 pt/cc, above the instrument's 500,000 maximum (Raw PTrak Data row 325): kept and flagged; treating it as invalid is our inference. [CALC][INF] (F-T3-22)
+- NASA's post-flight report: during the Velcro test point the P-Trak readings rose and fell logically, stayed in range and showed no anomalies, so the unit was functioning normally (p.8); the DustTrak responded but stayed below 10% of its capability (p.8). [SRC S10]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-25 | location: lines 405-411 | mapping: track-level T3 chunk (source: all) covering SAME, SAME-R and DAFT | SHARED with: PSI-101 (SAME-R), PSI-102 (SAME)
+### [CHUNK T3-25] Cross-source synthesis (what the T3 data say together) | source: all | tags: insights, synthesis
+1. Smoke from overheated materials keeps changing after it forms: the same smoke grew about 1.5x in mean diameter after 4-33 minutes (F-T3-1). A detector far from a source in still air would see older, larger smoke. [CALC][INF]
+2. Weak air flow went with larger particles for three of five materials at the same heater setting (F-T3-2), consistent with NASA's expectation of longer residence time near the source in microgravity (S1). [CALC][INF]
+3. Material matters about fourfold (57 nm Kapton to 207-244 nm Pyrell and Silicone at baseline, F-T3-3), but each material was heated to a different temperature, so material and temperature are mixed. [CALC]
+4. Instruments set the limits of what can be concluded: the ISS detector's scatter channel pins at its range end in about half the tests (F-T3-6, F-T3-15); the P-Trak cannot see above 2.5 um; DAFT clocks drift (F-T3-20). [SRC][CALC]
+5. Count and mass readings can disagree about the same aerosol (F-T3-13, F-T3-21), which matters because detectors respond to different particle properties. [CALC][INF]
+6. Provenance needs care: table vs flight-record mismatch (F-T3-8), duplicated test number (F-T3-7), DBP without sizes (F-T3-9), a mislabelled housekeeping column (F-T3-19), six size rows that break a law of size statistics (F-T3-23, kept out; no conclusion changed). [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-26 | location: lines 413-424 | mapping: declared sources 'S1-S11' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R), PSI-102 (SAME)
+### [CHUNK T3-26] Data-quality flags | source: S1-S11 | tags: data-quality, flags, verify
+- F1 [FLAG] The SAME experimental table (5/10 cm/s, 1/20 min) does not match the SAME flight records (2-8 cm/s, 11-1964 s); use the workbook (F-T3-8).
+- F2 [FLAG] SAME-R test 57 appears twice (row 57 Lampwick, row 75 Teflon); the Teflon row's Rt/R0 1.253 is outside Teflon's 1.445-1.452 (F-T3-7).
+- F3 [FLAG] PSI page experimental-table counters show one more row than the CSV files (SAME 9 vs 8, SAME-R 110 vs 109, DAFT 3 vs 2).
+- F4 [FLAG] The PSI-47 page approach says 'Arizona Red Dust'; the experimental table says 'Arizona Road Dust (ARD Fine)'.
+- F5 [FLAG] Housekeeping files: repeated timestamps in some files (first kept) and a repeated header line in gmt251_4 (skipped); both logged in data_log.md.
+- F6 [FLAG] Housekeeping column DustTrakAMeasurement(MgPerM3) is not mg/m3 (F-T3-19); NASA says M-pass replaced one DustTrak enclosure in SAME-R (S2).
+- F7 [FLAG] The ISS detector output range and the meaning of Rt/R0 are not yet confirmed in engineering documents.
+- F8 [FLAG] For pinned tests the workbook's ISS scatter value equals minus the housekeeping minimum (within 0.021 V): the two files use opposite signs (F-T3-15).
+- F9 [FLAG] The DAFT per-test file and the summary differ in one P-Trak reading (second 152: 6 vs 518) and one extra DustTrak reading (779 vs 778).
+- F10 [FLAG] PSI size labels use 1 MB = 1,048,576 bytes (627.14 MB for PSI-102 = 657.6 million bytes).
+- F11 In 6 of 130 workbook rows that have both sizes, the diameter of average mass is smaller than the number-mean diameter (rows 47 (SAME-R 90 Kapton), 48 (SAME-R 90a Kapton), 145 (SAME-R 79a Teflon), 147 (SAME-R 81a Teflon), 149 (SAME-R 83a Teflon), 155 (SAME-R 69 Teflon)). For any size distribution $D_{avg\,mass} = (M_3/M_0)^{1/3} \ge M_1/M_0$, so these rows are internally inconsistent; none has sigma_g. Handled: kept out of every size analysis and logged in data_log.md (F-T3-23). [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-27 | location: lines 426-428 | mapping: declared sources 'S1, S2, S3, team' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R), PSI-102 (SAME)
+### [CHUNK T3-27] Limits: what the T3 data cannot answer | source: S1, S2, S3, team | tags: limitations, scope, out-of-scope
+The smoke data in this track come from small samples of five spacecraft materials heated inside a glovebox on the International Space Station in 2007 (SAME) and 2010 (SAME-R), plus two short particle-counter checks in 2005-2006 (DAFT). All tests ran in normal station air, so the data say nothing directly about higher oxygen, lower pressure or the Moon's partial gravity. The smoke came from overheated, not burning, material. Particle sizes are NASA's estimates from instrument averages, assuming a typical size spread, and many comparisons rest on one to four tests. The two flights used partly different instruments and cannot be pooled. Detector timings reflect how the hardware carried smoke to each sensor, not how fast a detector would react to a real fire. Some instruments hit the end of their range (the station smoke detector's scatter signal, the counter's 500,000 particles/cm3 limit), and the DAFT instrument clocks drift, so second-by-second comparisons between instruments are uncertain.
+- Not in the analysed data: oxygen above cabin air, low cabin pressure, Moon or Mars partial gravity, flaming fires, detector alarm thresholds, ground (1 g) comparison rows. [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-28 | location: lines 430-435 | mapping: track-level T3 chunk (source: all) covering SAME, SAME-R and DAFT | SHARED with: PSI-101 (SAME-R), PSI-102 (SAME)
+### [CHUNK T3-28] Gaps and what to fetch next | source: all | tags: gaps, todo
+1. SAME and SAME-R final reports and engineering documents: ISS detector output range, meaning of Rt/R0, M-pass description (python scripts/psi_fetch.py --datasets t3-docs).
+2. Workbook sheets 'SAME Ground Test Results', '3-tests Compar.' and 'Flight-ground plot': flight vs 1 g comparison, NASA's main hypothesis; not analysed yet.
+3. Workbook sheet 'detection June 14': cross-detector alarm equivalents (e.g. 'Number count to produce scattering alarm'); definitions needed before use.
+4. PSI-102 per-run workbooks (60 files): same tests as the combined workbook; not analysed.
+5. Publications listed on PSI (16 for SAME, 6 for SAME-R): not read.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-29 | location: lines 437-438 | mapping: track-level T3 chunk (source: team) covering SAME, SAME-R and DAFT | SHARED with: PSI-101 (SAME-R), PSI-102 (SAME)
+### [CHUNK T3-29] Plain-language paragraph (for the site and the demo) | source: team | tags: plain-language, summary
+Materials that overheat inside a spacecraft give off smoke even without flames, and smoke detectors are how the crew finds out. On Earth smoke rises; in microgravity it hangs near its source and moves only with the air. NASA's SAME (2007) and SAME-R (2010) experiments heated five spacecraft materials on the International Space Station and measured the smoke particles, and DAFT first checked that the particle counter works without gravity. The flight data show that this smoke keeps growing as it ages, grows larger when the air barely moves, and differs about fourfold in size between materials, while one channel of the station's own smoke detector appears to hit the end of its range in about half the tests. These are the facts a smoke-detection design for future spacecraft and Moon habitats has to start from.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-DAFT-1 | location: lines 1414-1415 | mapping: chunk ID T3-DAFT (DAFT test)
+### [CHUNK T3-DAFT-1] DAFT test 1 (DAFT-1,2 (2005)) | source: S9 | tags: daft, test, ptrak, dusttrak
+DAFT test 1, series DAFT-1,2 (2005): ptrak_readings 724; ptrak_zero_share 0.182; ptrak_max_pt_cc 524291.0; ptrak_max_excel_row 325; dusttrak_readings 771; dusttrak_zero_share 0.943; dusttrak_max_mg_m3 6.273; headers_ptrak_start 10:57:08; headers_dusttrak_start 11:48:52; dusttrak_minus_ptrak_clock_s 3104; ptrak_second_highest_pt_cc 2050.0. [CALC] Source S9 (Retrieved Data Summary).
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-DAFT-2 | location: lines 1417-1418 | mapping: chunk ID T3-DAFT (DAFT test)
+### [CHUNK T3-DAFT-2] DAFT test 2 (DAFT-1,2 (2005)) | source: S9 | tags: daft, test, ptrak, dusttrak
+DAFT test 2, series DAFT-1,2 (2005): ptrak_readings 724; ptrak_zero_share 0.131; ptrak_max_pt_cc 45400.0; ptrak_max_excel_row 537; dusttrak_readings 778; dusttrak_zero_share 0.847; dusttrak_max_mg_m3 0.79; headers_ptrak_start 14:36:50; headers_dusttrak_start 15:28:04; dusttrak_minus_ptrak_clock_s 3074; ptrak_second_highest_pt_cc 43300.0. [CALC] Source S9 (Retrieved Data Summary).
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-DAFT-3 | location: lines 1420-1421 | mapping: chunk ID T3-DAFT (DAFT test)
+### [CHUNK T3-DAFT-3] DAFT test 3 (DAFT-1,2 (2005)) | source: S9 | tags: daft, test, ptrak, dusttrak
+DAFT test 3, series DAFT-1,2 (2005): ptrak_readings 707; ptrak_zero_share 0.396; ptrak_max_pt_cc 10.0; ptrak_max_excel_row 31; dusttrak_readings 754; dusttrak_zero_share 0.958; dusttrak_max_mg_m3 1.024; headers_ptrak_start 14:52:56; headers_dusttrak_start 15:44:15; dusttrak_minus_ptrak_clock_s 3079; ptrak_second_highest_pt_cc 10.0. [CALC] Source S9 (Retrieved Data Summary).
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-DAFT-4 | location: lines 1423-1424 | mapping: chunk ID T3-DAFT (DAFT test)
+### [CHUNK T3-DAFT-4] DAFT test 4 (DAFT-1,2 (2005)) | source: S9 | tags: daft, test, ptrak, dusttrak
+DAFT test 4, series DAFT-1,2 (2005): ptrak_readings 455; ptrak_zero_share 0.695; ptrak_max_pt_cc 76.0; ptrak_max_excel_row 3; dusttrak_readings 545; dusttrak_zero_share 0.938; dusttrak_max_mg_m3 0.837; headers_ptrak_start 15:07:49; headers_dusttrak_start 15:58:25; dusttrak_minus_ptrak_clock_s 3036; ptrak_second_highest_pt_cc 41.0. [CALC] Source S9 (Retrieved Data Summary).
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-DAFT-5 | location: lines 1426-1427 | mapping: chunk ID T3-DAFT (DAFT test)
+### [CHUNK T3-DAFT-5] DAFT test 5 (DAFT-3 (2006)) | source: S9 | tags: daft, test, ptrak, dusttrak
+DAFT test 5, series DAFT-3 (2006): ptrak_readings 2330; ptrak_zero_share 0.361; ptrak_max_pt_cc 1730.0; ptrak_max_excel_row 1953; dusttrak_readings 2426; dusttrak_zero_share 0.986; dusttrak_max_mg_m3 0.031; headers_ptrak_start 09:58:18; headers_dusttrak_start 09:41:05; dusttrak_minus_ptrak_clock_s -1033; ptrak_second_highest_pt_cc 915.0. [CALC] Source S9 (Retrieved Data Summary).
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-DAFT-6 | location: lines 1429-1430 | mapping: chunk ID T3-DAFT (DAFT test)
+### [CHUNK T3-DAFT-6] DAFT test 6 (DAFT-3 (2006)) | source: S9 | tags: daft, test, ptrak, dusttrak
+DAFT test 6, series DAFT-3 (2006): ptrak_readings 1187; ptrak_zero_share 0.2; ptrak_max_pt_cc 232000.0; ptrak_max_excel_row 1068; dusttrak_readings 271; dusttrak_zero_share 0.199; dusttrak_max_mg_m3 200.042; headers_ptrak_start 10:04:56; headers_dusttrak_start 10:04:46; dusttrak_minus_ptrak_clock_s -10; ptrak_second_highest_pt_cc 120000.0. [CALC] Source S9 (Retrieved Data Summary).
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-DAFT-7 | location: lines 1432-1433 | mapping: chunk ID T3-DAFT (DAFT test)
+### [CHUNK T3-DAFT-7] DAFT test 7 (DAFT-3 (2006)) | source: S9 | tags: daft, test, ptrak, dusttrak
+DAFT test 7, series DAFT-3 (2006): ptrak_readings 2292; ptrak_zero_share 0.259; ptrak_max_pt_cc 137000.0; ptrak_max_excel_row 2214; dusttrak_readings 2365; dusttrak_zero_share 0.501; dusttrak_max_mg_m3 273.571; headers_ptrak_start 15:19:04; headers_dusttrak_start 15:02:19; dusttrak_minus_ptrak_clock_s -1005; ptrak_second_highest_pt_cc 121000.0. [CALC] Source S9 (Retrieved Data Summary).
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-QA | location: lines 1435-1454 | mapping: track-level T3 chunk (source: all) covering SAME, SAME-R and DAFT | SHARED with: PSI-101 (SAME-R), PSI-102 (SAME)
+### [CHUNK T3-QA] Q&A pairs (retrieval testing and few-shot) | source: all | tags: qa
+Q: Does smoke from overheated spacecraft materials change as it ages in microgravity? A: Yes. In 42 of 44 paired SAME and SAME-R flight tests the number-mean particle diameter grew after 4 to 33 minutes of aging, by a median factor of 1.46 (F-T3-1).
+Q: Which flown material gave the smallest smoke particles? A: Kapton, about 57 nm at its baseline (4 tests); Pyrell and Silicone gave the largest, about 207 to 244 nm. Each material was heated to its own baseline temperature (F-T3-3).
+Q: Does weaker ventilation change the smoke? A: For Kapton, Lampwick and Silicone, runs with 0 to 2 cm/s air flow gave larger particles than runs at 8 cm/s at the same heater setting; Pyrell and Teflon did not. Groups are small (1 to 4 tests) (F-T3-2).
+Q: Can the 2007 SAME and the 2010 SAME-R results be combined? A: Not without a correction: in all 5 matching comparisons SAME gave larger diameters, and SAME-R changed one instrument (F-T3-5).
+Q: Did the modified P-Trak particle counter work in microgravity? A: NASA's DAFT post-flight report says it was functioning normally; it cannot see particles above 2.5 um and saturates at 500,000 particles/cm3 (F-T3-14, F-T3-22).
+Q: Would a spacecraft smoke detector alarm in time for a fire in a Moon habitat at 30 % oxygen and 10.2 psi? A: Not in our data. SAME, SAME-R and DAFT ran in ISS cabin air: no oxygen or pressure changes, no partial gravity, and no alarm thresholds in these tables. The detector timings we have reflect how the hardware moved smoke (F-T3-16).
+Q: Does smoke from a flaming fire behave the same way? A: Not in our data. These tests made smoke by overheating material samples, not by flaming fires (PSI-102 page, Approach).
+Q: What are the PSI IDs and DOIs of the T3 experiments? A: SAME PSI-102 (10.60555/gd4k-8h62), SAME-R PSI-101 (10.60555/2np7-jv14), DAFT / DAFT-2 PSI-47 (10.60555/ztgj-d202). [SRC]
+Q: Why was SAME flown again as SAME-R? A: SAME's TEM grids came back contaminated with foreign particles; SAME-R added Pyrell, wider conditions (higher heating, no-flow heating) and the M-pass instrument. [SRC S2]
+Q: Which materials were tested? A: SAME: Teflon, Kapton, silicone rubber, lampwick (cotton) and DBP; SAME-R: Kapton, Teflon, lampwick, silicone and Pyrell (DBP replaced). [SRC]
+Q: How was particle size measured? A: By the moment method: instrument averages of number and mass combined under a lognormal size assumption; the workbook diameters satisfy the Hatch-Choate relations (T3-08). [SRC][CALC]
+Q: What does 'aged' mean in these tests? A: The same smoke kept in the chamber and measured again later (test 'NN' fresh, 'NNa' aged). [SRC][CALC]
+Q: Did the ISS smoke detector saturate? A: Its scatter channel bottoms out near -6.25 V and stays there in 21 of 44 SAME-R tests; likely the end of its range, not yet confirmed in documents (F-T3-6, F-T3-15). [CALC][INF]
+Q: How long did smoke take to reach the sensors? A: About two minutes after heater start (median 129-139 s), usually after heating had ended; this is a hardware transport time (F-T3-16). [CALC]
+Q: Which sensor responded first? A: The ISS scatter channel in 32 of 41 tests, DustTrak B in 9; low confidence because the sensors sit at different points of the flow path (F-T3-17). [CALC]
+Q: Is there oxygen or pressure data? A: No. All T3 tests ran in ISS cabin air; the tables have no oxygen or cabin-pressure columns. [CALC]
+Q: Can the DAFT instruments be compared second by second? A: Both logged in all 7 tests, but their clocks drift (report p.5), so second-by-second alignment is uncertain by tens of seconds (F-T3-11, F-T3-20). [SRC][CALC]
+Q: Was the data cleaned before the findings? A: Yes, without changing any NASA file: housekeeping rows with repeated timestamps and a repeated header line were skipped; rows without a size (20 DBP rows, 3 runs without a P-Trak count) and 6 size rows that break a law of size statistics were kept out of the size analyses (F-T3-23); NASA's zero-filled DAFT gaps were excluded; a P-Trak reading above the instrument maximum was kept and flagged (F-T3-22). Every step is listed with file and row in each record's data_log.md. [CALC]
+Q: What are the biggest data traps? A: Pooling SAME and SAME-R, using the SAME experimental table instead of the flight records, and treating the housekeeping DustTrakA column as mg/m3 (T3-26). [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-DASH | location: lines 1456-1459 | mapping: track-level T3 chunk (source: team) covering SAME, SAME-R and DAFT | SHARED with: PSI-101 (SAME-R), PSI-102 (SAME)
+### [CHUNK T3-DASH] Dashboard integration | source: team | tags: dashboard, integration
+- The dashboard (fif-dashboard) reads the T3 package with build_site_data.py: findings, evidence snippets, questions, track paragraph, limitations, charts, and the dataset 'same_tests' (rows of S7 with Excel row numbers).
+- Routes: #/record/PSI-102, #/record/PSI-101, #/record/PSI-47 (smoke illustration on SAME and SAME-R), #/results (size by material, aging, air flow within heater setting; SAME and SAME-R never pooled), #/research (all findings with sources).
+- Character: Mahmoud Nadeem (T3) answers from this pack and the findings; anything outside them gets 'not in our data'.

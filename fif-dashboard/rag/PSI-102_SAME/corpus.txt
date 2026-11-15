@@ -1,0 +1,616 @@
+RAG CORPUS - SAME
+Dataset ID: PSI-102
+Title: Smoke and Aerosol Measurement Experiment
+Names and aliases: SAME
+Listed in: flame-in-freefall-kit/data/psi_metadata/PSI-102.json, flame-in-freefall/site_data/investigations.json, fif-dashboard/data/site-data.js (records), docs/psi_member_assignments_verified.csv, RAG/rag-map.json
+Crew: Mahmoud Nadeem (dashboard T3), Mahmoud Nadeem (assignment sheet, T3), Mahmoud Nadeem (rag-map key 'nadeem')
+Chunks: 71 (48 only about this dataset, 23 shared with other datasets)
+Chunk text is copied verbatim. Each chunk is preceded by a '>>>' line: source file, chunk ID, location, mapping rule,
+other datasets that share it, identical copies elsewhere. Each source file's header (source codes S1, S2 ..., evidence
+tags such as [SRC] [CALC] [INF] [FLAG] [DOC] [QA]) is repeated before its chunks because the chunks cite it.
+====================================================================================================
+
+##### SOURCE FILE: RAG/Mahmoud.txt (71 chunks)
+
+--- source-file header (context for citations; not a chunk) ---
+# SAME, SAME-R and DAFT (track T3: smoke and aerosol detection) - Deep Analysis Pack
+# Built for: RAG / chatbot / agent / dashboard ingestion. Track owner: Mahmoud Nadeem (T3), team Flame in Freefall.
+# Sources:
+#   S1 PSI-102 SAME record page, https://psi.nasa.gov/physci/repo/data/investigations/PSI-102 (version 4)
+#   S2 PSI-101 SAME-R record page, https://psi.nasa.gov/physci/repo/data/investigations/PSI-101 (version 4)
+#   S3 PSI-47 DAFT / DAFT-2 record page, https://psi.nasa.gov/physci/repo/data/investigations/PSI-47 (version 5)
+#   S4 PSI-102 experimental table, PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv
+#   S5 PSI-101 experimental table, PSI-101/Experimental table/PSI-101_Experimental table_SAME-R.csv
+#   S6 PSI-47 experimental table, PSI-47/Experimental table/PSI-47_Experimental table_DAFT.csv
+#   S7 SAME/SAME-R results workbook, PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx (sheet 'Reduced Data with ISS Det' unless stated)
+#   S8 SAME-R housekeeping time series, PSI-101/Raw Data/PSI-101_Raw Data_HKPData_*.csv (44 files, 1 Hz)
+#   S9 DAFT analyzed data, PSI-47/Analyzed Data/ (Retrieved Data Summary, flight data 063 TIMING, ISS_Daft_Aug21_06 sheets)
+#   S10 NASA DAFT 30-day post-flight report, PSI-47/Reports/PSI-47_Reports_DAFT_30Day.PostFlightReport.pdf
+#   S11 NASA DAFT fact sheet, PSI-47/Presentations/PSI-47_Presentations_Daft_FactSheet.pdf
+#   S12 NASA, What Is Microgravity? (Grades 5-8), https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/
+#   S13 T3 analysis scripts (same_results_analysis.py, hkp_time_series.py, daft_time_series.py) and their outputs in analysis/T3/*/tables
+# Splitting rule: split on lines beginning '### [CHUNK'. Every chunk is self-contained (names its experiment and source).
+# Confidence tags: [SRC] stated in a source | [CALC] computed from NASA data by the T3 scripts | [INF] our inference | [FLAG] needs verification
+# Finding labels (team standard): OBSERVED IN DATA, REPORTED BY NASA OR A PUBLICATION, OUR INFERENCE; confidence high/medium/low.
+# Rows: Excel row number for xls/xlsx (header row counted), line number for csv (header = 1).
+# Equations are LaTeX ($...$).
+# Generated 2026-11-15 09:05 UTC by analysis/T3/extra/build_rag_pack.py from the T3 package; regenerate after any change.
+--- end of header ---
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-00 | location: lines 24-30 | mapping: track-level T3 chunk (source: -) covering SAME, SAME-R and DAFT | SHARED with: PSI-47 (DAFT / DAFT-2), PSI-101 (SAME-R)
+### [CHUNK T3-00] How to use this file | source: - | tags: meta, schema
+Chunk ids: T3-00..T3-29 topic chunks; T3-F01..T3-F23 the 23 findings (one per chunk); T3-MAT-* per-material summaries;
+T3-TEST-* one chunk per flight test (SAME 2007, SAME-R 2010); T3-DAFT-* the 7 DAFT tests; T3-QA question set; T3-DASH dashboard use.
+For answers prefer [SRC] and [CALC] lines and cite the finding id (F-T3-n) or source id (S1..S13). Say so when a line is [INF] or [FLAG].
+Never pool SAME (2007) and SAME-R (2010) numbers: they used partly different instruments (F-T3-5).
+Units: particle diameters in micrometres (um) unless nm is stated (1 um = 1000 nm); air flow cm/s; times s; mass concentration mg/m3; particle counts per cm3 (pt/cc); detector signals volts; temperatures C.
+Out of scope of this track's data: oxygen level, cabin pressure, partial gravity, flaming fires, alarm thresholds (see T3-27).
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-01 | location: lines 32-38 | mapping: declared sources 'S1, S2, S3, S13' (S-codes defined in the file header) | SHARED with: PSI-47 (DAFT / DAFT-2), PSI-101 (SAME-R)
+### [CHUNK T3-01] Track overview: what T3 covers | source: S1, S2, S3, S13 | tags: overview, track, smoke, detection
+Track T3 (owner Mahmoud Nadeem) covers three NASA PSI records about smoke from overheated spacecraft materials and the instruments that measure it: [SRC]
+- PSI-102 SAME, Smoke and Aerosol Measurement Experiment (ISS, flight tests in 2007). [SRC][CALC]
+- PSI-101 SAME-R, Smoke Aerosol Measurement Experiment-Reflight (ISS, flight tests 16 July - 9 September 2010). [SRC]
+- PSI-47 DAFT / DAFT-2, Dust and Aerosol Measurement Feasibility Test(s): checked on the ISS that a modified P-Trak particle counter works in microgravity before SAME used it (tests in 2005, plus a DAFT-3 series in 2006 in its files). [SRC][CALC]
+Why it matters: smoke detectors are how a crew learns that material is overheating; in microgravity smoke does not rise, so it may grow differently and reach detectors differently. [SRC S1 hypothesis]
+What the T3 package contains: 3 record cards checked against the PSI pages, 3 standard run tables (8, 109, 2 rows), an analysis of the SAME/SAME-R results workbook (154 flight tests), of 44 SAME-R housekeeping time series and of 7 DAFT instrument logs, 23 findings, 6 charts and a model card. [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-02 | location: lines 40-51 | mapping: PSI ID(s) in chunk header
+### [CHUNK T3-02] PSI-102 SAME record metadata | source: S1 | tags: record, psi, metadata, citation
+- Name: Smoke and Aerosol Measurement Experiment (SAME). PSI ID: PSI-102. DOI: 10.60555/gd4k-8h62. Page: https://psi.nasa.gov/physci/repo/data/investigations/PSI-102 [SRC]
+- Version 4; size on page 627.14 MB; licence CC0-1.0; sub-research area Spacecraft Fire Safety; related: PSI-101. [SRC]
+- Type: Microgravity Investigation; platform: International Space Station (ISS); managing centre: Glenn Research Center (GRC); investigation dates on PSI (month-day-year): 03-02-2001 to 02-28-2008. [SRC]
+- Hardware (as written on PSI): Comparitive Soot Diagnostic Hardware. [SRC]
+- People on PSI: David Urban (NASA GRC, Principal Investigator (PI)); George Mulholland (University of Maryland, Co-Investigator (Co-I)); Claire Fortenberry (NASA GRC, Project Scientist); Thomas Cleary (National Institute of Standards and Technology (NIST), Co-Investigator (Co-I)); Jiann Yang (National Institute for Standards and Technology (NIST), Co-Investigator (Co-I)). [SRC]
+- Keywords on PSI: Smoke, Surface Combustion, Fire Safety, Bio-Astronautics, Smoldering. [SRC]
+- File folders on PSI: Analyzed Data: 59 files, 217.5 MB; Engineering Documents: 28 files, 345.2 MB; Experimental table: 1 files, 0.0 MB; Presentations: 6 files, 58.6 MB; Reference Data: 3 files, 1.3 MB; Reports: 1 files, 3.5 MB; Science Documents: 2 files, 0.9 MB; metadata: 1 files, 0.0 MB. [SRC]
+- Publications listed on PSI: 16. [SRC]
+- Citation (PSI 'Cite this Investigation'): Urban D, Mulholland G, Cleary T, Yang J, Fortenberry C. "Smoke and Aerosol Measurement Experiment(SAME)", NASA PSI Data Repository, Version 4, http://doi.org/10.60555/gd4k-8h62. [SRC]
+- Card checked field by field against the PSI page on 2026-11-15 01:50 (Alexandria). [CALC]
+- Example publication: 'Measurement of Smoke Particle Size under Low-Gravity Conditions' (doi 10.4271/2008-01-2089). [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-03 | location: lines 53-58 | mapping: PSI ID(s) in chunk header
+### [CHUNK T3-03] PSI-102 SAME: objectives, hypothesis, approach, impacts (NASA text) | source: S1 | tags: objectives, hypothesis, approach, impacts
+Objective [SRC]: One of the major goals of this investigation was to quantify the sizes that the liquid smoke particulate achieves in low gravity and to relate the droplet size distribution to the smoke generation and smoke transport conditions in the experiment. A numerical code was to be developed to predict the smoke droplet growth as a function of the fuel pyrolysis rate, the thermodynamic properties of the pyrolysis vapor, and the flow environment.
+Hypothesis [SRC]: In a microgravity environment, with the absence of the strong buoyancy-induced flows, smoke particle growth from a pyrolyzing/smoldering source, as a result of nucleation, condensation, and coagulation, will lead to larger particles compared to those produced in 1g. The formation of the larger particles is favored by the expected higher vapor concentration and smoke residence times near the source due to the reduced velocities and mixing at microgravity conditions. In particular, it is hypothesized that liquid aerosol smokes produced in microgravity will exhibit substantially larger droplet sizes than under the same conditions in normal gravity (with a corresponding decrease in the particle number density for the same mass of smoke). The change in the size distribution and number density will, in turn, affect the response of the smoke detectors and possibly result in some detectors not producing an alarm when exposed to this smoke.
+Approach [SRC]: The crew installed the near field hardware in the Glovebox, attached the Far Field Box to the Glovebox, and positioned the video cameras. The operator then ran the self diagnostic procedures on the two smoke detectors and activated the video cameras, turned on the igniter for a predefined period of time (15 to 60 seconds), and initiated the thermophoretic soot samplers to sample the smoke. The actual duration of each combustion event was typically 2 minutes. After flight, the particulate collected on the thermophoretic probes were analyzed using a Transmission Electron microscope (TEM) to determine primary and aggregate particle dimensions. The remains of the samples were weighed to determine their mass loss. The digital data was transcribed from the video record and analyzed to determine the response of the detectors. Once the flight mass loss rates were determined, 1-g operation conditions to produce the same loss were determined. The measurements were made using smoke generated by overheated spacecraft materials where variables such as the sample temperature, flow field, and particle aging time were more rigorously controlled.
+Research impacts / Earth benefits [SRC]: The SAME experiment will provide technology for an advanced fire detector for future spacecraft that will be used for long duration missions. SAME will provide quantitative data on the sensitivity of these detectors to reduced gravity smokes that will allow evaluation of the adequacy of these existing technologies using relevant data. The results from SAME are needed to provide the reduced gravity baseline data against which future detection technology developments can be evaluated. The smoke detectors developed from the results of SAME can also be useful in other extreme environments on Earth, such as submarines or underwater laboratories.
+Team summary in plain words: Measure the size of smoke particles produced by heating materials used in spacecraft, in microgravity, to understand the properties of this smoke and improve the design requirements of smoke and fire detectors. Samples of different materials were heated below their ignition temperature while temperature and air flow were controlled. The particles were then measured with aerosol analyzers, and samples were collected for examination with an electron microscope.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-08 | location: lines 101-115 | mapping: declared sources 'S1, S2, S7, S12, S13' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R)
+### [CHUNK T3-08] Core concepts, glossary and equations (LaTeX) | source: S1, S2, S7, S12, S13 | tags: glossary, equations, theory, microgravity, aerosol
+- Microgravity: the condition in which people and objects appear weightless; gravity on the ISS is still about 90% of Earth's; objects float because they are in free fall. [SRC S12]
+- Without buoyancy hot gas does not rise, so smoke stays near its source and moves only with the air flow. [SRC S1 hypothesis]
+- Smoke is an aerosol: liquid or solid particles suspended in air, with a spread of sizes. Growth mechanisms named by NASA: nucleation, condensation, coagulation. [SRC S1]
+- Moments of a number size distribution n(D) (standard aerosol definition): $$M_k = \int_0^\infty D^k\, n(D)\, dD$$ M0 is the number concentration, M1 the first moment. [INF]
+- Number-mean (arithmetic mean) diameter used in T3 (workbook column 'M1/M0 (micro-m)--AMD'): $$\bar D_{10} = M_1 / M_0$$ [SRC S7 column name]
+- Lognormal size distribution with geometric mean (count median) diameter $D_g$ and geometric standard deviation $\sigma_g$; Hatch-Choate relations (standard): $$\bar D_{10} = D_g\, e^{\frac{1}{2}\ln^2\sigma_g}, \qquad D_{\text{avg mass}} = D_g\, e^{\frac{3}{2}\ln^2\sigma_g}$$ [INF]
+- Check on the NASA workbook: for 124 flight tests with $\sigma_g$ and $D_g$, the two relations reproduce the columns 'M1/M0' (124 of 124) and 'Diameter of Average mass' (124 of 124) within 2%. So the workbook diameters are lognormal moment-method estimates. [CALC]
+- Moment method: NASA inferred sizes from instrument averages (number and mass) assuming a lognormal distribution; SAME-R ground tests were run to validate that assumption. [SRC S2]
+- Aging: the same smoke kept in the chamber and measured again later (test 'NN' fresh, 'NNa' aged). [SRC S5 Description column][CALC]
+- Rt/R0: heater setting written as a resistance ratio; higher values go with higher sample temperatures in the data. Exact definition to be confirmed in the SAME engineering documents. [CALC][FLAG]
+- Pyrolysis / overheating: SAME and SAME-R made smoke by heating samples, not by flaming fires. [SRC S1 approach]
+- TEM: transmission electron microscope; thermophoretic samplers (thermal precipitators) collected particles for it; SAME's TEM grids came back contaminated. [SRC S1, S2]
+- Instruments: P-Trak (condensation nuclei counter, pt/cc), DustTrak (mass concentration, mg/m3), ionization detectors Ion A and Ion B, the ISS smoke detector (scatter and obscuration channels), a detector labelled STS, and M-pass (GRC instrument that replaced one Commercial Diagnostic Enclosure in SAME-R). [SRC S2, S7, S8]
+- Glovebox: SAME hardware was installed in the ISS Glovebox with a Far Field Box attached. [SRC S1 approach]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-09 | location: lines 117-123 | mapping: declared sources 'S10, S11, S7, S8, S9' (S-codes defined in the file header) | SHARED with: PSI-47 (DAFT / DAFT-2), PSI-101 (SAME-R)
+### [CHUNK T3-09] Instruments, ranges and limits | source: S10, S11, S7, S8, S9 | tags: instruments, limits, ptrak, dusttrak, detector, data-quality
+- P-Trak sees particles from 0.02 um to above 1 um (fact sheet p.1-2); particles above 2.5 um are above its measurement limit (report p.3); maximum count 500,000 pt/cc (report p.8). [SRC S10, S11]
+- DustTrak size range 0.1 to 10 um (fact sheet p.2; the unit extracts as '(mm)' but page 1 gives micrometres). [SRC S11][FLAG]
+- DAFT instrument clocks drift over time (report p.5), so logs cannot be aligned second by second. [SRC S10] (F-T3-20)
+- ISS smoke detector scatter channel: the raw housekeeping signal sits near -0.185 V before heating and goes negative with smoke; in 21 of 44 SAME-R tests it bottoms out between -6.275 and -6.243 V and stays there for 10-432 s (median 45 s). [CALC] Likely the end of its range [INF], to confirm in the engineering documents [FLAG]. (F-T3-6, F-T3-15)
+- The same detector's obscuration channel barely moves (median largest change -0.091 V) while scatter moves a median -5.945 V. [CALC] (F-T3-18)
+- Housekeeping column DustTrakAMeasurement(MgPerM3) is not a mass concentration: of 63,083 samples, every nonzero value lies between 10,009 and 22,997. Do not use it as mg/m3. [CALC] (F-T3-19)
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-10 | location: lines 125-129 | mapping: declared sources 'S4, S5, S6' (S-codes defined in the file header) | SHARED with: PSI-47 (DAFT / DAFT-2), PSI-101 (SAME-R)
+### [CHUNK T3-10] Experimental tables (what PSI lists per test) | source: S4, S5, S6 | tags: experimental-table, test-matrix, data-dictionary
+- SAME table (S4): 8 rows; columns Sample #, Sample Material, Air Flow (cm/s), Weight loss rate (mg/min), Aging Duration (minutes). Rows 2-5: Teflon at 5 or 10 cm/s with 1 or 20 min aging; rows 6-9: Kapton, Silicone Rubber, Lampwick and Dibutyl Phthalate 'same conditions as 1-4' with the numbers left empty. [SRC]
+- SAME-R table (S5): 109 rows; columns Sample Type, SAME Test #, Description, Date, Inlet velocity (cm/s), Rt/R0, Duration (sec), Primary aging time (sec), Primary mixing time (sec), Net aging time (sec). Kapton 29 rows, Silicone 22, Lampwick 20, Pyrell 20, Teflon 18; inlet velocities 0, 1, 2, 8 and 8.1 cm/s; test numbers ending in 'a' are aged re-measurements. [SRC][CALC]
+- DAFT table (S6): 2 rows. D1 (GMT 54, 2005): modified P-Trak with alcohol wick and batteries, sampled air near EXPRESS rack 4. D2 (GMT 63, 2005): DustTrak and batteries, sampled separated Velcro and the air near Port rack 6 and in Node 1. Sample: Arizona Road Dust (ARD Fine) with ISS GN2. [SRC]
+- Standard run tables (team schema, 13 columns, exact source rows): analysis/T3/*/tables/*_runs_clean.csv. Oxygen and pressure columns are empty because the tables contain neither. [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-11 | location: lines 131-137 | mapping: declared sources 'S7' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R)
+### [CHUNK T3-11] SAME/SAME-R results workbook: structure and fields | source: S7 | tags: workbook, data-dictionary, provenance
+- One Excel workbook in PSI-101 Analyzed Data holds the combined SAME and SAME-R results: 40 sheets, several near-copies (per-material plot sheets, reduced-data variants, detection sheets, data tables for ICES 2012, AIAA 2012 and IAASS papers, SAME-R ground verification and drum tests of August 2012). [CALC]
+- T3 uses only sheet 'Reduced Data with ISS Det' (header on Excel row 2; one row per flight test; column 'Flight 1=same 2=sameR, g=ground'). [CALC]
+- Fields used: Sample Type, SAME #, Description, Inlet Velocity (cm/sec), Rt/R0, Net Aging Duration, ISS Detector Scatter (volts), STS Detector (volts), M0, M1, DustTrak B (mg/m3), M1/M0 (micro-m)--AMD, Diameter of Average mass (micro-m), Hatch Choate Sigma g, Hatch Choate Dg, Sample Temperature C, Mass Loss mg. [SRC]
+- Rows: 154 flight tests (45 SAME, 109 SAME-R); 131 have a particle size. No size: all 20 DBP (dibutyl phthalate) rows (3-22, SAME only, zeros in every size column, F-T3-9) and rows 32, 41, 45 (SAME-R Kapton runs without a P-Trak count). [CALC]
+- Consistency check: 6 rows with a size break $D_{avg\,mass} \ge \bar D_{10}$ (rows 47, 48, 145, 147, 149, 155) and are kept out of all size analyses, so the size results rest on 125 rows (F-T3-23). Every excluded row is listed in PSI-101_same-r/data_log.md. [CALC]
+- Derived table with every row and its Excel row: analysis/T3/PSI-101_same-r/tables/derived_same_results_flight_tests.csv. [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-12 | location: lines 139-143 | mapping: declared sources 'S7, S8, S13' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R)
+### [CHUNK T3-12] Flight test matrix (counts and ranges) | source: S7, S8, S13 | tags: test-matrix, counts, calc
+- Tests per flight and material: SAME (2007): DBP 20, Kapton 6, Lampwick 6, Silicone 7, Teflon 6; SAME-R (2010): Kapton 30, Lampwick 20, Pyrell 20, Silicone 22, Teflon 17. [CALC]
+- SAME flight rows use inlet velocities 2, 4, 7.5 and 8 cm/s and net aging 11-1964 s, which does not match the SAME experimental table (5/10 cm/s, 1/20 min). [CALC] (F-T3-8)
+- Aged re-measurement pairs with a size: 44 (Kapton 12, Lampwick 9, Pyrell 8, Silicone 10, Teflon 5). [CALC]
+- Housekeeping: 44 files covering 45 SAME-R test numbers; 44 contain a heating period of 51-53 s. [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-F08 | location: lines 194-199 | mapping: PSI ID(s) in chunk header | SHARED with: PSI-101 (SAME-R)
+### [CHUNK T3-F08] F-T3-8 (PSI-102) | source: PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv; PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx, sheet 'Reduced Data with  | tags: finding, observed-in-data
+Finding F-T3-8 about PSI-102: The SAME experimental table lists Teflon at air flows of 5 and 10 cm/s with 1 or 20 minutes of aging (rows 2-5) and says the other four materials used the same conditions (rows 6-9), but the 45 SAME flight rows of the SAME/SAME-R results workbook record inlet velocities of 2, 4, 7.5 and 8 cm/s and net aging of 11-1964 s.
+Plain words: The SAME condition table (5/10 cm/s) does not match the flight records (2-8 cm/s): use the flight records.
+Label: OBSERVED IN DATA. Confidence: high.
+Source file: PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv; PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx, sheet 'Reduced Data with ISS Det'. Rows or page: table rows 2-9; workbook rows 3-139 where the flight column is 1.
+Caveat: The table may describe a planned matrix; use the workbook values for analysis and confirm with the SAME final report.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-F09 | location: lines 201-206 | mapping: PSI ID(s) in chunk header | SHARED with: PSI-101 (SAME-R)
+### [CHUNK T3-F09] F-T3-9 (PSI-102) | source: PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx, sheet 'Reduced Data with ISS Det' | tags: finding, observed-in-data
+Finding F-T3-9 about PSI-102: All 20 SAME tests with dibutyl phthalate (DBP) have no particle-size result in the results workbook (all moment columns are 0); SAME-R did not fly DBP.
+Plain words: see the statement.
+Label: OBSERVED IN DATA. Confidence: high.
+Source file: PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx, sheet 'Reduced Data with ISS Det'. Rows or page: rows 3-22.
+Caveat: NASA reports SAME-R introduced Pyrell to replace the DBP samples (PSI-101 page, Approach); the reason for the missing DBP sizes is not stated in this sheet.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-F10 | location: lines 208-213 | mapping: PSI ID(s) in chunk header
+### [CHUNK T3-F10] F-T3-10 (PSI-102) | source: https://psi.nasa.gov/physci/repo/data/investigations/PSI-102 | tags: finding, reported-by-nasa-or-a-publication
+Finding F-T3-10 about PSI-102: NASA hypothesised that smoke grown in microgravity forms larger particles than in 1 g and that this change could keep some smoke detectors from alarming.
+Plain words: see the statement.
+Label: REPORTED BY NASA OR A PUBLICATION (PSI-102 page, Hypothesis). Confidence: high.
+Source file: https://psi.nasa.gov/physci/repo/data/investigations/PSI-102. Rows or page: page section Hypothesis.
+Caveat: This is NASA's hypothesis, not a result; findings F-T3-1 to F-T3-6 are what the flight data show.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-MAT-KAPTON | location: lines 306-317 | mapping: declared sources 'S7, S13' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R)
+### [CHUNK T3-MAT-KAPTON] Material summary: Kapton | source: S7, S13 | tags: material, kapton, particle-size, aging, flow
+Material Kapton in SAME (2007) and SAME-R (2010) flight tests (source S7; Excel rows given; rows kept out by F-T3-23 are not counted). Never pool the two flights. [CALC]
+- SAME: 6 tests with a size (4 fresh, 2 aged re-measurements); fresh number-mean diameter median 133 nm (range 94-218 nm); heater settings Rt/R0 1.38, 1.48; sample temperature 417-581 C. [CALC]
+  - SAME fresh smoke at Rt/R0 1.38: 8 cm/s median 94 nm (n=1, rows 23); 0-2 cm/s median 152 nm (n=1, rows 25). [CALC]
+  - SAME fresh smoke at Rt/R0 1.48: 8 cm/s median 218 nm (n=1, rows 26). [CALC]
+- SAME-R: 25 tests with a size (12 fresh, 12 aged re-measurements); fresh number-mean diameter median 90 nm (range 49-304 nm); heater settings Rt/R0 1.38, 1.43, 1.45, 1.48; sample temperature 417-583 C. [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.38: 8 cm/s median 57 nm (n=4, rows 30, 33, 35, 39). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.43: 8 cm/s median 64 nm (n=1, rows 49). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.45: 8 cm/s median 92 nm (n=1, rows 51). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.48: 8 cm/s median 118 nm (n=2, rows 37, 43); 0-2 cm/s median 207 nm (n=4, rows 31, 53, 55, 57). [CALC]
+- Aging, both flights: 12 pairs, median growth factor 1.52 (F-T3-1). [CALC]
+- SAME-R baseline (fresh, 8 cm/s, lowest heater setting Rt/R0 1.38, median sample temperature 422 C): median 57 nm, range 49-59 nm, n=4, rows [30, 33, 35, 39] (F-T3-3). [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-MAT-TEFLON | location: lines 319-330 | mapping: declared sources 'S7, S13' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R)
+### [CHUNK T3-MAT-TEFLON] Material summary: Teflon | source: S7, S13 | tags: material, teflon, particle-size, aging, flow
+Material Teflon in SAME (2007) and SAME-R (2010) flight tests (source S7; Excel rows given; rows kept out by F-T3-23 are not counted). Never pool the two flights. [CALC]
+- SAME: 6 tests with a size (4 fresh, 2 aged re-measurements); fresh number-mean diameter median 165 nm (range 134-187 nm); heater settings Rt/R0 1.44, 1.445; sample temperature 512-518 C. [CALC]
+  - SAME fresh smoke at Rt/R0 1.44: 8 cm/s median 152 nm (n=1, rows 136); 0-2 cm/s median 178 nm (n=1, rows 137). [CALC]
+  - SAME fresh smoke at Rt/R0 1.445: 8 cm/s median 187 nm (n=1, rows 135). [CALC]
+- SAME-R: 13 tests with a size (10 fresh, 3 aged re-measurements); fresh number-mean diameter median 155 nm (range 53-275 nm); heater settings Rt/R0 1.445, 1.448, 1.45, 1.452; sample temperature 513-538 C. [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.445: 8 cm/s median 93 nm (n=4, rows 141, 142, 144, 156). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.448: 8 cm/s median 140 nm (n=1, rows 148). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.45: 8 cm/s median 208 nm (n=1, rows 146); 0-2 cm/s median 197 nm (n=3, rows 150, 152, 154). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.452: 8 cm/s median 148 nm (n=1, rows 140). [CALC]
+- Aging, both flights: 5 pairs, median growth factor 1.17 (F-T3-1). [CALC]
+- SAME-R baseline (fresh, 8 cm/s, lowest heater setting Rt/R0 1.445, median sample temperature 515 C): median 93 nm, range 53-163 nm, n=4, rows [141, 142, 144, 156] (F-T3-3). [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-MAT-LAMPWICK | location: lines 332-343 | mapping: declared sources 'S7, S13' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R)
+### [CHUNK T3-MAT-LAMPWICK] Material summary: Lampwick | source: S7, S13 | tags: material, lampwick, particle-size, aging, flow
+Material Lampwick in SAME (2007) and SAME-R (2010) flight tests (source S7; Excel rows given; rows kept out by F-T3-23 are not counted). Never pool the two flights. [CALC]
+- SAME: 6 tests with a size (4 fresh, 2 aged re-measurements); fresh number-mean diameter median 184 nm (range 149-268 nm); heater settings Rt/R0 1.245, 1.32; sample temperature 258-344 C. [CALC]
+  - SAME fresh smoke at Rt/R0 1.245: 8 cm/s median 204 nm (n=1, rows 60); 0-2 cm/s median 164 nm (n=1, rows 61). [CALC]
+  - SAME fresh smoke at Rt/R0 1.32: 8 cm/s median 268 nm (n=1, rows 62). [CALC]
+- SAME-R: 20 tests with a size (10 fresh, 7 aged re-measurements); fresh number-mean diameter median 144 nm (range 110-442 nm); heater settings Rt/R0 1.245, 1.251, 1.265, 1.28; sample temperature 255-299 C. [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.245: 8 cm/s median 116 nm (n=3, rows 68, 69, 72); 0-2 cm/s median 185 nm (n=1, rows 79). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.251: 8 cm/s median 149 nm (n=1, rows 67). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.265: 8 cm/s median 139 nm (n=1, rows 76). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.28: 8 cm/s median 124 nm (n=1, rows 74); 0-2 cm/s median 295 nm (n=3, rows 78, 81, 83). [CALC]
+- Aging, both flights: 9 pairs, median growth factor 1.29 (F-T3-1). [CALC]
+- SAME-R baseline (fresh, 8 cm/s, lowest heater setting Rt/R0 1.245, median sample temperature 263 C): median 116 nm, range 110-130 nm, n=3, rows [68, 69, 72] (F-T3-3). [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-MAT-PYRELL | location: lines 345-353 | mapping: declared sources 'S7, S13' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R)
+### [CHUNK T3-MAT-PYRELL] Material summary: Pyrell | source: S7, S13 | tags: material, pyrell, particle-size, aging, flow
+Material Pyrell in SAME (2007) and SAME-R (2010) flight tests (source S7; Excel rows given; rows kept out by F-T3-23 are not counted). Never pool the two flights. [CALC]
+- SAME: no tests with a particle size.
+- SAME-R: 20 tests with a size (10 fresh, 8 aged re-measurements); fresh number-mean diameter median 237 nm (range 140-391 nm); heater settings Rt/R0 1.22, 1.225, 1.23; sample temperature 225-245 C. [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.22: 8 cm/s median 207 nm (n=3, rows 86, 90, 97); 0-2 cm/s median 140 nm (n=1, rows 99). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.225: 8 cm/s median 233 nm (n=1, rows 94). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.23: 8 cm/s median 304 nm (n=2, rows 88, 92); 0-2 cm/s median 259 nm (n=3, rows 98, 101, 103). [CALC]
+- Aging, both flights: 8 pairs, median growth factor 1.63 (F-T3-1). [CALC]
+- SAME-R baseline (fresh, 8 cm/s, lowest heater setting Rt/R0 1.22, median sample temperature 232 C): median 207 nm, range 198-220 nm, n=3, rows [86, 90, 97] (F-T3-3). [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-MAT-SILICONE | location: lines 355-368 | mapping: declared sources 'S7, S13' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R)
+### [CHUNK T3-MAT-SILICONE] Material summary: Silicone | source: S7, S13 | tags: material, silicone, particle-size, aging, flow
+Material Silicone in SAME (2007) and SAME-R (2010) flight tests (source S7; Excel rows given; rows kept out by F-T3-23 are not counted). Never pool the two flights. [CALC]
+- SAME: 7 tests with a size (4 fresh, 2 aged re-measurements); fresh number-mean diameter median 207 nm (range 186-227 nm); heater settings Rt/R0 1.32, 1.327, 1.38; sample temperature 341-414 C. [CALC]
+  - SAME fresh smoke at Rt/R0 1.32: 8 cm/s median 186 nm (n=1, rows 108). [CALC]
+  - SAME fresh smoke at Rt/R0 1.327: 8 cm/s median 227 nm (n=1, rows 106). [CALC]
+  - SAME fresh smoke at Rt/R0 1.38: 8 cm/s median 208 nm (n=1, rows 109). [CALC]
+- SAME-R: 22 tests with a size (13 fresh, 8 aged re-measurements); fresh number-mean diameter median 244 nm (range 182-940 nm); heater settings Rt/R0 1.304, 1.327, 1.345, 1.35, 1.36; sample temperature 325-392 C. [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.304: 8 cm/s median 244 nm (n=1, rows 112). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.327: 8 cm/s median 189 nm (n=4, rows 114, 118, 131, 132). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.345: 8 cm/s median 245 nm (n=1, rows 122). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.35: 8 cm/s median 245 nm (n=2, rows 113, 116); 0-2 cm/s median 406 nm (n=4, rows 125, 127, 129, 133). [CALC]
+  - SAME-R fresh smoke at Rt/R0 1.36: 8 cm/s median 242 nm (n=1, rows 120). [CALC]
+- Aging, both flights: 10 pairs, median growth factor 1.65 (F-T3-1). [CALC]
+- SAME-R baseline (fresh, 8 cm/s, lowest heater setting Rt/R0 1.304, median sample temperature 325 C): median 244 nm, range 244-244 nm, n=1, rows [112] (F-T3-3). [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-MAT-DBP | location: lines 370-373 | mapping: declared sources 'S2, S4, S7' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R)
+### [CHUNK T3-MAT-DBP] Material summary: DBP (dibutyl phthalate) | source: S2, S4, S7 | tags: material, dbp
+- DBP flew only in SAME (2007): 20 tests, workbook rows 3-22, all with zero particle-size results. [CALC] (F-T3-9)
+- SAME-R replaced DBP with Pyrell, an intumescent fire-retardant foam. [SRC S2]
+- DBP rows still carry ISS detector scatter readings (median 6.25 V) and sample temperatures of 177-204 C. [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-22 | location: lines 399-403 | mapping: declared sources 'S7, S13' (S-codes defined in the file header) | SHARED with: PSI-101 (SAME-R)
+### [CHUNK T3-22] Model card: estimating smoke particle size (gate passed, modest) | source: S7, S13 | tags: model, ridge, evaluation, our-inference
+- Question: how well can the number-mean diameter of a flight test be estimated from material, flight, air flow, heater setting and aging time? 121 rows in 78 groups. [CALC]
+- Split: 5 x GroupKFold(5), groups = test + its aged re-measurement. Baseline: median log diameter of the material in the training folds. [CALC]
+- Baseline MAE (log) 0.372 +- 0.089 (typical error factor 1.45); ridge regression MAE (log) 0.274 +- 0.027 (factor 1.32). [CALC]
+- Limits: only the five flown materials; 2007/2010 hardware; moment-method diameters; Rt/R0 is set per material, so its effect mixes material and temperature. A model result is OUR INFERENCE, never a NASA finding. [INF]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-25 | location: lines 405-411 | mapping: track-level T3 chunk (source: all) covering SAME, SAME-R and DAFT | SHARED with: PSI-47 (DAFT / DAFT-2), PSI-101 (SAME-R)
+### [CHUNK T3-25] Cross-source synthesis (what the T3 data say together) | source: all | tags: insights, synthesis
+1. Smoke from overheated materials keeps changing after it forms: the same smoke grew about 1.5x in mean diameter after 4-33 minutes (F-T3-1). A detector far from a source in still air would see older, larger smoke. [CALC][INF]
+2. Weak air flow went with larger particles for three of five materials at the same heater setting (F-T3-2), consistent with NASA's expectation of longer residence time near the source in microgravity (S1). [CALC][INF]
+3. Material matters about fourfold (57 nm Kapton to 207-244 nm Pyrell and Silicone at baseline, F-T3-3), but each material was heated to a different temperature, so material and temperature are mixed. [CALC]
+4. Instruments set the limits of what can be concluded: the ISS detector's scatter channel pins at its range end in about half the tests (F-T3-6, F-T3-15); the P-Trak cannot see above 2.5 um; DAFT clocks drift (F-T3-20). [SRC][CALC]
+5. Count and mass readings can disagree about the same aerosol (F-T3-13, F-T3-21), which matters because detectors respond to different particle properties. [CALC][INF]
+6. Provenance needs care: table vs flight-record mismatch (F-T3-8), duplicated test number (F-T3-7), DBP without sizes (F-T3-9), a mislabelled housekeeping column (F-T3-19), six size rows that break a law of size statistics (F-T3-23, kept out; no conclusion changed). [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-26 | location: lines 413-424 | mapping: declared sources 'S1-S11' (S-codes defined in the file header) | SHARED with: PSI-47 (DAFT / DAFT-2), PSI-101 (SAME-R)
+### [CHUNK T3-26] Data-quality flags | source: S1-S11 | tags: data-quality, flags, verify
+- F1 [FLAG] The SAME experimental table (5/10 cm/s, 1/20 min) does not match the SAME flight records (2-8 cm/s, 11-1964 s); use the workbook (F-T3-8).
+- F2 [FLAG] SAME-R test 57 appears twice (row 57 Lampwick, row 75 Teflon); the Teflon row's Rt/R0 1.253 is outside Teflon's 1.445-1.452 (F-T3-7).
+- F3 [FLAG] PSI page experimental-table counters show one more row than the CSV files (SAME 9 vs 8, SAME-R 110 vs 109, DAFT 3 vs 2).
+- F4 [FLAG] The PSI-47 page approach says 'Arizona Red Dust'; the experimental table says 'Arizona Road Dust (ARD Fine)'.
+- F5 [FLAG] Housekeeping files: repeated timestamps in some files (first kept) and a repeated header line in gmt251_4 (skipped); both logged in data_log.md.
+- F6 [FLAG] Housekeeping column DustTrakAMeasurement(MgPerM3) is not mg/m3 (F-T3-19); NASA says M-pass replaced one DustTrak enclosure in SAME-R (S2).
+- F7 [FLAG] The ISS detector output range and the meaning of Rt/R0 are not yet confirmed in engineering documents.
+- F8 [FLAG] For pinned tests the workbook's ISS scatter value equals minus the housekeeping minimum (within 0.021 V): the two files use opposite signs (F-T3-15).
+- F9 [FLAG] The DAFT per-test file and the summary differ in one P-Trak reading (second 152: 6 vs 518) and one extra DustTrak reading (779 vs 778).
+- F10 [FLAG] PSI size labels use 1 MB = 1,048,576 bytes (627.14 MB for PSI-102 = 657.6 million bytes).
+- F11 In 6 of 130 workbook rows that have both sizes, the diameter of average mass is smaller than the number-mean diameter (rows 47 (SAME-R 90 Kapton), 48 (SAME-R 90a Kapton), 145 (SAME-R 79a Teflon), 147 (SAME-R 81a Teflon), 149 (SAME-R 83a Teflon), 155 (SAME-R 69 Teflon)). For any size distribution $D_{avg\,mass} = (M_3/M_0)^{1/3} \ge M_1/M_0$, so these rows are internally inconsistent; none has sigma_g. Handled: kept out of every size analysis and logged in data_log.md (F-T3-23). [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-27 | location: lines 426-428 | mapping: declared sources 'S1, S2, S3, team' (S-codes defined in the file header) | SHARED with: PSI-47 (DAFT / DAFT-2), PSI-101 (SAME-R)
+### [CHUNK T3-27] Limits: what the T3 data cannot answer | source: S1, S2, S3, team | tags: limitations, scope, out-of-scope
+The smoke data in this track come from small samples of five spacecraft materials heated inside a glovebox on the International Space Station in 2007 (SAME) and 2010 (SAME-R), plus two short particle-counter checks in 2005-2006 (DAFT). All tests ran in normal station air, so the data say nothing directly about higher oxygen, lower pressure or the Moon's partial gravity. The smoke came from overheated, not burning, material. Particle sizes are NASA's estimates from instrument averages, assuming a typical size spread, and many comparisons rest on one to four tests. The two flights used partly different instruments and cannot be pooled. Detector timings reflect how the hardware carried smoke to each sensor, not how fast a detector would react to a real fire. Some instruments hit the end of their range (the station smoke detector's scatter signal, the counter's 500,000 particles/cm3 limit), and the DAFT instrument clocks drift, so second-by-second comparisons between instruments are uncertain.
+- Not in the analysed data: oxygen above cabin air, low cabin pressure, Moon or Mars partial gravity, flaming fires, detector alarm thresholds, ground (1 g) comparison rows. [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-28 | location: lines 430-435 | mapping: track-level T3 chunk (source: all) covering SAME, SAME-R and DAFT | SHARED with: PSI-47 (DAFT / DAFT-2), PSI-101 (SAME-R)
+### [CHUNK T3-28] Gaps and what to fetch next | source: all | tags: gaps, todo
+1. SAME and SAME-R final reports and engineering documents: ISS detector output range, meaning of Rt/R0, M-pass description (python scripts/psi_fetch.py --datasets t3-docs).
+2. Workbook sheets 'SAME Ground Test Results', '3-tests Compar.' and 'Flight-ground plot': flight vs 1 g comparison, NASA's main hypothesis; not analysed yet.
+3. Workbook sheet 'detection June 14': cross-detector alarm equivalents (e.g. 'Number count to produce scattering alarm'); definitions needed before use.
+4. PSI-102 per-run workbooks (60 files): same tests as the combined workbook; not analysed.
+5. Publications listed on PSI (16 for SAME, 6 for SAME-R): not read.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-29 | location: lines 437-438 | mapping: track-level T3 chunk (source: team) covering SAME, SAME-R and DAFT | SHARED with: PSI-47 (DAFT / DAFT-2), PSI-101 (SAME-R)
+### [CHUNK T3-29] Plain-language paragraph (for the site and the demo) | source: team | tags: plain-language, summary
+Materials that overheat inside a spacecraft give off smoke even without flames, and smoke detectors are how the crew finds out. On Earth smoke rises; in microgravity it hangs near its source and moves only with the air. NASA's SAME (2007) and SAME-R (2010) experiments heated five spacecraft materials on the International Space Station and measured the smoke particles, and DAFT first checked that the particle counter works without gravity. The flight data show that this smoke keeps growing as it ages, grows larger when the air barely moves, and differs about fourfold in size between materials, while one channel of the station's own smoke detector appears to hit the end of its range in about half the tests. These are the facts a smoke-detection design for future spacecraft and Moon habitats has to start from.
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-18 | location: lines 440-444 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-18] SAME test 18 (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 18 (DBP), fresh smoke; description 'Repeat'. Source S7, Excel row 3. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.18; net aging 49.7 s; sample temperature 195.0 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.241 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-19 | location: lines 446-450 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-19] SAME test 19 (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 19 (DBP), fresh smoke; description 'Repeat'. Source S7, Excel row 4. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.18; net aging 41.0 s; sample temperature 195.8 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.245 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-22 | location: lines 452-456 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-22] SAME test 22 (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 22 (DBP), fresh smoke; description 'Repeat'. Source S7, Excel row 5. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.18; net aging 41.0 s; sample temperature 196.1 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.258 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-36 | location: lines 458-462 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-36] SAME test 36 (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 36 (DBP), fresh smoke; description 'baseline'. Source S7, Excel row 6. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.18; net aging 50.0 s; sample temperature 194.3 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.243 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-37 | location: lines 464-468 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-37] SAME test 37 (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 37 (DBP), fresh smoke; description 'baseline repeat'. Source S7, Excel row 7. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.18; net aging 39.0 s; sample temperature 194.8 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.247 V; STS 5.133 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-38 | location: lines 470-474 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-38] SAME test 38 (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 38 (DBP), fresh smoke; description 'low flow aging'. Source S7, Excel row 8. [SRC]
+- Conditions: inlet velocity 4.0 cm/s; heater Rt/R0 1.18; net aging 49.0 s; sample temperature 194.8 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.253 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-39 | location: lines 476-480 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-39] SAME test 39 (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 39 (DBP), fresh smoke; description 'baseline repeat'. Source S7, Excel row 9. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.18; net aging 58.0 s; sample temperature not given; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.236 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-40 | location: lines 482-486 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-40] SAME test 40 (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 40 (DBP), fresh smoke; description 'low flow aging'. Source S7, Excel row 10. [SRC]
+- Conditions: inlet velocity 2.0 cm/s; heater Rt/R0 1.18; net aging 44.0 s; sample temperature 194.7 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.254 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-42 | location: lines 488-492 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-42] SAME test 42 (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 42 (DBP), fresh smoke; description 'low flow aging'. Source S7, Excel row 11. [SRC]
+- Conditions: inlet velocity 7.5 cm/s; heater Rt/R0 1.16; net aging 65.0 s; sample temperature 176.8 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.241 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-43 | location: lines 494-498 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-43] SAME test 43 (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 43 (DBP), fresh smoke; description 'low tempng'. Source S7, Excel row 12. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.18; net aging 60.0 s; sample temperature 197.5 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.258 V; STS -0.0 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-44 | location: lines 500-504 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-44] SAME test 44 (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 44 (DBP), fresh smoke; description 'low temp aging'. Source S7, Excel row 13. [SRC]
+- Conditions: inlet velocity 7.5 cm/s; heater Rt/R0 1.16; net aging 62.0 s; sample temperature 178.2 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.259 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-45 | location: lines 506-510 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-45] SAME test 45 (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 45 (DBP), fresh smoke; description 'high temp aging'. Source S7, Excel row 14. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.19; net aging 86.0 s; sample temperature 203.6 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.246 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-36a | location: lines 512-516 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-36a] SAME test 36a (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 36a (DBP), aged re-measurement of test 36; description '     Aging'. Source S7, Excel row 15. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.18; net aging 869.0 s; sample temperature 194.3 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.246 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-38a | location: lines 518-522 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-38a] SAME test 38a (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 38a (DBP), aged re-measurement of test 38; description '     Aging'. Source S7, Excel row 16. [SRC]
+- Conditions: inlet velocity 4.0 cm/s; heater Rt/R0 1.18; net aging 859.0 s; sample temperature 194.8 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.257 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-39a | location: lines 524-528 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-39a] SAME test 39a (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 39a (DBP), aged re-measurement of test 39; description '     Aging'. Source S7, Excel row 17. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.18; net aging 883.0 s; sample temperature not given; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.245 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-40a | location: lines 530-534 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-40a] SAME test 40a (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 40a (DBP), aged re-measurement of test 40; description '     Aging'. Source S7, Excel row 18. [SRC]
+- Conditions: inlet velocity 2.0 cm/s; heater Rt/R0 1.18; net aging 860.0 s; sample temperature 194.7 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.206 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-42a | location: lines 536-540 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-42a] SAME test 42a (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 42a (DBP), aged re-measurement of test 42; description '     Aging'. Source S7, Excel row 19. [SRC]
+- Conditions: inlet velocity 7.5 cm/s; heater Rt/R0 1.16; net aging 871.0 s; sample temperature 176.8 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.247 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-43a | location: lines 542-546 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-43a] SAME test 43a (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 43a (DBP), aged re-measurement of test 43; description '     Aging'. Source S7, Excel row 20. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.18; net aging 879.0 s; sample temperature 197.5 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.257 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-44a | location: lines 548-552 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-44a] SAME test 44a (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 44a (DBP), aged re-measurement of test 44; description '     Aging'. Source S7, Excel row 21. [SRC]
+- Conditions: inlet velocity 7.5 cm/s; heater Rt/R0 1.16; net aging 1958.0 s; sample temperature 178.2 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 6.259 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-45a | location: lines 554-558 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-45a] SAME test 45a (DBP) | source: S7 | tags: flight-test, same, dbp
+SAME flight test 45a (DBP), aged re-measurement of test 45; description '     Aging'. Source S7, Excel row 22. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.19; net aging 554.2 s; sample temperature 203.6 C; mass loss not given. [SRC]
+- Result: no particle size in the workbook (zeros). [SRC]
+- Detector readings in the workbook: ISS scatter 4.894 V; STS -0.001 V; DustTrak B 0.0 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-29 | location: lines 560-564 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-29] SAME test 29 (Kapton) | source: S7 | tags: flight-test, same, kapton
+SAME flight test 29 (Kapton), fresh smoke; description 'Baseline'. Source S7, Excel row 23. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.38; net aging 38.2 s; sample temperature 418.3 C; mass loss 1.16 mg. [SRC]
+- Result: number-mean diameter 0.0942 um (94 nm); diameter of average mass 0.1818 um; sigma_g 2.25; Dg 0.0678 um. [SRC]
+- Detector readings in the workbook: ISS scatter 3.664 V; STS -0.001 V; DustTrak B 11.371 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-30 | location: lines 566-570 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-30] SAME test 30 (Kapton) | source: S7 | tags: flight-test, same, kapton
+SAME flight test 30 (Kapton), fresh smoke; description 'Air flow down (4)'. Source S7, Excel row 24. [SRC]
+- Conditions: inlet velocity 4.0 cm/s; heater Rt/R0 1.38; net aging 11.0 s; sample temperature not given; mass loss 1.09 mg. [SRC]
+- Result: number-mean diameter 0.1146 um (115 nm); diameter of average mass 0.2127 um; sigma_g 2.195; Dg 0.0842 um. [SRC]
+- Detector readings in the workbook: ISS scatter 4.203 V; STS 4.559 V; DustTrak B 14.101 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-33 | location: lines 572-576 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-33] SAME test 33 (Kapton) | source: S7 | tags: flight-test, same, kapton
+SAME flight test 33 (Kapton), fresh smoke; description 'lower flow (2)'. Source S7, Excel row 25. [SRC]
+- Conditions: inlet velocity 2.0 cm/s; heater Rt/R0 1.38; net aging 11.0 s; sample temperature 417.3 C; mass loss 1.08 mg. [SRC]
+- Result: number-mean diameter 0.1523 um (152 nm); diameter of average mass 0.2597 um; sigma_g 2.076; Dg 0.1166 um. [SRC]
+- Detector readings in the workbook: ISS scatter 5.084 V; STS 4.612 V; DustTrak B 17.908 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-47 | location: lines 578-582 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-47] SAME test 47 (Kapton) | source: S7 | tags: flight-test, same, kapton
+SAME flight test 47 (Kapton), fresh smoke; description 'High Temp Aging'. Source S7, Excel row 26. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.48; net aging 11.0 s; sample temperature 581.0 C; mass loss 1.99 mg. [SRC]
+- Result: number-mean diameter 0.2185 um (218 nm); diameter of average mass 0.2776 um; sigma_g 1.631; Dg 0.1939 um. [SRC]
+- Detector readings in the workbook: ISS scatter 5.641 V; STS -0.001 V; DustTrak B 27.025 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-29a | location: lines 584-588 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-29a] SAME test 29a (Kapton) | source: S7 | tags: flight-test, same, kapton
+SAME flight test 29a (Kapton), aged re-measurement of test 29; description 'after secondary aging'. Source S7, Excel row 27. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.38; net aging 802.7 s; sample temperature 418.3 C; mass loss 1.16 mg. [SRC]
+- Result: number-mean diameter 0.1662 um (166 nm); diameter of average mass 0.2707 um; sigma_g 2.011; Dg 0.1302 um. [SRC]
+- Detector readings in the workbook: ISS scatter 4.826 V; STS -0.001 V; DustTrak B 13.243 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-47a | location: lines 590-594 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-47a] SAME test 47a (Kapton) | source: S7 | tags: flight-test, same, kapton
+SAME flight test 47a (Kapton), aged re-measurement of test 47; description 'Aging'. Source S7, Excel row 28. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.48; net aging 731.0 s; sample temperature 581.0 C; mass loss 1.99 mg. [SRC]
+- Result: number-mean diameter 0.2536 um (254 nm); diameter of average mass 0.3554 um; sigma_g 1.788; Dg 0.2142 um. [SRC]
+- Detector readings in the workbook: ISS scatter 5.883 V; STS -0.001 V; DustTrak B 28.676 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-31 | location: lines 792-796 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-31] SAME test 31 (Lampwick) | source: S7 | tags: flight-test, same, lampwick
+SAME flight test 31 (Lampwick), fresh smoke; description 'Air flow down (4)'. Source S7, Excel row 59. [SRC]
+- Conditions: inlet velocity 4.0 cm/s; heater Rt/R0 1.245; net aging 11.0 s; sample temperature not given; mass loss 0.79 mg. [SRC]
+- Result: number-mean diameter 0.1486 um (149 nm); diameter of average mass not given; sigma_g not given; Dg not given. [SRC]
+- Detector readings in the workbook: ISS scatter 6.232 V; STS 4.55 V; DustTrak B not given. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-32 | location: lines 798-802 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-32] SAME test 32 (Lampwick) | source: S7 | tags: flight-test, same, lampwick
+SAME flight test 32 (Lampwick), fresh smoke; description 'Baseline'. Source S7, Excel row 60. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.245; net aging 62.7 s; sample temperature 258.6 C; mass loss 0.86 mg. [SRC]
+- Result: number-mean diameter 0.2036 um (204 nm); diameter of average mass 0.311 um; sigma_g 1.917; Dg 0.1647 um. [SRC]
+- Detector readings in the workbook: ISS scatter 6.242 V; STS -0.001 V; DustTrak B 29.251 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-34 | location: lines 804-808 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-34] SAME test 34 (Lampwick) | source: S7 | tags: flight-test, same, lampwick
+SAME flight test 34 (Lampwick), fresh smoke; description 'lower flow (2)'. Source S7, Excel row 61. [SRC]
+- Conditions: inlet velocity 2.0 cm/s; heater Rt/R0 1.245; net aging 45.7 s; sample temperature 258.5 C; mass loss 0.8 mg. [SRC]
+- Result: number-mean diameter 0.1636 um (164 nm); diameter of average mass 0.3112 um; sigma_g 2.23; Dg 0.1186 um. [SRC]
+- Detector readings in the workbook: ISS scatter 6.247 V; STS 4.668 V; DustTrak B 18.148 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-46 | location: lines 810-814 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-46] SAME test 46 (Lampwick) | source: S7 | tags: flight-test, same, lampwick
+SAME flight test 46 (Lampwick), fresh smoke; description 'high temp aging'. Source S7, Excel row 62. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.32; net aging 82.0 s; sample temperature 343.6 C; mass loss 1.42 mg. [SRC]
+- Result: number-mean diameter 0.268 um (268 nm); diameter of average mass 0.3537 um; sigma_g 1.694; Dg 0.2333 um. [SRC]
+- Detector readings in the workbook: ISS scatter 6.251 V; STS -0.001 V; DustTrak B 34.595 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-32a | location: lines 816-820 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-32a] SAME test 32a (Lampwick) | source: S7 | tags: flight-test, same, lampwick
+SAME flight test 32a (Lampwick), aged re-measurement of test 32; description 'after secondary aging'. Source S7, Excel row 63. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.245; net aging 893.0 s; sample temperature 258.6 C; mass loss 0.86 mg. [SRC]
+- Result: number-mean diameter 0.2757 um (276 nm); diameter of average mass 0.3984 um; sigma_g 1.834; Dg 0.2294 um. [SRC]
+- Detector readings in the workbook: ISS scatter 6.247 V; STS -0.001 V; DustTrak B 28.685 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-46a | location: lines 822-826 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-46a] SAME test 46a (Lampwick) | source: S7 | tags: flight-test, same, lampwick
+SAME flight test 46a (Lampwick), aged re-measurement of test 46; description 'aging'. Source S7, Excel row 64. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.32; net aging 1963.7 s; sample temperature 343.6 C; mass loss 1.42 mg. [SRC]
+- Result: number-mean diameter 0.3447 um (345 nm); diameter of average mass 0.4856 um; sigma_g 1.796; Dg 0.2904 um. [SRC]
+- Detector readings in the workbook: ISS scatter 6.255 V; STS -0.0 V; DustTrak B 34.305 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-5 | location: lines 1082-1086 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-5] SAME test 5 (Silicone) | source: S7 | tags: flight-test, same, silicone
+SAME flight test 5 (Silicone), fresh smoke; description 'Aging up'. Source S7, Excel row 105. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.327; net aging 755.0 s; sample temperature 356.6 C; mass loss 1.21 mg. [SRC]
+- Result: number-mean diameter 0.326 um (326 nm); diameter of average mass 0.6067 um; sigma_g 2.2; Dg 0.2389 um. [SRC]
+- Detector readings in the workbook: ISS scatter 6.294 V; STS 4.394 V; DustTrak B 124.638 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-23 | location: lines 1088-1092 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-23] SAME test 23 (Silicone) | source: S7 | tags: flight-test, same, silicone
+SAME flight test 23 (Silicone), fresh smoke; description 'Baseline'. Source S7, Excel row 106. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.327; net aging 57.0 s; sample temperature 349.1 C; mass loss 0.93 mg. [SRC]
+- Result: number-mean diameter 0.2267 um (227 nm); diameter of average mass 0.5164 um; sigma_g 2.478; Dg 0.1502 um. [SRC]
+- Detector readings in the workbook: ISS scatter 6.242 V; STS -0.001 V; DustTrak B 193.241 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-24 | location: lines 1094-1098 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-24] SAME test 24 (Silicone) | source: S7 | tags: flight-test, same, silicone
+SAME flight test 24 (Silicone), fresh smoke; description 'Flow Down'. Source S7, Excel row 107. [SRC]
+- Conditions: inlet velocity 4.0 cm/s; heater Rt/R0 1.327; net aging 35.7 s; sample temperature 340.6 C; mass loss 0.62 mg. [SRC]
+- Result: number-mean diameter 0.2055 um (206 nm); diameter of average mass 0.4635 um; sigma_g 2.464; Dg 0.1368 um. [SRC]
+- Detector readings in the workbook: ISS scatter 6.249 V; STS 4.274 V; DustTrak B 89.078 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-27 | location: lines 1100-1104 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-27] SAME test 27 (Silicone) | source: S7 | tags: flight-test, same, silicone
+SAME flight test 27 (Silicone), fresh smoke; description 'Heat down'. Source S7, Excel row 108. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.32; net aging 38.5 s; sample temperature 340.8 C; mass loss 0.57 mg. [SRC]
+- Result: number-mean diameter 0.1856 um (186 nm); diameter of average mass 0.4358 um; sigma_g 2.519; Dg 0.1212 um. [SRC]
+- Detector readings in the workbook: ISS scatter 6.237 V; STS 4.209 V; DustTrak B 99.546 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-35 | location: lines 1106-1110 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-35] SAME test 35 (Silicone) | source: S7 | tags: flight-test, same, silicone
+SAME flight test 35 (Silicone), fresh smoke; description 'High temp  aging'. Source S7, Excel row 109. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.38; net aging 70.0 s; sample temperature 414.4 C; mass loss 0.13 mg. [SRC]
+- Result: number-mean diameter 0.2078 um (208 nm); diameter of average mass 0.4168 um; sigma_g 2.303; Dg 0.1467 um. [SRC]
+- Detector readings in the workbook: ISS scatter 6.212 V; STS -0.001 V; DustTrak B 65.466 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-23a | location: lines 1112-1116 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-23a] SAME test 23a (Silicone) | source: S7 | tags: flight-test, same, silicone
+SAME flight test 23a (Silicone), aged re-measurement of test 23; description 'after secondary aging'. Source S7, Excel row 110. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.327; net aging 890.0 s; sample temperature 349.1 C; mass loss 0.93 mg. [SRC]
+- Result: number-mean diameter 0.3725 um (372 nm); diameter of average mass 0.6231 um; sigma_g 2.049; Dg 0.288 um. [SRC]
+- Detector readings in the workbook: ISS scatter 6.244 V; STS -0.001 V; DustTrak B 132.861 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-35a | location: lines 1118-1122 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-35a] SAME test 35a (Silicone) | source: S7 | tags: flight-test, same, silicone
+SAME flight test 35a (Silicone), aged re-measurement of test 35; description '     Aging'. Source S7, Excel row 111. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.38; net aging 890.0 s; sample temperature 414.4 C; mass loss 0.13 mg. [SRC]
+- Result: number-mean diameter 0.2761 um (276 nm); diameter of average mass 0.4922 um; sigma_g 2.139; Dg 0.2068 um. [SRC]
+- Detector readings in the workbook: ISS scatter 6.221 V; STS -0.001 V; DustTrak B 59.66 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-25 | location: lines 1265-1269 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-25] SAME test 25 (Teflon) | source: S7 | tags: flight-test, same, teflon
+SAME flight test 25 (Teflon), fresh smoke; description 'Air flow down'. Source S7, Excel row 134. [SRC]
+- Conditions: inlet velocity 4.0 cm/s; heater Rt/R0 1.445; net aging 33.5 s; sample temperature 516.3 C; mass loss 1.63 mg. [SRC]
+- Result: number-mean diameter 0.1337 um (134 nm); diameter of average mass 0.3022 um; sigma_g 2.467; Dg 0.089 um. [SRC]
+- Detector readings in the workbook: ISS scatter 1.64 V; STS 4.541 V; DustTrak B 54.644 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-26 | location: lines 1271-1275 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-26] SAME test 26 (Teflon) | source: S7 | tags: flight-test, same, teflon
+SAME flight test 26 (Teflon), fresh smoke; description 'Base line / Aging'. Source S7, Excel row 135. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.445; net aging 35.2 s; sample temperature 517.6 C; mass loss 3.4 mg. [SRC]
+- Result: number-mean diameter 0.1868 um (187 nm); diameter of average mass 0.2026 um; sigma_g 1.329; Dg 0.1794 um. [SRC]
+- Detector readings in the workbook: ISS scatter 0.819 V; STS -0.001 V; DustTrak B 13.351 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-28 | location: lines 1277-1281 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-28] SAME test 28 (Teflon) | source: S7 | tags: flight-test, same, teflon
+SAME flight test 28 (Teflon), fresh smoke; description 'Heat down'. Source S7, Excel row 136. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.44; net aging 41.3 s; sample temperature 511.7 C; mass loss 2.1 mg. [SRC]
+- Result: number-mean diameter 0.1521 um (152 nm); diameter of average mass 0.2066 um; sigma_g 1.74; Dg 0.1305 um. [SRC]
+- Detector readings in the workbook: ISS scatter 0.864 V; STS 4.641 V; DustTrak B 12.972 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-41 | location: lines 1283-1287 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-41] SAME test 41 (Teflon) | source: S7 | tags: flight-test, same, teflon
+SAME flight test 41 (Teflon), fresh smoke; description 'low flow aging'. Source S7, Excel row 137. [SRC]
+- Conditions: inlet velocity 2.0 cm/s; heater Rt/R0 1.44; net aging 36.2 s; sample temperature 517.7 C; mass loss 1.52 mg. [SRC]
+- Result: number-mean diameter 0.1778 um (178 nm); diameter of average mass 0.3897 um; sigma_g 2.425; Dg 0.1201 um. [SRC]
+- Detector readings in the workbook: ISS scatter 0.001 V; STS -0.001 V; DustTrak B 68.24 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-26a | location: lines 1289-1293 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-26a] SAME test 26a (Teflon) | source: S7 | tags: flight-test, same, teflon
+SAME flight test 26a (Teflon), aged re-measurement of test 26; description 'after secondary aging'. Source S7, Excel row 138. [SRC]
+- Conditions: inlet velocity 8.0 cm/s; heater Rt/R0 1.445; net aging 801.0 s; sample temperature 517.6 C; mass loss 3.4 mg. [SRC]
+- Result: number-mean diameter 0.2492 um (249 nm); diameter of average mass 0.2672 um; sigma_g 1.302; Dg 0.2407 um. [SRC]
+- Detector readings in the workbook: ISS scatter 0.936 V; STS -0.001 V; DustTrak B 14.05 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-TEST-SAME-41a | location: lines 1295-1299 | mapping: chunk ID T3-TEST-SAME (SAME flight test)
+### [CHUNK T3-TEST-SAME-41a] SAME test 41a (Teflon) | source: S7 | tags: flight-test, same, teflon
+SAME flight test 41a (Teflon), aged re-measurement of test 41; description '     Aging'. Source S7, Excel row 139. [SRC]
+- Conditions: inlet velocity 2.0 cm/s; heater Rt/R0 1.44; net aging 807.2 s; sample temperature 517.7 C; mass loss 1.52 mg. [SRC]
+- Result: number-mean diameter 0.182 um (182 nm); diameter of average mass 0.4095 um; sigma_g 2.461; Dg 0.1214 um. [SRC]
+- Detector readings in the workbook: ISS scatter 0.001 V; STS -0.001 V; DustTrak B 44.178 mg/m3. [SRC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-QA | location: lines 1435-1454 | mapping: track-level T3 chunk (source: all) covering SAME, SAME-R and DAFT | SHARED with: PSI-47 (DAFT / DAFT-2), PSI-101 (SAME-R)
+### [CHUNK T3-QA] Q&A pairs (retrieval testing and few-shot) | source: all | tags: qa
+Q: Does smoke from overheated spacecraft materials change as it ages in microgravity? A: Yes. In 42 of 44 paired SAME and SAME-R flight tests the number-mean particle diameter grew after 4 to 33 minutes of aging, by a median factor of 1.46 (F-T3-1).
+Q: Which flown material gave the smallest smoke particles? A: Kapton, about 57 nm at its baseline (4 tests); Pyrell and Silicone gave the largest, about 207 to 244 nm. Each material was heated to its own baseline temperature (F-T3-3).
+Q: Does weaker ventilation change the smoke? A: For Kapton, Lampwick and Silicone, runs with 0 to 2 cm/s air flow gave larger particles than runs at 8 cm/s at the same heater setting; Pyrell and Teflon did not. Groups are small (1 to 4 tests) (F-T3-2).
+Q: Can the 2007 SAME and the 2010 SAME-R results be combined? A: Not without a correction: in all 5 matching comparisons SAME gave larger diameters, and SAME-R changed one instrument (F-T3-5).
+Q: Did the modified P-Trak particle counter work in microgravity? A: NASA's DAFT post-flight report says it was functioning normally; it cannot see particles above 2.5 um and saturates at 500,000 particles/cm3 (F-T3-14, F-T3-22).
+Q: Would a spacecraft smoke detector alarm in time for a fire in a Moon habitat at 30 % oxygen and 10.2 psi? A: Not in our data. SAME, SAME-R and DAFT ran in ISS cabin air: no oxygen or pressure changes, no partial gravity, and no alarm thresholds in these tables. The detector timings we have reflect how the hardware moved smoke (F-T3-16).
+Q: Does smoke from a flaming fire behave the same way? A: Not in our data. These tests made smoke by overheating material samples, not by flaming fires (PSI-102 page, Approach).
+Q: What are the PSI IDs and DOIs of the T3 experiments? A: SAME PSI-102 (10.60555/gd4k-8h62), SAME-R PSI-101 (10.60555/2np7-jv14), DAFT / DAFT-2 PSI-47 (10.60555/ztgj-d202). [SRC]
+Q: Why was SAME flown again as SAME-R? A: SAME's TEM grids came back contaminated with foreign particles; SAME-R added Pyrell, wider conditions (higher heating, no-flow heating) and the M-pass instrument. [SRC S2]
+Q: Which materials were tested? A: SAME: Teflon, Kapton, silicone rubber, lampwick (cotton) and DBP; SAME-R: Kapton, Teflon, lampwick, silicone and Pyrell (DBP replaced). [SRC]
+Q: How was particle size measured? A: By the moment method: instrument averages of number and mass combined under a lognormal size assumption; the workbook diameters satisfy the Hatch-Choate relations (T3-08). [SRC][CALC]
+Q: What does 'aged' mean in these tests? A: The same smoke kept in the chamber and measured again later (test 'NN' fresh, 'NNa' aged). [SRC][CALC]
+Q: Did the ISS smoke detector saturate? A: Its scatter channel bottoms out near -6.25 V and stays there in 21 of 44 SAME-R tests; likely the end of its range, not yet confirmed in documents (F-T3-6, F-T3-15). [CALC][INF]
+Q: How long did smoke take to reach the sensors? A: About two minutes after heater start (median 129-139 s), usually after heating had ended; this is a hardware transport time (F-T3-16). [CALC]
+Q: Which sensor responded first? A: The ISS scatter channel in 32 of 41 tests, DustTrak B in 9; low confidence because the sensors sit at different points of the flow path (F-T3-17). [CALC]
+Q: Is there oxygen or pressure data? A: No. All T3 tests ran in ISS cabin air; the tables have no oxygen or cabin-pressure columns. [CALC]
+Q: Can the DAFT instruments be compared second by second? A: Both logged in all 7 tests, but their clocks drift (report p.5), so second-by-second alignment is uncertain by tens of seconds (F-T3-11, F-T3-20). [SRC][CALC]
+Q: Was the data cleaned before the findings? A: Yes, without changing any NASA file: housekeeping rows with repeated timestamps and a repeated header line were skipped; rows without a size (20 DBP rows, 3 runs without a P-Trak count) and 6 size rows that break a law of size statistics were kept out of the size analyses (F-T3-23); NASA's zero-filled DAFT gaps were excluded; a P-Trak reading above the instrument maximum was kept and flagged (F-T3-22). Every step is listed with file and row in each record's data_log.md. [CALC]
+Q: What are the biggest data traps? A: Pooling SAME and SAME-R, using the SAME experimental table instead of the flight records, and treating the housekeeping DustTrakA column as mg/m3 (T3-26). [CALC]
+
+>>> source: RAG/Mahmoud.txt | chunk: T3-DASH | location: lines 1456-1459 | mapping: track-level T3 chunk (source: team) covering SAME, SAME-R and DAFT | SHARED with: PSI-47 (DAFT / DAFT-2), PSI-101 (SAME-R)
+### [CHUNK T3-DASH] Dashboard integration | source: team | tags: dashboard, integration
+- The dashboard (fif-dashboard) reads the T3 package with build_site_data.py: findings, evidence snippets, questions, track paragraph, limitations, charts, and the dataset 'same_tests' (rows of S7 with Excel row numbers).
+- Routes: #/record/PSI-102, #/record/PSI-101, #/record/PSI-47 (smoke illustration on SAME and SAME-R), #/results (size by material, aging, air flow within heater setting; SAME and SAME-R never pooled), #/research (all findings with sources).
+- Character: Mahmoud Nadeem (T3) answers from this pack and the findings; anything outside them gets 'not in our data'.

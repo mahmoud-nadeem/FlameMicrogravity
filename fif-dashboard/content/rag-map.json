@@ -1,0 +1,9 @@
+{
+  "morgan": ["PSI-26_BASS", "PSI-25_BASS-II"],
+  "shreif": ["PSI-98_SAFFIRE-I", "PSI-99_SAFFIRE-II", "PSI-100_SAFFIRE-III"],
+  "nadeem": ["PSI-102_SAME", "PSI-101_SAME-R", "PSI-47_DAFT"],
+  "tamer": ["PSI-69_FLEX", "PSI-68_FLEX_II", "PSI-39_CFI", "PSI-159_ACME-CFI-G"],
+  "adwi": ["PSI-20_ACME-BRE", "PSI-22_ACME-E-FIELD", "PSI-23_ACME-S-FLAME", "PSI-10_ACME-FLAME-DESIGN"],
+  "gamal": ["PSI-107_SPICE", "PSI-106_SLICE", "PSI-21_ACME-CLD"],
+  "guide": ["*"]
+}
