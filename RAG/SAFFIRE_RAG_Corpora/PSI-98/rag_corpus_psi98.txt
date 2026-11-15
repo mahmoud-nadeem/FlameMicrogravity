@@ -1,0 +1,245 @@
+PSI-98 | SAFFIRE-I | Spacecraft Fire Safety Experiment-I
+NASA PSI DOI: 10.60555/0t15-1z43 | Version 4
+
+=== SAFFIRE-98-99-00 | How to read and index this corpus ===
+Investigation: PSI-98, PSI-99, PSI-100
+Topic: How to read and index this corpus ===
+Sources: Source registry and method pointers in this corpus
+
+Each section between === markers is a retrieval unit. Keep its ID, title, and source labels with its text. Link sample IDs to the mission ID because all three missions contain a “Sample 1”. Keep each source category with the claim it supports.
+
+[DOC] is a value or outcome reported in a source document or the experimental table.
+[CALC] is a statistic calculated from stored workbook values.
+[FIG] is a qualitative observation from a workbook plot.
+[INTERP] is an interpretation of the combined evidence.
+[QA] is a discrepancy, coverage limit, or unresolved data issue.
+
+Unless otherwise specified, times for sensor peaks and igniter operation are elapsed seconds from the beginning of the sample file, not seconds since ignition. A documented burn duration is the experimental table's outcome. An observed igniter window is calculated independently using current >0.5 A, from the first to the last sample in the pulse. A reported post-igniter temperature maximum is a sensor-channel maximum after the electrical pulse within the recording. Different probes measure different locations. Temperature maxima should retain their channel IDs and should not be used as direct measurements of flame temperature. Percent gas values are reported on the source scale. A change from 0.432% to 0.510% is 0.078 percentage points.
+
+Main result [DOC, CALC]: PSI-98 compared two large SIBAL runs at a nominal 20 cm/s. The concurrent run burned for 420 s, compared with 70 s for the opposed run. PSI-99 tested nine small samples and recorded negligible low-gravity burned length in four silicone runs, full 29 cm burns in samples 5 and 6, consumption only of the PMMA portion in sample 7, and long burns with localized damage or regression in samples 8 and 9. The conditions differ across experiments, so raw burn duration alone cannot rank material flammability across missions.
+
+=== SAFFIRE-98-01 | PSI-98 Saffire-I experiment and diagnostic setup ===
+Investigation: PSI-98
+Topic: PSI-98 Saffire-I experiment and diagnostic setup ===
+Sources: [NASA-FLIGHT], [98-DOC], [98-TABLE], [98-S1], [98-S2]
+
+[DOC] Saffire-I investigated large-scale fire growth in low gravity and whether flame spread reached a steady rate. The test fabric was SIBAL, 75% cotton and 25% fiberglass by mass. The Saffire-I/III Readme lists 20 cm/s for Saffire-I and 30 cm/s for Saffire-III. These are stated test conditions. The PSI-98 CSV gives nominal igniter settings of 182 W and 8 s for each. Its geometric labels conflict with the flight-results presentation, which identifies the original fabric as 94 cm long, 40.6 cm wide and 0.37 mm thick. The opposed run used the approximately 10 cm remaining after the concurrent run. [NASA-FLIGHT]
+[CALC] Both PSI-98 sample files have 20,000 timestamped data rows, spanning about 659.97 s each. Median elapsed-time increment is 0.033 s (about 30.3 Hz). Maximum increments are 0.046 s in sample 1 and 0.047 s in sample 2. Neither file shows repeated or backward elapsed times.
+[DOC] The Calibrated Data sheets include elapsed time, clock fields, fan speed, two anemometers, gas concentrations, ambient pressure, humidity, inlet temperature, six plume thermocouples TC1–TC6, six sample thermocouples TC7–TC12, four radiometer channels, and igniter current and voltage. The workbook labels the four processed radiometer channels Downstream Front, Upstream Front, Upstream Back, and Downstream Back. Sample 1 includes 0–50 s reference average labels. Preserve the workbook's separate uncorrected and processed channels.
+Sources: [98-DOC] pp. 1–2, [98-TABLE] S1–S2, [98-S1] and [98-S2] Calibrated Data.
+
+=== SAFFIRE-98-99-100-SENSITIVITY | Robustness of sensor response thresholds ===
+Investigation: PSI-98, PSI-99, PSI-100
+Topic: sustained-response threshold sensitivity
+Sources: Calibrated Data workbooks; extra/saffire_threshold_sensitivity.csv
+
+Across 13 runs and 23 channels per run, vary the sustained-rise cutoff to 0.5x, 1x and 2x max(floor, 6 MAD). Keep the igniter definition (>0.5 A), pre-igniter baseline, full one-second bins, and minimum of two adjacent qualifying bins fixed. These are cumulative qualifying seconds.
+
+PSI-99 S5 TC3 plume response: 165 / 161 / 155 s; S6 TC3: 0 / 0 / 0 s. S5 TC8 and S6 TC12 onset stayed at elapsed 70 s in all three settings; totals were 85 / 84 / 83 and 72 / 71 / 70 s, respectively. The contrast persists under these settings for these channels. Durations depend on the threshold and are not burn times.
+
+=== SAFFIRE-98-S01 | PSI-98 sample 1 — concurrent SIBAL flames ===
+Investigation: PSI-98
+Sample: S1
+Topic: PSI-98 sample 1 — concurrent SIBAL flames ===
+Sources: [98-TABLE], [98-S1]
+
+[DOC] Sample S1 was SIBAL, with air moving in the direction of flame spread (concurrent), 20 cm/s nominal airflow, and a reported burn duration of 420 s.
+[CALC] Igniter current exceeded 0.5 A from 60.027 to 67.980 s, spanning 7.953 s with a peak of 4.120 A. Median anemometer speeds over that window were 20.53 and 19.37 cm/s.
+[CALC] The highest recorded surface temperature was TC11 at 1091.76 °C at 369.039 s. TC9 independently reached 1078.12 °C at 204.402 s. The highest plume reading was TC3 at 121.71 °C at 477.675 s, from a pre-igniter median of 23.02 °C. The processed downstream-back radiation channel peaked at 149.15 mW/cm² at 343.398 s. Upstream front/back peaked near 225 s, downstream front/back near 343 s. CO2 was 0.426% at the pre-igniter median and peaked at 0.632% at 595.716 s.
+[INTERP] The time separation between the upstream and downstream radiometer maxima and the long thermal response provide evidence of changing heat exposure across the test section. A spread speed would require a camera measurement or a defined arrival marker and verified sensor locations. Maxima alone do not specify transit time.
+Sources: [98-TABLE] S1, [98-S1] Calibrated Data.
+
+=== SAFFIRE-98-S02 | PSI-98 sample 2 — opposed SIBAL flames ===
+Investigation: PSI-98
+Sample: S2
+Topic: PSI-98 sample 2 — opposed SIBAL flames ===
+Sources: [98-TABLE], [98-S2]
+
+[DOC] Sample S2 was SIBAL, with air moving against flame spread (opposed), 20 cm/s nominal airflow, and a reported burn duration of 70 s.
+[CALC] Igniter current exceeded 0.5 A from 60.026 to 67.979 s, spanning 7.953 s with a peak of 4.146 A. Median anemometer speeds during that window were 21.20 and 18.85 cm/s.
+[CALC] TC3 reached 94.40 °C at 106.490 s, compared with its 28.69 °C pre-igniter median. The downstream-front radiometer peaked at 20.64 mW/cm² at 104.477 s and the downstream-back channel peaked at 17.67 mW/cm² at 104.906 s. The highest stored surface reading across TC7–TC12 was 24.88 °C. CO2 had a pre-igniter median of 0.629% and a maximum of 0.646%.
+[FIG] Pressure stayed around 14.85–14.90 PSIA and gradually declined. Relative humidity was roughly 48–50%, with an overall decline. Inlet temperature was around 21 °C.
+[INTERP] The plume and radiation peaks align near 105 s even though the surface probes show little heating. The sensor response is spatially specific. The CO2 starting levels differ between S1 and S2, so evaluate CO2 change within each run before comparing concentrations across runs.
+Sources: [98-TABLE] S2, [98-S2] Calibrated Data and Pressure, Humidity, Inlet Temperature charts.
+
+=== SAFFIRE-98-02 | PSI-98 comparison and telemetry context ===
+Investigation: PSI-98
+Topic: PSI-98 comparison and telemetry context ===
+Sources: [NASA-FLIGHT], [98-TABLE], [98-S1], [98-S2], [98-TM]
+
+[DOC, CALC] In these two SIBAL runs, reported burn duration was six times longer in concurrent S1 than in opposed S2 (420/70), with essentially identical observed igniter spans and similar nominal airflow. The largest recorded processed radiation peak was also higher in S1 (149.15 versus 20.64 mW/cm²). The opposed run was a contingency on the fuel left by the first run, and the first run was timed to airflow shutoff. The duration ratio therefore describes these runs under different available fuel lengths and stopping conditions. [NASA-FLIGHT]
+[QA] S1 and S2 pre-igniter O2 medians were 22.638% and 22.320% in the calibrated sensor files, while the experimental table reported 21.5–21.7% and about 21.5% respectively. Keep both values with their source and verify the calibration and reference before treating them as interchangeable.
+[DOC] The mission telemetry workbook separates Saffire channels (radiometers, airflow, fan and igniter measurements) from Cygnus channels (pressure, temperature, smoke detectors, fan differential pressure, rates and acceleration).
+[FIG] The example telemetry plots show radiometer peaks, fan transitions, a rising then falling FIZ 2 scatter response, and gradual changes in Cygnus pressure and temperature over their plotted intervals. These are contextual observations on the workbook's time axes.
+[QA] RawData includes zero Saffire timestamps and spreadsheet errors such as #REF! in derived timing fields. The column RelativeSeconds contains millisecond-scale values in the inspected rows. Use explicitly labeled Relative Time (s) fields where valid, and verify the time origin before joining to elapsed time from the sample workbooks. Separate clocks and sensor locations make Cygnus pressure or temperature different observation streams from test-section channels.
+Sources: [98-TABLE] S1–S2, [98-S1] and [98-S2] Calibrated Data, [98-TM] RawData, SaffireData, CygnusData and telemetry charts.
+
+=== SAFFIRE-98-99-IMG | Camera coverage, file types and alignment ===
+Investigation: PSI-98, PSI-99
+Topic: Camera coverage, file types and alignment ===
+Sources: [98-DOC], [99-DOC], [98-IMG], [99-IMG]
+
+[DOC] F1 and F2 denote pre-flow and post-flow visualization, C1/C2 identify camera channels, and S1 etc. identify samples. BIT denotes built-in test. JPEG is the on-board JPEG product. Mapped products correct camera distortion. icmad products include annotated exposure and gain. Original RAW files require camera processing; the Readme specifies an 8-byte offset for Raw_DistroMaster. The PSI archive may package large image sets as ZIP files.
+[DOC] The PSI-98 MergeResult workbook catalogs filenames, timestamps, received and corrupt JPEG lists, file sizes and ZIP metadata. It includes separate camera and time-sorted sheets. Count from one representation per run to avoid double-counting.
+[CALC] The PSI-99 MergeResult sample worksheets contain 177,300 JPEG filename rows whose received filename matches. Counts by sample and camera: S1 C2 11,400; S2 C2 15,000; S3 C2 15,000; S4 C1/C2 15,000 each; S5 and S6 C1/C2 9,600 each per run; S7 C1 18,600; S8 C1 19,950; S9 C1 28,950. The count excludes BIT and pre/post-flow. The same workbook lists 809 received JPEG rows per camera in each pre/post-flow set. These counts describe the workbook's recorded receipt status. File availability, decoding and time continuity of the actual frames require separate verification.
+[INTERP] A camera study can use mission/sample/camera and epoch timestamps as candidate join keys. Validate common clock reference and overlap with the sensor recording before comparing frame timing with the igniter window. A spatial flame-front measurement also needs an image scale, distortion correction, and a stated criterion for the front.
+Sources: [98-DOC] Tables 1 and 3, [99-DOC] Tables 2 and 4, [98-IMG], [99-IMG] sample and flow-visualization worksheets.
+
+=== SAFFIRE-98-99-X01 | Cross-mission synthesis and reuse ===
+Investigation: PSI-98, PSI-99
+Topic: Cross-mission synthesis and reuse ===
+Sources: [98-TABLE], [99-TABLE], [98-S1], [98-S2], [99-SENS], [98-TM], [99-TM], [98-IMG], [99-IMG]
+
+[INTERP] PSI-98 illustrates the different observed responses of two large SIBAL experiments at the same nominal speed and different relative-flow directions; PSI-99 illustrates differences between small silicone, SIBAL, and PMMA-containing tests and includes normal-gravity references. Geometry, material, air speed, relative-flow direction, and igniter settings are needed when interpreting a cross-mission comparison.
+[CALC, INTERP] Under the uniform detector, PSI-99 S5 TC8 first qualified at 70 s and accumulated 84 s above threshold in sustained runs. Its peak was at 136.224 s. S6 TC12 first qualified at 70 s and accumulated 71 s, peaking at 124.311 s. S5 plume TC3 accumulated 161 s, and S6 plume TC3 never met the sustained criterion. These are channel-specific detections, with different local probe exposure and baselines. See SAFFIRE-99-S05-SENSORS and SAFFIRE-99-S06-SENSORS.
+[INTERP] Useful run-level features are the channel-specific median before ignition, peak and time of peak after ignition, temperature rise relative to the baseline, active-window air speed, and CO2 change in a defined window. Keep the threshold and window definitions attached. Ground outputs such as burned length, burn duration, and spread rate in the experimental table, with separate fields for low gravity and normal gravity.
+[QA] Unresolved items to retain in any downstream summary: PSI-98 O2 mismatch; PSI-99 S6 and S9 airflow discrepancies; ambiguous CSV thickness strings and blank material cells; unverified voltage scale; telemetry synchronization; camera index versus actual image integrity. Treat “Insignificant”, “n/a”, approximately zero and blank as distinct source states. The PSI-99 CSV field labeled “?-g Spread Length” includes mm/s values, so preserve the literal header and use the unit for the reported numeric rates.
+Sources: [98-TABLE], [99-TABLE], [98-S1], [98-S2], [99-SENS], [98-TM], [99-TM], [98-IMG], [99-IMG].
+
+=== SAFFIRE-98-99-SCI | Published flight results and implications ===
+Investigation: PSI-98, PSI-99
+Topic: Published flight results and implications ===
+Sources: [NASA-FLIGHT], [NASA-SYNTH]
+
+[DOC] The NASA flight-results presentation reports nearly steady flame spread over most of the large-fabric tests. Average rates were approximately 1.8 mm/s concurrent and 1.3 mm/s opposed. The visible concurrent flame length approached about 40 mm; the opposed flame length was about 24 mm. The flame length plateau and the rate of flame-front motion are separate observables. [NASA-FLIGHT, slides 19–20]
+[DOC] The first large SIBAL run used the original 94 cm fabric and stopped after airflow shutoff at the allotted 420 s. About 90% had burned, leaving a short segment for the opposed contingency. This explains why the burn-duration ratio is much larger than the ratio of published propagation rates. [NASA-FLIGHT, slides 14, 16, 20 and backup Table I]
+[DOC] The flight presentation's thermocouple diagram distinguishes surface and above-surface locations. Compare it with the workbook labels before interpreting the Sample Temp group as contact surface temperature. The concurrent curve has two groups of thermal maxima, consistent with the two timing clusters in the sample workbook. [NASA-FLIGHT, slide 21; 98-S1]
+[DOC] The flight team reported the two narrow SIBAL tests at 20 and 25 cm/s. The hardware Readme lists 30 cm/s for S6, while the CSV lists 20 cm/s. Flight reporting and sensor readings both support about 25 cm/s for S6. The origin of the documentary differences remains open. [NASA-FLIGHT, slides 16, 19–20; 99-DOC; 99-TABLE; 99-SENS]
+[DOC] NASA's later synthesis reports visible flame lengths of about 8.0 and 9.5 cm for the grooved and flat Saffire-II PMMA specimens respectively. Keep these image-derived flame lengths separate from the approximately 10 cm damage or burn-length fields and the reported surface regression rates. [NASA-SYNTH, section IV.D; 99-TABLE]
+[INTERP] A local thermal peak measures probe exposure. An image-defined front, a steady visible flame length, a damaged fuel length, and a surface regression rate answer different questions. Retrieval should preserve the observable, instrument and run identifier.
+
+=== SAFFIRE-98-99-METHOD | Uniform sensor analysis across 13 runs ===
+Investigation: PSI-98, PSI-99, PSI-100
+Topic: Uniform sensor analysis across 13 runs ===
+Sources: [98-S1], [98-S2], [99-SENS]
+
+Timing glossary: Igniter span is first-to-last sample above 0.5 A. Reported burn duration comes from a cited experiment document. Sustained response duration counts qualifying one-second sensor bins and can include gaps. Peak elapsed time is measured from recording start.
+
+[CALC] Use Calibrated Data and finite numeric elapsed times. Identify the observed current pulse at >0.5 A. Baseline is the median of all channel observations before pulse onset. Post-pulse maximum is the highest individual stored measurement after the last current sample above threshold. Peak time is elapsed seconds from recording start. Delta is peak minus baseline. Time since the pulse ended is peak time minus the stated pulse end.
+[CALC] To screen for sustained positive deviations, divide elapsed time into one-second bins from recording start. Evaluate full post-pulse bins with 20 or more observations. A bin qualifies if its median exceeds baseline by the greater of six unscaled baseline median absolute deviations (MAD) and a channel-specific floor. The floors are 1 °C for plume/sample thermocouples, 1 mW/cm² for radiometers, 1 cm/s for anemometers, and 0.005 in the stored units for the remaining channels, including the inlet probe. The first sustained bin is the first bin in a run of at least two consecutive qualifying bins. Total seconds is the number of qualifying bins in all such runs. The metric measures cumulative detected positive response, which can have gaps; it does not estimate burn duration. The detector does not quantify downward excursions. A dash means no qualifying sustained rise.
+[QA] Thresholds are operational comparisons, not instrument specifications or significance tests. Baseline drift and fan state can influence late peaks. One-second medians suppress isolated excursions for the sustained metric; raw sample maxima remain sensitive to spikes. Channel units are the workbook units. Radiometer results here use original channels, so 98 values can differ from processed channels reported earlier.
+Sources: [98-S1], [98-S2], [99-SENS], Calibrated Data.
+
+=== SAFFIRE-98-S01-SENSORS | PSI-98 sample 1 sensor response ===
+Investigation: PSI-98
+Sample: S1
+Topic: PSI-98 sample 1 sensor response ===
+Sources: [98-S1]
+
+[CALC] 20,000 igniter-current observations; observed pulse 60.027 to 67.980 s. Apply SAFFIRE-98-99-METHOD to the 23 channels below. Source: [98-S1], sample 1, Calibrated Data.
+CO2: baseline 0.426; post-pulse peak 0.6324 at 595.716 s (lag 527.736 s); delta 0.2064; first sustained bin 138 s; sustained total 521 s.
+O2: baseline 22.6379; post-pulse peak 22.7198 at 133.782 s (lag 65.802 s); delta 0.0818; first sustained bin - s; sustained total 0 s.
+Anemometer 1: baseline 20.5383; post-pulse peak 21.6297 at 247.698 s (lag 179.718 s); delta 1.0915; first sustained bin 211 s; sustained total 46 s.
+Anemometer 2: baseline 19.462; post-pulse peak 19.7486 at 72.105 s (lag 4.125 s); delta 0.2866; first sustained bin - s; sustained total 0 s.
+Ambient Pressure: baseline 14.8431; post-pulse peak 14.9035 at 457.083 s (lag 389.103 s); delta 0.0604; first sustained bin 212 s; sustained total 438 s.
+Radiometer 1: baseline -12.5768; post-pulse peak 132.174 at 343.398 s (lag 275.418 s); delta 144.7508; first sustained bin 83 s; sustained total 405 s.
+Radiometer 2: baseline -14.7546; post-pulse peak 124.1609 at 225.951 s (lag 157.971 s); delta 138.9155; first sustained bin 68 s; sustained total 342 s.
+Radiometer 3: baseline -0.8339; post-pulse peak 138.6037 at 224.994 s (lag 157.014 s); delta 139.4377; first sustained bin 68 s; sustained total 334 s.
+Radiometer 4: baseline -15.4178; post-pulse peak 133.7341 at 343.398 s (lag 275.418 s); delta 149.152; first sustained bin 81 s; sustained total 406 s.
+Humidity: baseline 46.8772; post-pulse peak 51.0916 at 483.285 s (lag 415.305 s); delta 4.2144; first sustained bin 125 s; sustained total 534 s.
+Test Section Inlet Temp: baseline 20.717; post-pulse peak 21.373 at 614.559 s (lag 546.579 s); delta 0.656; first sustained bin 316 s; sustained total 326 s.
+Plume Temp 1 (TC1): baseline 23.1064; post-pulse peak 57.9996 at 129.228 s (lag 61.248 s); delta 34.8933; first sustained bin 72 s; sustained total 587 s.
+Plume Temp 2 (TC2): baseline 23.1734; post-pulse peak 72.8017 at 126.621 s (lag 58.641 s); delta 49.6283; first sustained bin 70 s; sustained total 589 s.
+Plume Temp 3 (TC3): baseline 23.0209; post-pulse peak 121.7048 at 477.675 s (lag 409.695 s); delta 98.6839; first sustained bin 68 s; sustained total 591 s.
+Plume Temp 4 (TC4): baseline 23.0301; post-pulse peak 87.6378 at 110.451 s (lag 42.471 s); delta 64.6076; first sustained bin 68 s; sustained total 591 s.
+Plume Temp 5 (TC5): baseline 23.1064; post-pulse peak 38.0972 at 484.704 s (lag 416.724 s); delta 14.9909; first sustained bin 122 s; sustained total 537 s.
+Plume Temp 6 (TC6): baseline 23.0323; post-pulse peak 42.2576 at 479.622 s (lag 411.642 s); delta 19.2253; first sustained bin 100 s; sustained total 559 s.
+Sample Temp 1 (TC7): baseline 18.225; post-pulse peak 698.31 at 193.777 s (lag 125.797 s); delta 680.085; first sustained bin 70 s; sustained total 151 s.
+Sample Temp 2 (TC8): baseline 18.642; post-pulse peak 885.9938 at 206.679 s (lag 138.699 s); delta 867.3518; first sustained bin 69 s; sustained total 161 s.
+Sample Temp 3 (TC9): baseline 18.642; post-pulse peak 1078.1228 at 204.402 s (lag 136.422 s); delta 1059.4808; first sustained bin 68 s; sustained total 163 s.
+Sample Temp 4 (TC10): baseline 18.642; post-pulse peak 688.1295 at 359.502 s (lag 291.522 s); delta 669.4876; first sustained bin 78 s; sustained total 304 s.
+Sample Temp 5 (TC11): baseline 18.642; post-pulse peak 1091.7621 at 369.039 s (lag 301.059 s); delta 1073.1201; first sustained bin 68 s; sustained total 324 s.
+Sample Temp 6 (TC12): baseline 18.225; post-pulse peak 332.5693 at 344.718 s (lag 276.738 s); delta 314.3444; first sustained bin 68 s; sustained total 315 s.
+
+=== SAFFIRE-98-S02-SENSORS | PSI-98 sample 2 sensor response ===
+Investigation: PSI-98
+Sample: S2
+Topic: PSI-98 sample 2 sensor response ===
+Sources: [98-S2]
+
+[CALC] 20,000 igniter-current observations; observed pulse 60.026 to 67.979 s. Apply SAFFIRE-98-99-METHOD to the 23 channels below. Source: [98-S2], sample 2, Calibrated Data.
+CO2: baseline 0.6286; post-pulse peak 0.6458 at 281.555 s (lag 213.576 s); delta 0.0172; first sustained bin 198 s; sustained total 354 s.
+O2: baseline 22.3195; post-pulse peak 22.4514 at 83.39 s (lag 15.411 s); delta 0.1319; first sustained bin - s; sustained total 0 s.
+Anemometer 1: baseline 21.1403; post-pulse peak 21.2284 at 68.441 s (lag 0.462 s); delta 0.0881; first sustained bin - s; sustained total 0 s.
+Anemometer 2: baseline 18.8465; post-pulse peak 19.0524 at 369.038 s (lag 301.059 s); delta 0.2059; first sustained bin - s; sustained total 0 s.
+Ambient Pressure: baseline 14.8812; post-pulse peak 14.9035 at 242.417 s (lag 174.438 s); delta 0.0223; first sustained bin - s; sustained total 0 s.
+Radiometer 1: baseline -12.5768; post-pulse peak 8.1196 at 104.477 s (lag 36.498 s); delta 20.6964; first sustained bin 68 s; sustained total 80 s.
+Radiometer 2: baseline -14.7546; post-pulse peak -13.5209 at 141.107 s (lag 73.128 s); delta 1.2337; first sustained bin - s; sustained total 0 s.
+Radiometer 3: baseline -0.8339; post-pulse peak 0.3447 at 190.409 s (lag 122.43 s); delta 1.1787; first sustained bin - s; sustained total 0 s.
+Radiometer 4: baseline -15.4178; post-pulse peak 2.2354 at 104.906 s (lag 36.927 s); delta 17.6532; first sustained bin 68 s; sustained total 78 s.
+Humidity: baseline 49.7324; post-pulse peak 50.1091 at 229.019 s (lag 161.04 s); delta 0.3767; first sustained bin - s; sustained total 0 s.
+Test Section Inlet Temp: baseline 21.147; post-pulse peak 21.6362 at 493.679 s (lag 425.7 s); delta 0.4892; first sustained bin 226 s; sustained total 414 s.
+Plume Temp 1 (TC1): baseline 24.2877; post-pulse peak 32.3384 at 105.669 s (lag 37.69 s); delta 8.0507; first sustained bin 80 s; sustained total 52 s.
+Plume Temp 2 (TC2): baseline 28.114; post-pulse peak 41.6004 at 116.39 s (lag 48.411 s); delta 13.4864; first sustained bin 82 s; sustained total 103 s.
+Plume Temp 3 (TC3): baseline 28.6937; post-pulse peak 94.4031 at 106.49 s (lag 38.511 s); delta 65.7094; first sustained bin 74 s; sustained total 140 s.
+Plume Temp 4 (TC4): baseline 24.4401; post-pulse peak 59.4024 at 111.605 s (lag 43.626 s); delta 34.9623; first sustained bin 75 s; sustained total 102 s.
+Plume Temp 5 (TC5): baseline 30.7794; post-pulse peak 29.111 at 68.54 s (lag 0.561 s); delta -1.6683; first sustained bin - s; sustained total 0 s.
+Plume Temp 6 (TC6): baseline 32.0734; post-pulse peak 32.2067 at 189.254 s (lag 121.275 s); delta 0.1333; first sustained bin - s; sustained total 0 s.
+Sample Temp 1 (TC7): baseline 18.225; post-pulse peak 23.6334 at 244.133 s (lag 176.154 s); delta 5.4085; first sustained bin - s; sustained total 0 s.
+Sample Temp 2 (TC8): baseline 18.642; post-pulse peak 23.2184 at 354.386 s (lag 286.407 s); delta 4.5764; first sustained bin - s; sustained total 0 s.
+Sample Temp 3 (TC9): baseline 18.642; post-pulse peak 22.8031 at 123.617 s (lag 55.638 s); delta 4.1611; first sustained bin - s; sustained total 0 s.
+Sample Temp 4 (TC10): baseline 18.225; post-pulse peak 24.0484 at 538.037 s (lag 470.058 s); delta 5.8234; first sustained bin - s; sustained total 0 s.
+Sample Temp 5 (TC11): baseline 18.642; post-pulse peak 24.4632 at 316.106 s (lag 248.127 s); delta 5.8213; first sustained bin - s; sustained total 0 s.
+Sample Temp 6 (TC12): baseline 18.225; post-pulse peak 24.8779 at 512.753 s (lag 444.774 s); delta 6.6529; first sustained bin - s; sustained total 0 s.
+
+=== SAFFIRE-98-99-QA | Retrieval examples ===
+Investigation: PSI-98, PSI-99
+Topic: Retrieval examples ===
+Sources: [98-TABLE], [98-S2], [99-TABLE], [99-DOC], [99-SENS], [99-IMG]
+
+Q: How long did the Saffire-I opposed SIBAL sample burn?
+A: PSI-98 S2 is reported as 70 s in [98-TABLE]. Its igniter current was above 0.5 A for about 7.95 s in [98-S2]. See SAFFIRE-98-S02.
+
+Q: Did all Saffire-II silicone samples have the same response?
+A: PSI-99 S1–S4 all have about zero reported low-gravity burn length. S2 showed a comparatively large short plume transient near ignition, and their normal-gravity outcomes differed. See SAFFIRE-99-S01 through S04.
+
+Q: What airflow values are documented and measured for PSI-99 sample 6?
+A: [99-TABLE] gives 20 cm/s and [99-DOC] gives 30 cm/s. The two stored anemometer channel medians in [99-SENS] are about 25.13 and 24.85 cm/s. The discrepancy remains open. See SAFFIRE-99-S06.
+
+Q: Did the Nomex in Saffire-II sample 7 ignite?
+A: No. [99-TABLE] Note 2 says PMMA was entirely consumed and Nomex did not ignite. See SAFFIRE-99-S07.
+
+Q: Does a 900 s Saffire-II burn mean the igniter ran for 900 s?
+A: In PSI-99 S9, the burn duration is 900 s in [99-TABLE] and the measured igniter window is 29.964 s. See SAFFIRE-99-S09.
+
+Q: What does 177,300 mean for PSI-99?
+A: It is the combined count of sample JPEG filename rows marked received in [99-IMG], excluding flow test and BIT sheets. See SAFFIRE-98-99-IMG.
+
+=== SAFFIRE-98-99-SOURCES | Source registry ===
+Investigation: PSI-98, PSI-99, PSI-100
+Topic: Source registry ===
+Sources: [98-TABLE], [98-DOC], [98-S1], [98-S2], [98-TM], [98-IMG], [99-TABLE], [99-DOC], [99-SENS], [99-TM], [99-IMG], [NASA-FLIGHT], [NASA-SYNTH]
+
+Files are relative to data/raw/<mission>/ in the project. Section references above identify workbook sheets, CSV rows or document pages.
+
+[98-TABLE] Experimental table/PSI-98_Experimental table_SAFFIRE-1.csv
+[98-DOC] Science Documents/PSI-98_Science Documents_SAFFIRE-I and SAFFIRE-III Readme.docx
+[98-S1] Raw Data/PSI-98_Raw Data_Saffire-I Sample 1 Sensor Data Complete TM graphs.xlsx
+[98-S2] Raw Data/PSI-98_Raw Data_Saffire-I Sample 2 Sensor Data Complete TM graphs.xlsx
+[98-TM] Raw Data/PSI-98_Raw Data_Saffire-I Telemetry Data Good Process Version.xlsx
+[98-IMG] Science Documents/PSI-98_Science Documents_SAFFIRE-1_MergeResult-jpeg_Update_Final_v2.xlsx
+
+[99-TABLE] Experimental table/PSI-99_Experimental table_SAFFIRE-2.csv
+[99-DOC] Science Documents/PSI-99_Science Documents_SAFFIRE-II Readme.docx
+[99-SENS] Raw Data/PSI-99_Raw Data_Saffire Sensor Data Sample {1..9}.xlsx. Use the numbered filename specified by the sample section.
+[99-TM] Raw Data/PSI-99_Raw Data_Saffire-II Telemetry Data.xlsx
+[99-IMG] Science Documents/PSI-99_Science Documents_SAFFIRE-II_MergeResult-jpeg_v5_Final.xlsx
+
+[NASA-FLIGHT] NASA NTRS 20170008805, Results of Large-Scale Spacecraft Flammability Tests. https://ntrs.nasa.gov/citations/20170008805
+[NASA-SYNTH] NASA NTRS 20210011521, Fire Safety Implications of Preliminary Results from Saffire IV and V Experiments on Large Scale Spacecraft Fires. https://ntrs.nasa.gov/citations/20210011521
+
+=== SAFFIRE-100-X01 | Comparison with PSI-98 and PSI-99 ===
+Investigation: PSI-98, PSI-99, PSI-100
+Topic: Comparison with PSI-98 and PSI-99 ===
+Sources: [98-TABLE], [98-S1], [98-S2], [99-TABLE], [99-DOC], [100-TABLE], [100-S1], [100-S2], [NASA-III]
+
+[DOC, CALC] Saffire-I and III both record large SIBAL at different nominal airflows. The sample workbooks and flight presentation support roughly 20 cm/s for Saffire-I and 25 cm/s for Saffire-III, while the PSI-100 table/Readme state 30 cm/s for III. Both concurrent runs show strongly staggered thermal peaks and large radiometer rises. The shorter Saffire-III published burn is consistent with faster propagation in that run, while the timed stop and different duration definitions limit inference from a duration ratio.
+[DOC, INTERP] PSI-99 S5 and S6 also use SIBAL, at substantially narrower width. Compare width, flow direction, air speed, and diagnostic positions before transferring a spread relationship. Keep local probe temperatures, radiation, visible flame length and fuel consumption as separate observables.
+Sources: [98-TABLE], [98-S1], [98-S2], [99-TABLE], [99-DOC], [100-TABLE], [100-S1], [100-S2], [NASA-III].
+
+=== SAFFIRE-V6-QA | Normalization and package validation ===
+Investigation: PSI-98, PSI-99, PSI-100
+Sources: extra/run_crosswalk.csv; extra/normalization_audit.csv; extra/coverage.csv
+[CALC] All 13 nominal flow entries are parseable; local pre-igniter probe baselines remain separate. Approximate oxygen or paired oxygen values are not reduced to exact scalar measurements. [QA] Package-level consistency passed; raw-source verification remains pending.
+
+END OF CORPUS
