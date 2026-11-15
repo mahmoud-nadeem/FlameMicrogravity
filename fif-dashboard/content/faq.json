@@ -1,0 +1,26 @@
+{
+  "_help": "General questions the Guide answers offline. Keep every answer short and give its source.",
+  "items": [
+    {"q": "What is this site?", "keywords": ["site", "project", "about", "what is this", "purpose", "dashboard"],
+     "a": "It explains NASA's microgravity fire experiments for everyone: what each experiment did, what the data show and where every number comes from. Start with Explore, then Results, then Sources.",
+     "source": "Team"},
+    {"q": "What is microgravity?", "keywords": ["microgravity", "weightless", "zero gravity", "gravity", "float", "free fall"],
+     "a": "Microgravity is the condition in which people and objects appear weightless and float. Gravity does not vanish: on the space station it is still about 90% of Earth's. Things float because the station and everything in it are in free fall around Earth.",
+     "source": "NASA, What Is Microgravity? (Grades 5-8)"},
+    {"q": "Why does fire behave differently in space?", "keywords": ["fire", "flame", "space", "different", "buoyancy", "rise", "shape"],
+     "a": "On Earth hot gas rises and pulls in fresh air, which shapes flames and carries smoke upward. In microgravity there is no rising hot gas, so flames and smoke move only with the air flow that is there.",
+     "source": "PSI-102 page, Hypothesis"},
+    {"q": "What is the PSI repository?", "keywords": ["psi", "repository", "physical sciences informatics", "nasa data", "where data"],
+     "a": "NASA's Physical Sciences Informatics repository stores data from physical-science experiments run in space and on the ground. Every experiment on this site has a PSI page, linked on the Sources page.",
+     "source": "NASA PSI repository"},
+    {"q": "What do the labels on each finding mean?", "keywords": ["label", "observed", "reported", "inference", "confidence", "trust"],
+     "a": "OBSERVED IN DATA: we computed it from NASA's data files. REPORTED BY NASA OR A PUBLICATION: NASA or a paper states it. OUR INFERENCE: our own interpretation. Confidence (high, medium, low) says how solid it is.",
+     "source": "Team method"},
+    {"q": "Who should I ask about a specific experiment?", "keywords": ["who", "ask", "crew", "team", "member", "character"],
+     "a": "Each crew member covers one group of experiments: Amr (BASS), Mohamed Shreif (SAFFIRE), Mahmoud (smoke: SAME, SAME-R, DAFT), Mohammed Tamer (FLEX, CFI), Khaled (ACME flames), Mohamed Gamal (soot: SPICE, SLICE, CLD). Pick them in the chat.",
+     "source": "Team"},
+    {"q": "Does this work without internet?", "keywords": ["offline", "internet", "connection", "wifi"],
+     "a": "Yes. Pages, charts, characters, answers and saved sources all work offline. Only the optional AI answers need a connection, and the crew falls back to its saved answers without one.",
+     "source": "Team"}
+  ]
+}

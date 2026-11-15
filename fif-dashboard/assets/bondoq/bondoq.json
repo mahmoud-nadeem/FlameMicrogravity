@@ -1,0 +1,211 @@
+{
+ "frame": [
+  52,
+  42
+ ],
+ "ground": 39,
+ "stride": 16,
+ "cells": [
+  "walk0",
+  "walk1",
+  "walk2",
+  "walk3",
+  "walk4",
+  "walk5",
+  "stand",
+  "stand_breathe",
+  "stand_blink",
+  "stand_ear",
+  "look_l",
+  "look_r",
+  "look_r_ear",
+  "halfsit",
+  "sit",
+  "sit_breathe",
+  "sit_blink",
+  "sit_tail",
+  "sit_look_l",
+  "sit_look_r",
+  "groom_paw",
+  "groom_lick",
+  "groom_ear",
+  "groom_done",
+  "eat_lower",
+  "eat0",
+  "eat1",
+  "crouch",
+  "loaf",
+  "loaf_breathe",
+  "loaf_half",
+  "loaf_yawn",
+  "curl0",
+  "curl1",
+  "curl_ear",
+  "curl_lift",
+  "stretch0",
+  "stretch1",
+  "stretch_yawn"
+ ],
+ "anims": {
+  "walk": {
+   "intro": [],
+   "loop": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "stand": {
+   "intro": [],
+   "loop": [
+    6,
+    6,
+    7,
+    7,
+    6,
+    6,
+    7,
+    8,
+    7,
+    6,
+    9,
+    6
+   ]
+  },
+  "look": {
+   "intro": [],
+   "loop": [
+    6,
+    10,
+    10,
+    6,
+    11,
+    12,
+    11,
+    6
+   ]
+  },
+  "sit": {
+   "intro": [
+    13
+   ],
+   "loop": [
+    14,
+    15,
+    14,
+    15,
+    18,
+    18,
+    14,
+    16,
+    15,
+    17,
+    14,
+    19,
+    19,
+    15
+   ]
+  },
+  "groom": {
+   "intro": [],
+   "loop": [
+    20,
+    21,
+    20,
+    21,
+    20,
+    21,
+    22,
+    22,
+    23,
+    14
+   ]
+  },
+  "eat": {
+   "intro": [
+    6,
+    24
+   ],
+   "loop": [
+    25,
+    26,
+    25,
+    26,
+    25,
+    24
+   ]
+  },
+  "settle": {
+   "intro": [
+    13,
+    14,
+    27
+   ],
+   "loop": [
+    28,
+    29
+   ]
+  },
+  "loaf": {
+   "intro": [],
+   "loop": [
+    28,
+    28,
+    29,
+    29
+   ]
+  },
+  "sleep": {
+   "intro": [],
+   "loop": [
+    32,
+    32,
+    33,
+    33,
+    32,
+    32,
+    33,
+    33,
+    34,
+    32,
+    33,
+    33
+   ]
+  },
+  "wake": {
+   "intro": [
+    35,
+    30,
+    31,
+    30
+   ],
+   "loop": [
+    28
+   ]
+  },
+  "stretch": {
+   "intro": [
+    27,
+    36,
+    37,
+    38,
+    37,
+    36
+   ],
+   "loop": [
+    6
+   ]
+  }
+ },
+ "bowl": [
+  20,
+  10
+ ],
+ "bed": [
+  60,
+  12
+ ]
+}

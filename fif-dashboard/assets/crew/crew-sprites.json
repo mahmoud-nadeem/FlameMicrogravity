@@ -1,0 +1,158 @@
+{
+  "morgan": {
+    "sheet": "assets/crew/morgan.png",
+    "frame": [
+      176,
+      300
+    ],
+    "frames": [
+      "idle",
+      "breath",
+      "talk",
+      "point"
+    ],
+    "source": "crew-illustrations/Amr Morgan.jpeg",
+    "head_box": [
+      295,
+      18,
+      482,
+      262
+    ],
+    "scale": 0.1726,
+    "bust": [
+      46,
+      9,
+      84
+    ]
+  },
+  "adwi": {
+    "sheet": "assets/crew/adwi.png",
+    "frame": [
+      176,
+      300
+    ],
+    "frames": [
+      "idle",
+      "breath",
+      "talk",
+      "point"
+    ],
+    "source": "crew-illustrations/Khaled Adawi.jpeg",
+    "head_box": [
+      434,
+      251,
+      582,
+      428
+    ],
+    "scale": 0.2591,
+    "bust": [
+      46,
+      9,
+      84
+    ]
+  },
+  "nadeem": {
+    "sheet": "assets/crew/nadeem.png",
+    "frame": [
+      176,
+      300
+    ],
+    "frames": [
+      "idle",
+      "breath",
+      "talk",
+      "point"
+    ],
+    "source": "crew-illustrations/Mahmoud Nadeem.jpeg",
+    "head_box": [
+      300,
+      12,
+      528,
+      272
+    ],
+    "scale": 0.1721,
+    "bust": [
+      46,
+      9,
+      84
+    ]
+  },
+  "gamal": {
+    "sheet": "assets/crew/gamal.png",
+    "frame": [
+      176,
+      300
+    ],
+    "frames": [
+      "idle",
+      "breath",
+      "talk",
+      "point"
+    ],
+    "source": "crew-illustrations/Mohammed Gamal.jpeg",
+    "head_box": [
+      422,
+      254,
+      587,
+      452
+    ],
+    "scale": 0.2318,
+    "bust": [
+      46,
+      9,
+      84
+    ]
+  },
+  "shreif": {
+    "sheet": "assets/crew/shreif.png",
+    "frame": [
+      176,
+      300
+    ],
+    "frames": [
+      "idle",
+      "breath",
+      "talk",
+      "point"
+    ],
+    "source": "crew-illustrations/Mohammed Shiref.jpeg",
+    "head_box": [
+      308,
+      8,
+      485,
+      228
+    ],
+    "scale": 0.1715,
+    "bust": [
+      46,
+      9,
+      84
+    ]
+  },
+  "tamer": {
+    "sheet": "assets/crew/tamer.png",
+    "frame": [
+      176,
+      300
+    ],
+    "frames": [
+      "idle",
+      "breath",
+      "talk",
+      "point"
+    ],
+    "source": "crew-illustrations/Mohammed Tamer.jpeg",
+    "head_box": [
+      408,
+      263,
+      612,
+      492
+    ],
+    "scale": 0.2352,
+    "bust": [
+      41,
+      9,
+      94
+    ]
+  }
+}

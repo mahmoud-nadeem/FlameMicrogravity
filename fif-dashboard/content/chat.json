@@ -1,0 +1,7 @@
+{
+  "_help": "Optional online answers. Leave api_url empty (the default) for offline answers from each crew member's RAG folders. To let an AI model write answers from the same passages: run tools/llm_proxy.py (it holds the API key and serves http://localhost:8787/ask), set api_url to that URL and run build_site_data.py. Never put an API key here. 'rag': false turns off the per-character RAG texts.",
+  "api_url": "",
+  "timeout_ms": 8000,
+  "min_score": 0.14,
+  "rag": true
+}

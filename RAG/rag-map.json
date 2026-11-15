@@ -1,0 +1,9 @@
+{
+  "morgan": ["BASS", "BASS-II"],
+  "shreif": ["SAFFIRE-I", "SAFFIRE-II", "SAFFIRE-III"],
+  "nadeem": ["SAME", "SAME-R", "DAFT"],
+  "tamer": ["FLEX", "FLEX-II", "CFI", "ACME-CFI-G"],
+  "adwi": ["ACME-BRE", "ACME-E-FIELD", "ACME-S-FLAME", "ACME-FLAME-DESIGN"],
+  "gamal": ["SPICE", "SLICE", "ACME-CLD"],
+  "guide": ["*"]
+}

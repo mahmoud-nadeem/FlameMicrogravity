@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flame in Freefall</title>
+  <meta name="description" content="NASA's microgravity fire experiments explained for everyone, with every number traced to its NASA source.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/expedition.css">
+  <script>
+    /* Choose the visual mode before the first paint so there is no flash: Cinematic unless the
+       visitor saved Retro. The scientific content is identical in both modes. */
+    try { if (JSON.parse(localStorage.getItem("fif.cinematic") ?? "true")) document.documentElement.classList.add("cinematic-boot"); }
+    catch (e) { document.documentElement.classList.add("cinematic-boot"); }
+  </script>
+</head>
+<body>
+  <canvas id="space" aria-hidden="true"></canvas>
+  <a class="skip" href="#app">Skip to content</a>
+
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="Flame in Freefall home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">FLAME IN FREEFALL</span>
+    </a>
+    <nav class="journey" id="journey" aria-label="Main"></nav>
+    <div class="top-actions">
+    </div>
+  </header>
+
+  <!-- Console frame: decorative corners and live telemetry. Hidden from assistive technology. -->
+  <div class="hud" aria-hidden="true">
+    <span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span>
+    <span class="hud-telemetry" id="hud-telemetry"></span>
+  </div>
+  <nav class="edge-nav" id="edge-nav" aria-label="Previous and next section"></nav>
+
+  <main id="app" tabindex="-1"></main>
+
+  <button class="chat-launch" id="chat-launch" aria-expanded="false" aria-controls="chat">
+    <canvas class="sprite" data-character="guide" width="16" height="16" aria-hidden="true"></canvas>
+    <span>ASK THE CREW</span>
+  </button>
+  <section class="chat" id="chat" aria-label="Ask the crew" hidden>
+    <header class="chat-head">
+      <div class="chat-crew" id="chat-crew" role="tablist" aria-label="Choose who to ask"></div>
+      <button class="icon-btn" id="chat-close" aria-label="Close chat">X</button>
+    </header>
+    <div class="chat-log" id="chat-log" aria-live="polite"></div>
+    <div class="chat-suggest" id="chat-suggest"></div>
+    <form class="chat-form" id="chat-form" autocomplete="off">
+      <label class="sr-only" for="chat-input">Your question</label>
+      <input id="chat-input" type="text" placeholder="Type a question..." maxlength="300">
+      <button type="submit" class="px-btn">SEND</button>
+    </form>
+    <p class="chat-mode" id="chat-mode"></p>
+  </section>
+
+  <footer class="footer" id="footer"></footer>
+
+  <script src="assets/vendor/chart.umd.min.js"></script>
+  <script src="data/site-data.js"></script>
+  <script src="data/shorts.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/starfield.js"></script>
+  <script src="assets/js/planet-renderer.js"></script>
+  <script src="assets/js/space-engine.js"></script>
+  <script src="assets/js/sprites.js"></script>
+  <script src="assets/js/dialog.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/sim-smoke.js"></script>
+  <script src="assets/js/conversation-queue.js"></script>
+  <script src="assets/js/rag.js"></script>
+  <script src="assets/js/chat.js"></script>
+  <script src="assets/js/chat-visuals.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script src="assets/js/lab-config.js"></script>
+  <script src="assets/js/lab.js"></script>
+  <script src="assets/js/expedition.js"></script>
+  <script src="assets/js/planet-guide.js"></script>
+  <script src="assets/js/orbital-explore.js"></script>
+  <script src="assets/js/controls.js"></script>
+  <script src="assets/js/cursor.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/bondoq.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+const vm=require("node:vm"),fs=require("node:fs"),path=require("node:path"),assert=require("node:assert/strict");
+const ctx=vm.createContext({window:{FIF:{}}});
+vm.runInContext(fs.readFileSync(path.join(__dirname,"../assets/js/lab-config.js"),"utf8"),ctx);
+const F=ctx.window.FIF,config={u:2,d:1,l:50,t:0};
+assert.equal(F.parseLabCommand("set flow to 4",config).patch.u,4);
+assert.equal(F.parseLabCommand("double flow",config).patch.u,4);
+assert.equal(F.parseLabCommand("mixing to 2 and time to 10",config).patch.t,10);
+assert.equal(F.parseLabCommand("distance to 60",config).patch.l,60);
+assert.equal(F.parseLabCommand("still air",config).patch.u,0);
+for(const q of ["flow to -1","flow to 9","mixing to 0","set oxygen to 30","distance to 200"])assert.ok(F.parseLabCommand(q,config).error,q);
+assert.ok(F.validateLabConfig({u:NaN}).error);
+assert.ok(F.validateLabConfig({u:"4"}).error);
+assert.ok(F.validateLabConfig({oxygen:20}).error);
+assert.ok(F.parseLabCommand("explain mixing",config).patch);
+console.log("Passed: command parsing, multi-parameter configuration, negative/out-of-range/unknown/non-numeric rejection.");

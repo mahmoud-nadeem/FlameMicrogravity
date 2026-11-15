@@ -1,0 +1,18 @@
+{
+  "title": "Flame in Freefall",
+  "tagline": "NASA's fire experiments in microgravity, explained for everyone",
+  "intro": [
+    "Fire behaves differently in space. Without weight, hot gas does not rise, flames take odd shapes and smoke hangs near its source instead of drifting up to a detector.",
+    "For decades NASA has burned, heated and measured materials on the International Space Station and in drop towers. The results sit in NASA's Physical Sciences Informatics (PSI) repository as tables, logs and reports that are hard to read without a science background.",
+    "This site turns those experiments into something you can explore: what each experiment did, what the data show, a simple illustration of what it means, and every number traced back to its NASA source."
+  ],
+  "journey": [
+    {"id": "home", "label": "Briefing", "route": "#/"},
+    {"id": "explore", "label": "Explore", "route": "#/explore"},
+    {"id": "results", "label": "Results", "route": "#/results"},
+    {"id": "research", "label": "Research", "route": "#/research"},
+    {"id": "sources", "label": "Sources", "route": "#/sources"}
+  ],
+  "team": "Team Flame in Freefall, NASA Space Apps Challenge 2026, Alexandria, Egypt",
+  "disclosure": "Data: NASA PSI repository (CC0). Analysis code, text and characters were made by the team with help from an AI assistant; see the Sources page."
+}

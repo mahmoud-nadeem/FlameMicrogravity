@@ -1,0 +1,196 @@
+{
+ "_help": "One character per team member plus a guide. This file is the one authoritative crew-to-colour table: 'suit' (suit colour), 'accent' (trim), 'suit_name' (the same in words), 'visor' (the dark reflective visor, the same for everyone). Faces are never shown: every astronaut wears a closed helmet. Crew members use sprite sheets made by tools/crew_astronauts.py (it measures proportions from each member's illustration in ../crew-illustrations and draws the suit in these colours; 'sheet': frame size, 'bust' crop for small portraits, frames idle/breath/talk/point). Re-run that tool after changing a colour; it updates 'sprite' and 'sheet' here. Ids stay stable: routes and data use them.",
+ "characters": [
+  {
+   "id": "guide",
+   "name": "Guide",
+   "track": null,
+   "role": "Mission guide",
+   "greeting": "Welcome aboard! I can tell you what this site is, what microgravity means and which crew member to ask about each experiment.",
+   "sprite": "generated",
+   "suit": "#e8e6dd",
+   "visor": "#0e1424",
+   "accent": "#c98500"
+  },
+  {
+   "id": "morgan",
+   "name": "Amr Morgan",
+   "track": "T1",
+   "role": "Solid fuels (BASS, BASS-II)",
+   "greeting": "I study how solid materials burn in microgravity: the BASS and BASS-II runs on the space station. Ask me about the runs, the oxygen readings or what the data cannot tell us.",
+   "sprite": "assets/crew/morgan.png",
+   "suit": "#cf6230",
+   "visor": "#0e1424",
+   "accent": "#ffe08a",
+   "sheet": {
+    "frame": [
+     176,
+     300
+    ],
+    "bust": [
+     46,
+     9,
+     84
+    ],
+    "frames": [
+     "idle",
+     "breath",
+     "talk",
+     "point"
+    ],
+    "source": "crew-illustrations/Amr Morgan.jpeg"
+   },
+   "suit_name": "burnt orange, pale-gold trim"
+  },
+  {
+   "id": "shreif",
+   "name": "Mohamed Shreif",
+   "track": "T2",
+   "role": "Large-scale fire tests (SAFFIRE)",
+   "greeting": "I cover the large fire tests flown in empty cargo ships (SAFFIRE). My findings are in: ask me about the temperatures.",
+   "sprite": "assets/crew/shreif.png",
+   "suit": "#2f9467",
+   "visor": "#0e1424",
+   "accent": "#f2f5ea",
+   "sheet": {
+    "frame": [
+     176,
+     300
+    ],
+    "bust": [
+     46,
+     9,
+     84
+    ],
+    "frames": [
+     "idle",
+     "breath",
+     "talk",
+     "point"
+    ],
+    "source": "crew-illustrations/Mohammed Shiref.jpeg"
+   },
+   "suit_name": "green, white trim"
+  },
+  {
+   "id": "nadeem",
+   "name": "Mahmoud Nadeem",
+   "track": "T3",
+   "role": "Smoke and aerosol detection (SAME, SAME-R, DAFT)",
+   "greeting": "I study the smoke that overheated spacecraft materials give off, and the instruments that measure it. Ask me anything about it!",
+   "sprite": "assets/crew/nadeem.png",
+   "suit": "#16181e",
+   "visor": "#0e1424",
+   "accent": "#f0b042",
+   "sheet": {
+    "frame": [
+     176,
+     300
+    ],
+    "bust": [
+     46,
+     9,
+     84
+    ],
+    "frames": [
+     "idle",
+     "breath",
+     "talk",
+     "point"
+    ],
+    "source": "crew-illustrations/Mahmoud Nadeem.jpeg"
+   },
+   "suit_name": "black, amber trim"
+  },
+  {
+   "id": "tamer",
+   "name": "Mohammed Tamer",
+   "track": "T4",
+   "role": "Droplets and cool flames (FLEX, CFI)",
+   "greeting": "I cover burning fuel droplets and cool flames (FLEX, FLEX-2, CFI). My FLEX findings are in: ask me about extinction.",
+   "sprite": "assets/crew/tamer.png",
+   "suit": "#3c6fd6",
+   "visor": "#0e1424",
+   "accent": "#ffb347",
+   "sheet": {
+    "frame": [
+     176,
+     300
+    ],
+    "bust": [
+     41,
+     9,
+     94
+    ],
+    "frames": [
+     "idle",
+     "breath",
+     "talk",
+     "point"
+    ],
+    "source": "crew-illustrations/Mohammed Tamer.jpeg"
+   },
+   "suit_name": "blue, orange trim"
+  },
+  {
+   "id": "adwi",
+   "name": "Khaled Adawi",
+   "track": "T5",
+   "role": "Gas flames (ACME)",
+   "greeting": "I study gas flames in the ACME experiments on the space station: BRE, E-FIELD Flames, s-Flame and Flame Design. Ask me about the BRE flight data and what it can and cannot show.",
+   "sprite": "assets/crew/adwi.png",
+   "suit": "#e3e0d4",
+   "visor": "#0e1424",
+   "accent": "#d95926",
+   "sheet": {
+    "frame": [
+     176,
+     300
+    ],
+    "bust": [
+     46,
+     9,
+     84
+    ],
+    "frames": [
+     "idle",
+     "breath",
+     "talk",
+     "point"
+    ],
+    "source": "crew-illustrations/Khaled Adawi.jpeg"
+   },
+   "suit_name": "white, orange-red trim"
+  },
+  {
+   "id": "gamal",
+   "name": "Mohamed Gamal",
+   "track": "T6",
+   "role": "Soot and smoke points (SPICE, SLICE, CLD)",
+   "greeting": "I cover soot and smoke points of flames (SPICE, SLICE, CLD). My findings are in: ask me about the airflow and the flames.",
+   "sprite": "assets/crew/gamal.png",
+   "suit": "#7c52b8",
+   "visor": "#0e1424",
+   "accent": "#7fe0c4",
+   "sheet": {
+    "frame": [
+     176,
+     300
+    ],
+    "bust": [
+     46,
+     9,
+     84
+    ],
+    "frames": [
+     "idle",
+     "breath",
+     "talk",
+     "point"
+    ],
+    "source": "crew-illustrations/Mohammed Gamal.jpeg"
+   },
+   "suit_name": "purple, mint trim"
+  }
+ ]
+}
