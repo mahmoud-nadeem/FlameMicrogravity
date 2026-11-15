@@ -1,0 +1,520 @@
+# FLEX (Flame Extinguishment Experiment) - Deep Analysis Pack
+# Built for: RAG / chatbot / agent / dashboard ingestion
+# Sources analysed (7): S1 PSI record (FLEX.txt), S2 dashboard v2 HTML, S3 Nayagam 2013 ISS R&D slides,
+#   S4 Liu et al. 2013 (n-octane/n-decane diameter study), S5 Farouk & Dryer 2013 (cool-flame simulation),
+#   S6 Hicks et al. 2012 (methanol water dynamics), S7 FLEX Test Plan (from the 2005 Research Requirements Document)
+# Also seen: screenshot of PSI-69 folder tree (7 folders, no files or sizes visible).
+# Equations are LaTeX ($...$). Splitting rule: split on lines beginning "### [CHUNK". Every chunk is self-contained.
+# Confidence tags: [SRC] stated in a source | [CALC] computed here | [FIG] read off a figure (approximate) | [INF] inference | [FLAG] needs verification
+
+### [CHUNK FLEX-00] How to use this file | tags: meta, schema
+Each chunk header has: id, title, tags. Body lines may carry confidence tags [SRC], [CALC], [FIG], [INF], [FLAG].
+For retrieval, filter on tags (e.g. "cool-flame", "test-matrix", "methanol", "data-quality").
+For answers, prefer [SRC] and [CALC] facts, and say so when quoting [FIG] or [INF] facts.
+Units: burning rate $K$ is in mm^2/s, diameters in mm, pressure in atm, mole fractions dimensionless.
+
+### [CHUNK FLEX-01] Record metadata | source: S1, S2 | tags: record, psi, metadata
+- Name: Flame Extinguishment Experiment (FLEX). Proposal title: "Droplet Flame Extinguishment in Microgravity". [SRC]
+- PSI ID: PSI-69. DOI: 10.60555/mbq8-0451. URL: https://psi.nasa.gov/physci/repo/data/investigations/PSI-69 [SRC]
+- Type: Microgravity Investigation. Platform: International Space Station (ISS). [SRC]
+- Dates: 2007-08-01 to 2016-07-31. Sponsor: NASA. Center: Glenn Research Center (GRC). [SRC]
+- Hardware: Combustion Integrated Rack (CIR) in the Fluids and Combustion Facility (FCF), and the Multi-user Droplet Combustion Apparatus (MDCA). [SRC]
+- Contacts on PSI: Forman A. Williams, Benjamin D. Shaw, Michael C. Hicks, Vedha Nayagam, Mun Y. Choi, Frederick L. Dryer, Daniel Dietrich. [SRC]
+- Science team (S3): PI F.A. Williams (UCSD). Co-Is: C.T. Avedisian (Cornell), M.Y. Choi (UConn), F.L. Dryer (Princeton), T. Farouk (U South Carolina), M.C. Hicks (NASA GRC), V. Nayagam (NCSER/CWRU), B.D. Shaw (UC Davis). Project scientists: D.L. Dietrich (NASA GRC), P.V. Ferkul and V.M. Bryg (NCSER/GRC). Project manager: J.M. Hickman (NASA GRC). [SRC]
+- PSI-69 folder tree: Investigation Metadata Files, Experimental table, Engineering Documents, Presentations, Raw Data, Calibration, Science Documents. The screenshot shows no file names, sizes or dates, so file-level content is unknown. [SRC][FLAG]
+- Dashboard seed row for FLEX: fuel=liquid, hardware="MDCA in CIR", domain=suppression, scores [prev1, det0, sup3, hiO2 1, hab 2, model 3], PSI ID verified, owner Mohammed Tamer, track 4 "Droplets, suppression and cool flames". [SRC]
+- Dashboard row "FLEX-2" has no PSI ID (status unknown). Whether it is a separate PSI record is unverified. [FLAG]
+
+### [CHUNK FLEX-02] Objectives, hypothesis, approach | source: S1 | tags: objectives, hypothesis, approach
+- Objectives [SRC]: (1) map flammability limits of liquid fuels in microgravity; (2) measure effectiveness of gaseous suppressants (CO2, He, SF6); (3) build predictive models of combustion limits in reduced gravity, validating simplified models by adding detailed chemistry, heat transfer and transport; (4) obtain high-resolution droplet burning rate, extinction, radiation, soot and temperature data across ambient conditions and suppressant levels.
+- Hypothesis [SRC]: absence of buoyant convection changes species/energy transport, radiative loss and kinetics, so flammability limits and suppressant efficacy differ from normal gravity.
+- Approach [SRC]: ignite relatively large droplets and determine the Limiting Oxygen Index (LOI) as a function of ambient pressure (0.5-1.5 atm), then repeat with suppressants. Includes slow, sub-buoyant flow tests made by translating the droplet at a slow uniform speed, and many free (fiber-free) droplets with slow drift.
+- Claimed Earth benefits [SRC]: fire safety in confined or reduced-gravity settings (submarines, high-altitude aircraft); less harmful suppressants; cool-flame chemistry informing engines with better efficiency and lower emissions.
+- [INF] The PSI text names "He, CO2, SF6" while the 2013 slides (S3) say N2, He, CO2 and xenon were flown. See FLEX-14.
+
+### [CHUNK FLEX-03] Core concepts and equations (LaTeX) | source: S4, S5, S7, S6 | tags: equations, theory, glossary
+1. Classical d-square law (no soot, no radiation, quasi-steady) [SRC, S4]:
+   $$\left(\frac{D}{D_0}\right)^2 = 1 - K_0\,\frac{t}{D_0^2}, \qquad \text{equivalently } D^2 = D_0^2 - K t$$
+   Real droplets deviate. K depends on $D_0$ (S4, FLEX-09).
+2. Standoff ratios [SRC, S4]: flame standoff ratio $\mathrm{FSR}=D_f/D$, soot-shell standoff ratio $\mathrm{SSR}=D_s/D$.
+3. Limiting Oxygen Index and Minimum Extinction Concentration [SRC, S7]:
+   $$\mathrm{LOI} = 0.209\,(1-\mathrm{MEC})$$
+   LOI is the lowest O2 mole fraction that supports a quasi-steady flame. For total flooding, the agent must drop O2 below LOI. [SRC]
+4. Damkohler framing [SRC S7, definition added] The flammability boundary is essentially the critical Damkohler number, $\mathrm{Da}=\tau_{\text{residence}}/\tau_{\text{chemistry}}$. Below the critical value the flame cannot be sustained. The exact definition is not given in the source. [INF]
+5. Two classical extinction modes [SRC, S3, S7]: diffusive/blowoff extinction (high O2, small droplet; red branch, Law 1975) and radiative extinction (low O2, large droplet; blue branch, Chao et al. 1990). After extinction the droplet continues as pure evaporation.
+6. Generic overall-reaction form used in activation-energy analyses [INF]:
+   $$\dot{\omega} = B\,\exp\!\left(-\frac{E_a}{R T}\right)[\text{Fuel}]^{a}[\text{O}_2]^{b}$$
+   Nayagam et al. extracted an effective heat release, overall activation energy and pre-exponential factor from burning rates and extinction diameters. The numeric values are not in the supplied text. [FLAG]
+7. Methanol two-step global kinetics (Zhang 1996, in S6) [SRC]:
+   $$2\,\mathrm{CH_3OH}+\mathrm{O_2}\rightarrow \mathrm{H_2O}+\mathrm{CO_2}+3\,\mathrm{H_2}+\mathrm{CO}, \qquad \mathrm{H_2}+\mathrm{CO}+\mathrm{O_2}\rightarrow \mathrm{H_2O}+\mathrm{CO_2}$$
+   Reaction II is written schematically in the slide. It is not stoichiometrically scaled to the H2 produced in reaction I.
+8. Methanol extinction-diameter theory (Zhang, Card, Williams 1996, via S6) [SRC]: extinction diameter $d_e$ is linear in initial diameter, $d_e \propto d_0$. Water produced in the flame diffuses back and condenses on the droplet, builds up in the second half of burning, and at a threshold begins to evaporate with the fuel. That water reaches the flame zone, lowers flame temperature, raises reaction time, and the flame extinguishes when residence time is insufficient.
+9. Simulation governing equations (S5) [SRC, summarized]: 1-D spherosymmetric transient species and energy conservation in both phases; heat flux = conduction + enthalpy transport by species diffusion + Dufour effect + spectral radiation; Stefan-Maxwell diffusion; far field at 200 x initial droplet diameter, fixed composition and 298 K. Interface equilibrium (reconstructed from garbled text) [INF]: $x_{i,\text{gas}}\,p=\gamma_i\,x_{i,\text{liq}}\,p_{\text{vap},i}(T)$.
+
+### [CHUNK FLEX-04] LOI test procedure | source: S1, S7 | tags: procedure, LOI, flammability-map
+Construct the flammability map (O2 mole fraction vs droplet diameter) as follows [SRC]:
+1. Select test pressure 0.5-1.5 atm.
+2. Select a smaller droplet (about 3 mm).
+3. Choose an O2 fraction, based on ground tests, that lets the droplet burn to completion.
+4. Run a droplet combustion test.
+5. If the flame extinguishes at a finite diameter, enlarge the droplet or repeat.
+6. Continue until the flame survives only briefly after ignition (radiative extinction).
+7. Repeat at lower O2 fraction.
+8. Continue to the O2 fraction where the droplet does not ignite.
+If extinction sizes are too small to measure at every O2 level, run an iterative sequence (burn to completion, then no-ignition) with finer O2 increments to bracket LOI. [SRC]
+Slow-flow tests: duplicate runs that gave finite extinction diameters, then near the end impose a small sub-buoyant flow by translating the droplet. Hardware could not diagnose a uniform steady convective flow over a whole test. [SRC]
+Suppressant tests repeat the same procedure at fixed suppressant level, then step the level and type. [SRC]
+Conceptual map (S7 Fig. 2): flammable region inside a U-shaped curve; red branch = extinction (blowoff), blue branch = radiative quench; LOI = point where they meet (lowest O2 supporting a quasi-steady flame). [SRC]
+
+### [CHUNK FLEX-05] Suppressant efficacy: MEC, LOI, CO2 vs He | source: S7 | tags: suppression, CO2, helium, MEC, LOI, calc
+- ISS US segment uses CO2 as suppressant. [SRC]
+- Cup-burner methane flames, standard air (Takahashi et al. 2004), MEC [SRC]:
+  CO2: 0.16 (1-g), 0.19 (micro-g). He: 0.27 (1-g), 0.31 (micro-g). N2: 0.26 (1-g), 0.38 (micro-g).
+- LOI from $\mathrm{LOI}=0.209(1-\mathrm{MEC})$ [CALC]:
+  | Agent | LOI 1-g | LOI micro-g | change |
+  | CO2 | 0.176 | 0.169 | -0.007 |
+  | He  | 0.153 | 0.144 | -0.008 |
+  | N2  | 0.155 | 0.130 | -0.025 |
+  (rounded to 3 decimals)
+- Reading [INF]: lower MEC means a more effective agent. By cup-burner MEC, CO2 is the most effective of the three in both gravity levels. N2 loses the most effectiveness in micro-g (MEC rises 0.26 to 0.38).
+- Conflicting evidence [SRC]: Honda and Ronney 1998 (opposed-flow flame spread over thin solids with He, N2, Ar, CO2, SF6) suggest CO2 is less effective than He in microgravity on a minimum-O2 basis. The two results differ in fuel and geometry, so no single ranking holds. [INF]
+- Katta et al. 2004 (methane cup burner, simulation plus micro-g experiment): CO2 above 19.1 vol% needed to destabilize the flame base in micro-g, vs 16.4 vol% in normal gravity. Gas-phase radiation is important for micro-g limits. [SRC]
+- Radiative feedback: with no buoyant convection, flame radiative losses become a large share of heat loss; a thermally participating gas like CO2 absorbs and re-radiates, raising fuel-side temperatures (Chernovsky et al. 2005, ethylene flame on a spherical porous burner, 20-40% CO2). This is why CO2 efficacy in micro-g is not assured. [SRC]
+
+### [CHUNK FLEX-06] Flight test matrix structure and statistics | source: S7 | tags: test-matrix, planning, calc
+Planned envelope (not the final flown matrix; the final matrix was to change with drop-tower results). [SRC]
+Fuels: n-heptane (C7H16) and methanol (CH3OH). Initial droplet diameters: 3 and 5 mm. Balance gas N2: $X_{N_2}=1-X_{O_2}-X_{\text{suppressant}}$. [SRC]
+| Table | Tests | Purpose | P (atm) | X_O2 | X_suppressant | Flow / support |
+| 6  | 1-28   | Quiescent LOI (14 heptane + 14 methanol)  | 0.5, 0.75, 1.0, 1.5 | 0.10-0.40 | none | 0 cm/s, no fiber |
+| 7  | 29-50  | Slow-flow LOI (11 + 11)                   | 0.5, 0.75, 1.0 | 0.10-0.40 | none | 1.5 cm/s, SiC fiber |
+| 8  | 51-106 | CO2 efficacy (28 + 28)                    | 0.70, 0.85, 1.0 | 0.10-0.30 | 0.15, 0.25, 0.50, 0.70 | 0 cm/s, no fiber |
+| 9  | 107-162| He efficacy (28 + 28)                     | 0.70, 0.85, 1.0 | 0.10-0.30 | 0.15, 0.25, 0.50, 0.70 | 0 cm/s, no fiber |
+| 10 | 163-218| SF6 efficacy (28 + 28)                    | 0.70, 0.85, 1.0 | 0.10-0.30 | 0.15, 0.25, 0.50, 0.70 | 0 cm/s, no fiber |
+| 11 | 219-258| CO2 in slow flow (20 + 20)                | 0.70, 1.0 | 0.10-0.21 | 0.15, 0.25, 0.50, 0.70 | 1.5 cm/s, no fiber |
+| 12 | 259-290| CO2 in radiative environment (16 + 16)    | 2.0, 3.0 | 0.10, 0.21 | 0.15, 0.25, 0.50, 0.70 | 0 cm/s, no fiber |
+- Totals [CALC]: 290 planned tests = 145 heptane + 145 methanol. Suppressant-efficacy tests (Tables 8-10) = 168; slow-flow (7, 11) = 62; LOI baselines (6) = 28; radiative (12) = 32.
+- Per-suppressant design [CALC]: Tables 8-10 each cover 3 pressures x (heptane: XO2 values 0.25/0.30 at 0.70 and 0.85 atm; 0.10/0.15/0.21 at 1.0 atm) x 4 suppressant levels.
+- Diagnostics requirements (S7 section 5.2) [SRC]: chamber gas temperature accuracy at least +/-0.5 C and pressure at least +/-0.01 atm, sampled at 10 Hz or faster; all data time-synchronized to GMT within +/-0.03 s.
+- Machine use: this is a ready-made design-of-experiments grid. An agent can rebuild it from the table above, or load the original Tables 6-12 from the PDF.
+
+### [CHUNK FLEX-07] Cool-flame discovery (n-heptane) | source: S3, S4-ref, S5 | tags: cool-flame, discovery, heptane, fire-safety
+- Conventional view before FLEX [SRC, S3]: a droplet flame extinguishes by diffusive extinction (high O2, small droplet) or radiative extinction (low O2, large droplet), followed by pure evaporation. Cool flames were traditionally tied to premixed combustion and engine knock (cool flame leads to hot ignition).
+- Anomaly [SRC]: after radiative extinction of a large n-heptane droplet (the visible flame disappears), the droplet keeps regressing at a quasi-steady burning rate for an extended period, ends at a finite "cool-flame extinction" diameter, and then a vapor cloud rapidly appears around the droplet. [SRC, Nayagam et al. 2012 abstract on S3 slide]
+- Hypothesis: the second stage is sustained by low-temperature, soot-free "cool-flame" chemical heat release. Measured burning rates and extinction diameters give effective activation energy and pre-exponential values closer to literature cool-flame values than hot-flame values. [SRC]
+- Never before seen in 50+ years of drop-tower, parabolic-flight and shuttle droplet experiments. Published after critical review by skeptical reviewers. [SRC]
+- Signature (slide): low heat release rate, quasi-steady burning, a second extinction, lower activation energy.
+- Conditions: n-heptane in air at 1 atm; also 18% O2 in N2 (82%) and 18/67/15 O2-N2-CO2. Later tests show similar behavior for n-octane and n-decane. [SRC]
+- Fire-safety implication [SRC, authors' interpretation]: the cool flame can persist after hot-flame extinction, generating partially oxidized, combustible vapor that can re-ignite, akin to smoldering in solid fuels. Recent results show re-ignition with decane. [SRC]
+- Second-stage temperature debate [SRC, S5 intro]: Nayagam's analysis allowed 1000-1400 K for the second stage if heat release were 50%, but a true cool flame at the NTC maximum would sit near 700 K with heptyl ketohydroperoxide, formaldehyde and alkenes as main products instead of H2O, CO2 and CO. Simulation later gave about 750 K (FLEX-08).
+- Independent support [SRC]: Cuoci, Frassoldati, Faravelli, Ranzi (Politecnico di Milano) reported cool-flame second-stage burning in simulations of the same case (21% O2, d0 = 3.91 mm).
+- Why the classical mechanism needs care [SRC, S5]: low-temperature oxidation chemistry (R + O2 to RO2 to QOOH to O2QOOH to ketohydroperoxide + OH) normally needs partial premixing, so a diffusive low-temperature flame was surprising.
+
+### [CHUNK FLEX-08] Numerical modelling of the cool flame | source: S5, S3 | tags: simulation, kinetics, heptane, radiation, parametric
+Model [SRC]: transient 1-D spherosymmetric droplet code with detailed gas-phase kinetics, spectral radiation and multicomponent transport.
+Kinetics [SRC]: Curran et al. n-heptane mechanism (1038 species, 2739 reactions) reduced by path flux analysis (PFA) to 128 species and 565 reactions; reproduces shock-tube ignition delay (1, 13.5, 30 atm) and flow-reactor oxidation (8 atm) including the NTC region. A high-temperature-only mechanism (Chaos et al. 2007) is used as a control.
+Base case [SRC]: d0 = 3.91 mm, 21% O2 / 79% N2, 1 atm.
+- High-temperature-only model: radiative extinction at large size, then pure evaporation; extinguishes earlier than experiment.
+- Detailed model: radiative extinction (first stage), then a second stage with significantly higher burning rate and a flame hugging the droplet at about 750 K, then extinction near the end. First-stage peak temperature near 2000 K. Reproduces experiment qualitatively. [SRC]
+- Quantitative gap [SRC]: second-stage burning rate is over-predicted and extinction diameter under-predicted: about 0.35 mm, a factor of 3.5 below experiment (so experiment is about 1.2 mm [CALC]).
+- Heat budget (S5 Fig. 4) [SRC, numbers FIG]: Q_generation spikes to about 380 W at ignition, falls to about 100 W by the end of stage 1; Q_radiation plateaus near 85 W and Q_conduction near 38 W, so radiation is about 2x conduction in stage 1. Transition to stage 2 when total losses meet generation (about 6-7 s in simulation). Stage-2 generation is about 17 W (about 11% of stage 1), and the dominant loss switches from radiation to conduction.
+- Mechanism of transition [SRC]: heat loss (not radiation specifically) moves the flame close to the droplet and drops temperature into the cool-flame window.
+- Parametric studies (all n-heptane, 1 atm) [SRC, details FIG]:
+  - Initial diameter 2-7 mm in air: larger d0 gives an earlier transition; 2 and 3 mm stay single-stage, 4 mm and above go two-stage.
+  - CO2 added to a 3.0 mm droplet: 0% CO2 single-stage; 5% to 70% CO2 triggers the cool flame, and more CO2 means earlier transition (about 0.8 s/mm^2 at 5% down to about 0.1 s/mm^2 at 30%+ [FIG]).
+  - He added to a 3.0 mm droplet: also triggers the transition earlier, via enhanced conductive loss. Initial burning rate rises (up to about 0.9 mm^2/s at 70% He [FIG]), but the second stage ends sooner and a larger residual droplet remains [FIG, INF].
+- Kinetic tuning (S3) [SRC]: Curran chemistry with PFA reduction; "revised" model changed two sensitive rates: QOOHO2 to QOOH + O2 (A factor x2) and QOOHO2 to ketohydroperoxide + OH (A factor /2). Revised kinetics improved ignition-delay and flow-reactor reactivity in the low-temperature region, a case where droplet data improves kinetics used by other methods. Conclusion: widely used detailed models do not accurately predict second-stage cool-flame extinction.
+- Take-home [INF]: any enhanced heat loss (radiative CO2, conductive He, large size) can push a droplet into the cool-flame branch. This directly links FLEX suppressant studies to cool-flame hazard: suppression by dilution may convert a hot flame into a cool one rather than extinguishing it.
+
+### [CHUNK FLEX-09] Initial-diameter effects: n-octane and n-decane | source: S4 | tags: droplet-size, soot, radiation, fiber, octane, decane
+- Question [SRC]: how burning rate $K_0$ depends on initial diameter $D_0$ over the widest range ever done for one fuel.
+- Range [SRC]: $0.52\le D_0\le 0.85$ mm in a ground 1.2 s drop tower (fibers 14 um SiC); $2.16\le D_0\le 4.97$ mm on ISS (MDCA). No data for 0.85-1.7 mm because drop-tower time is too short and ISS deployment near 1.5 mm could impart drift. Conditions: room-temperature air, 1 atm. Fuels n-octane (to 3.61 mm) and n-decane (to 4.97 mm). [SRC]
+- MDCA method [SRC]: fuel pushed through hollow needles into a liquid bridge, needles retracted fast, hot-wire igniters, free-floating or 80 um SiC-tethered droplets; Hi-Beam backlit camera (1 MP, 30 fps), color camera, and low-light UV camera for OH emission. Droplet, flame and soot-shell diameters extracted by image analysis (Dembia et al. 2012 Matlab tool).
+- Findings [SRC]:
+  1. $K$ and FSR decrease with increasing $D_0$ in every time interval; SSR increases with $D_0$.
+  2. Small droplets (0.52-0.85 mm; radiation negligible): lower $K$ with larger $D_0$, attributed to more soot and longer fuel residence time.
+  3. Large droplets (2.16-4.97 mm): $K$ still decreases, but the flame is less luminous (less soot), so the cause is increasing radiative loss reducing heat feedback to the droplet.
+  4. Radiative extinction visible for octane at $D_0 = 3.61$ mm (about 1.0 s/mm^2) with a clear burning-rate drop; post-extinction burning is slower than before but still faster than pure evaporation. For decane with $D_0>3.97$ mm extinction is subtler (flame disappearance); pre-extinction $K$ is lower than octane, partly attributed to higher liquid density.
+  5. After radiative extinction the soot shell keeps expanding while no new soot forms; suggested cause is weaker thermophoresis once the hot flame is gone.
+  6. Fiber effect: the 80 um SiC fiber induces convection around ~1-2 mm droplets (flame displaced farther, higher $K$ and FSR); negligible for $D_0\approx 4.97$ mm. New idea: fibers may act through gas motion, not only heat conduction.
+- Link to cool flames [INF]: the post-extinction burning rate being above pure evaporation in octane and decane is consistent with the second-stage burning in heptane (FLEX-07). The paper does not use the term "cool flame".
+
+### [CHUNK FLEX-10] Methanol: water absorption, evaporation, extinction | source: S6 | tags: methanol, water, extinction, OH-star, ZGF, CO2
+- Why methanol [SRC]: simple kinetics, almost no soot, small flame standoff (minimal radiation effects), and combustion water condenses on the droplet, a model for bi-component fuels.
+- Mixing limits [SRC]: diffusion-limited (thin water boundary layer, evaporates early with the fuel) vs convection-limited (homogeneous droplet, more water, more water in the vapor).
+- ISS FLEX methanol tests [SRC]: O2 13-21% with CO2/N2 diluents, 1 atm. Plot of extinction diameter vs initial diameter forms two clusters: 13-16% O2 near the no-burn line (little burning before extinction), 18-21% O2 much smaller extinction diameters. [FIG, INF]
+- Example ISS test FLEX-145 [SRC, with conflict]: slide 10: P = 763.5 mmHg, Y_O2 0.199, Y_N2 0.749, Y_CO2 0.050, $D_0$ = 3.33 mm, $D_{ext}$ = 1.613 mm, $K_{avg}$ = 0.448 mm^2/s; date 2010-11-16. Slide 9 gives conflicting composition and size (see FLEX-13).
+- Ground (ZGF drop tower) tests [SRC]: 16 methanol tests, 21% O2 with Ar/N2 diluents, 0.5-2 atm. Ar/N2 mimics CO2/N2 without gas-phase radiation. $D_0$ about 1.5-2.0 mm gave $d_e$ about 0.65-1.05 mm, nearly linear [FIG]. Example H-8-04: 1 atm, 21% O2 / 35% Ar / 44% N2, $D_0$ = 1.69 mm, $D_{ext}$ = 0.79 mm.
+- Method [SRC]: OH* chemiluminescence from the Low-Light-Level Ultra-Violet (LLUV) camera in the ISS runs; blue-flame pixel intensity from the 8-bit color camera in the ZGF. Flame intensity falls when water starts to evaporate (about 3 s in H-8-04); this marks the water-flux transition diameter $d_c$ (condensation to evaporation). $d_c$ (about 0.75-1.8 mm) sits above $d_e$ in the ZGF data [FIG]. Summary: flame-intensity analysis gives the water-flux transition point; a color camera may be an adequate substitute.
+- Future work [SRC]: extend analysis to the full FLEX methanol data set, refine correlations, compare with theory.
+
+### [CHUNK FLEX-11] Publications corpus (PSI list) | source: S1 | tags: publications, corpus, bibliography
+- The PSI record lists 51 entries (my count) [CALC]. Most have DOIs; several do not (e.g. "Methanol Droplet Combustion in Oxygen-Inert Environments in Microgravity", "Methanol Droplet Extinction in Oxygen/Carbon-dioxide/Nitrogen Mixtures...", "FLEX: A Decisive Step Forward...", "Dynamics of Water Absorption and Evaporation...", Ghata & Shaw "Computational modeling of the effects of support fibers...", and the "Detailed results from FLEX" report).
+- Theme clusters (approximate, by title) [INF]:
+  - Methanol / alcohol droplets and water effects (Nayagam, Hicks, Shaw, Farouk & Dryer, Williams).
+  - Cool flames and n-alkane two-stage burning (Nayagam et al. 2012, 2015, 2016; Farouk & Dryer 2014; Paczko, Peters, Seshadri, Williams; Prince, Williams, Ovando).
+  - Support-fiber effects (Ghata & Shaw; Shringi, Dwyer & Shaw; Liu, Xu, Avedisian, Hicks).
+  - Fuel surrogates, biofuels, gasoline (Avedisian group: methyl decanoate/butanoate, Jet-A, camelina, tallow, n-butanol, indolene).
+  - Propanol, heptane/methanol and heptane/ethanol mixtures, and sub-millimeter droplets in drop towers (Shaw group). These are ground-based, so not all PSI-69 publications come from ISS data.
+  - Methods: image analysis (Dembia et al.), backlit-image interpretation (Yu & Shaw), uncertainties (Shaw 2014), needle-retraction flow simulations (Jin & Shaw), droplet LIF/spectroscopy.
+  - Overview papers: Dietrich et al. "Droplet Combustion Experiments Aboard the ISS" (DOI 10.1007/s12217-014-9372-2); "Detailed results from FLEX, March 2009 to December 2011" (Dietrich et al.; likely NASA/TP-2013-216046, cited as [1] in S5 [FLAG]).
+- Use: the supplied talks and papers (S3-S6) are probably related to entries here (e.g. S4 to "Experimental Study of Initial Diameter Effects...", S5 to "Isolated n-heptane droplet combustion in microgravity: Cool Flames", S6 to "Dynamics of Water Absorption and Evaporation...", S3 to the Nayagam cool-flame papers). The mapping is inferred from titles, not confirmed. [INF]
+
+### [CHUNK FLEX-12] Cross-source synthesis and insights | source: all | tags: insights, synthesis
+1. Heat loss is the control variable. Radiation (large droplet, CO2) and conduction (He) both drive the transition from hot flame to cool flame (S5), and radiative loss controls burning-rate decline at large size (S4). One mechanism ties the suppressant tests (S7) to the cool-flame discovery (S3).
+2. Suppression by dilution may not be complete extinction. CO2 and He at modest levels push heptane droplets into a cool-flame branch with persistent vapor generation and possible re-ignition (S3, S5). Fire-safety margins should therefore be set by the end of the cool-flame stage, not just the loss of visible flame. [INF]
+3. Microgravity changes suppressant ranking. N2 is far less effective in micro-g by MEC (0.26 to 0.38), CO2 less so (0.16 to 0.19); other studies conflict (S7). FLEX was designed to resolve this with droplets at controlled pressure and O2.
+4. Visible-flame extinction is not the end of reactions. Post-extinction burning in octane and decane stays above pure-evaporation rates (S4), heptane shows a second stage (S3), and kinetic models underpredict extinction size (S5). [INF]
+5. Fiber artifacts matter. Support fibers can drive micro-convection (S4), so free-droplet data are the cleaner dataset for model validation; fiber data need correction. [INF]
+6. Methanol is the calibration fuel, heptane the discovery fuel. Methanol shows classical radiative/diffusive extinction plus water effects (S6); heptane shows anomalous behavior (S3, S5). Combining them gives a validation ladder for kinetics.
+7. Model-readiness is high. Droplet data are small, 1-D and well characterized, and kinetics were tuned with them (S3). This supports the dashboard score model=3. [INF]
+8. Dashboard relevance [INF, subjective]: FLEX strongly supports Suppression (3) and Model-ready data (3). Its relevance to Detection is nil. The seed hiO2=1 is plausible: LOI and suppressant tests run mostly at 10-40% O2, not high-O2 cabins. The cool-flame re-ignition finding may justify raising Prevention above 1; this is a judgment, not data.
+
+### [CHUNK FLEX-13] Data-quality flags | source: S1-S7 | tags: data-quality, flags, verify
+- F1 [FLAG] S6 slide 9 (FLEX-145): "20% O2 / 75% CO2 / 5% N2, $D_0$ = 3.38 mm, $D_{ext}$ = 1.66" conflicts with slide 10: Y_CO2 = 0.050, Y_N2 = 0.749, $D_0$ = 3.330 mm, $D_{ext}$ = 1.613 mm. Slide 10 matches the data box on the plot. Treat slide 10 as primary and CO2/N2 on slide 9 as likely swapped.
+- F2 [FLAG] S6 slides 7 and 9 give burning rate "K = 0.67 m^2/s" and "0.44 m^2/s". Units must be mm^2/s (slide 10 uses mm^2/s: 0.448).
+- F3 [FLAG] S5 figure captions: Fig. 5 caption lists burning rate as (b) and flame standoff as (c), but panel (b) plots FSR and panel (c) plots K. Same swap in Fig. 6 and 7. Also Fig. 3 caption says "(b) burning rate, (c) flame radius" while panel (b) is flame diameter and (c) burning rate.
+- F4 [FLAG] S5 (dated May 2013) cites reference [1] "NASA/TP-2013-216046 ... December 2013". Date is inconsistent; the manuscript may have been updated, or the date is a typo.
+- F5 [FLAG] S4 text cross-references "Figs. 10b-e and 11b-e" for fiber data; likely Figs. 9 and 10. Abstract says ISS handled $D_0>1.2$ mm while Methods say $D_0>1.7$ mm; the reported data start at 2.16 mm.
+- F6 [FLAG] Suppressants: PSI text and S7 plan list CO2, He, SF6; S3 slide lists nitrogen, helium, CO2 and xenon. Confirm what was actually flown (xenon vs SF6).
+- F7 [FLAG] Start date: PSI says 2007-08-01; S5 says ISS experiments began in 2009; "Detailed results" covers March 2009 to December 2011. Likely the earlier date is the award start, not the first ISS run.
+- F8 [FLAG] S5 gives the predicted extinction diameter as about 0.35 mm, 3.5x smaller than experiment; no experimental value is stated, so the 1.2 mm in FLEX-08 is back-calculated.
+- F9 [FLAG] Dashboard (S2): FLEX-2 has no PSI ID; BASS ID is "presumed"; SAME and others "third-party" unconfirmed. Verify on PSI before treating IDs as authoritative.
+- F10 [FLAG] [FIG] values (temperatures, W, thresholds) are read from plots and are approximate (typically +/-10%).
+
+### [CHUNK FLEX-14] Gaps and what to fetch next | source: all | tags: gaps, todo
+Highest value, in order:
+1. PSI-69 "Experimental table" and "Raw Data": gives per-test O2, diluent, pressure, $D_0$, $D_{ext}$, burning rate; makes LOI and efficacy analyses quantitative.
+2. NASA/TP-2013-216046 (Detailed results March 2009-December 2011): authoritative summary of what was flown and measured.
+3. Nayagam et al. 2012 and 2015 full papers: effective activation energy, pre-exponential factor, heat-release values.
+4. Hicks et al. (methanol) full data on $d_c$ vs $d_e$.
+5. Confirm FLEX-2 and CFI relationship to FLEX (separate records, follow-ons, or same campaign).
+6. Confirm the suppressant set flown (He, CO2, Xe, SF6).
+Not available from supplied sources: LOI values per pressure, SF6 results, slow-flow results, measured soot or temperature profiles, and the exact flown test matrix.
+
+### [CHUNK FLEX-15] Q&A pairs (for retrieval testing / few-shot) | tags: qa
+Q: What is the DOI and PSI ID of FLEX? A: DOI 10.60555/mbq8-0451, PSI-69. [SRC]
+Q: What hardware did FLEX use? A: MDCA inside the CIR of the FCF on ISS. [SRC]
+Q: What does LOI mean and how does it relate to MEC? A: LOI is the lowest O2 mole fraction that supports a quasi-steady flame; $\mathrm{LOI}=0.209(1-\mathrm{MEC})$. [SRC]
+Q: Is CO2 a better suppressant than He in microgravity? A: By cup-burner MEC (0.19 vs 0.31) yes, CO2 is more effective; Honda and Ronney's thin-solid flame spread results suggest the opposite. It depends on fuel and geometry. [SRC/INF]
+Q: How many tests were planned and for which fuels? A: 290, split evenly between n-heptane and methanol (145 each). [CALC]
+Q: What was surprising about the heptane droplets? A: After radiative extinction of the visible flame, they kept burning quasi-steadily via a low-temperature cool flame until a second extinction at a finite diameter. [SRC]
+Q: What temperature does the simulated cool flame have? A: About 750 K, versus about 2000 K at the start of the hot-flame stage. [SRC/FIG]
+Q: Why does a larger droplet transition to the cool-flame stage earlier? A: More radiative loss; heat loss moves the flame close to the droplet and cools it into the low-temperature window. [SRC]
+Q: How does the initial droplet diameter affect the burning rate? A: Burning rate decreases as $D_0$ increases across 0.5-5 mm, due to soot and residence time when small and radiative loss when large. [SRC]
+Q: Why is methanol used? A: Simple kinetics, almost no soot, small flame standoff, and water back-diffusion makes it a bi-component model. [SRC]
+Q: Why does the methanol flame intensity drop during burning? A: Water that condensed starts evaporating with the fuel and cools the flame; this marks the water-flux transition diameter $d_c$. [SRC]
+Q: Which numbers in the sources conflict? A: See FLEX-13 (FLEX-145 composition and size, units of K, figure captions, suppressant lists).
+Q: Why does cool-flame burning matter for spacecraft fire safety? A: It generates combustible partially oxidized vapor and can re-ignite after the visible flame is gone, so flame loss does not guarantee safety. [SRC/INF]
+
+### [CHUNK FLEX-16] Dashboard integration | source: S2 | tags: dashboard, integration, json
+The dashboard (S2) separates layers: Theme, Core (data/ranking/services), Views. Safe update points for FLEX:
+- Verified fields already in ASSIGN: ["PSI-69","verified","10.60555/mbq8-0451","Mohammed Tamer",4].
+- Add knowledge for the chatbot with Core.addKnowledge({text, source}) (a loop over the JSON array below).
+- Add an analysis note with Core.addAnalysis("FLEX", {...}); entries stay "draft" until storage is wired.
+- Consider a "Flags" panel (FLEX-13) and a "Test matrix" table (FLEX-06) as new views via THEME.tabs.push and V.<Name>.
+- Suggested summary text replacement (optional): "Burning liquid-fuel droplets (n-heptane, methanol) at different pressures, O2 levels and suppressant mixtures (CO2, He; plan also lists SF6) to map LOI and suppression, and discovered cool-flame burning after hot-flame extinction."
+
+<<<DASHBOARD_JSON_BEGIN>>>
+{
+  "investigation": "FLEX",
+  "psiId": "PSI-69",
+  "doi": "10.60555/mbq8-0451",
+  "knowledge": [
+    {"text": "FLEX (PSI-69) ran droplet combustion experiments in the MDCA inside the CIR on the ISS to map the Limiting Oxygen Index (LOI) and test suppressants such as CO2 and He (the plan also lists SF6).", "source": "FLEX PSI-69 record"},
+    {"text": "LOI = 0.209 (1 - MEC). Cup-burner MEC in microgravity: CO2 0.19, He 0.31, N2 0.38 (1-g: 0.16, 0.27, 0.26). Lower MEC means a more effective agent.", "source": "FLEX Test Plan, Takahashi et al. 2004"},
+    {"text": "The FLEX planned test envelope has 290 tests (145 n-heptane, 145 methanol): 28 quiescent LOI, 22 slow-flow LOI, 168 suppressant-efficacy (CO2, He, SF6), 40 CO2 slow-flow, 32 CO2 at 2-3 atm.", "source": "FLEX Test Plan Tables 6-12"},
+    {"text": "FLEX discovered cool-flame burning: after radiative extinction of a large n-heptane droplet the droplet continues quasi-steady burning at low temperature until a second extinction at finite size. Similar behavior was seen in n-octane and n-decane.", "source": "Nayagam 2013; Nayagam et al. 2012"},
+    {"text": "Simulation of n-heptane (d0 = 3.91 mm, air, 1 atm) gives a cool-flame stage near 750 K after the hot-flame stage; radiation is about twice conduction in stage 1, and heat loss (radiative via CO2 or conductive via He) triggers the transition.", "source": "Farouk and Dryer 2013"},
+    {"text": "Cool flames may persist after hot-flame extinction, produce combustible partially oxidized vapor and re-ignite (reported for decane), a spacecraft fire-safety concern.", "source": "Nayagam 2013"},
+    {"text": "For n-octane and n-decane, burning rate decreases with initial diameter from 0.5 to 5 mm; small droplets via soot and residence time, large droplets via radiative loss. An 80 um fiber can induce convection around 1-2 mm droplets.", "source": "Liu et al. 2013"},
+    {"text": "In methanol droplets, combustion water condenses, builds up, then evaporates with the fuel and cools the flame to extinction; the water-flux transition diameter dc exceeds the extinction diameter de in ZGF tests.", "source": "Hicks et al. 2012"},
+    {"text": "Data-quality warnings: FLEX-145 composition/size differ between slides 9 and 10 (slide 10 matches the plot); burning-rate units should be mm^2/s; figure captions in Farouk and Dryer swap burning rate and standoff ratio.", "source": "FLEX analysis pack, FLEX-13"}
+  ],
+  "analysis": {
+    "title": "FLEX analysis pack: LOI, suppression, cool flames",
+    "body": "See FLEX_analysis.txt chunks FLEX-03 to FLEX-13. Key insight: heat loss, not only radiation, moves droplets from hot to cool flames; suppression by dilution can leave a persistent low-temperature reaction.",
+    "author": "analysis pack",
+    "kind": "analysis",
+    "status": "draft"
+  }
+}
+<<<DASHBOARD_JSON_END>>>
+
+
+# Appended research material supplied by the user
+# Original chunk identifiers and source labels are preserved.
+# Appended on 2026-11-15.
+
+### [CHUNK FLEX-23] FLEX Research Requirements Document (2005): design, requirements, success criteria
+Source: S9 (S7 is an excerpt)
+Tags: requirements, success-criteria, diagnostics, ground-program, justification
+
+- Document: "Research Requirements Document: Droplet Flame Extinguishment in Microgravity (FLEX)", 4 Nov 2005, 81 pages (LaTeX). Research team lead F.A. Williams (UC San Diego); NASA members M. Hicks (GRC) and V. Nayagam (NCSER); external members M.Y. Choi (listed at Drexel University), F.L. Dryer (Princeton), B.D. Shaw (UC Davis). Sections: 1 Introduction, 2 Fire suppression background, 3 Droplet combustion for fire-suppression research, 4 Flight experiment description, 5 Flight experiment requirements and test matrix, 6 Post-flight analysis and success criteria, 7 Ground program, 8 Management, 9 Justification for reduced gravity, Appendix A previous droplet experiments (FSDC, FSDC-2, DCE, soot and Soret ground studies). [SRC]
+- Context [SRC]: ISS US segment uses CO2 extinguishers, Russian modules water-based foam. Suppressant choice criteria in the 1985 and 1990 trade studies: effectiveness, reliability, maintainability, system weight, post-fire cleanup, toxicity, collateral damage. NASA FPDS suppression objectives: (i) suppressant effectiveness in reduced gravity, (ii) large-scale agent deployment, (iii) verify suppression-system design rules. Without buoyancy, suppressant transport, diffusion, thermophoresis and radiation dominate. Crew motion or extinguisher discharge can create flows of several cm/s (up to about 50 cm/s locally in a rack, Wu and Ruff 2003), which motivates the slow-flow tests.
+- Flammability theory [SRC]: S-curve of flame temperature vs Damkohler number (Fendell 1972); Linan (1974) extinction criterion `δe = τch/τr = f(1-|γ|)` with an oxidizer-mass-fraction and temperature dependence (formula garbled in extraction) [FLAG]; Table 1 lists reduced Damkohler numbers for droplet combustion (Law 1975), stagnation-point boundary layer (Wu et al. 1982) and rotating disk (Nayagam and Williams 2000), each containing `(Tf/Ta)^3 exp(-Ta/Tf)` [INF, reconstructed from garbled text].
+- Buoyancy justification [SRC/CALC]: sphericity needs diffusive residence times short vs buoyant time: `τk/τb = sqrt(gD^3)/αg` and `τm/τb = sqrt(gD^3)/Dg` (both much below 1; `αg` = thermal and `Dg` = mass diffusivity of the gas). `Gr/Re² = gβΔT D/U∞²` much below 1. Worst case `ΔT ≈ 5 K`, `D ≈ 1 cm`, `U ≈ 1 cm/s` gives required `g/g0 ≈ 10^-5`, i.e. below `10^-4 m/s²` (`10^-4/9.81 = 1.0×10^-5`). Check with `β = 1/300 K^-1`: `Gr/Re² = 16 × (g/g0)`, so `10^-5` gives `1.6×10^-4`. [CALC] 1-g tests at 1 atm would need D far below 1 mm, where extinction diameters are unmeasurable; reduced pressure at 1 g (Chung and Law 1986) covers too narrow a range, and Easton (1998) found that conditions with finite extinction diameter at 1 g burn to completion in microgravity. The 10 s JAMIC drop tower used by Dietrich et al. 2005 is no longer available.
+- Independent variables (Section 4.2 and Table 4) [SRC]: O2 0.10-0.40; suppressants CO2, He, SF6 at 0-0.70 (0.70 expected for the weakest agent); pressure 0.5, 1.0, 2.0, 3.0 atm; fuels n-heptane (sooting alkane) and methanol (non-sooting alcohol with bound oxygen, small standoff); D0 2-6 mm (3 and 5 mm in the matrix); slow flow 0.1-5 cm/s by translating the fiber. DCE-1 (earlier flight, He diluent, same fuels) is the baseline.
+- Hardware requirements (Table 4) [SRC]: fuel research grade, dry, degassed, purity above 99.5%, 18-27 C; droplet tolerance +/-0.25 mm, reproducibility +/-5%; fiber under 100 um; hot-wire igniter at 1-5 radii from the surface (0.5-2.5 D0), 0.5 mm positioning, igniter on 1-5 s; exclusion zone cylinder 20 D0 downstream, 8 D0 upstream, 10 D0 diameter; pressure +/-0.05 atm, held within +/-10% during a test; gas tolerance +/-0.005 (O2) and +/-0.01 (others); humidity below 10% (heptane) and below 2% (methanol); settle 2 min after fill; dwell at least 10 s before ignition; fuel vapor below 0.005; CO, CO2 and products below 0.02 (each) in atmospheres without CO2.
+- Diagnostics (Table 5) [SRC]: droplet backlit view FOV 3 cm, 30 um, 30 fps, DOF 3 cm, optional 2x2 binned 60-100 fps at 60 um; OH* at 310 nm +/-5 nm, FOV 5 cm, 100 um, 30 fps; color camera FOV 5 cm, 100 um, 30 fps, near-real-time downlink; radiometers 0.6-5.0 um broadband and 1.87 um water-vapor narrow band, 30 Hz, accuracy 5% of full scale, time constant below 40 ms, at least 15 cm from the droplet, FOV 65 mm; soot volume fraction 660 nm backlight (FWHM 5 nm), 50 um, at least 5 cm FOV; soot/fiber temperature two-color LCTF pyrometry; flow velocity sampling 30 Hz; pressure/temperature 10 Hz, +/-0.01 atm, +/-0.5 C; GMT sync +/-0.03 s.
+- Science end products (Table 3) [SRC]: 1a Dext vs O2 and pressure; 1b LOI vs pressure; 1c transient effects; 2a-2c LOI, Dext and heat release/radiation vs suppressant; 3 validated numerical models; 4a-4e reduced sub-models (radiation, kinetics with suppressants, soot, transport with Soret diffusion, small sub-buoyant flows).
+- Flight procedure (Section 5.3) is the 8-step LOI procedure in FLEX-04; the S8 table follows it with ladders (FLEX-17).
+- Success criteria (Section 6.2) [SRC]. Minimal: (1) droplet diameter plus OH* or color flame video vs time for both fuels at two pressures over a range of sizes and O2 to define LOI; (2) same with slow flow near extinction for at least 5 droplets; (3) both fuels, one pressure, two O2 levels, four CO2 fractions; (4) same with one more suppressant (He or SF6); (5) slow flow for at least 10 droplets with suppressants; (6) radiometric data at two pressures, two O2, four CO2 fractions; (7) soot volume fraction, temperature and radiometer data at P = 3 atm, O2 = 0.21 and two CO2 levels (Table 12). Complete: all diagnostics for all tests, at least four pressures, three pressures x four O2 levels, at least three suppressants, slow flow for at least 10 droplets with one quarter including soot data, soot data at three pressures and four O2 levels, and soot data for two pressures, two O2 levels and four suppressant levels. Not every test point has to succeed for Complete Success if all objectives are covered. Check against S8 in FLEX-18.
+- Data policy [SRC]: archive raw images, camera settings, scale factors, radiometer data, housekeeping data in an open format such as HDF; GRC investigators responsible; public within 2 years of flight completion. Raw droplet history is derived from backlit images (Choi et al. 1989; Struk et al. 1998 methods).
+- Ground program (Section 7) [SRC]: 2.2 s and 5.2 s GRC drop towers (including slow-flow rigs at 0-3 cm/s and D 1-3 mm), UC Davis high-pressure rigs, Drexel soot rig, Princeton, and GRC rigs to set the final matrix; Dryer leads detailed modeling (heptane, methanol, ethanol mechanisms, soot sub-models, inert substitution studies with CO2, He, SF6; Kroenlein et al. 2004); Shaw leads fiber-supported droplet modeling (overset grids: main cylindrical grid, droplet grid, fiber grid; Marangoni flows).
+- Management (Section 8) [SRC]: Williams has overall responsibility; Nayagam and Hicks run flight-hardware work; Dryer owns the numerical model.
+- Internal inconsistencies of S9 are listed in flag F16 (FLEX-13).
+
+### [CHUNK FLEX-24] FLEX-2: engineering requirements, fuels and hardware
+Source: S10, S11
+Tags: FLEX-2, requirements, hardware, MDCA, fuels, ethanol, decane, mixtures
+
+- Identity [SRC]: FLEX-2 Engineering Requirements Document FLX-REQ-0001, Final, 4 Feb 2010 (CM authorization 16 Feb 2010); prepared by ZIN Technologies (J. Robbins systems engineering lead, M. O'Toole project lead, B. Finley SpaceDOC manager) and approved by NASA GRC project scientist Michael Hicks. Export controlled EAR 99 (no license required). Flows down from the FLEX-2 Science Requirements Document of 6 Dec 2009 ("Fundamental Studies in Droplet Combustion and Flame Extinguishment in Micro-gravity (FLEX-2)"). Contains 98 science requirements (4.1.1-4.1.98), 15 derived requirements (4.2.x) and a table of about 65 previously verified MDCA/FLEX carrier requirements (my count). [SRC][CALC]
+- Platform [SRC]: Multi-user Droplet Combustion Apparatus (MDCA) inside the Combustion Integrated Rack (CIR) of the Fluids and Combustion Facility (FCF), US Lab. Three hardware domains: Chamber Insert Assembly (CIA), Avionics package, Diagnostics. CIR and MDCA launched on STS-126/ULF-2 in November 2008; FLEX-2 hardware was expected on ATV2 or ULF5 in 2010 and to be integrated after FLEX and FLEX-Helium (S11).
+- Fuels [SRC]: ethanol; decane; propanol/glycerol; heptane/hexadecane; heptane/octane; decane/propylbenzene (4.1.1-4.1.6); compatibility list also names octane (4.2.1.2). Research grade above 99.5%, anhydrous, degassed pure fuels, 18-27 C, mixture ratio accuracy +/-0.5%, reservoir leak rate below `10^-6` scc/s He. FLEX fuels were methanol and heptane. Two 5 mL fuel reservoirs per MDCA; FLEX-2 reservoirs are pre-filled; each syringe carries a thermistor.
+- Atmospheres [SRC]: O2/N2 (4.1.41) and O2/He (4.1.42) only, so no CO2 or SF6; pressure 0.5-3 atm +/-0.05 atm; O2 0.1-0.4 +/-0.005; RH below 10%; fuel vapor below 0.005; CO and CO2 byproducts below 0.02 each; temperature 18-27 C; components must be compatible with 40% O2 at 3 atm. Safety: the pressure-sensitive igniter switch is no longer a hazard control because the updated detonation analysis shows fuel/O2 ratio falls below the flammability limit as pressure rises. [SRC, S11]
+- Droplets and fiber [SRC]: D0 1.5-5 mm, tolerance +/-0.25 mm, reproducibility +/-5%. Fiber under 100 um (79 um silicon carbide, thermal diffusivity no greater than 2.3 cm^2/s, emissivity like 80 um SiC), beads impervious, spherical, smallest workable, with no pores (porous beads cause boiling). Binary droplet arrays on a beaded fiber with 12 mm and 24 mm spacing (three crossing-fiber pairs: two at 12 mm, one at 24 mm); the central 129 mm of the fiber is usable; fiber tension 15000 psi; fiber translation gives flow 0.1-5 cm/s +/-1%; rotation retraction 2-6 degrees/s. Hot-wire Kanthal A-1 igniters, dual-loop tips for arrays; ignition 10 s after deployment; igniter on 1-5 s; igniter 1-5 D0 from the surface +/-0.5 mm; retract after ignition; no hardware within a sphere of 10 D0 radius after ignition. [SRC]
+- Diagnostics [SRC]: backlit droplet view (30 um, 30 fps, FOV 3 cm; 60-100 fps at 60 um), OH imaging at 310 nm (150 um, 30 fps, FOV at least 5 cm), color camera (100 um, 30 fps), narrow-band (1.87 um) and broadband (0.6-5.0 um) radiometers (30 Hz, accuracy 5%, time constant below 40 ms, at least 15 cm away, shielded from igniter radiation), soot volume fraction (660 nm backlight, 50 um, at least 15 fps), soot/fiber temperature with LCTF alternating 700 and 800 nm (at least 7 fps per wavelength), droplet-view filter at 653 nm (bandwidth below 12 nm, transmission at least 80%), microgravity below `10^-4 m/s²` on three axes, measurement to `10^-6 m/s²` at 0.01-125 Hz, GMT sync +/-0.03 s.
+- Crew tasks [SRC, S11]: replace igniter tips, fiber arm, fuel reservoirs and deployment needles at the ISS work bench (covers on needles and fiber, gloves for igniter tips); the FLEX-2 cache brings a Large adsorber cartridge, 2 fiber arms, gas bottles (FLEX-28).
+- FLEX vs FLEX-2 hardware [SRC, S11]: gas bottles, adsorber, needle assemblies and fuel reservoirs identical; changes are the fuels, the Retractable Indexing Fiber (crossing fibers) and the dual-loop igniter tips. HiBMs camera with its own IPSU is added for FLEX-2.
+
+### [CHUNK FLEX-25] CIR imaging diagnostics: capabilities and derived numbers
+Source: S11 (CIR-DOC-4064), S9, S10
+Tags: CIR, diagnostics, HiBMs, LLL-UV, imaging, calc
+
+**Capabilities [SRC], CIR Payload Accommodations Handbook, 1 Oct 2008:**
+
+| Package | Use | Spectral band | FOV | Resolution | Frame rate | Record time |
+|---|---|---|---|---|---|---|
+| HiBMs (telecentric, 12-bit, 1024x1024) | droplet backlit view, soot volume fraction, soot temperature, shadowgraph | 650-1050 nm via LCTF (10 nm bandpass), removable | 30, 50, 90 mm | about 10 lp/mm = 0.050 mm | up to 30 fps full frame; 60 fps at 512x512 binned | about 18 min at 30 fps; about 36 min at 60 fps |
+| LLL-UV (Gen II MCP intensifier, 18 mm) | OH* at 310 nm | filter 310 nm, 10 nm FWHM; sensor 250-750 nm, peak 450 nm | 50 mm square (80 mm with deferred hardware) | 3.6 lp/mm = 0.138 mm (binned) | 7.5, 15, 30 fps full frame; 54 fps binned | about 18 min at 30 fps; about 40 min at 54 fps |
+| LLL-IR | CH* at 430 nm | filter module changeable | 50 mm | 4.5 lp/mm = 0.110 mm (binned) | 30 fps full; 54 fps binned | same as LLL-UV |
+| Illumination package | collimated backlight | 650-660 nm, bandwidth under 10 nm, laser diode used below lasing threshold | 90 mm beam, divergence 0.339 deg | 8-bit programmable output (0-255) | CW | - |
+
+- Other CIR items [SRC]: Passive Rack Isolation System (PaRIS) attenuates vibration above about 1 Hz without ISS resources; SAMS tri-axial sensor head on the Optics Bench measures accelerations; Diagnostic packages mount on the Optics Bench through common flange mounts.
+- Derived numbers [CALC]:
+  - Pixel pitch = FOV/pixels: HiBMs 30 mm / 1024 = 29.3 um, 50 mm = 48.8 um, 90 mm = 87.9 um; binned 512 px: 58.6, 97.7, 175.8 um. So the S9/S10 droplet requirement of 30 um over a 3 cm FOV equals the HiBMs 30 mm full-frame mode, and the 60 um at 60-100 fps requirement equals the 30 mm binned mode (58.6 um).
+  - LLL-UV: 50 mm / 512 binned = 97.7 um, 50 mm / 1024 = 48.8 um. The OH requirement of 100 um (S9) is met by binned mode only if the stated 0.138 mm is ignored; the handbook figure 0.138 mm (lp/mm basis) does not meet 100 um, whereas S10 relaxed it to 150 um, which 0.138 mm does meet. [CALC/INF]
+  - Storage: the recording times imply the same buffer size in every mode: 1024x1024 x 12 bit (1.5 byte) x 30 fps x 18 min = 32,400 frames x 1.57 MB = about 51 GB; 512x512 x 1.5 byte x 60 fps x 36 min = 129,600 frames x 0.39 MB = about 51 GB; LLL-UV binned 54 fps x 40 min = 129,600 frames = about 51 GB. So the direct-to-disk buffer is about 51 GB per camera if data are packed at 12 bit. [CALC/INF]
+  - Frame budget for a typical test: median burn 9.6 s at 30 fps = about 290 frames per camera, plus 10 s pre-ignition dwell and post-extinction time. [CALC]
+- Flags [FLAG]:
+  1. S9/S10 ask for 60-100 fps in binned mode, but the handbook gives up to 60 fps (HiBMs binned). The text on sub-frame readout is cut off in the excerpt, so a higher rate may exist for windowed readout. Unverified.
+  2. LCTF switching time is 100 ms per the handbook, while two-color pyrometry needs at least 7 fps per wavelength with alternating frames (14 fps total, a 71 ms frame period). The two numbers conflict unless switching overlaps readout. Unverified. [INF]
+  3. The handbook lists illumination uniformity as 60% and output as "less than 5 maw", apparently typographical (mW).
+  4. The handbook is a 2008 document; the as-flown CIR configuration may differ.
+
+### [CHUNK FLEX-26] Requirement evolution: FLEX (2005) vs FLEX-2 (2010)
+Source: S9, S10, S11
+Tags: requirements, comparison, FLEX-2, evolution, flags
+
+| Item | FLEX, S9 (2005) | FLEX-2, S10 (2010) | Comment |
+|---|---|---|---|
+| Fuels | methanol, n-heptane | ethanol, decane, propanol/glycerol, heptane/hexadecane, heptane/octane, decane/propylbenzene | FLEX-2 moves to fuel chemistry and surrogates |
+| Suppressant / diluent | N2 balance; CO2, He, SF6 to 0.70 (He diluent in a few tests, Section 4.2) | O2/N2 and O2/He only | CO2 and SF6 dropped |
+| Pressure | 0.5, 1.0, 2.0, 3.0 atm (Table 4); 0.5-1.0 atm (4.2); LOI 0.5-1.5 atm (5.3) | 0.5-3 atm; matrix 0.5, 0.7, 1.0, 2.0, 2.5 atm | |
+| O2 | 0.10-0.40 (4.2 text says up to 0.50) | 0.1-0.4; matrix 0.17-0.30 | |
+| Droplet D0 | 2-6 mm (4.2 text: 2-5 mm) | 1.5-5 mm; matrix 3, 4, 5 mm | |
+| Droplet tolerance | +/-0.25 mm, +/-5% | same | |
+| Igniter distance | 1-5 radii = 0.5-2.5 D0 | 1-5 D0 +/-0.5 mm | different by factor 2; likely a unit change [INF] |
+| Exclusion zone | cylinder 20 D0 downstream, 8 D0 upstream, diameter 10 D0 | sphere of radius 10 D0 | |
+| Humidity | below 10% heptane, below 2% methanol | below 10% all | |
+| Purity | CO, CO2, products below 0.02 only when no CO2 diluent | below 0.02 each | CO2 not a FLEX-2 atmosphere |
+| Flow | 0.1-5 cm/s +/-1%; 5.0 cm uniform diameter | 0.1-5 cm/s +/-1%; matrix 0.1, 0.3, 0.5 cm/s | |
+| Microgravity | 2e-6 to 2e-4 m/s^2 depending on size; below 1e-4 stated | below 1e-4 m/s^2 | |
+| Droplet view | 30 um, 3 cm FOV, 30 fps, DOF 3 cm | same, DOF at least 3 cm | |
+| OH* view | 100 um, DOF 3 cm | 150 um, DOF 5 mm | relaxed |
+| Color view | 100 um, DOF 3 cm | 100 um, DOF 5 mm | relaxed |
+| Soot fraction frame rate | 7 fps (5.2.5 text) / 15 fps (Table 5) | at least 15 fps | S9 text and table disagree |
+| Radiometers | 1.87 um narrow, 0.6-5.0 um broad | same | S9 also quotes "5.1-7.5 um" for the water band [FLAG] |
+| Number of planned tests | 290 envelope (FLEX-06) | SRD 550 points; preliminary matrix 456 | FLEX-28 |
+
+- S10 internal conflicts [FLAG]: igniter 30 AWG, 4 mm loops (3.4.1.2.4) vs 26 AWG, 75.8 mm, 1 ohm (4.2.3.2); bead spacing 12 and 24 mm (4.1.18) vs 12 mm (4.1.23); fiber 235 mm long (S10) vs 229 mm (S11); fiber rotation 68 degrees (S10) vs about 120 degrees (S11); droplet range 1.5-5 mm (S10) vs matrix sizes 3-5 mm; S10 lists flow 0.1-5 cm/s but matrix uses 0.1-0.5 cm/s.
+- Reading [INF]: the FLEX-2 requirements are a relaxed, de-risked version of FLEX (imaging depth of field and OH resolution loosened, mixtures and arrays added) built on hardware already verified in FLEX.
+
+### [CHUNK FLEX-27] Publications corpus: 51 PSI entries with clusters
+Source: S12, S1
+Tags: publications, bibliography, corpus
+
+- PSI-69 lists 51 publications (S12 i_Investigation.txt). DOI present in 45; absent in 6 (pubs 1, 2, 5, 6, 16, 51).
+- Clusters (my assignment, by title) [INF]: methanol/alcohol and water effects 7 (1, 2, 3, 6, 7, 17, 31); CO2-enriched combustion 2 (4, 42); cool flames / two-stage n-alkane burning 7 (9, 12, 13, 22, 23, 24, 34); support-fiber effects 6 (16, 20, 21, 36, 37, 40); fuel surrogates and biofuels (Avedisian group) 10 (14, 19, 26, 27, 28, 29, 32, 33, 45, 50); Shaw ground-based and modeling studies 7 (25, 35, 39, 41, 43, 48, 49); imaging and methods 6 (18, 30, 38, 44, 46, 47); swirl-flow and polymer-disc theory 2 (10, 11; not droplet experiments); overviews 3 (5, 15, 51); droplet-size effects 1 (8).
+- Mapping of supplied sources to entries [INF, from titles]: S3 (Nayagam slides) with 22, 34 and 12; S4 with 8; S5 with 9; S6 with 6. NTRS pages exist for 1, 2, 5, 6.
+
+| # | First authors | Title (shortened) | DOI |
+|---|---|---|---|
+| 1 | Nayagam, Dietrich, Hicks, Williams | Methanol droplet combustion in oxygen-inert environments in microgravity | none |
+| 2 | Nayagam | Methanol droplet extinction in O2/CO2/N2 mixtures in microgravity (ISS results) | none |
+| 3 | Farouk, Dryer | Numerical study of extinction characteristics of droplet combustion in microgravity (AIAA 2012-1252) | 10.2514/6.2012-1252 |
+| 4 | Farouk, Dryer | Tethered methanol droplet combustion in CO2-enriched environment | 10.1016/j.combustflame.2011.06.014 |
+| 5 | Hickman, Dietrich, Hicks, Nayagam, Stocker | FLEX: a decisive step forward in NASA's combustion research program | none |
+| 6 | Hicks, Dietrich, Nayagam, Williams | Dynamics of water absorption and evaporation during methanol droplet combustion | none |
+| 7 | Nayagam | Activation energy asymptotics for methanol droplet extinction | 10.1016/j.combustflame.2013.05.011 |
+| 8 | Liu, Rah, Trenou, Hicks | Initial diameter effects on convection-free droplet combustion in standard atmosphere | 10.2514/6.2014-1019 |
+| 9 | Farouk, Dryer | Isolated n-heptane droplet combustion: cool flames, two-stage combustion | 10.1016/j.combustflame.2013.09.011 |
+| 10 | Urzay, Nayagam, Williams | Spiral edges of diffusion flames in von Karman swirling flows | 10.1016/j.combustflame.2010.08.015 |
+| 11 | Nayagam, Williams | Melt phase of a rotating polymer disc supporting a diffusion flame | 10.1017/jfm.2011.349 |
+| 12 | Nayagam, Dietrich, Williams | Partial-burning regime for quasi-steady droplet combustion supported by cool flames | 10.2514/1.J054437 |
+| 13 | Seshadri, Peters, Williams | Asymptotic analysis of n-heptane droplet combustion supported by cool-flame chemistry | 10.1080/13647830.2016.1248494 |
+| 14 | Alam, Liu, Avedisian, Dryer, Farouk | n-Butanol droplet combustion: modeling and reduced-gravity experiments | 10.1016/j.proci.2014.06.043 |
+| 15 | Dietrich, Nayagam, Hicks, Ferkul et al. | Droplet combustion experiments aboard the ISS | 10.1007/s12217-014-9372-2 |
+| 16 | Ghata, Shaw | Effects of support fibers on evaporation of fiber-supported droplets in reduced gravity | none |
+| 17 | Shaw, Vang | Oxygen Lewis number effects on reduced-gravity combustion of methanol and n-heptane | 10.1080/00102202.2015.1072176 |
+| 18 | Shaw | ISS droplet combustion experiments: uncertainties in droplet sizes and burning rates | 10.1007/s12217-014-9377-x |
+| 19 | Xu, Avedisian | Combustion of n-butanol, gasoline and mixture droplets | 10.1021/acs.energyfuels.5b00158 |
+| 20 | Ghata, Shaw | Unsupported and fiber-supported n-heptane droplet combustion in reduced gravity | 10.1080/00102202.2014.971950 |
+| 21 | Liu, Xu, Avedisian, Hicks | Effect of support fibers on micro-convection in droplet combustion | 10.1016/j.proci.2014.07.022 |
+| 22 | Nayagam, Dietrich, Hicks, Williams | Cool-flame extinction during n-alkane droplet combustion in microgravity | 10.1016/j.combustflame.2015.01.012 |
+| 23 | Prince, Williams, Ovando | Short mechanism for low-temperature ignition of n-heptane at high pressures | 10.1016/j.fuel.2014.08.063 |
+| 24 | Paczko, Peters, Seshadri, Williams | Role of cool-flame chemistry in quasi-steady combustion and extinction of n-heptane droplets | 10.1080/13647830.2014.934296 |
+| 25 | Aharon, Tam, Shaw | Submillimeter heptane/methanol and heptane/ethanol droplets in reduced gravity | 10.1155/2013/154202 |
+| 26 | Farouk, Liu, Savas, Avedisian, Dryer | Sub-millimeter methyl butanoate droplets: microgravity experiments and modeling | 10.1016/j.proci.2012.07.074 |
+| 27 | Liu, Farouk, Savas, Dryer, Avedisian | Spherically symmetrical combustion of methyl decanoate droplets | 10.1016/j.combustflame.2012.11.006 |
+| 28 | Liu, Savas, Avedisian | Spherically symmetric burning of Jet-A and camelina/tallow biofuels | 10.1016/j.fuel.2013.02.025 |
+| 29 | Liu, Savas, Avedisian | Three and four component miscible mixtures as Jet-A surrogates | 10.1016/j.proci.2012.05.065 |
+| 30 | Dembia, Liu, Avedisian | Automated data analysis for consecutive images from droplet combustion | 10.5566/ias.v31.p137-148 |
+| 31 | Farouk, Dryer | Extinction of alcohol droplet combustion under microgravity: numerical study | 10.1016/j.combustflame.2012.04.005 |
+| 32 | Liu, Avedisian | Sub-millimeter droplets of n-heptane/iso-octane mixtures | 10.1016/j.combustflame.2011.08.015 |
+| 33 | Liu, Savas, Avedisian | Indolene and commercial gasoline droplets without convection | 10.1021/ef3007849 |
+| 34 | Nayagam, Dietrich, Ferkul, Hicks, Williams | Can cool flames support quasi-steady alkane droplet burning? | 10.1016/j.combustflame.2012.07.012 |
+| 35 | Shaw, Wang | Submillimeter free droplet flame extinction | 10.1080/00102202.2012.759946 |
+| 36 | Shringi, Dwyer, Shaw | Influences of support fibers on vaporizing droplets | 10.1016/j.compfluid.2013.02.005 |
+| 37 | Shringi, Dwyer, Shaw | Flows over liquid droplets on cylindrical fibers | 10.1016/j.compfluid.2013.02.011 |
+| 38 | Yu, Shaw | Interpretation of backlit droplet images from ISS experiments | 10.2478/gsr-2014-0007 |
+| 39 | Shaw, Wei | Methanol droplets in air-diluent environments, reduced and normal gravity | 10.1155/2012/587987 |
+| 40 | Farouk, Dryer | Effect of tethering fiber on burning rate and flame structure | 10.1080/13647830.2010.547601 |
+| 41 | Shaw, Wei | Gravity and pressure effects on n-heptane and 1-propanol droplets | 10.1080/00102202.2010.498798 |
+| 42 | Dzik, Nayagam, Williams | Ignition and combustion of n-heptane droplets in CO2-enriched environments | 10.1016/j.icheatmasstransfer.2009.10.006 |
+| 43 | Jin, Shaw | n-Heptane droplet combustion in air-diluent environments, modeling | 10.1016/j.ijheatmasstransfer.2010.08.005 |
+| 44 | Jin, Shaw | Unsteady flows and shape oscillations in droplets induced by deployment needle retraction | 10.1007/s12217-008-9096-2 |
+| 45 | Bae, Avedisian | Nonane droplet combustion with and without buoyant convection | 10.1016/j.proci.2008.06.221 |
+| 46 | Xiao, Wei, Shaw, Peng | Temperature and fiber-optic spectroscopy of heated propanol-acetone droplets | 10.1016/j.optlaseng.2009.05.004 |
+| 47 | Shringi, Shaw, Dwyer | LIF imaging of acetone inside evaporating and burning droplets | 10.1016/j.optlaseng.2008.08.002 |
+| 48 | Wei, Shaw | Reduced-gravity combustion of propanol droplets in oxygen-inert environments | 10.1080/00102200903190851 |
+| 49 | Shaw, Wei | Propanol droplet flammability in air-diluent environments, normal and reduced gravity | 10.1080/00102200601057394 |
+| 50 | Avedisian | Developing surrogates for liquid transportation fuels: spherically symmetric droplet combustion | 10.1007/978-81-322-2211-8_16 |
+| 51 | Dietrich, Bryg, Ferkul, Williams, Dryer, Shaw et al. | Detailed results from FLEX, March 2009 to December 2011 | none |
+
+- Note [FLAG]: titles are shortened here; use the DOI for exact titles. Pubs 25, 35, 39, 41, 43-49 and others are ground-based or numerical and do not use the S8 ISS data.
+
+### [CHUNK FLEX-28] FLEX-2 test matrix and resources
+Source: S11 (MDC-DOC-1790A Tables 2-4, Section 9.3)
+Tags: FLEX-2, test-matrix, planning, calc, resources
+
+- Test points [SRC]: SRD Table 3 lists 550 points; the preliminary matrix has 456 (pure fuels 240, mixed fuels 216). My permutation check reproduces every row total: 456 = 240 + 216. [CALC]
+- Pure fuels (Table 3) [SRC; states count; permutations CALC]:
+
+| Class | D0 (mm) | O2 (%) | Diluent | Pressure (atm) | Other | States | Tests |
+|---|---|---|---|---|---|---|---:|
+| decane, flow | 3, 4 | 17, 21, 25, 30 | N2, He | 1 | flow 0.1, 0.3, 0.5 cm/s | 2x4x2x1x3 | 48 |
+| ethanol, flow | 3, 4 | 17, 21, 25, 30 | N2, He | 1 | flow 0.1, 0.3, 0.5 cm/s | 2x4x2x1x3 | 48 |
+| decane, quiescent | 3, 5 | 17, 21, 25, 30 | N2, He | 0.5, 1.0, 2.0 | - | 2x4x2x3 | 48 |
+| ethanol, quiescent | 3, 5 | 17, 21, 25, 30 | N2, He | 0.5, 1.0, 2.0 | - | 2x4x2x3 | 48 |
+| decane, array | 3 | 17, 21, 25 | N2, He | 0.5, 1.0 | bead spacing L1 (12 mm), L2 (24 mm) | 1x3x2x2x2 | 24 |
+| ethanol, array | 3 | 17, 21, 25 | N2, He | 0.5, 1.0 | L1, L2 | 1x3x2x2x2 | 24 |
+
+- Mixed fuels (Table 4) [SRC]:
+
+| Mixture | D0 (mm) | O2 (%) | Diluent | Pressure (atm) | Mix ratios | States | Tests |
+|---|---|---|---|---|---|---|---:|
+| heptane/hexadecane | 3, 4 | 17, 21, 30 | He | 0.7, 1.0, 2.5 | F1, F2 | 2x3x1x3x2 | 36 |
+| propanol/glycerol | 3, 4 | 17, 21, 30 | He | 0.7, 1.0, 2.5 | F1, F2 | 2x3x1x3x2 | 36 |
+| heptane/octane | 3 | 17, 21, 30 | N2, He | 1.0, 2.0 | 10/90, 25/75, 40/60, 55/45, 70/30, 85/15 | 1x3x2x2x6 | 72 |
+| decane/propylbenzene | 3 | 17, 21, 30 | N2, He | 1.0, 2.0 | same six ratios | 1x3x2x2x6 | 72 |
+
+- Resources for 456 points [SRC]: 23 gas bottles of 3.8 L (9 of 30% O2/70% N2, 7 of 30% O2/70% He, 7 of 100% He; total checks 23) and 22 fuel reservoirs of 5 mL (2 heptane/hexadecane, 2 propanol/glycerol, 6 heptane/octane, 6 decane/propylbenzene, 3 decane, 3 ethanol; total checks 22), 1 large adsorber cartridge, 2 fiber arms. About 20.7 tests per reservoir. [CALC]
+- The 30%-O2 bottles match the 0.7 atm base mix seen in FLEX flight ladders (30/70, FLEX-17); this means the FLEX-2 bottle set is built to blend 17-30% O2. [CALC]
+- Fuel mixtures listed in Table 2 (5 mL reservoirs, pending detonation analysis and JSC toxicity review) [SRC]: heptane/hexadecane 10/90, 80/20, 85/15, 90/10, 95/5; propanol/glycerol 10/90, 80/20, 85/15, 90/10, 95/5; heptane/octane 10/90, 25/75, 40/60, 50/50, 55/45, 70/30, 85/15; decane/propylbenzene 10/90, 25/75, 40/60, 55/45, 70/30, 85/15.
+- [FLAG] Ratio lists in Table 2 and Table 4 differ (7 heptane/octane ratios vs 6 in the matrix; Table 4 shows "8515" for 85/15).
+- FLEX comparison [CALC]: FLEX plan 290 tests on two fuels; FLEX-2 456 tests on six fuel classes; FLEX flown 274 tests (S8). FLEX-2 plan has 12 distinct sub-matrices vs 7 in FLEX.
+- The question of how many FLEX-2 tests flew is outside S10 and S11 (2010 planning documents). Web sources (FLEX-30) say FLEX-2 operated on ISS at least into 2014. [FLAG]
+
+### [CHUNK FLEX-29] Agent toolbox: formulas, filters and data schema
+Source: S8, S9, S11
+Tags: agent, tools, formulas, schema, python
+
+- Use these exact definitions when computing from the flight table (`FLEX_flight_tests_clean.csv`).
+- LOI and MEC: `LOI = 0.209(1-MEC)`, `MEC = 1-LOI/0.209`. At 0.7 atm the flight ladders use base O2 0.30 (30/70 N2), so use `xs = 1-xO2/0.30` there. [CALC]
+- Equivalent dilution: `equiv_dilution = 1 - x_O2/0.209` (column in the clean CSV).
+- Partial pressure: `pi = xi P` (atm), with P = `pressure_mmHg/760`.
+- Extinction fraction: `Dext_over_D0 = Dext/D0`; near-limit if Extinction and `Dext_over_D0` at least 0.9.
+- Average burning rate from table: `K_est = (D0^2-Dext^2)/t_burn` (matches the tabulated K within 15% in 87% of tests, FLEX-17).
+- d-square law: `D^2 = D0^2-Kt`; droplet lifetime `τ = D0^2/K`.
+- Droplet volume: `V = πD^3/6` (mm^3; 1 mL = 1000 mm^3).
+- Image pixel pitch: FOV/pixels; frame storage = pixels x bits/8 x fps x seconds.
+- Gas balance: `x_N2 = 1-x_O2-x_CO2-x_He` (sums to 1 within 0.015 except tests 69, 75, 76, 79, 80, 81).
+- Schema of `FLEX_flight_tests_clean.csv` (274 rows, 24 columns): `test_no`, `flex_id`, `date`, `gmt`, `fuel`, `pressure_mmHg`, `pressure_atm`, `pressure_band`, `x_O2`, `x_N2`, `x_CO2`, `x_He`, `diluent`, `suppressant_fraction`, `equiv_dilution_1_minus_xO2_over_0.209`, `D0_mm`, `Dext_mm`, `Dext_over_D0`, `burning_rate_mm2_s`, `burn_time_s`, `burn_time_approx`, `test_end`, `id_group`, `flags`.
+- Flags values: disruption_no_extinction_data 61, Dext_missing 49, Dext_corrupt_byte 28, K_missing 16, Dext_zero_no_visible_extinction 8, D0_missing 6, D0_corrupt_byte 6, composition_sum_off 6, duplicate_id 2, burn_time_approx 2, pressure_zero_invalid 1, Dext_gt_D0 1, K_implausibly_low 1. [CALC]
+- Usable subsets: 159 Extinction tests with Dext > 0 (for extinction-diameter analysis); 262 tests with D0; 258 with K. Always drop `pressure_zero_invalid` (test 114) and treat Disruption rows as outcome-only.
+- Agent behaviors recommended [INF]: (1) answer numeric questions by filtering the CSV, not from memory; (2) when asked for LOI say that no no-ignition test exists in the table and give the near-limit bracket from FLEX-19; (3) always state n for any ladder row; (4) when a question mixes FLEX and FLEX-2, check FLEX-24/26 first.
+- Example filters (pandas):
+  - Heptane, 1 atm, CO2: `df[(df.fuel=="heptane")&(df.pressure_band=="1.0atm")&(df.diluent=="CO2")]`
+  - Near-limit set: `df[(df.test_end=="extinction")&(df.Dext_over_D0>=0.9)]`
+
+### [CHUNK FLEX-30] Public web corroboration
+Source: S13
+Tags: web, press, corroboration, FLEX-2, media
+
+Retrieved 2026-11-15. Paraphrased; no dates were shown in the retrieved text unless stated. Press accuracy is lower than the NASA documents, so use these only as corroboration.
+
+- NBC News (about FLEX-2, labeled as "this month"): NASA's Daniel Dietrich and Forman Williams operate the experiment by remote control in the Destiny module; the team says methanol and heptane flames burn down to about 12-13% O2. This matches the table minimum (O2 0.12 methanol, 0.13 heptane, FLEX-19). The article calls it FLEX-2 although the result is a FLEX (this PSI record) result. [SRC/CALC][FLAG: naming]
+- Smithsonian (Air & Space), "Great balls of floating fire": FLEX-2 runs in the 560-pound CIR in the Destiny module; the PI is Forman Williams; astronauts did four to 10 droplet burns per session, twice a week; the video shows a heptane droplet in a short hot flame, then a steady cool flame, then extinction in a bright orange vapor cloud. FLEX-2 is described as "more science-oriented" and tied to fuel mixtures for efficient engines. Consistent with S8 session sizes (median 3, maximum 9 tests per day). [SRC][FLAG: naming]
+- Smithsonian (science and nature), jellyfish flames: FLEX-2 droplets of about 3 mm made of equal parts isooctane and heptane show pulsing "jellyfish" flames only for droplets of about 3 mm or larger and not always; Thomas Avedisian (Cornell) is a co-investigator; cool-flame combustion is cited as relevant to cleaner engines. [SRC]
+- Gizmodo: co-investigator Vedha Nayagam says helium, carbon dioxide and "sometimes" xenon were tried as inert ambient gases to find the most effective suppressant. Xenon does not appear in S8. [SRC][F6]
+- phys.org / NASA (Sept 2014): astronaut Reid Wiseman ran FLEX-2 and described a "jellyfish of fire"; Williams explains disruptive soot burning; Avedisian leads that study of burning rates and soot agglomeration. NASA Scientific Visualization Studio "Spherical Flames" (16 Sept 2014) also covers FLEX-2. [SRC]
+- LabXchange: FLEX-2 is the second FLEX experiment using fuels and conditions closer to real combustors. [SRC]
+- Low-reliability page (an education blog) claims FLEX-2 tested new suppression agents and ventilation techniques; this is not supported by S10 or S11 (N2/He only) and should be ignored. [FLAG]
+- Conclusions [INF]: FLEX-2 flew on ISS (at least through 2014); its public emphasis is fuel mixtures, soot and cool flames, not CO2 suppression; press mixes FLEX and FLEX-2 names, so rely on S8 for FLEX data.
+
+### [CHUNK FLEX-31] Cross-source insights, version 2
+Source: all
+Tags: insights, synthesis, v2
+
+1. The flight ladders make LOI a direct dilution test. At 1 atm the CO2 and He ladders hold O2/N2 at air ratio and add suppressant, so the suppressant fraction equals MEC in `LOI = 0.209(1-MEC)`. The experiment therefore measures MEC for each fuel and agent directly. [CALC]
+2. Droplet and cup-burner limits agree for heptane, not for methanol. Heptane near-limit CO2 0.19-0.20 and N2 0.38 equal the microgravity cup-burner MEC (0.19, 0.38). Methanol needs CO2 about 0.33-0.36 and He about 0.38 (N2 not reached above 0.43). Agent design margins depend on fuel; an oxygenated fuel is harder to suppress with CO2. [CALC/INF]
+3. CO2 lowers and He raises burning rate at fixed O2 (`K He > CO2`, p < 0.01 in both fuels), so a suppressant changes heat release, not only the limit; this also fits the simulation of S5 where He raises initial K and brings the cool-flame stage earlier. [CALC/INF]
+4. Yield: 186 of 274 tests (68%) ended in Extinction and 159 (58%) have a measured Dext. Disruption (22%) removes most high-O2 and 0.7 atm high-O2 tests (15 of 17 at O2 0.30-0.34). Plan any new extinction study at O2 below 0.22. [CALC]
+5. The table mixes extinction stages. In heptane in air the shortest runs end near 0.8 D0 (hot-flame radiative extinction), while a 17.5 s run ends at 1.37 mm, close to the second-stage size implied by S5. Any model-validation use of Dext must split first-stage from second-stage extinction. [INF]
+6. Heat loss is still the control variable: lower pressure shifts the near-limit O2 fraction up (0.7 atm vs 1 atm: lowest O2 with a flame 0.15 vs 0.14 methanol, 0.17 vs 0.17 heptane; near-limit pO2 about 0.12-0.14 vs 0.15-0.18 atm) while partial pressure of CO2 at the methanol limit is the same (0.32 atm). A partial-pressure framing might unify limits across pressures for methanol; not for heptane. [INF, weak]
+7. FLEX is a suppression experiment; FLEX-2 is a combustion-chemistry experiment. Dropped CO2/SF6, added fuel mixtures, droplet arrays, flow velocities 0.1-0.5 cm/s and OH/soot diagnostics. The cool-flame discovery in FLEX likely shaped the FLEX-2 emphasis (web articles). [INF]
+8. Highest-value open items for fire safety: (a) the 2-3 atm radiative corner has only 9 tests at one condition (CO2 0.70); (b) SF6 and xenon are absent; (c) flow-velocity identification is missing from S8; (d) no "no ignition" bracket for LOI; (e) He heptane ladder stops at O2 0.16. [CALC]
+9. Dashboard scoring (S2 row FLEX: [prev 1, det 0, sup 3, hiO2 1, hab 2, model 3]) [INF, subjective]: S8 supports model = 3 (274 tests with D0, Dext, K, burn time) and sup = 3 (CO2/He/N2 limits). hiO2 = 1 stays reasonable (flown O2 at most 0.34, and tests above O2 0.26 mostly end by disruption). The FLEX-2 row [1, 0, 3, 1, 2, 3] copies FLEX; S10 suggests sup should be lower (2) because CO2 is absent and the focus is fuels; this is a judgment, not data.
+10. Verified cross-checks: S6 slide 10 test 145 equals S8 row 145 exactly; press-quoted 12-13% O2 limits equal S8 minima; session sizes in the press match S8 test-day counts; storage arithmetic of the CIR cameras is self-consistent (about 51 GB). [CALC]
+
+### [CHUNK FLEX-17] Flight test table: provenance and data dictionary
+Source: S8
+Tags: data, csv, dictionary, flight-data
+
+- Source S8: `PSI-69_Experimental_table_FLEX.csv` (PSI "Experimental table" folder). 274 test rows, 15 columns. Cleaned copy with per-row flags: `FLEX_flight_tests_clean.csv` (24 columns). [SRC][CALC]
+- Dates: first test 2009-03-05 (test 1, id 20CAL08), last 2011-12-08 (test 274). Matches the "Detailed results, March 2009 to December 2011" report window. [CALC]
+- Fuels: methanol 157 tests, n-heptane 117. Diluents: N2-only 101, CO2/N2 123, He/N2 50. No SF6 or xenon columns exist. [CALC]
+- Columns [SRC]: FLEX Test #, FLEX Identifier, Test Date, Test GMT, Fuel, Ambient pressure (mmHg), O / N / CO / He initial ambient mole fractions, Droplet initial diameter (mm), Visible flame extinction diameter (mm), Burning rate (mm), Burn time (s), Test end.
+- Header quirks [INF]: "CO" almost certainly means CO2 (fractions 0.05-0.70; O2+N2+CO sums to 1). "Burning rate; mm" must be mm^2/s (values 0.25-1.06 match K in mm^2/s of S6). The CSV is Windows-1252, not UTF-8; 34 cells hold a corrupt byte instead of a number.
+- Test end values [SRC]: Extinction 186, Disruption 61, Completion 27. Interpretation [INF]: Extinction = visible flame went out at a finite diameter; Completion = droplet burned out; Disruption = test ended by droplet disruption, so no extinction diameter is available.
+- Identifier prefixes [CALC/INF]: C## = CO2-diluent conditions (108 tests), H## = helium (50), N## = N2-only (23); numeric prefixes (e.g. 20CAL08, 256F002, 192F001) = earlier and calibration tests (93). The trailing F or R before the 3-digit run number is undecoded: R tests have smaller mean D0 (2.74 mm, 25 tests) than F tests (3.27 mm, 59 tests). Meaning unverified. [FLAG]
+- Visible-flame extinction diameter 0 appears in tests ending Completion and Disruption; read it as "no visible-flame extinction before test end". [INF]
+- Derived columns in the clean CSV: `pressure_atm`, `pressure_band` (0.7, 1.0, 2-3 atm), `diluent`, `suppressant_fraction`, `equiv_dilution = 1-x_O2/0.209`, `Dext_over_D0`, `id_group`, `flags`.
+
+### [CHUNK FLEX-18] Coverage of the flight data and comparison with the plan
+Source: S8, S7
+Tags: coverage, test-matrix, calc, plan-vs-flown
+
+Pressure bands [CALC]: 0.7 atm (526-545 mmHg) 103 tests; 1.0 atm (752-774 mmHg) 161; 2-3 atm (1546-2320 mmHg) 9; one row with P = 0 (invalid).
+
+| Pressure | Diluent | Fuel | Tests | O2 range | Max suppressant fraction |
+|---|---|---|---:|---|---:|
+| 0.7 atm | N2 | heptane | 10 | 0.20-0.34 | 0 |
+| 0.7 atm | N2 | methanol | 12 | 0.20-0.34 | 0 |
+| 0.7 atm | CO2 | heptane | 19 | 0.17-0.25 | 0.45 |
+| 0.7 atm | CO2 | methanol | 38 | 0.15-0.25 | 0.50 |
+| 0.7 atm | He | heptane | 10 | 0.17-0.24 | 0.45 |
+| 0.7 atm | He | methanol | 14 | 0.17-0.24 | 0.45 |
+| 1.0 atm | N2 | heptane | 37 | 0.13-0.30 | 0 |
+| 1.0 atm | N2 | methanol | 42 | 0.12-0.30 | 0 |
+| 1.0 atm | CO2 | heptane | 27 | 0.17-0.24 | 0.20 |
+| 1.0 atm | CO2 | methanol | 29 | 0.14-0.21 | 0.36 |
+| 1.0 atm | He | heptane | 12 | 0.16-0.21 | 0.25 |
+| 1.0 atm | He | methanol | 14 | 0.13-0.20 | 0.40 |
+| 2-3 atm | CO2 | heptane | 2 | 0.21 | 0.70 |
+| 2-3 atm | CO2 | methanol | 7 | 0.21 | 0.70 |
+
+- Plan vs flown [CALC]:
+  - 274 tests in the table vs 290 in the planned envelope (S7). The two lists are not the same set: the flown table has no 0.5 or 1.5 atm tests, uses 0.7 and 1.0 atm for almost everything, and reaches O2 = 0.12-0.34 (plan 0.10-0.40).
+  - Only CO2 and He appear as suppressants; the SF6 tables of the plan (Table 10) have no counterpart, and xenon (mentioned on a 2013 slide) has no column either. This settles flag F6 for this table: flown suppressants in the PSI table = CO2 and He. [CALC]?

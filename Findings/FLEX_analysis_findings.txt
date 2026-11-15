@@ -1,0 +1,234 @@
+FLEX (Flame Extinguishment Experiment, PSI-69) - ANALYSIS FINDINGS
+=====================================================================
+Source: CompleteTamerRAGChunks_plus_FLEX_analysis (analysis pack v2, chunks FLEXA-01 to FLEXA-29)
+Dataset: 274 ISS flight tests, 2009-03-05 to 2011-12-08 (157 methanol, 117 n-heptane)
+Hardware: Multi-user Droplet Combustion Apparatus (MDCA) in the Combustion Integrated Rack (CIR)
+
+Evidence labels used below:
+  [CALC] computed from the flight table   [SRC] stated in a source document
+  [INF]  interpretation / inference       [FLAG] caveat or unresolved issue
+Units: burning rate K in mm^2/s, diameters in mm, pressure in atm.
+Note: limits derived from the table are upper bounds on LOI, not measured LOI values.
+
+
+=====================================================================
+FINDING 1 - What was actually flown
+=====================================================================
+- 274 tests in the table vs 290 in the planned envelope; the two lists are not the same set. [CALC]
+- Pressures flown: ~0.7 atm (103 tests), ~1.0 atm (161), 2-3 atm (9). No 0.5 or 1.5 atm tests. [CALC]
+- O2 range flown: 0.12-0.34 (plan was 0.10-0.40). [CALC]
+- Suppressants flown: CO2 and He only, plus N2-only baselines. No SF6 or xenon. [CALC]
+- Diluents: N2-only 101 tests, CO2/N2 123, He/N2 50. [CALC]
+- Use the flight-table rows as the record of what was flown; planning documents describe intent only.
+
+
+=====================================================================
+FINDING 2 - How the tests ended
+=====================================================================
+- Overall: 186 extinction (68%), 61 disruption (22%), 27 completion (10%). [CALC]
+- Methanol: 126 extinction / 23 disruption / 8 completion.
+- Heptane: 60 extinction / 38 disruption / 19 completion.
+- "Extinction" = visible flame went out at a finite diameter; "Completion" = droplet burned out;
+  "Disruption" = test ended by droplet disruption, so no extinction diameter. [INF]
+
+
+=====================================================================
+FINDING 3 - High oxygen gives a poor flammability map (disruption problem)
+=====================================================================
+Share of tests ending in disruption rises sharply with O2: [CALC]
+  O2 <= 0.15       0 of 48 tests
+  O2 0.15-0.18     2 of 67
+  O2 0.18-0.22    20 of 91
+  O2 > 0.22       39 of 68 (57%)
+- At 0.7 atm in N2 with O2 = 0.30 or 0.34: 15 of 17 tests disrupted, 2 completed, none gave an extinction diameter.
+- At 1 atm in air: 8 of 17 heptane tests were disrupted.
+- Consequence: extinction-diameter data are scarce on the high-O2 side (where diffusive/blowoff extinction would show).
+  Usable extinction data concentrate at O2 <= 0.21. [INF]
+- The cause of disruption is not stated in the table (possible link to ignition or deployment effects, unverified). [FLAG]
+
+
+=====================================================================
+FINDING 4 - Methanol shows a sharp regime change between 16% and 18% O2
+=====================================================================
+Metric: rho = Dext / D0 (rho near 1 = flame went out almost immediately; rho 0.4-0.5 = droplet burned down first).
+Mean rho, extinction tests, 1 atm, N2 diluent: [CALC]
+  O2     methanol (n)     heptane (n)
+  0.12   0.69 (8)         -
+  0.13   0.76 (5)         0.98 (3)
+  0.14   0.66 (4)         1.00 (2)
+  0.15   0.63 (5)         0.96 (3)
+  0.16   -                0.90 (3)
+  0.18   0.51 (4)         0.85 (2)
+  0.21   0.49 (9)         0.74 (5)
+  0.30   0.41 (2)         -
+- Methanol: rho 0.8-1.0 at O2 <= 0.16, but 0.4-0.55 at O2 >= 0.18, for N2 and CO2 alike. [CALC/INF]
+- This reproduces the two clusters seen in the Hicks methanol slides (13-16% O2 vs 18-21% O2).
+- Heptane stays near rho = 1 up to about 18% O2 and only drops to 0.74-0.82 at 21%. It quenches
+  radiatively over a wider O2 range than methanol.
+
+
+=====================================================================
+FINDING 5 - Radiatively quenched droplets burn for only ~2 seconds
+=====================================================================
+- Short-burn tests (rho >= 0.95) have median burn times at 1 atm of 1.6 s (heptane) and ~1.9 s (methanol). [CALC]
+- Burn time by rho bin: rho 0.8-0.95 gives 4.5 s (heptane) and 7.8 s (methanol);
+  rho <= 0.5 gives 10.2 s and 15.6 s. [CALC]
+- Small droplets complete at low O2: heptane at 14-15% O2 burned to completion at D0 = 1.1-1.3 mm
+  (3 tests), while a 4.6 mm droplet quenched after ~1.5 s (rho ~0.99). The flammability boundary for
+  heptane at 15% O2 therefore lies between D0 = 1.3 and 2.5 mm. [CALC]
+
+
+=====================================================================
+FINDING 6 - Methanol extinction diameter vs initial diameter (1 atm, OLS, descriptive only)
+=====================================================================
+- O2 >= 0.18 (n = 30):  Dext = 0.43 * D0 + 0.06,   R^2 = 0.67  [CALC]
+- O2 <= 0.16 (n = 34):  Dext = 1.26 * D0 - 1.39,   R^2 = 0.82  [CALC]
+  (The intercept is not physical; it just describes a near-unity ratio over a limited D0 range.)
+
+
+=====================================================================
+FINDING 7 - Burning rate falls with droplet size and rises with oxygen
+=====================================================================
+In air, 1 atm, N2 diluent: [CALC]
+- Heptane: Spearman rho = -0.63 (n = 15, p = 0.011), slope ~ -0.11 mm^2/s per mm of D0, K range 0.42-0.79.
+- Methanol: Spearman rho = -0.69 (n = 12, p = 0.013), slope ~ -0.085 mm^2/s per mm of D0, K range 0.27-0.60.
+- This independently supports the Liu et al. n-octane/n-decane finding with flight data for different fuels.
+
+Mean K vs O2 in N2, 1 atm (mm^2/s): [CALC]
+  Heptane:  0.25 (13% O2), 0.52 (14%), 0.53 (15%), 0.56 (21%), 0.74 (30%)
+  Methanol: 0.36 (12%), 0.36 (13%), 0.34 (14%), 0.39 (15%), 0.43 (18%), 0.50 (21%), 0.67 (30%)
+
+
+=====================================================================
+FINDING 8 - n-Heptane in air at 1 atm matches the radiative-extinction picture
+=====================================================================
+- 17 heptane tests in air: completion 4, extinction 5, disruption 8. [CALC]
+- Four of the five extinction tests went out near D^2 = 8-11 mm^2 after 8-10 s. This agrees with radiative
+  extinction at D^2 ~ 10 mm^2 in the Nayagam slides and with the 6-7 s transition in the simulation. [INF]
+- One test (N01H401, D0 = 3.32 mm) burned much longer and extinguished at 1.37 mm.
+- Suggestive threshold (n = 5 only): D0 near 3.3 mm sits at the boundary between a single hot-flame stage
+  and radiative extinction, consistent with simulation (3 mm single-stage, 4 mm and above two-stage). [INF]
+- The table has no column for the cool-flame (second) stage; cool-flame data must come from raw data or video. [FLAG]
+
+
+=====================================================================
+FINDING 9 - Suppressant comparison: CO2 vs He vs N2
+=====================================================================
+Lowest O2 at which a flame was observed, 1 atm, and implied dilution phi = 1 - x_O2/0.209: [CALC]
+  Diluent  Fuel      Lowest O2   phi    Cup-burner micro-g MEC (methane)
+  N2       methanol  0.12        0.43   0.38
+  N2       heptane   0.13        0.38   0.38
+  CO2      methanol  0.14        0.33   0.19
+  CO2      heptane   0.17        0.19   0.19
+  He       methanol  0.13        0.38   0.31
+  He       heptane   0.16        0.23   0.31
+- Where the limit appears reached (heptane with N2 and CO2), droplet-implied dilution matches the cup-burner
+  micro-g MEC (0.38 and 0.19) - a notable cross-check across very different geometries. A single matching
+  pair is a cross-check, not proof of equivalence, and the cup-burner source is methane. [INF]
+- Heptane: CO2 reaches the quench boundary at much lower dilution (0.19) than N2 (0.38), consistent with CO2
+  being the most effective agent. [INF]
+- He limits were not reached in the tested range, so no firm He ranking can be drawn.
+- Methanol burning rate at matched O2: helium raises K (about +0.1 to +0.23 mm^2/s over N2 at 14-18% O2),
+  CO2 is close to or slightly below N2. For heptane at 18-20% O2 the He-N2 difference is within noise.
+  He bins hold only 1-3 tests, so this is indicative. [CALC/INF]
+- Direction agrees with the simulation prediction that helium raises initial burning rate via conductive heat transfer.
+
+
+=====================================================================
+FINDING 10 - Pressure effect: lower pressure may raise the O2 needed
+=====================================================================
+- CO2-diluted heptane shows radiatively quenched tests up to O2 = 0.23 at 0.7 atm (9 tests) but only up to
+  0.18 at 1 atm (4 tests). [CALC]
+- Methanol short burns reach O2 = 0.18 at 0.7 atm (3 tests) vs 0.14 at 1 atm (1 test). [CALC]
+- Suggestion: lower pressure raises the O2 needed to avoid radiative quench, i.e. LOI rises as pressure
+  falls; low-pressure cabins may need more O2 reduction. Small n. [INF]
+- 0.7 atm N2 tests exist only at O2 = 0.20, 0.30, 0.34, so no N2 limit is available at 0.7 atm.
+- 2-3 atm: 9 tests, all at O2 0.21 / N2 0.09 / CO2 0.70; only 2 of 9 have an extinction diameter. [CALC]
+
+
+=====================================================================
+FINDING 11 - Cool-flame discovery and why it matters for fire safety (from the source papers)
+=====================================================================
+- After radiative extinction of a large n-heptane droplet, the droplet keeps regressing at a quasi-steady
+  rate, ends at a finite "cool-flame extinction" diameter, and then a vapor cloud rapidly appears. Never seen
+  before in 50+ years of droplet experiments. [SRC]
+- Simulation (detailed kinetics) reproduces two-stage burning qualitatively: first-stage peak ~2000 K, second
+  stage ~750 K. It over-predicts second-stage burning rate and under-predicts extinction diameter
+  (~0.35 mm, a factor of ~3.5 below experiment). [SRC]
+- Any enhanced heat loss (radiative CO2, conductive He, large droplet size) can push a droplet into the
+  cool-flame branch. [INF]
+- Implication: suppression by dilution may convert a hot flame into a cool one rather than extinguishing it,
+  and the partially oxidized vapor can re-ignite (re-ignition has been shown with decane). Safety margins
+  should be set by the end of the cool-flame stage, not just loss of visible flame. [INF]
+
+
+=====================================================================
+FINDING 12 - Cross-source checks that held up
+=====================================================================
+1. Test 145 (id C01M201) equals the plot data box on Hicks slide 10: methanol, 763.5 mmHg, 20% O2 / 75% N2 /
+   5% CO2, D0 = 3.33 mm, Dext = 1.61 mm, K = 0.45 mm^2/s. Slide 9 (75% CO2 / 5% N2) is the erroneous one. [CALC]
+2. K units: the table spans 0.05-1.06 (typically 0.3-0.7), i.e. mm^2/s; "m^2/s" on slides is a unit typo. [CALC]
+3. Hicks cluster plot is consistent with the methanol regime change in Finding 4.
+4. Burning-rate decrease with D0 is reproduced in heptane and methanol flight data (Finding 7).
+5. Cup-burner MEC agrees with droplet-implied dilution for heptane in N2 and CO2 (Finding 9).
+6. Heptane radiative extinction at D^2 ~ 10 mm^2 matches 4 of 5 flight tests (Finding 8).
+7. Simulated He effect on K matches the direction in the flight data.
+
+
+=====================================================================
+FINDING 13 - Data-quality flags in the flight table
+=====================================================================
+- 85 of 274 rows (31%) lack a usable visible-extinction diameter (blank in 49, zero in 8, plus 28 corrupt). D0 missing in 12 rows, K in 16. [CALC]
+- File is Windows-1252, not UTF-8; 34 cells in 32 rows hold a corrupt byte instead of a number.
+- Tests 70 and 73 share id 193F001 and the same timestamp - a duplicate record of one test.
+- Test 114 (C11M201) has pressure = 0 mmHg and the same timestamp as test 118; both suspect.
+- Test 129 has Dext (3.34) above D0 (3.33), within measurement error; test 130 has K = 0.05 with a 0.6 s burn,
+  probably a fit artifact.
+- Six rows (tests 69, 75, 76, 79, 80, 81) have composition sums off by more than 0.015 from 1.
+- Burn times for tests 223 and 224 are approximate ("~6", "~9"); test 109 has no burn time.
+- Dates mix MM/DD/YY and MM/DD/YYYY, and test numbers are not in chronological order (24 backward steps).
+  Order by date and GMT, not test number.
+- No explicit "no ignition" outcome exists, so every limit is an upper bound on LOI.
+- The "CO" column almost certainly means CO2; the "Burning rate; mm" header must be mm^2/s. [INF]
+- The meaning of the F and R suffixes in test ids, the cause of "Disruption", and each test's flow velocity are
+  not in the table. Slow-flow tests cannot be identified. [FLAG]
+
+
+=====================================================================
+FINDING 14 - Unresolved source discrepancies
+=====================================================================
+- Three planning documents give different envelopes: Test Plan (0.5-1.5 atm quiescent, 0.7-1.0 suppressant,
+  2-3 atm radiative, O2 0.10-0.40); EIRD v4 p.38 (0.5-3.0 atm, O2 0.1-0.4, suppressant 0-0.7); EIRD v4 p.29
+  (O2 0.10-0.50). Always name the document a range came from. [FLAG]
+- Suppressant lists differ: PSI text and Test Plan say CO2, He, SF6; a 2013 slide says N2, He, CO2, xenon;
+  the flight table only has CO2 and He. [FLAG]
+- Metadata archive is named PSI-133 but the study ID inside is PSI-69 (unexplained). [FLAG]
+- The "Detailed results" report is linked to NTRS 20150023456 in the PSI list, not NASA/TP-2013-216046. [FLAG]
+- Cup-burner CO2 vs He ranking conflicts with Honda & Ronney thin-solid flame-spread results; no single
+  ranking holds across fuels and geometries. [SRC/INF]
+- Values read from plots (temperatures, watts, thresholds) are approximate (about +/-10%). [FLAG]
+
+
+=====================================================================
+FINDING 15 - Coverage limits and what to fetch next
+=====================================================================
+Coverage limits:
+- 31% of rows lack an extinction diameter; only 9 tests at 2-3 atm; no "no ignition" results; so no official
+  LOI can be extracted from this table.
+- No SF6 results, no cool-flame stage data, no soot or temperature profiles in the table.
+Highest-value next sources, in order:
+1. PSI-69 "Raw Data" folder (time series, images) for D^2(t) curves and cool-flame stage timing.
+2. NASA/TP-2013-216046 / "Detailed results from FLEX, March 2009 - December 2011".
+3. Nayagam et al. 2012 and 2015 full papers (activation energy, pre-exponential factor, heat release).
+4. Hicks et al. full methanol data on water-flux transition diameter vs extinction diameter.
+5. Confirmation of how FLEX-2 and CFI relate to FLEX.
+
+
+=====================================================================
+SUGGESTED DASHBOARD VIEWS (data: FLEX_flight_tests_clean.csv)
+=====================================================================
+- Stacked bar: test_end share by O2 bin, per fuel.
+- Scatter: Dext/D0 vs O2, colour = diluent, facet = fuel.
+- Scatter: burning rate vs D0 in air, line fit per fuel.
+- Coverage heatmap: pressure band x diluent x fuel.
+- Table with a quality-flag filter.

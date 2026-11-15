@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Microgravity Combustion RAG Chunk",
+  "type": "object",
+  "required": [
+    "chunk_id",
+    "domain",
+    "category",
+    "topic",
+    "language",
+    "source_files",
+    "content",
+    "content_type",
+    "evidence_status"
+  ],
+  "properties": {
+    "chunk_id": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "source_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "content": {
+      "type": "string"
+    },
+    "content_type": {
+      "type": "string"
+    },
+    "evidence_status": {
+      "type": "string"
+    },
+    "layer": {
+      "type": "string"
+    },
+    "source_archive": {
+      "type": "string"
+    },
+    "locator": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
