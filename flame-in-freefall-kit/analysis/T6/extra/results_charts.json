@@ -1,0 +1,102 @@
+[
+ {
+  "id": "slice-peaks",
+  "title": "SLICE: measured peak air velocity vs the fan calibration (2009 scans)",
+  "type": "line",
+  "y": "velocity (cm/s, assumed)",
+  "labels": [
+   "fan 56",
+   "65",
+   "82",
+   "98",
+   "115",
+   "131",
+   "139"
+  ],
+  "datasets": [
+   {
+    "label": "measured peak near the nozzle",
+    "data": [
+     17.4,
+     25.8,
+     41.6,
+     56.8,
+     67.6,
+     79.7,
+     81.7
+    ]
+   },
+   {
+    "label": "calibration polynomial u2",
+    "data": [
+     4.2,
+     10.0,
+     19.8,
+     28.9,
+     36.4,
+     43.3,
+     45.8
+    ]
+   }
+  ],
+  "findings": [
+   "F-T6-10606",
+   "F-T6-10604"
+  ],
+  "note": "Mohamed Gamal, PSI-106 boundary-condition workbook; units not stated in the sheet. The fan-56 calibration value is outside the polynomial's valid range."
+ },
+ {
+  "id": "spice-flames",
+  "title": "SPICE: flames burned by fuel and nozzle",
+  "type": "bar",
+  "stacked": true,
+  "y": "flames",
+  "labels": [
+   "50% Propylene",
+   "75% Propylene",
+   "Ethylene",
+   "Methane",
+   "Propane",
+   "Propylene"
+  ],
+  "datasets": [
+   {
+    "label": "0.4064 mm",
+    "data": [
+     8,
+     15,
+     6,
+     2,
+     6,
+     16
+    ]
+   },
+   {
+    "label": "0.762 mm",
+    "data": [
+     6,
+     8,
+     8,
+     2,
+     4,
+     10
+    ]
+   },
+   {
+    "label": "1.6002 mm",
+    "data": [
+     11,
+     14,
+     9,
+     0,
+     10,
+     12
+    ]
+   }
+  ],
+  "findings": [
+   "F-T6-10702"
+  ],
+  "note": "Mohamed Gamal, PSI-107 experiment table (147 flames, his grouping). Conditions that were run, not smoke-point results."
+ }
+]

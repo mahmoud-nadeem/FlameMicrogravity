@@ -1,0 +1,3 @@
+# T6 limitations: from Mohamed Gamal's findings_and_analysis.txt ('Limits and open questions')
+
+SLICE: no flame result (flame length, liftoff height, soot temperature) is in the files analysed; units are assumed (cm/s, mm); one nozzle size and one probe orientation; the cause of the +X/-X asymmetry is not established. SPICE: no smoke-point or flame-length result is attached (the Day 045 files are the next place to look); O2, pressure and the balance gas of the propylene blends are not recorded. ACME CLD: flows are in volts and converted only approximately; fuel concentration is known per test day only; flame detection uses the team's radiometer threshold; the polarity code and the always-off electric field are unexplained.
