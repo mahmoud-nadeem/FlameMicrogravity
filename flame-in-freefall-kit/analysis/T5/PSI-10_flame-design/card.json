@@ -1,0 +1,186 @@
+{
+  "investigation_id": "PSI-10",
+  "title": "Advanced Combustion via Microgravity Experiments / Flame Design",
+  "acronym": "ACME/Flame Design",
+  "doi": "10.60555/w4zy-bt45",
+  "license": "unconfirmed",
+  "version": "unconfirmed",
+  "sub_research_area": "Flames of Gaseous Fuels",
+  "related_investigations": [],
+  "size_on_page": "2,079,425 MB",
+  "file_types_and_counts": {
+    "zip": 1184,
+    "txt": 993,
+    "csv": 636,
+    "mdipsug": 490,
+    "ts": 317,
+    "pdf": 76,
+    "asc": 66,
+    "log": 35,
+    "jpg": 5,
+    "png": 2,
+    "xlsx": 2,
+    "errors": 1
+  },
+  "has_experiment_table": "yes",
+  "objectives": "Study how different gaseous-flame compositions and conditions affect soot formation and flame behavior in microgravity.",
+  "approach": "Use controlled spherical diffusion flames and vary fuel, oxygen/diluent composition, flow and pressure; record diagnostics for comparison.",
+  "publications": [
+    {
+      "title": "The kinetics and warm flame chemistry associated with radiative extinction of spherical diffusion flames",
+      "link": "https://doi.org/10.1080/13647830.2024.2326830"
+    },
+    {
+      "title": "Soot Formation in Spherical Diffusion Flames",
+      "link": "https://doi.org/10.3390/math11020261"
+    },
+    {
+      "title": "On the existence of steady-state gaseous microgravity spherical diffusion flames in the presence of radiation heat loss",
+      "link": "https://doi.org/10.1016/j.proci.2022.07.049"
+    },
+    {
+      "title": "Critical temperature and reactant mass flux for radiative extinction of ethylene microgravity spherical diffusion flames at 1 bar",
+      "link": "https://doi.org/10.1016/j.proci.2022.07.043"
+    },
+    {
+      "title": "An investigation of thermal radiation from laminar diffusion flames in a tri-coflow burner with central oxygen",
+      "link": "https://doi.org/10.1016/j.combustflame.2022.112158"
+    },
+    {
+      "title": "SPHERICAL DIFFUSION FLAME IN MICROGRAVITY CONDITIONS: FIRST RESULTS OF JOINT RUSSIAN-AMERICAN SPACE EXPERIMENT FLAME DESIGN - ADAMANT",
+      "link": "https://doi.org/10.30826/NEPCAP9B-13"
+    },
+    {
+      "title": "Observations of long duration microgravity spherical diffusion flames aboard the International Space Station",
+      "link": "https://doi.org/10.1016/j.combustflame.2021.02.019"
+    },
+    {
+      "title": "Double blue zones in inverse and normal laminar jet diffusion flames",
+      "link": "https://doi.org/10.1016/j.combustflame.2019.09.014"
+    },
+    {
+      "title": "Dilution effects on laminar jet diffusion flame lengths",
+      "link": "https://doi.org/10.1016/j.proci.2018.06.085"
+    },
+    {
+      "title": "A new method of flame temperature measurement utilizing the acoustic emissions from laser-induced plasmas",
+      "link": "https://doi.org/10.1016/j.proci.2018.07.096"
+    },
+    {
+      "title": "Structure and extinction of spherical burner-stabilized diffusion flames that are attached to the burner surface",
+      "link": "https://doi.org/10.1016/j.combustflame.2017.08.024"
+    },
+    {
+      "title": "Effects of Inert Placement (Z st) on Soot and Radiative Heat Flux in Turbulent Diffusion Flames",
+      "link": "https://doi.org/10.1021/acs.energyfuels.7b01092"
+    },
+    {
+      "title": "Observation of water–gas shift equilibrium in diffusion flames",
+      "link": "https://doi.org/10.1016/j.combustflame.2016.07.025"
+    },
+    {
+      "title": "An Approach to Thermocouple Measurements That Reduces Uncertainties in High-Temperature Environments",
+      "link": "https://doi.org/10.1021/acs.energyfuels.5b00071"
+    },
+    {
+      "title": "Modeled quenching limits of spherical hydrogen diffusion flames",
+      "link": "https://doi.org/10.1016/j.proci.2012.07.029"
+    },
+    {
+      "title": "Simplifying the complexity of diffusion flames through interpretation in C/O ratio space",
+      "link": "https://doi.org/10.1016/j.camwa.2013.01.008"
+    },
+    {
+      "title": "Numerical study of flame structure and soot inception interpreted in carbon-to-oxygen atom ratio space",
+      "link": "https://doi.org/10.1016/j.proci.2012.06.043"
+    },
+    {
+      "title": "Stability of spray combustion for water/alcohols mixtures in oxygen-enriched air",
+      "link": "https://doi.org/10.1016/j.proci.2012.05.088"
+    },
+    {
+      "title": "Numerical investigation of spherical diffusion flames at their sooting limits",
+      "link": "https://doi.org/10.1016/j.combustflame.2011.05.022"
+    },
+    {
+      "title": "Kinetic and radiative extinctions of spherical burner-stabilized diffusion flames",
+      "link": "https://doi.org/10.1016/j.combustflame.2010.12.007"
+    },
+    {
+      "title": "Extremely weak hydrogen flames",
+      "link": "https://doi.org/10.1016/j.combustflame.2010.07.024"
+    },
+    {
+      "title": "Characteristics of non-premixed oxygen-enhanced combustion: II. Flame structure effects on soot precursor kinetics resulting in soot-free flames",
+      "link": "https://doi.org/10.1016/j.combustflame.2010.04.013"
+    },
+    {
+      "title": "Characteristics of non-premixed oxygen-enhanced combustion: I. The presence of appreciable oxygen at the location of maximum temperature",
+      "link": "https://doi.org/10.1016/j.combustflame.2009.07.009"
+    },
+    {
+      "title": "Soot inception limits in laminar diffusion flames with application to oxy–fuel combustion",
+      "link": "https://doi.org/10.1016/j.combustflame.2008.03.008"
+    },
+    {
+      "title": "Radiative extinction of gaseous spherical diffusion flames in microgravity",
+      "link": "https://doi.org/10.1016/j.combustflame.2007.08.009"
+    },
+    {
+      "title": "Numerical and experimental observations of spherical diffusion flames",
+      "link": "https://doi.org/10.1080/13647830601161567"
+    },
+    {
+      "title": "The effects of elevated pressure on the kinetics and extinction of hot, warm, and cool gaseous ethylene spherical diffusion flames",
+      "link": "https://doi.org/10.1016/j.proci.2024.105400"
+    },
+    {
+      "title": "On Soot Inception in Nonpremixed Flames and the Effects of Flame Structure",
+      "link": "https://doi.org/10.1080/00102209808952065"
+    },
+    {
+      "title": "Measurement and analysis of soot inception limits of oxygen-enriched coflow flames",
+      "link": "https://doi.org/10.1016/j.combustflame.2006.08.004"
+    },
+    {
+      "title": "Scalar dissipation rate at extinction and the effects of oxygen-enriched combustion",
+      "link": "https://doi.org/10.1016/j.combustflame.2005.02.008"
+    },
+    {
+      "title": "A theoretical study on soot inception in spherical burner-stabilized diffusion flames",
+      "link": "https://doi.org/10.1016/j.combustflame.2004.08.016"
+    },
+    {
+      "title": "SOOTING LIMITS OF MICROGRAVITY SPHERICAL DIFFUSION FLAMES IN OXYGEN-ENRICHED AIR AND DILUTED FUEL",
+      "link": "https://doi.org/10.1080/00102200490514994"
+    },
+    {
+      "title": "Effects of structure and hydrodynamics on the sooting behavior of spherical microgravity diffusion flames",
+      "link": "https://doi.org/10.1016/S0010-2180(02)00424-8"
+    }
+  ],
+  "verified_on": "",
+  "verified_by": "",
+  "x_prefilled_from": "NASA PSI API (investigation record and file listing), retrieved 2026-11-14; NOT yet checked on the page",
+  "x_psi_page": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-10",
+  "x_how_to_verify": "Open x_psi_page, compare every field, correct what differs, read the version from the page, then fill verified_on (date and time) and verified_by (your name). size_on_page uses 1 MB = 1,048,576 bytes, as the page does.",
+  "x_review_status": "PARTIAL: investigation ID, title, DOI cross-checked against archived NASA PSI metadata; objectives/approach independently compared to NASA Science; PSI live version, listing/size and exact Cite-this-Investigation formatting not independently verified.",
+  "x_nasa_science_url": "https://science.nasa.gov/biological-physical/investigations/flame-design/",
+  "x_verified_fields": [
+    "investigation_id",
+    "title",
+    "acronym",
+    "doi",
+    "general objectives/approach"
+  ],
+  "x_unverified_fields": [
+    "version",
+    "size_on_page",
+    "file_types_and_counts",
+    "full publication list",
+    "exact PSI Cite-this-Investigation UI text",
+    "PSI live license if not shown"
+  ],
+  "x_partial_review_date": "2026-11-15",
+  "x_reviewed_by": "AI-assisted cross-check, not a manual click-through"
+}

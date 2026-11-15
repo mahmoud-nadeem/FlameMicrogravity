@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "scope": "LOCAL FILE INVENTORY ONLY",
+  "input_dir": "/mnt/data/psi20_inputs",
+  "output_dir": "/mnt/data/analysis/T5/PSI-20_BRE/inventory",
+  "summary": {
+    "recognized_files": 2,
+    "unrelated_files": 0,
+    "unique_candidate_runs": 1,
+    "complete_validated_pairs": 1,
+    "incomplete_or_conflicting_pairs": 0,
+    "issues": 0
+  },
+  "expected_runs_manifest": null,
+  "expected_run_ids": null,
+  "unrelated_files": [],
+  "limitations": [
+    "Only first two CSV records parsed; full data integrity is not verified",
+    "SHA-256 streamed across entire recognized files",
+    "No timezone or clock synchronization assumptions",
+    "Filename/metadata pairing is local evidence, not NASA completeness certification",
+    "Unrelated files listed but not hashed",
+    "Strict mode exits nonzero for pairing issues or invalid recognized files"
+  ]
+}

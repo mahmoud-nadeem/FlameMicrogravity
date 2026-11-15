@@ -1,0 +1,6 @@
+mfc_change_event_id,original_row_1based,parsed_timestamp,event_kind,source_csv_record,Time,MFCA1Setpoint(V),MFCA2Setpoint(V),MFCA3Setpoint(V),changed_channels,inside_major_data_gap,clock_sync_verified
+19056A2_E0001,1,2019-02-25 15:58:51.737,initial_state,3,15:58:51:737,0.000000,0.000000,0.000000,"MFCA1Setpoint(V),MFCA2Setpoint(V),MFCA3Setpoint(V)",False,False
+19056A2_E0002,23,2019-02-25 15:59:05.909,setpoint_change,25,15:59:05:909,0.000000,3.750000,0.000000,MFCA2Setpoint(V),False,False
+19056A2_E0003,26,2019-02-25 15:59:20.911,setpoint_change,28,15:59:20:911,0.000000,0.000000,0.000000,MFCA2Setpoint(V),True,False
+19056A2_E0004,48,2019-02-25 16:01:47.147,setpoint_change,50,16:01:47:147,0.000000,0.000000,5.000000,MFCA3Setpoint(V),False,False
+19056A2_E0005,51,2019-02-25 16:04:58.949,setpoint_change,53,16:04:58:949,0.000000,0.000000,0.000000,MFCA3Setpoint(V),False,False

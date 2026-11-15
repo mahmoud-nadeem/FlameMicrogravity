@@ -1,0 +1,308 @@
+NASA ACME RAG CORPUS
+DATASET: PSI-23
+INVESTIGATION: s-Flame
+CHUNKS: 15
+SOURCE: rag_chunks.jsonl
+
+============================================================================
+CHUNK 1/15 | ID: PSI23-01
+TITLE: s-Flame objective
+SECTION: s-flame_objective
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Science Objectives
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: spherical | extinction | model_validation | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: SCI23
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/s-flame/
+
+CONTENT:
+The s-Flame investigation examines transient spherical diffusion flames to improve models of flame structure, extinction and dynamical stability. It includes both sooty and soot-free regimes.
+
+============================================================================
+CHUNK 2/15 | ID: PSI23-02
+TITLE: Fuel mixtures and soot conditions
+SECTION: fuel_mixtures_and_soot_conditions
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Experiment Description
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: hydrogen | methane | ethylene | dilution | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: SCI23
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/s-flame/
+
+CONTENT:
+NASA describes hydrogen–methane mixtures for soot-free flames and ethylene for sooty cases, with inert dilution of fuels or chamber atmospheres. Avoid assigning any one fuel to an unidentified row unless the original test record states it.
+
+============================================================================
+CHUNK 3/15 | ID: PSI23-03
+TITLE: Transient experimental strategy
+SECTION: transient_experimental_strategy
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Experiment Description
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: time_series | transient | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: SCI23
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/s-flame/
+
+CONTENT:
+Unlike a strictly steady-state burner experiment, s-Flame ignites spherical flames under unsteady conditions and follows their evolution toward extinction. Temporal trajectories and initial conditions therefore matter; one static image cannot identify an extinction mechanism reliably.
+
+============================================================================
+CHUNK 4/15 | ID: PSI23-04
+TITLE: Radiative versus convective extinction
+SECTION: radiative_versus_convective_extinction
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Experiment Description
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: radiative_extinction | convective_extinction | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: SCI23
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/s-flame/
+
+CONTENT:
+The scientific question separates extinction driven by radiative heat loss from that caused by convective or flow-related effects. Observed extinction alone does not establish its mechanism; additional heat-transfer, fuel-flow or time-resolved diagnostics are required.
+
+============================================================================
+CHUNK 5/15 | ID: PSI23-05
+TITLE: NASA reported extinction regimes
+SECTION: nasa_reported_extinction_regimes
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: s-Flame slide, p.9
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: radiative_extinction | kinetic_extinction | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+A 2022 NASA briefing states that both radiative and kinetic/convective extinction appear in the s-Flame data; it tentatively associates higher-flow tests with radiative extinction and lower-flow tests with kinetic extinction. This is a reported interpretation, not a universal flow-rate rule.
+
+============================================================================
+CHUNK 6/15 | ID: PSI23-06
+TITLE: Effect of inert species
+SECTION: effect_of_inert_species
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: s-Flame slide, p.9
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: helium | nitrogen | extinction_limit | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+NASA’s briefing reports that changing the diluent from nitrogen to helium shifts extinction limits and may make kinetic extinction harder to distinguish. The gas identity is therefore a key categorical variable, not a generic inert-dilution fraction alone.
+
+============================================================================
+CHUNK 7/15 | ID: PSI23-07
+TITLE: Oscillatory instability question
+SECTION: oscillatory_instability_question
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Experiment Description
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: oscillation | instability | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: SCI23
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/s-flame/
+
+CONTENT:
+The study explores whether pulsating instabilities predicted for certain fuel and diluent combinations occur experimentally. “Studied” must not be translated into “observed in every run”; use test-level evidence for claims of onset and amplitude.
+
+============================================================================
+CHUNK 8/15 | ID: PSI23-08
+TITLE: Thermal diagnostic context
+SECTION: thermal_diagnostic_context
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Methods, pp.4–5
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: temperature | TFP | provenance | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: NTRS_PAPER
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+The NASA ACME documentation identifies temperature instrumentation including Thin Filament Pyrometry. A temperature recorded through TFP and a color-camera estimate may reflect different processing pipelines; keep the method attached to every derived variable.
+
+============================================================================
+CHUNK 9/15 | ID: PSI23-09
+TITLE: Conflicting published table representations
+SECTION: conflicting_published_table_representations
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: external_inventory
+EVIDENCE_LEVEL: third_party_conflict
+SOURCE_LOCATOR: Third-party table descriptions
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: row_count | observation_unit | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: SECONDARY_ATLAS | SECONDARY_FREEFALL
+SOURCE_URLS: https://vlo0d.github.io/flame-atlas/methodology/ | https://muneer-ul-hassan.github.io/flame-in-freefall/
+
+CONTENT:
+A third-party methodology describes 18 s-Flame test-day CSV rows; another summary describes 23 test rows. Neither row count is independently established as NASA’s current authoritative release in this package.
+
+============================================================================
+CHUNK 10/15 | ID: PSI23-10
+TITLE: Mechanism inference caution
+SECTION: mechanism_inference_caution
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Methodological guidance
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: causality | imaging | PSI-23 | ACME | NASA PSI
+
+CONTENT:
+“Radiative extinction” and “blowout” can both end a visible flame, but they imply different physical mechanisms. A text-only retrieval system must not infer causality from flame darkness, row order, or short narrative descriptions.
+
+============================================================================
+CHUNK 11/15 | ID: PSI23-OPS
+TITLE: ISS operation periods
+SECTION: iss_operation_periods
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Table 1, PDF p.3
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: timeline | on_orbit | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: NTRS_PAPER
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+NASA’s ACME technical paper lists ISS operating intervals for s-Flame: 2019-07 to 2020-01 and 2020-04 to 2020-07. These are study-wide operating windows, not exact test times, and should not be used to date individual CSV records.
+
+============================================================================
+CHUNK 12/15 | ID: QA-013
+TITLE: FAQ: What is PSI-23 about?
+SECTION: faq:_what_is_psi-23_about?
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI23-01
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: SCI23
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/s-flame/
+
+CONTENT:
+Question: What is PSI-23 about?
+Answer: s-Flame studies time-dependent spherical diffusion flames, soot and radiative/flow-related extinction mechanisms.
+
+============================================================================
+CHUNK 13/15 | ID: QA-014
+TITLE: FAQ: Which fuels are used in s-Flame?
+SECTION: faq:_which_fuels_are_used_in_s-flame?
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI23-02
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: SCI23
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/s-flame/
+
+CONTENT:
+Question: Which fuels are used in s-Flame?
+Answer: NASA discusses hydrogen/methane mixtures in soot-free cases and ethylene in sooty cases; specific run fuels require the original records.
+
+============================================================================
+CHUNK 14/15 | ID: QA-015
+TITLE: FAQ: How do radiative and kinetic extinction differ?
+SECTION: faq:_how_do_radiative_and_kinetic_extinction_differ?
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI23-04
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: SCI23
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/s-flame/
+
+CONTENT:
+Question: How do radiative and kinetic extinction differ?
+Answer: Radiative extinction emphasizes heat loss; kinetic or flow-related extinction emphasizes inability to sustain reaction under transport and flow conditions. Mechanism requires evidence.
+
+============================================================================
+CHUNK 15/15 | ID: QA-016
+TITLE: FAQ: Does helium behave the same as nitrogen in s-Flame?
+SECTION: faq:_does_helium_behave_the_same_as_nitrogen_in_s-flame?
+INVESTIGATION_ID: PSI-23
+INVESTIGATION_NAME: s-Flame
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI23-06
+DOI: 10.60555/k57n-p030
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-23 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+Question: Does helium behave the same as nitrogen in s-Flame?
+Answer: No. NASA reports shifted extinction limits when helium is used instead of nitrogen for dilution.
+

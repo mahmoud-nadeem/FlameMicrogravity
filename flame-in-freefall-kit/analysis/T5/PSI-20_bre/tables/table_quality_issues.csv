@@ -1,0 +1,6 @@
+source_row,column,code,raw_value,detail,severity
+6,Oxygen Conc (percent),percent_symbol_in_value,3400%,Percent symbol in field already labeled percent; preserve raw text,review
+6,Oxygen Conc (percent),oxygen_value_over_100,3400%,Token exceeds 100 on percent-labeled field; no correction inferred,review
+9,Oxygen Conc (percent),percent_symbol_in_value,2100%,Percent symbol in field already labeled percent; preserve raw text,review
+9,Oxygen Conc (percent),oxygen_value_over_100,2100%,Token exceeds 100 on percent-labeled field; no correction inferred,review
+ALL,Fuel Bottle,inconsistent_spacing,100%C2H4,3 row(s) have compact percent/fuel notation,review

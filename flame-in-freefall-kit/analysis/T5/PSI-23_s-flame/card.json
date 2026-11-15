@@ -1,0 +1,229 @@
+{
+  "investigation_id": "PSI-23",
+  "title": "Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames",
+  "acronym": "ACME s-Flame",
+  "doi": "10.60555/k57n-p030",
+  "license": "Creative Commons Zero v1.0 Universal",
+  "version": "unconfirmed",
+  "sub_research_area": "Flames of gaseous fuels",
+  "related_investigations": [],
+  "size_on_page": "745,937 MB",
+  "file_types_and_counts": {
+    "zip": 2038,
+    "txt": 963,
+    "csv": 577,
+    "mp4": 290,
+    "asc": 170,
+    "log": 68,
+    "pdf": 38,
+    "mdipsug": 16,
+    "xlsx": 2,
+    "next": 2,
+    "sfk": 1
+  },
+  "has_experiment_table": "yes",
+  "objectives": "Investigate spherical diffusion-flame structure, extinction, and possible dynamic instabilities in microgravity.",
+  "approach": "Test gaseous fuels and diluents under varied conditions, studying soot-free and sooty flames as they evolve.",
+  "publications": [
+    {
+      "title": "Opportunities and challenges of combustion in microgravity",
+      "link": "https://doi.org/10.1016/0360-1285(94)90006-X"
+    },
+    {
+      "title": "On burner-stabilized cylindrical premixed flames in microgravity",
+      "link": "https://doi.org/10.1016/S0082-0784(06)80819-2"
+    },
+    {
+      "title": "On the structure, stabilization, and dual response of flat-burner flames",
+      "link": "https://doi.org/10.1016/0010-2180(94)00102-X"
+    },
+    {
+      "title": "Extinction mechanisms of near-limit premixed flames and extended limits of flammability",
+      "link": "https://doi.org/10.1016/S0082-0784(96)80296-7"
+    },
+    {
+      "title": "On the spreading of unsteady cylindrical diffusion flames",
+      "link": "https://doi.org/10.1016/S0010-2180(97)00069-2"
+    },
+    {
+      "title": "On the response of spherical premixed flames under rotation",
+      "link": "https://doi.org/10.1016/S0010-2180(97)00051-5"
+    },
+    {
+      "title": "Role of flamefront motion and criterion for global quasi-steadiness in droplet burning",
+      "link": "https://doi.org/10.1016/S0082-0784(98)80038-6"
+    },
+    {
+      "title": "On micro-buoyancy spherical diffusion flames and a double luminous zone structure of the hydrogen/methane flame",
+      "link": "https://doi.org/10.1016/S0082-0784(98)80108-2"
+    },
+    {
+      "title": "Structure, aerodynamics, and geometry of premixed flamelets",
+      "link": "https://doi.org/10.1016/S0360-1285(00)00018-6"
+    },
+    {
+      "title": "Microgravity burner-generated spherical diffusion flames: experiment and computation‡‡Currently at Department of Mechanical and Aerospace Engineering, Case Western Reserve University, Cleveland, OH 44106.",
+      "link": "https://doi.org/10.1016/S0010-2180(01)00247-4"
+    },
+    {
+      "title": "Chemiluminescent OH* and CH* flame structure and aerodynamic scaling of weakly buoyant, nearly spherical diffusion flames",
+      "link": "https://doi.org/10.1016/S1540-7489(02)80204-8"
+    },
+    {
+      "title": "Oscillatory extinction of spherical diffusion flames: Micro-buoyancy experiment and computation",
+      "link": "https://doi.org/10.1016/S1540-7489(02)80008-6"
+    },
+    {
+      "title": "Development of Comprehensive Detailed and Reduced Reaction Mechanisms for Combustion Modeling",
+      "link": "https://doi.org/10.2514/2.7289"
+    },
+    {
+      "title": "Response of spherical diffusion flames under rotation with general Lewis numbers",
+      "link": "https://doi.org/10.1080/13647830500098423"
+    },
+    {
+      "title": "Porous spherical burner for combustion experimentation",
+      "link": "https://doi.org/10.1063/1.2212399"
+    },
+    {
+      "title": "On intrinsic oscillation in radiation-affected diffusion flames",
+      "link": "https://doi.org/10.1016/j.proci.2006.07.183"
+    },
+    {
+      "title": "Effects of variable density on response of spherical diffusion flames under rotation",
+      "link": "https://doi.org/10.1016/j.ijheatmasstransfer.2006.12.014"
+    },
+    {
+      "title": "A mechanistic study of Soret diffusion in hydrogen–air flames",
+      "link": "https://doi.org/10.1016/j.combustflame.2009.09.018"
+    },
+    {
+      "title": "Self-similar accelerative propagation of expanding wrinkled flames and explosion triggering",
+      "link": "https://doi.org/10.1103/PhysRevE.83.026305"
+    },
+    {
+      "title": "Response of spherical diffusion flames subjected to rotation: Microgravity experimentation and computational simulation",
+      "link": "https://doi.org/10.1016/j.combustflame.2011.07.013"
+    },
+    {
+      "title": "Fuel Options for Next-Generation Chemical Propulsion",
+      "link": "https://doi.org/10.2514/1.J051328"
+    },
+    {
+      "title": "A mechanistic evaluation of Soret diffusion in heptane/air flames",
+      "link": "https://doi.org/10.1016/j.combustflame.2012.03.005"
+    },
+    {
+      "title": "An experimental investigation on self-acceleration of cellular spherical flames",
+      "link": "https://doi.org/10.1016/j.proci.2012.05.068"
+    },
+    {
+      "title": "Initiation and propagation of laminar premixed cool flames",
+      "link": "https://doi.org/10.1016/j.fuel.2015.11.025"
+    },
+    {
+      "title": "On colliding spherical flames: Morphology, corner dynamics, and flame-generated vorticity",
+      "link": "https://doi.org/10.1016/j.combustflame.2015.10.029"
+    },
+    {
+      "title": "Extended flammability limits of n-heptane/air mixtures with cool flames",
+      "link": "https://doi.org/10.1016/j.combustflame.2017.06.015"
+    },
+    {
+      "title": "Theory of first-stage ignition delay in hydrocarbon NTC chemistry",
+      "link": "https://doi.org/10.1016/j.combustflame.2017.10.003"
+    },
+    {
+      "title": "Direct Numerical Simulation of turbulent nonpremixed “cool” flames: Applicability of flamelet models",
+      "link": "https://doi.org/10.1016/j.proci.2018.06.191"
+    },
+    {
+      "title": "On Radical-Induced Ignition in Combustion Systems",
+      "link": "https://doi.org/10.1146/annurev-chembioeng-060718-030141"
+    },
+    {
+      "title": "Binary collision of a burning droplet and a non-burning droplet of xylene: Outcome regimes and flame dynamics",
+      "link": "https://doi.org/10.1016/j.proci.2018.06.198"
+    },
+    {
+      "title": "Stabilization mechanisms and burning rates of cylindrical burner flames",
+      "link": "https://doi.org/10.2514/6.1994-571"
+    },
+    {
+      "title": "On burner-supported, spherical diffusion flames under micro-buoyancy conditions",
+      "link": "https://doi.org/10.2514/6.1998-563"
+    },
+    {
+      "title": "Microgravity burner-generated spherical diffusion flames - Experiment and computation",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Thin-Flame Theory for Droplet Combustion at Low Grashof Numbers",
+      "link": "https://doi.org/10.2514/6.2005-1140"
+    },
+    {
+      "title": "Nonlinear Analysis of Pulsating Instabilities in Diffusion Flames",
+      "link": "https://doi.org/10.2514/6.2005-544"
+    },
+    {
+      "title": "An Experimental Study on the Response of Spherical Diffusion Flames Subjected to Rotation and Nonequidiffusion",
+      "link": "https://doi.org/10.2514/6.2005-1141"
+    },
+    {
+      "title": "A Mechanistic Study of Soret Diffusion in Hydrogen-Air Flames",
+      "link": "https://doi.org/10.2514/6.2009-988"
+    },
+    {
+      "title": "A comprehensive evaluation of soret diffusion in heptane-air flames",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Dynamics and morphology of spherical diffusion flames under rotation",
+      "link": "https://doi.org/10.2514/6.2012-1251"
+    },
+    {
+      "title": "Dynamics and morphology of colliding spherical flames",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "On the structure and dynamics of stationary and rotating spherical diffusion flames",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Weakly Buoyant Spherical Diffusion Flames: Properties of Hydrogen-CO Ethylene Flames",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Computational Simulation of Spherical Diffusion Flame Dynamics and Extinction in Microgravity",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Combustion Science: A Researcher&#x27;s Guide to International Space Station",
+      "link": "unconfirmed"
+    }
+  ],
+  "verified_on": "",
+  "verified_by": "",
+  "x_prefilled_from": "NASA PSI API (investigation record and file listing), retrieved 2026-11-14; NOT yet checked on the page",
+  "x_psi_page": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+  "x_how_to_verify": "Open x_psi_page, compare every field, correct what differs, read the version from the page, then fill verified_on (date and time) and verified_by (your name). size_on_page uses 1 MB = 1,048,576 bytes, as the page does.",
+  "x_review_status": "PARTIAL: investigation ID, title, DOI cross-checked against archived NASA PSI metadata; objectives/approach independently compared to NASA Science; PSI live version, listing/size and exact Cite-this-Investigation formatting not independently verified.",
+  "x_nasa_science_url": "https://science.nasa.gov/biological-physical/investigations/s-flame/",
+  "x_verified_fields": [
+    "investigation_id",
+    "title",
+    "acronym",
+    "doi",
+    "general objectives/approach"
+  ],
+  "x_unverified_fields": [
+    "version",
+    "size_on_page",
+    "file_types_and_counts",
+    "full publication list",
+    "exact PSI Cite-this-Investigation UI text",
+    "PSI live license if not shown"
+  ],
+  "x_partial_review_date": "2026-11-15",
+  "x_reviewed_by": "AI-assisted cross-check, not a manual click-through"
+}

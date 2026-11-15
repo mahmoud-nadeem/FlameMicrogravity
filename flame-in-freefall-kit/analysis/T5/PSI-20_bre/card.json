@@ -1,0 +1,116 @@
+{
+  "investigation_id": "PSI-20",
+  "title": "Advanced Combustion via Microgravity Experiments - Burning Rate Emulator",
+  "acronym": "ACME BRE",
+  "doi": "10.60555/vb93-3y72",
+  "license": "Creative Commons Zero v1.0 Universal",
+  "version": "unconfirmed",
+  "sub_research_area": "Flames of Gaseous Fuels",
+  "related_investigations": [],
+  "size_on_page": "1,941,269 MB",
+  "file_types_and_counts": {
+    "zip": 1049,
+    "txt": 652,
+    "csv": 383,
+    "mp4": 199,
+    "pdf": 59,
+    "mdipsug": 10,
+    "xlsx": 5,
+    "docx": 2,
+    "ziip": 1,
+    "next": 1
+  },
+  "has_experiment_table": "yes",
+  "objectives": "Explore burning and sustained-combustion conditions relevant to understanding flammability of condensed fuels in microgravity.",
+  "approach": "Use gaseous fuels through a porous burner to emulate selected heat-transfer and burning features of solid/liquid fuels.",
+  "publications": [
+    {
+      "title": "Burning on flat wicks at various orientations",
+      "link": "https://doi.org/10.1177/0734904113495650"
+    },
+    {
+      "title": "A Gas Burner to Emulate Condensed-Phase Burning",
+      "link": "https://doi.org/10.3850/978-981-07-5936-0_03-01"
+    },
+    {
+      "title": "Experimental Investigation of Liquid and Gas Fueled Flames Towards the Development of a Burning Rate Emulator (BRE) for Microgravity Applications",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Burning in microgravity: Experimental results and analysis",
+      "link": "https://doi.org/10.1016/j.combustflame.2021.01.035"
+    },
+    {
+      "title": "Transient dynamics of radiative extinction in low-momentum microgravity diffusion flames",
+      "link": "https://doi.org/10.1016/j.proci.2020.06.110"
+    },
+    {
+      "title": "Emulation of condensed fuel flames with gaseous fuels supplied through a porous copper calorimeter",
+      "link": "https://doi.org/10.1002/fam.2896"
+    },
+    {
+      "title": "Radiative Extinction of Laminar Diffusion Flame above the Flat Porous Burner in Microgravity: A Computational Study",
+      "link": "https://doi.org/10.1134/S0010508220040036"
+    },
+    {
+      "title": "Transient ellipsoidal combustion model for a porous burner in microgravity",
+      "link": "https://doi.org/10.1016/j.combustflame.2019.09.030"
+    },
+    {
+      "title": "Measuring heat flux to a porous burner in microgravity",
+      "link": "https://doi.org/10.1016/j.proci.2018.05.006"
+    },
+    {
+      "title": "Analysis of extinction and sustained ignition",
+      "link": "https://doi.org/10.1016/j.firesaf.2019.02.003"
+    },
+    {
+      "title": "A Burning Rate Emulator (BRE) for study of condensed fuel burning in microgravity",
+      "link": "https://doi.org/10.1016/j.combustflame.2018.01.044"
+    },
+    {
+      "title": "Study of ignition and extinction of small-scale fires in experiments with an emulating gas burner",
+      "link": "https://doi.org/10.1016/j.firesaf.2016.11.003"
+    },
+    {
+      "title": "Emulation of condensed fuel flames with gases in microgravity",
+      "link": "https://doi.org/10.1016/j.combustflame.2015.05.005"
+    },
+    {
+      "title": "Flammability maps for microgravity burning of a small flat material in a quiescent ambient",
+      "link": "https://doi.org/10.1016/j.combustflame.2023.112809"
+    },
+    {
+      "title": "Demonstrating steady burning for small flat materials in microgravity in a quiescent ambient",
+      "link": "https://doi.org/10.1016/j.proci.2022.08.107"
+    },
+    {
+      "title": "Theoretical analysis and predictions of burning in microgravity using a burning emulator",
+      "link": "https://doi.org/10.1016/j.combustflame.2021.111572"
+    }
+  ],
+  "verified_on": "",
+  "verified_by": "",
+  "x_prefilled_from": "NASA PSI API (investigation record and file listing), retrieved 2026-11-14; NOT yet checked on the page",
+  "x_psi_page": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+  "x_how_to_verify": "Open x_psi_page, compare every field, correct what differs, read the version from the page, then fill verified_on (date and time) and verified_by (your name). size_on_page uses 1 MB = 1,048,576 bytes, as the page does.",
+  "x_review_status": "PARTIAL: investigation ID, title, DOI cross-checked against archived NASA PSI metadata; objectives/approach independently compared to NASA Science; PSI live version, listing/size and exact Cite-this-Investigation formatting not independently verified.",
+  "x_nasa_science_url": "https://science.nasa.gov/biological-physical/investigations/bre/",
+  "x_verified_fields": [
+    "investigation_id",
+    "title",
+    "acronym",
+    "doi",
+    "general objectives/approach"
+  ],
+  "x_unverified_fields": [
+    "version",
+    "size_on_page",
+    "file_types_and_counts",
+    "full publication list",
+    "exact PSI Cite-this-Investigation UI text",
+    "PSI live license if not shown"
+  ],
+  "x_partial_review_date": "2026-11-15",
+  "x_reviewed_by": "AI-assisted cross-check, not a manual click-through"
+}

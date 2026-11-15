@@ -1,0 +1,7 @@
+report_title,report_date,pdf_pages,test_day,reference_calendar_date,reference_oxygen_concentration_text,reference_flames_ignited_count,provenance,verification_status,date_status,interpretation_note
+ACME/BRE Final Report (2022),2022-02-01,24;112,19066,2019-03-07,34%,6,"NASA ACME/BRE Final Report, PDF page(s) 24;112",independently_checked_pdf_text,as_reported,
+ACME/BRE Final Report (2022),2022-02-01,24;112,19091,2019-04-01,21%,0,"NASA ACME/BRE Final Report, PDF page(s) 24;112",independently_checked_pdf_text,as_reported,
+ACME/BRE Final Report (2022),2022-02-01,24;112,20261,2020-09-17,26.5%; 34%,13,"NASA ACME/BRE Final Report, PDF page(s) 24;112",independently_checked_pdf_text,as_reported,
+ACME/BRE Final Report (2022),2022-02-01,24;112,20279,2020-10-05,25%; 34%; 40%,21,"NASA ACME/BRE Final Report, PDF page(s) 24;112",independently_checked_pdf_text,as_reported,
+ACME/BRE Final Report (2022),2022-02-01,23;24,19094,2019-04-04,21%; 26.5%; 34%,9,"NASA ACME/BRE Final Report, PDF page(s) 23;24",independently_checked_pdf_text,corrected_operational_date,PDF page 23 explicitly corrects 19094 to April 4; April 5 is historical (page 112)
+ACME/BRE Final Report (2022),2022-02-01,112,19094,2019-04-05,21%; 26.5%; 34%,9,"NASA ACME/BRE Final Report, PDF page(s) 112",independently_checked_pdf_text,historical_superseded_date,PDF page 23 explicitly corrects 19094 to April 4; April 5 is historical (page 112)

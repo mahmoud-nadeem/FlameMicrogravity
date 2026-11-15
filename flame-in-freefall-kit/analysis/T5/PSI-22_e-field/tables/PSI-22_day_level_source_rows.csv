@@ -1,0 +1,22 @@
+investigation_id,source_file,source_row,source_test_day,flames_ignited_as_recorded,source_test_type,source_fuel_bottle,source_atmosphere_or_polarity
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,2,18073,10,First round of tests with coflow burner,100% CH4,negative
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,3,18078,10,First round of tests with coflow burner,100% CH4,negative
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,5,18080,8,First round of tests with coflow burner,40% CH4,negative
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,6,18087,10,First round of tests with coflow burner,100% C2H4,negative
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,8,18092,11,First round of tests with coflow burner,30% C2H4,negative
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,9,18095,10,First round of tests with coflow burner,30% C2H4,positive
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,10,18102,8,First round of tests with coflow burner,40% CH4,positive
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,11,18106,13,First round of tests with coflow burner,40% CH4,positive
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,12,18113,15,First round of tests with coflow burner,100% CH4,positive
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,13,18130,13,First round of tests with coflow burner,100% CH4,positive
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,14,18137,12,First round of tests with coflow burner,100% C2H4,positive
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,16,18269,11,Second round of tests with gas-jet burner,40% CH4,negative
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,17,18274,11,Second round of tests with gas-jet burner,30% C2H4,negative
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,18,18282,13,Second round of tests with gas-jet burner,100% CH4,negative
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,20,18285,10,Second round of tests with gas-jet burner,100% C2H4,negative
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,21,18290,11,Second round of tests with gas-jet burner,100% C2H4,negative
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,22,18298,9,Second round of tests with gas-jet burner,40% CH4,positive
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,23,18302,10,Second round of tests with gas-jet burner,30% C2H4,positive
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,24,18312,13,Second round of tests with gas-jet burner,100% CH4,positive
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,26,18319,11,Second round of tests with gas-jet burner,100% C2H4,positive
+PSI-22,PSI-22_Experimental table_ACME E-FIELD Flames.csv,30,18319,11,Second round of tests with gas-jet burner,100% C2H4,positive

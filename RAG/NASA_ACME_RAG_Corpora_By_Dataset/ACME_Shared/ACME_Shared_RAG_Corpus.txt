@@ -1,0 +1,876 @@
+NASA ACME RAG CORPUS
+DATASET: ACME
+INVESTIGATION: ACME cross-investigation
+CHUNKS: 53
+SOURCE: rag_chunks.jsonl
+
+============================================================================
+CHUNK 1/53 | ID: ACME-01
+TITLE: Mission scope
+SECTION: mission_scope
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: NASA Science: Mission Description; NTRS Paper pp.1–2
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: microgravity | nonpremixed | research_scope | ACME | NASA PSI
+SOURCE_IDS: SCI_ACME | NTRS_PAPER
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/acme/ | https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+ACME studies laminar non-premixed gaseous flames under reduced gravity aboard the ISS. Its investigations share combustion hardware but pose distinct questions: soot minimization, flame stability, induced ion transport, spherical flame extinction and emulated material burning. Do not pool data across experiments without harmonizing their experimental designs.
+
+============================================================================
+CHUNK 2/53 | ID: ACME-02
+TITLE: Why microgravity
+SECTION: why_microgravity
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: pp.1–2
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: gravity | convection | residence_time | ACME | NASA PSI
+SOURCE_IDS: NTRS_PAPER
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+Reducing buoyancy-induced flow allows long residence times and approximately spherical flame configurations that may be difficult to sustain under normal gravity. It also changes radiative losses, soot production and extinction behavior. A microgravity result is not automatically transferable to a terrestrial fire scenario.
+
+============================================================================
+CHUNK 3/53 | ID: ACME-03
+TITLE: Experiment count ambiguity
+SECTION: experiment_count_ambiguity
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: provenance_note
+EVIDENCE_LEVEL: documented_source_difference
+SOURCE_LOCATOR: NASA Science Mission Description; NTRS Paper p.3 Table 1
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: scope_difference | ACME | NASA PSI
+SOURCE_IDS: SCI_ACME | NTRS_PAPER
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/acme/ | https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+NASA Science describes ACME as a group of five independent experiments, while a 2022 NASA technical paper lists six, including the later Cool Flames Investigation with Gases (CFI-G). The four PSI accessions covered here are a subset of the broader program. Do not silently collapse or reconcile differing scope definitions.
+
+============================================================================
+CHUNK 4/53 | ID: ACME-04
+TITLE: Combustion Integrated Rack
+SECTION: combustion_integrated_rack
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Methods, pp.2–4
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: CIR | experimental_hardware | ACME | NASA PSI
+SOURCE_IDS: NTRS_PAPER
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+The ISS Combustion Integrated Rack provides shared experimental infrastructure, including an approximately 100-liter chamber, gas handling, venting and imaging. The ACME insert supports multiple burner styles and mission-specific diagnostics. Hardware commonality alone does not make test results interchangeable.
+
+============================================================================
+CHUNK 5/53 | ID: ACME-05
+TITLE: Diagnostics and physical measurements
+SECTION: diagnostics_and_physical_measurements
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Methods, pp.4–5
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: diagnostics | TFP | radiometer | PMT | ACME | NASA PSI
+SOURCE_IDS: NTRS_PAPER
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+The ACME technical paper describes mass-flow controllers, chamber gas delivery, optical imaging, radiometry, photomultiplier measurements and Thin Filament Pyrometry (TFP). Reported availability of an instrument does not imply that every test row contains that measurement.
+
+============================================================================
+CHUNK 6/53 | ID: ACME-06
+TITLE: Time and pressure context
+SECTION: time_and_pressure_context
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Methods, p.5
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: pressure | volume | timing | ACME | NASA PSI
+SOURCE_IDS: NTRS_PAPER
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+ACME used constant-volume experiments whose atmosphere could change during a test. The technical paper identifies a nominal chamber capacity of about 100 L and a free volume near 83 L depending on installed hardware. Treat initial, measured and final pressure or composition as different variables.
+
+============================================================================
+CHUNK 7/53 | ID: ACME-07
+TITLE: Operation control and data provenance
+SECTION: operation_control_and_data_provenance
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Methods, p.5
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: test_day | test_run | data_model | ACME | NASA PSI
+SOURCE_IDS: NTRS_PAPER
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+ISS crews configured and serviced ACME hardware, while experiments were largely commanded remotely from NASA Glenn Research Center. Therefore a test day, an individual ignition, a diagnostic frame and a recorded CSV row may represent different observation units.
+
+============================================================================
+CHUNK 8/53 | ID: ACME-08
+TITLE: NASA PSI archive scope
+SECTION: nasa_psi_archive_scope
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Repository background
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: repository | provenance | ACME | NASA PSI
+SOURCE_IDS: NASA_PSI_OVERVIEW
+SOURCE_URLS: https://www.nasa.gov/physical-sciences-informatics-psi/history-of-physical-science-informatics/
+
+CONTENT:
+NASA PSI is an open repository for reduced-gravity physical-sciences experiments. NASA describes investigation collections as containing numerical records, images, videos, technical designs, models and scientific reports. This RAG package indexes verified public descriptions, not the full raw archive.
+
+============================================================================
+CHUNK 9/53 | ID: GLOSS-001
+TITLE: Glossary: Non-premixed flame
+SECTION: glossary:_non-premixed_flame
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | non_premixed_flame | ACME | NASA PSI
+
+CONTENT:
+Non-premixed flame: Fuel and oxidizer are delivered separately and react after mixing by transport; the chemistry is coupled to diffusion and convection. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 10/53 | ID: GLOSS-002
+TITLE: Glossary: Microgravity
+SECTION: glossary:_microgravity
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | microgravity | ACME | NASA PSI
+
+CONTENT:
+Microgravity: A low-effective-gravity operating environment that greatly reduces natural buoyancy-driven convection; residual disturbances can persist. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 11/53 | ID: GLOSS-003
+TITLE: Glossary: Spherical diffusion flame
+SECTION: glossary:_spherical_diffusion_flame
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | spherical_diffusion_flame | ACME | NASA PSI
+
+CONTENT:
+Spherical diffusion flame: A flame with approximately radial symmetry, useful for simplified structure/transport analysis when conditions support that symmetry. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 12/53 | ID: GLOSS-004
+TITLE: Glossary: Normal diffusion flame
+SECTION: glossary:_normal_diffusion_flame
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | normal_diffusion_flame | ACME | NASA PSI
+
+CONTENT:
+Normal diffusion flame: Fuel supplied from the burner into an oxidizing surrounding gas; this contrasts with an inverse flame. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 13/53 | ID: GLOSS-005
+TITLE: Glossary: Inverse diffusion flame
+SECTION: glossary:_inverse_diffusion_flame
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | inverse_diffusion_flame | ACME | NASA PSI
+
+CONTENT:
+Inverse diffusion flame: Oxidizing gas supplied from a burner into a fuel-containing ambient gas; geometry and species direction differ from the normal case. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 14/53 | ID: GLOSS-006
+TITLE: Glossary: Soot inception
+SECTION: glossary:_soot_inception
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | soot_inception | ACME | NASA PSI
+
+CONTENT:
+Soot inception: Earliest stages of particle formation from combustion chemistry; it should not be equated with measured soot mass or smoke hazard. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 15/53 | ID: GLOSS-007
+TITLE: Glossary: Soot volume fraction
+SECTION: glossary:_soot_volume_fraction
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | soot_volume_fraction | ACME | NASA PSI
+
+CONTENT:
+Soot volume fraction: Volumetric proportion occupied by soot within a measured region; a local field, not necessarily a whole-flame total. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 16/53 | ID: GLOSS-008
+TITLE: Glossary: Radiative heat loss
+SECTION: glossary:_radiative_heat_loss
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | radiative_heat_loss | ACME | NASA PSI
+
+CONTENT:
+Radiative heat loss: Thermal energy emitted as electromagnetic radiation; in some microgravity flames it contributes to cooling and extinction. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 17/53 | ID: GLOSS-009
+TITLE: Glossary: Radiative extinction
+SECTION: glossary:_radiative_extinction
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | radiative_extinction | ACME | NASA PSI
+
+CONTENT:
+Radiative extinction: Flame loss associated with net radiative cooling that prevents continued reaction, subject to case-specific diagnostics. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 18/53 | ID: GLOSS-010
+TITLE: Glossary: Convective extinction
+SECTION: glossary:_convective_extinction
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | convective_extinction | ACME | NASA PSI
+
+CONTENT:
+Convective extinction: Flame loss related to fluid transport, flow strain, or heat/mass transport; the exact definition depends on experiment. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 19/53 | ID: GLOSS-011
+TITLE: Glossary: Kinetic extinction
+SECTION: glossary:_kinetic_extinction
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | kinetic_extinction | ACME | NASA PSI
+
+CONTENT:
+Kinetic extinction: A reaction-rate/transport-limited failure to sustain combustion; some reports use the term alongside convective extinction. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 20/53 | ID: GLOSS-012
+TITLE: Glossary: Flame stability
+SECTION: glossary:_flame_stability
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | flame_stability | ACME | NASA PSI
+
+CONTENT:
+Flame stability: Ability of a flame to persist under the defined conditions; should be quantified with an explicit endpoint and observation window. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 21/53 | ID: GLOSS-013
+TITLE: Glossary: Residence time
+SECTION: glossary:_residence_time
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | residence_time | ACME | NASA PSI
+
+CONTENT:
+Residence time: Characteristic time species remain in the hot reaction region; can affect soot chemistry, radiation and burning behavior. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 22/53 | ID: GLOSS-014
+TITLE: Glossary: Porous burner
+SECTION: glossary:_porous_burner
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | porous_burner | ACME | NASA PSI
+
+CONTENT:
+Porous burner: A burner that distributes reactant through a porous surface; different porous burner shapes emulate different flow geometries. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 23/53 | ID: GLOSS-015
+TITLE: Glossary: Condensed-phase emulation
+SECTION: glossary:_condensed-phase_emulation
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | condensed_phase_emulation | ACME | NASA PSI
+
+CONTENT:
+Condensed-phase emulation: Using a controlled gaseous burner to approximate specific aspects of fuel vaporization and feedback in a solid or liquid fire. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 24/53 | ID: GLOSS-016
+TITLE: Glossary: Heat feedback
+SECTION: glossary:_heat_feedback
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | heat_feedback | ACME | NASA PSI
+
+CONTENT:
+Heat feedback: Energy transferred from the flame to the fuel or burner surface; can sustain evaporation, pyrolysis or gasification. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 25/53 | ID: GLOSS-017
+TITLE: Glossary: Oxygen mole fraction
+SECTION: glossary:_oxygen_mole_fraction
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | oxygen_mole_fraction | ACME | NASA PSI
+
+CONTENT:
+Oxygen mole fraction: Mole fraction of oxygen, usually dimensionless between zero and one. Percent by volume at comparable ideal-gas conditions is fraction times 100. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 26/53 | ID: GLOSS-018
+TITLE: Glossary: Stoichiometric mixture fraction
+SECTION: glossary:_stoichiometric_mixture_fraction
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | stoichiometric_mixture_fraction | ACME | NASA PSI
+
+CONTENT:
+Stoichiometric mixture fraction: Mixture-fraction coordinate at which fuel and oxidizer are stoichiometrically balanced; must use the experiment-specific fuel and oxidizer compositions. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 27/53 | ID: GLOSS-019
+TITLE: Glossary: Inert dilution
+SECTION: glossary:_inert_dilution
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | inert_dilution | ACME | NASA PSI
+
+CONTENT:
+Inert dilution: Addition of gases such as nitrogen or helium that affect heat capacity, transport and reaction environment without themselves acting as primary fuel. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 28/53 | ID: GLOSS-020
+TITLE: Glossary: Ion wind
+SECTION: glossary:_ion_wind
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | ion_wind | ACME | NASA PSI
+
+CONTENT:
+Ion wind: Electric-field-driven bulk gas motion mediated by charged species that exchange momentum with surrounding neutral gas. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 29/53 | ID: GLOSS-021
+TITLE: Glossary: Ion current
+SECTION: glossary:_ion_current
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | ion_current | ACME | NASA PSI
+
+CONTENT:
+Ion current: Electric charge passing per unit time; its units and current path must be recorded, and it is not a direct flame temperature measurement. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 30/53 | ID: GLOSS-022
+TITLE: Glossary: Thin Filament Pyrometry
+SECTION: glossary:_thin_filament_pyrometry
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | thin_filament_pyrometry | ACME | NASA PSI
+
+CONTENT:
+Thin Filament Pyrometry: An optical technique that estimates temperature from light emission of a heated thin filament; requires calibration and processing assumptions. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 31/53 | ID: GLOSS-023
+TITLE: Glossary: Photomultiplier tube
+SECTION: glossary:_photomultiplier_tube
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | photomultiplier_tube | ACME | NASA PSI
+
+CONTENT:
+Photomultiplier tube: A sensitive light detector; its output is not a direct chemical concentration unless calibration and measurement model justify it. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 32/53 | ID: GLOSS-024
+TITLE: Glossary: Test day vs test run
+SECTION: glossary:_test_day_vs_test_run
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | test_day_vs_test_run | ACME | NASA PSI
+
+CONTENT:
+Test day vs test run: A single day may encompass multiple ignitions or sequences; counts, identifiers and metrics must not be merged without a mapping. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 33/53 | ID: GLOSS-025
+TITLE: Glossary: Right censoring
+SECTION: glossary:_right_censoring
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | right_censoring | ACME | NASA PSI
+
+CONTENT:
+Right censoring: If a flame is still burning when observation ends, its true extinction time exceeds the observation window, rather than equaling it. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 34/53 | ID: GLOSS-026
+TITLE: Glossary: Data provenance
+SECTION: glossary:_data_provenance
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | data_provenance | ACME | NASA PSI
+
+CONTENT:
+Data provenance: Traceable chain from original file and row/page through parsing and normalization to a claim in the RAG answer. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 35/53 | ID: GLOSS-027
+TITLE: Glossary: Raw versus normalized value
+SECTION: glossary:_raw_versus_normalized_value
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | raw_versus_normalized_value | ACME | NASA PSI
+
+CONTENT:
+Raw versus normalized value: Raw values reproduce the source exactly; normalized values are derived explicitly, with unit and transformation metadata. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 36/53 | ID: GLOSS-028
+TITLE: Glossary: Out-of-domain extrapolation
+SECTION: glossary:_out-of-domain_extrapolation
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: glossary
+EVIDENCE_LEVEL: general_scientific_background
+SOURCE_LOCATOR: Curatorial scientific terminology
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: glossary | out_of_domain_extrapolation | ACME | NASA PSI
+
+CONTENT:
+Out-of-domain extrapolation: Inferring flame behavior beyond tested conditions. RAG cannot turn source descriptions into validated predictions without a justified model. This is a conceptual definition, not a measurement or result from any particular NASA PSI run.
+
+============================================================================
+CHUNK 37/53 | ID: POL-001
+TITLE: Retrieval rule: Identity and title
+SECTION: retrieval_rule:_identity_and_title
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+Use PSI accession as the primary investigation identifier; avoid conflating PSI-10, PSI-20, PSI-22 and PSI-23 because the common ACME hardware does not imply common outcomes.
+
+============================================================================
+CHUNK 38/53 | ID: POL-002
+TITLE: Retrieval rule: Raw immutability
+SECTION: retrieval_rule:_raw_immutability
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+Every imported source file must retain its original bytes, SHA-256 hash, download URL if known, date, file size, version and local path. Normalize only into a separate derived table.
+
+============================================================================
+CHUNK 39/53 | ID: POL-003
+TITLE: Retrieval rule: Data types
+SECTION: retrieval_rule:_data_types
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+Store scientific observations with row-level IDs and source locators. Distinguish measured values, study-level findings, hypothesis, interpretation, missing data and secondary inventories.
+
+============================================================================
+CHUNK 40/53 | ID: POL-004
+TITLE: Retrieval rule: No fabricated results
+SECTION: retrieval_rule:_no_fabricated_results
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+Do not output run-level flame extinction times, actual oxygen settings, current intensities or quantitative trends unless the retrieved source includes the measured values and experimental conditions.
+
+============================================================================
+CHUNK 41/53 | ID: POL-005
+TITLE: Retrieval rule: Missing and malformed values
+SECTION: retrieval_rule:_missing_and_malformed_values
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+Blank/missing is not zero; textual ranges should not be parsed as single values; invalid percentage values require flags and independent source comparison.
+
+============================================================================
+CHUNK 42/53 | ID: POL-006
+TITLE: Retrieval rule: One row is not one ignition
+SECTION: retrieval_rule:_one_row_is_not_one_ignition
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+The experimental table may summarize a test day. Sum counts only where the column semantics prove the count is additive and exclude aggregate rows.
+
+============================================================================
+CHUNK 43/53 | ID: POL-007
+TITLE: Retrieval rule: Units and basis
+SECTION: retrieval_rule:_units_and_basis
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+Always preserve original units, pressure basis (absolute/gauge), oxygen basis (mole/volume percent), and gas identity; never mix kV, kV/cm, A and µA.
+
+============================================================================
+CHUNK 44/53 | ID: POL-008
+TITLE: Retrieval rule: Temporal identification
+SECTION: retrieval_rule:_temporal_identification
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+Store test date, run ID, video timestamp and study operations range in separate fields. Do not infer a specific run date from a broad ISS operations window.
+
+============================================================================
+CHUNK 45/53 | ID: POL-009
+TITLE: Retrieval rule: Scientific causation
+SECTION: retrieval_rule:_scientific_causation
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+Do not infer extinction mechanism or hazard severity solely from images, their brightness, a missing observation or the absence of a reported outcome column.
+
+============================================================================
+CHUNK 46/53 | ID: POL-010
+TITLE: Retrieval rule: Citations
+SECTION: retrieval_rule:_citations
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+Each factual response must cite at least one NASA document or exact NASA data file; secondary dashboards are only discovery aids until their claims are independently verified.
+
+============================================================================
+CHUNK 47/53 | ID: POL-011
+TITLE: Retrieval rule: Abstention
+SECTION: retrieval_rule:_abstention
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+When asked about an unindexed raw run or untested scenario, answer INSUFFICIENT TEST DATA and state exactly which source or variable is missing.
+
+============================================================================
+CHUNK 48/53 | ID: POL-012
+TITLE: Retrieval rule: Cross-investigation joins
+SECTION: retrieval_rule:_cross-investigation_joins
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+Join only on documented identifiers and compatible physical definitions. Similar oxygen fractions do not make BRE, E-FIELD, Flame Design and s-Flame directly comparable.
+
+============================================================================
+CHUNK 49/53 | ID: POL-013
+TITLE: Retrieval rule: Safety
+SECTION: retrieval_rule:_safety
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+No spacecraft safety or material acceptance verdict is justified using this descriptive RAG corpus alone.
+
+============================================================================
+CHUNK 50/53 | ID: POL-014
+TITLE: Retrieval rule: PDF figures
+SECTION: retrieval_rule:_pdf_figures
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+Quantities derived from plots need digitization with uncertainty and visual verification; do not treat approximate plot readings as raw CSV measurements.
+
+============================================================================
+CHUNK 51/53 | ID: POL-015
+TITLE: Retrieval rule: Source conflicts
+SECTION: retrieval_rule:_source_conflicts
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial retrieval requirement
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: policy | hallucination_control | ACME | NASA PSI
+
+CONTENT:
+Keep contradictions in separate records with the source, vintage, granularity and status. Do not silently pick the most convenient row count, DOI or numerical threshold.
+
+============================================================================
+CHUNK 52/53 | ID: QA-017
+TITLE: FAQ: Are the NASA PSI raw videos included?
+SECTION: faq:_are_the_nasa_psi_raw_videos_included?
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in ACME-08
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | ACME | NASA PSI
+SOURCE_IDS: NASA_PSI_OVERVIEW
+SOURCE_URLS: https://www.nasa.gov/physical-sciences-informatics-psi/history-of-physical-science-informatics/
+
+CONTENT:
+Question: Are the NASA PSI raw videos included?
+Answer: No. Only a curated text knowledge base, source references and import scripts are included; original archives must be downloaded and indexed separately.
+
+============================================================================
+CHUNK 53/53 | ID: QA-019
+TITLE: FAQ: How many ACME investigations are there?
+SECTION: faq:_how_many_acme_investigations_are_there?
+INVESTIGATION_ID: ACME
+INVESTIGATION_NAME: ACME cross-investigation
+RECORD_KIND: faq
+EVIDENCE_LEVEL: documented_source_difference
+SOURCE_LOCATOR: Retrieval guide grounded in ACME-03
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | ACME | NASA PSI
+SOURCE_IDS: SCI_ACME | NTRS_PAPER
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/acme/ | https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+Question: How many ACME investigations are there?
+Answer: Different NASA pages describe five or six depending on inclusion of CFI-G. This package covers four specified PSI accessions.
+

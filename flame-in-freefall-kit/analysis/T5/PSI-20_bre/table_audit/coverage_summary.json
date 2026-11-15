@@ -1,0 +1,68 @@
+{
+  "crosswalk": {
+    "candidate_link_count": 1,
+    "matched_unique_local_run_ids": 1,
+    "status_counts": {
+      "candidate_date_match": 1,
+      "unmatched_summary_day": 17
+    },
+    "unmatched_local_run_rows": 0,
+    "unmatched_summary_day_records": 17
+  },
+  "limitations": [
+    "Summary days and raw runs have different granularities",
+    "Flames Ignited is not a raw run count",
+    "Matching dates imply candidate links only, not unique experimental attribution",
+    "No timezone assumptions; source notes say day change on ISS neglected",
+    "No normalization of suspicious oxygen percentages",
+    "No inferred NASA total run coverage"
+  ],
+  "provenance": {
+    "nasa_report_comparison": "NOT PERFORMED: no exact source and page selected for comparable totals",
+    "run_dates": "LOCAL RUN INVENTORY: paired source Test Point and experiment calendar date metadata",
+    "table": "USER-SUPPLIED NASA PSI-20 STARTER-KIT CSV; NASA authorship not independently authenticated"
+  },
+  "quality_issue_count": 5,
+  "run_inventory": {
+    "path": "/mnt/data/analysis/T5/PSI-20_BRE/inventory/run_inventory.csv",
+    "row_count": 1,
+    "sha256": "2aedb0574cfd35510c2d2fb9795f527283b9bbd15fd9d4e522e100cf1912a0d1",
+    "unverified_run_rows": 0,
+    "validated_pairs_with_dates": 1
+  },
+  "schema_version": "1.0",
+  "scope": "DAY-LEVEL TABLE QUALITY AND LOCAL RUN DATE COVERAGE ONLY",
+  "table": {
+    "columns_original": [
+      "Year",
+      "Month",
+      "Date",
+      "Burner Size (mm)",
+      "Fuel Bottle",
+      "Oxygen Conc (percent)",
+      "Flames Ignited",
+      "Notes"
+    ],
+    "distinct_raw_values_by_column": {
+      "Burner Size (mm)": 2,
+      "Date": 12,
+      "Flames Ignited": 12,
+      "Fuel Bottle": 4,
+      "Month": 7,
+      "Notes": 3,
+      "Oxygen Conc (percent)": 10,
+      "Year": 3
+    },
+    "flames_ignited_sum_of_valid_integer_cells": 194,
+    "missing_cells_by_column": {
+      "Notes": 16
+    },
+    "path": "/mnt/data/PSI-20_Experimental table_ACME BRE.csv",
+    "row_count": 18,
+    "sha256": "4aa5d3f98708ceacced5c620d46858b9965f8d4d941b203229f46467d53e5ab7",
+    "size_bytes": 1113,
+    "unique_parsed_days": 18,
+    "valid_flames_ignited_count_rows": 18,
+    "well_formed_rows": 18
+  }
+}

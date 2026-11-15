@@ -1,0 +1,306 @@
+NASA ACME RAG CORPUS
+DATASET: PSI-10
+INVESTIGATION: Flame Design
+CHUNKS: 15
+SOURCE: rag_chunks.jsonl
+
+============================================================================
+CHUNK 1/15 | ID: PSI10-01
+TITLE: Scientific objective
+SECTION: scientific_objective
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Science Objectives
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: soot | oxygen_enrichment | PSI-10 | ACME | NASA PSI
+SOURCE_IDS: SCI10
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/flame-design/
+
+CONTENT:
+Flame Design investigates ways to suppress soot while retaining strong flames, especially for oxygen-enriched combustion. Its target outcome is better mechanistic understanding of soot inception and strategies for low-emission combustion rather than a universal material flammability ranking.
+
+============================================================================
+CHUNK 2/15 | ID: PSI10-02
+TITLE: Normal and inverse spherical flames
+SECTION: normal_and_inverse_spherical_flames
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Methods pp.4–5
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: normal_flame | inverse_flame | geometry | PSI-10 | ACME | NASA PSI
+SOURCE_IDS: NTRS_PAPER
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+In a normal spherical diffusion flame, fuel exits the burner into an oxidizing environment. In an inverse arrangement, oxidizer exits the burner into a fuel-containing environment. The configurations change reactant transport and the fuel-rich region; comparisons must include the flame orientation.
+
+============================================================================
+CHUNK 3/15 | ID: PSI10-03
+TITLE: Tradeoff between soot suppression and extinction
+SECTION: tradeoff_between_soot_suppression_and_extinction
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Experiment Description
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: dilution | soot | extinction | PSI-10 | ACME | NASA PSI
+SOURCE_IDS: SCI10
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/flame-design/
+
+CONTENT:
+Dilution and pressure adjustments can reduce soot, but they may simultaneously reduce flame robustness. The study asks how to maintain stable low-soot burning under appropriate reactant and flow conditions. A low-soot flame is not by definition safer from an extinction standpoint.
+
+============================================================================
+CHUNK 4/15 | ID: PSI10-04
+TITLE: Recorded flame behavior
+SECTION: recorded_flame_behavior
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Flame Design slide, p.8
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: flow_rate | oxygen | flame_size | PSI-10 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+A NASA 2022 presentation reports that flame size increases with reactant flow and generally decreases with ambient oxygen concentration in the investigated configurations. This is a study-level summary, not a formula that predicts flame diameter at an arbitrary untested point.
+
+============================================================================
+CHUNK 5/15 | ID: PSI10-05
+TITLE: Radiative extinction and unsteadiness
+SECTION: radiative_extinction_and_unsteadiness
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Flame Design slide, p.8
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: radiative_extinction | instability | PSI-10 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+In larger Flame Design cases, flames can grow and then extinguish after radiative losses become important. The presentation also describes partial extinction and reformation before total loss of the flame. Do not label every oscillation in any other investigation with this mechanism.
+
+============================================================================
+CHUNK 6/15 | ID: PSI10-06
+TITLE: Small-flame limit
+SECTION: small-flame_limit
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Flame Design slide, p.8
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: steady_state | radiation | PSI-10 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+Very small Flame Design flames may experience relatively weak radiative losses and approach quasi-steady conditions. This is a qualitative observation from NASA research; the threshold for “very small” depends on the actual experimental setup and cannot be assumed numerically.
+
+============================================================================
+CHUNK 7/15 | ID: PSI10-07
+TITLE: Observation unit and table files
+SECTION: observation_unit_and_table_files
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: external_inventory
+EVIDENCE_LEVEL: third_party_unverified
+SOURCE_LOCATOR: Methodology / source tables
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: csv | row_count | PSI-10 | ACME | NASA PSI
+SOURCE_IDS: SECONDARY_ATLAS
+SOURCE_URLS: https://vlo0d.github.io/flame-atlas/methodology/
+
+CONTENT:
+Secondary research dashboards describe separate Flame Design normal and inverse CSV tables, reportedly containing 207 and 120 experimental-test rows respectively. These numbers were not independently checked against NASA downloads in this build; they are catalog hints, not validated NASA counts.
+
+============================================================================
+CHUNK 8/15 | ID: PSI10-08
+TITLE: Recommended variables for analysis
+SECTION: recommended_variables_for_analysis
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial guidance
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: data_dictionary | schema | PSI-10 | ACME | NASA PSI
+
+CONTENT:
+When original tables are imported, distinguish flame configuration, fuel or oxidizer, ambient oxygen fraction, dilution fraction, pressure, flow rate, measured time, and observed soot and extinction status where those fields actually exist. Never invent measurements from descriptions of what the experiment intended to study.
+
+============================================================================
+CHUNK 9/15 | ID: PSI10-09
+TITLE: Interpreting oxygen enrichment
+SECTION: interpreting_oxygen_enrichment
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: scientific_interpretation
+EVIDENCE_LEVEL: reasoned_not_measured
+SOURCE_LOCATOR: Scientific interpretation based on design, not a measured relationship
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: oxygen | confounding | PSI-10 | ACME | NASA PSI
+
+CONTENT:
+Oxygen enrichment may help sustain certain flames while shifting soot inception and transport. Oxygen percentage alone is not a complete experimental condition: reactant geometry, flow, pressure, fuel, inert species and transient state can be decisive.
+
+============================================================================
+CHUNK 10/15 | ID: PSI10-10
+TITLE: Potential applications and boundaries
+SECTION: potential_applications_and_boundaries
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Earth Applications
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: applications | caution | PSI-10 | ACME | NASA PSI
+SOURCE_IDS: SCI10
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/flame-design/
+
+CONTENT:
+NASA identifies terrestrial burner efficiency, emissions mitigation and oxygen-enriched combustion as motivating applications. Results provide constraints for model validation; they do not certify a commercial burner or demonstrate safe operation over untested conditions.
+
+============================================================================
+CHUNK 11/15 | ID: PSI10-OPS
+TITLE: ISS operation periods
+SECTION: iss_operation_periods
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Table 1, PDF p.3
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: timeline | on_orbit | PSI-10 | ACME | NASA PSI
+SOURCE_IDS: NTRS_PAPER
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+NASA’s ACME technical paper lists ISS operating intervals for Flame Design: 2019-04 to 2019-07 and 2021-10 to 2022-02. These are study-wide operating windows, not exact test times, and should not be used to date individual CSV records.
+
+============================================================================
+CHUNK 12/15 | ID: QA-001
+TITLE: FAQ: What is PSI-10 about?
+SECTION: faq:_what_is_psi-10_about?
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI10-01
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-10 | ACME | NASA PSI
+SOURCE_IDS: SCI10
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/flame-design/
+
+CONTENT:
+Question: What is PSI-10 about?
+Answer: PSI-10 is Flame Design, focused on soot inception/control and robust oxygen-enriched spherical diffusion flames.
+
+============================================================================
+CHUNK 13/15 | ID: QA-002
+TITLE: FAQ: What are normal versus inverse flames?
+SECTION: faq:_what_are_normal_versus_inverse_flames?
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI10-02
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-10 | ACME | NASA PSI
+SOURCE_IDS: NTRS_PAPER
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+Question: What are normal versus inverse flames?
+Answer: Normal and inverse flames reverse the roles of fuel and oxidizer relative to the burner. The configuration must accompany any comparison.
+
+============================================================================
+CHUNK 14/15 | ID: QA-003
+TITLE: FAQ: Does increasing flow change Flame Design flame size?
+SECTION: faq:_does_increasing_flow_change_flame_design_flame_size?
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI10-04
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-10 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+Question: Does increasing flow change Flame Design flame size?
+Answer: The NASA presentation qualitatively reports larger flame sizes with increased reactant flow for the studied conditions; no general numeric relationship is provided here.
+
+============================================================================
+CHUNK 15/15 | ID: QA-004
+TITLE: FAQ: Can low-soot flames still extinguish?
+SECTION: faq:_can_low-soot_flames_still_extinguish?
+INVESTIGATION_ID: PSI-10
+INVESTIGATION_NAME: Flame Design
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI10-03
+DOI: 10.60555/w4zy-bt45
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-10 | ACME | NASA PSI
+SOURCE_IDS: SCI10
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/flame-design/
+
+CONTENT:
+Question: Can low-soot flames still extinguish?
+Answer: Yes. Inert dilution or reduced pressure can suppress soot while weakening the flame; extinction must be assessed separately.
+

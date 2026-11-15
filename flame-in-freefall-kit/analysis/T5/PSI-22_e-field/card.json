@@ -1,0 +1,156 @@
+{
+  "investigation_id": "PSI-22",
+  "title": "Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames",
+  "acronym": "ACME E-FIELD Flames",
+  "doi": "10.60555/se5a-8c73",
+  "license": "Creative Commons Zero v1.0 Universal",
+  "version": "unconfirmed",
+  "sub_research_area": "Laminar Flames",
+  "related_investigations": [
+    "PSI-23"
+  ],
+  "size_on_page": "906,193 MB",
+  "file_types_and_counts": {
+    "zip": 907,
+    "txt": 650,
+    "csv": 410,
+    "mp4": 222,
+    "mdipsug": 198,
+    "metadata": 85,
+    "pdf": 57,
+    "log": 52,
+    "jpg": 4,
+    "errors": 2,
+    "xlsx": 2,
+    "png": 1
+  },
+  "has_experiment_table": "yes",
+  "objectives": "Investigate how externally applied electric fields and chemi-ion current relate to diffusion-flame behavior.",
+  "approach": "Apply a voltage between burner and mesh/electrode and study flame response with coflow and gas-jet burner configurations.",
+  "publications": [
+    {
+      "title": "Ion Current and Flame Changes with Electric Fields in Microgravity",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Electric Field Induced Changes of a Diffusion Flame and Heat Transfer near an Impinging Surface",
+      "link": "https://doi.org/10.3390/en11051235"
+    },
+    {
+      "title": "Electrical Aspects of Impinging Flames",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "The Influence of Electric Field Power Systems on Flame Behavior",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Ionization and chemiluminescence during the progressive aeration of methane flames",
+      "link": "https://doi.org/10.1016/j.combustflame.2009.08.008"
+    },
+    {
+      "title": "Modelling electric field driven convection in small combustion plasmas and surrounding gases",
+      "link": "https://doi.org/10.1080/13647830701383814"
+    },
+    {
+      "title": "Canceling buoyancy of gaseous fuel flames in a gravitational environment using an ion-driven wind.",
+      "link": "https://doi.org/10.1196/annals.1362.038"
+    },
+    {
+      "title": "Detailed characterization of DC electric field effects on small non-premixed flames",
+      "link": "https://doi.org/10.1016/j.combustflame.2015.03.019"
+    },
+    {
+      "title": "Microgravity burner-generated spherical diffusion flames: experiment and computation. Currently at Department of Mechanical and Aerospace Engineering, Case Western Reserve University, Cleveland, OH 44106.",
+      "link": "https://doi.org/10.1016/S0010-2180(01)00247-4"
+    },
+    {
+      "title": "PLIF and chemiluminescence in a small laminar coflow methane-air diffusion flame at elevated pressures",
+      "link": "https://doi.org/10.1016/j.combustflame.2022.112067"
+    },
+    {
+      "title": "Ion current and carbon monoxide release from an impinging methane/air coflow flame in an electric field",
+      "link": "https://doi.org/10.1016/j.combustflame.2019.03.022"
+    },
+    {
+      "title": "Non-premixed axisymmetric flames driven by ion currents",
+      "link": "https://doi.org/10.1016/j.combustflame.2018.10.036"
+    },
+    {
+      "title": "Impinging nonpremixed coflow methane–air flames with unity Lewis number",
+      "link": "https://doi.org/10.1016/j.proci.2016.06.193"
+    },
+    {
+      "title": "Characterizing I-V Curves for Non-Premixed Methane Flames Stabilized on Different Burner Configurations",
+      "link": "https://doi.org/10.1080/00102202.2017.1331218"
+    },
+    {
+      "title": "CO emission from an impinging non-premixed flame",
+      "link": "https://doi.org/10.1016/j.combustflame.2016.09.004"
+    },
+    {
+      "title": "Electrical aspects of flame quenching",
+      "link": "https://doi.org/10.1016/j.proci.2012.07.007"
+    },
+    {
+      "title": "Behavior of a small diffusion flame as an electrically active component in a high-voltage circuit",
+      "link": "https://doi.org/10.1016/j.combustflame.2011.06.002"
+    },
+    {
+      "title": "Numerical prediction of ion current from a small methane jet flame",
+      "link": "https://doi.org/10.1016/j.combustflame.2009.02.002"
+    },
+    {
+      "title": "Electric field-controlled mesoscale burners",
+      "link": "https://doi.org/10.1016/j.combustflame.2007.07.007"
+    },
+    {
+      "title": "Numerical simulation of a tubular ion-driven wind generator",
+      "link": "https://doi.org/10.1016/j.elstat.2007.04.003"
+    },
+    {
+      "title": "Using large electric fields to control transport in microgravity.",
+      "link": "https://doi.org/10.1196/annals.1362.037"
+    },
+    {
+      "title": "Maximizing ion-driven gas flows",
+      "link": "https://doi.org/10.1016/j.elstat.2005.09.005"
+    },
+    {
+      "title": "Inducing gas flow and swirl in tubes using ionic wind from corona discharges",
+      "link": "https://doi.org/10.1007/s00348-005-0062-0"
+    },
+    {
+      "title": "Modeling of Elevated Pressure Diffusion Flames with Water Addition",
+      "link": "https://doi.org/10.1080/00102202.2023.2182205"
+    },
+    {
+      "title": "Electric-field effects on methane coflow flames aboard the international space station (ISS): ACME E-FIELD flames",
+      "link": "https://doi.org/10.1016/j.combustflame.2022.112443"
+    }
+  ],
+  "verified_on": "",
+  "verified_by": "",
+  "x_prefilled_from": "NASA PSI API (investigation record and file listing), retrieved 2026-11-14; NOT yet checked on the page",
+  "x_psi_page": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+  "x_how_to_verify": "Open x_psi_page, compare every field, correct what differs, read the version from the page, then fill verified_on (date and time) and verified_by (your name). size_on_page uses 1 MB = 1,048,576 bytes, as the page does.",
+  "x_review_status": "PARTIAL: investigation ID, title, DOI cross-checked against archived NASA PSI metadata; objectives/approach independently compared to NASA Science; PSI live version, listing/size and exact Cite-this-Investigation formatting not independently verified.",
+  "x_nasa_science_url": "https://science.nasa.gov/biological-physical/investigations/e-field-flames/",
+  "x_verified_fields": [
+    "investigation_id",
+    "title",
+    "acronym",
+    "doi",
+    "general objectives/approach"
+  ],
+  "x_unverified_fields": [
+    "version",
+    "size_on_page",
+    "file_types_and_counts",
+    "full publication list",
+    "exact PSI Cite-this-Investigation UI text",
+    "PSI live license if not shown"
+  ],
+  "x_partial_review_date": "2026-11-15",
+  "x_reviewed_by": "AI-assisted cross-check, not a manual click-through"
+}

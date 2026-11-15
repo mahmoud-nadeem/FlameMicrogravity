@@ -1,0 +1,19 @@
+investigation_id,source_file,source_row,source_test_day,flames_ignited_as_recorded,source_test_type,source_fuel_bottle,source_atmosphere_or_polarity
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,2,19254,13,First round of tests with nitrogen-diluted fuel and oxygen,50% C2H4 with N2,~21% O2 with N2
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,3,19256,16,First round of tests with nitrogen-diluted fuel and oxygen,50% C2H4 with N3,~21% O2 with N3
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,4,19304,9,First round of tests with nitrogen-diluted fuel and oxygen,45% CH4 with N2,~21% O2 with N4
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,5,19308,21,First round of tests with nitrogen-diluted fuel and oxygen,45% CH4 with N3,~30% O2 with N2
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,6,19352,10,First round of tests with nitrogen-diluted fuel and oxygen,100% H2,~21% O2 with N2
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,7,20006,17,First round of tests with nitrogen-diluted fuel and oxygen,44.4% H2 with CH4,~21% O2 with N3
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,8,20013,22,First round of tests with nitrogen-diluted fuel and oxygen,66.7% H2 with CH4,~21% O2 with N4
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,9,20024,16,First round of tests with nitrogen-diluted fuel and oxygen,100% H2,~21% O2 with N5
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,10,20029,21,First round of tests with nitrogen-diluted fuel and oxygen,50% C2H4 with N2,~21% O2 with N6
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,11,20132,7,First round of tests with nitrogen-diluted fuel and oxygen,"25% H2, 20% CH4, with He",~21% O2 with He
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,12,20136,11,Second round of tests with helium-diluted fuel and oxygen,"20% H2, 25% CH4, with He",~21% O2 with He
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,13,20142,17,Second round of tests with helium-diluted fuel and oxygen,"30% H2, 15% CH4, with He",~30% O2 with He
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,14,20155,9,Second round of tests with helium-diluted fuel and oxygen,45% H2 with He,~30% and ~21% O2 with He
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,15,20160,12,Second round of tests with helium-diluted fuel and oxygen,45% CH4 with He,~30% and ~21% O2 with He
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,16,20164,11,Second round of tests with helium-diluted fuel and oxygen,20% C2H4 with He,~30% O2 with He
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,17,20170,20,Second round of tests with helium-diluted fuel and oxygen,25% C2H4 with He,~30% and ~21% O2 with He
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,18,20176,23,Second round of tests with helium-diluted fuel and oxygen,30% C2H4 with He,~30% and ~21% O2 with He
+PSI-23,PSI-23_Experimental table_ACME s-Flame.csv,19,20190,21,Second round of tests with helium-diluted fuel and oxygen,35% H2 with He,~30% and ~21% O2 with He

@@ -1,0 +1,362 @@
+NASA ACME RAG CORPUS
+DATASET: PSI-20
+INVESTIGATION: Burning Rate Emulator (BRE)
+CHUNKS: 18
+SOURCE: rag_chunks.jsonl
+
+============================================================================
+CHUNK 1/18 | ID: PSI20-01
+TITLE: BRE scientific objective
+SECTION: bre_scientific_objective
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Science Objectives
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: fire_safety | flammability | PSI-20 | ACME | NASA PSI
+SOURCE_IDS: SCI20
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/bre/
+
+CONTENT:
+Burning Rate Emulator studies when flames can persist or extinguish in a low-gravity, low-flow environment. It uses gas-fueled flames to reproduce selected aspects of condensed-phase fuel combustion and to inform spacecraft material flammability testing.
+
+============================================================================
+CHUNK 2/18 | ID: PSI20-02
+TITLE: Porous burner and emulation principle
+SECTION: porous_burner_and_emulation_principle
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Experiment Description
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: porous_burner | heat_feedback | PSI-20 | ACME | NASA PSI
+SOURCE_IDS: SCI20
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/bre/
+
+CONTENT:
+The BRE burner presents gaseous fuel through a flat porous surface. It measures feedback of heat to that surface because a real solid or liquid depends on feedback for vaporization or gasification. Matching selected heat and smoke characteristics is a model of material burning, not a direct test on every solid or liquid.
+
+============================================================================
+CHUNK 3/18 | ID: PSI20-03
+TITLE: Material analogy limitations
+SECTION: material_analogy_limitations
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Experiment Description
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: materials | limitations | PSI-20 | ACME | NASA PSI
+SOURCE_IDS: SCI20
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/bre/
+
+CONTENT:
+BRE may emulate aspects of paper, polymers or liquid fuels using selected gaseous mixtures and matching criteria. An equivalence claim must specify which thermochemical characteristics are matched. Material ratings, toxicity, flame spread and actual spacecraft qualification require their own evidence.
+
+============================================================================
+CHUNK 4/18 | ID: PSI20-04
+TITLE: Qualitative burning duration evidence
+SECTION: qualitative_burning_duration_evidence
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: BRE slide, p.4
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: burn_duration | quiescent | PSI-20 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+A NASA 2022 presentation reports that low-momentum flames can remain burning for minutes in microgravity even without externally driven airflow or propagating flame spread. This does not mean every tested condition sustained a flame for minutes.
+
+============================================================================
+CHUNK 5/18 | ID: PSI20-05
+TITLE: Oxygen and extinction finding
+SECTION: oxygen_and_extinction_finding
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: BRE slide, p.4
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: oxygen | extinction | threshold_caution | PSI-20 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+The BRE presentation states that the tested flames generally self-extinguished below roughly 25% oxygen by volume, while some could last minutes under elevated oxygen. This approximate research finding must not be converted into a universal 25% ignition or fire-safety threshold.
+
+============================================================================
+CHUNK 6/18 | ID: PSI20-06
+TITLE: Burner size and fuel comparison
+SECTION: burner_size_and_fuel_comparison
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: BRE slide, p.4
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: size | methane | ethylene | PSI-20 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+In NASA’s BRE presentation, larger flames generally extinguished within about 1.5 minutes, and methane cases extinguished within about a minute, while smaller ethylene flames at elevated oxygen could persist longer. These statements are summaries of selected observations and require test-level qualification.
+
+============================================================================
+CHUNK 7/18 | ID: PSI20-07
+TITLE: Pressure and oxygen units
+SECTION: pressure_and_oxygen_units
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial guidance
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: oxygen_percent | validation | raw_preservation | PSI-20 | ACME | NASA PSI
+
+CONTENT:
+Interpret ambient O₂ values only after checking units, header text and source PDF. Keep percentages as strings in immutable raw records. Suspicious values above 100% should be quarantined and annotated rather than silently divided by 100.
+
+============================================================================
+CHUNK 8/18 | ID: PSI20-08
+TITLE: Summary versus individual runs
+SECTION: summary_versus_individual_runs
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial guidance
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: granularity | test_day | count | PSI-20 | ACME | NASA PSI
+
+CONTENT:
+A BRE summary row may describe an entire test day and an ignition count rather than one homogeneous flame or one burn-time outcome. Never infer a one-to-one mapping between rows, ignitions, videos, and distinct experimental conditions without authoritative run-level identifiers.
+
+============================================================================
+CHUNK 9/18 | ID: PSI20-09
+TITLE: Conflicting third-party row counts
+SECTION: conflicting_third-party_row_counts
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: external_inventory
+EVIDENCE_LEVEL: third_party_conflict
+SOURCE_LOCATOR: Published methodology / dashboard summary
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: row_count | provenance_conflict | PSI-20 | ACME | NASA PSI
+SOURCE_IDS: SECONDARY_ATLAS | SECONDARY_FREEFALL
+SOURCE_URLS: https://vlo0d.github.io/flame-atlas/methodology/ | https://muneer-ul-hassan.github.io/flame-in-freefall/
+
+CONTENT:
+One secondary catalog describes 18 BRE experimental-table test-day rows, while another describes 43 assembled test rows. These are different representations or processing snapshots; neither number is certified as the current NASA PSI raw table count here.
+
+============================================================================
+CHUNK 10/18 | ID: PSI20-10
+TITLE: What can be answered
+SECTION: what_can_be_answered
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial guidance
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: abstention | retrieval | PSI-20 | ACME | NASA PSI
+
+CONTENT:
+With descriptive sources alone, RAG can explain the purpose, apparatus and broad extinction observations. It cannot prove which exact BRE run survived a requested duration at a requested oxygen fraction without the original per-run or per-day observations and a valid crosswalk.
+
+============================================================================
+CHUNK 11/18 | ID: PSI20-11
+TITLE: Safe use in fire research
+SECTION: safe_use_in_fire_research
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Scientific interpretation / scope limitation
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: safety | no_overclaim | PSI-20 | ACME | NASA PSI
+
+CONTENT:
+Study-level findings about persistence of low-momentum flames support scientific risk assessment but are insufficient to authorize spacecraft atmosphere, material acceptance or suppression design decisions. Safety recommendations require documented mission standards and expert validation.
+
+============================================================================
+CHUNK 12/18 | ID: PSI20-OPS
+TITLE: ISS operation periods
+SECTION: iss_operation_periods
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Table 1, PDF p.3
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: timeline | on_orbit | PSI-20 | ACME | NASA PSI
+SOURCE_IDS: NTRS_PAPER
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+NASA’s ACME technical paper lists ISS operating intervals for Burning Rate Emulator (BRE): 2019-01 to 2019-04 and 2020-07 to 2021-01. These are study-wide operating windows, not exact test times, and should not be used to date individual CSV records.
+
+============================================================================
+CHUNK 13/18 | ID: QA-005
+TITLE: FAQ: What is the goal of BRE?
+SECTION: faq:_what_is_the_goal_of_bre?
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI20-01
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-20 | ACME | NASA PSI
+SOURCE_IDS: SCI20
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/bre/
+
+CONTENT:
+Question: What is the goal of BRE?
+Answer: BRE investigates gas-flame emulation of solid/liquid burning and flame persistence/extinction to improve understanding of spacecraft material flammability.
+
+============================================================================
+CHUNK 14/18 | ID: QA-006
+TITLE: FAQ: Is the BRE burner a real solid material?
+SECTION: faq:_is_the_bre_burner_a_real_solid_material?
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI20-02
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-20 | ACME | NASA PSI
+SOURCE_IDS: SCI20
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/bre/
+
+CONTENT:
+Question: Is the BRE burner a real solid material?
+Answer: No. A porous gas burner emulates selected aspects of condensed-phase burning; it does not directly test every material.
+
+============================================================================
+CHUNK 15/18 | ID: QA-007
+TITLE: FAQ: Is 25 percent oxygen always safe in microgravity?
+SECTION: faq:_is_25_percent_oxygen_always_safe_in_microgravity?
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI20-05
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-20 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+Question: Is 25 percent oxygen always safe in microgravity?
+Answer: No. A NASA BRE summary reports extinction below roughly 25% for studied cases, not a universal safety threshold.
+
+============================================================================
+CHUNK 16/18 | ID: QA-008
+TITLE: FAQ: How long do BRE flames last?
+SECTION: faq:_how_long_do_bre_flames_last?
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI20-04
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-20 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+Question: How long do BRE flames last?
+Answer: Some low-momentum BRE flames lasted minutes, but durations vary with oxygen, fuel, size and other conditions. Exact run-level durations require raw data.
+
+============================================================================
+CHUNK 17/18 | ID: QA-018
+TITLE: FAQ: Can I use this file for material certification?
+SECTION: faq:_can_i_use_this_file_for_material_certification?
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: faq
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Retrieval guide grounded in PSI20-11
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-20 | ACME | NASA PSI
+
+CONTENT:
+Question: Can I use this file for material certification?
+Answer: No. This is a scientific research retrieval corpus; material qualification needs appropriate standards, tests and expert review.
+
+============================================================================
+CHUNK 18/18 | ID: QA-020
+TITLE: FAQ: How many BRE table rows are there?
+SECTION: faq:_how_many_bre_table_rows_are_there?
+INVESTIGATION_ID: PSI-20
+INVESTIGATION_NAME: Burning Rate Emulator (BRE)
+RECORD_KIND: faq
+EVIDENCE_LEVEL: third_party_conflict
+SOURCE_LOCATOR: Retrieval guide grounded in PSI20-09
+DOI: 10.60555/vb93-3y72
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-20 | ACME | NASA PSI
+SOURCE_IDS: SECONDARY_ATLAS | SECONDARY_FREEFALL
+SOURCE_URLS: https://vlo0d.github.io/flame-atlas/methodology/ | https://muneer-ul-hassan.github.io/flame-in-freefall/
+
+CONTENT:
+Question: How many BRE table rows are there?
+Answer: This package has no independently validated primary BRE CSV. Secondary reports use 18 or 43 with differing representation; retrieve the specific NASA file version before using a count.
+

@@ -1,0 +1,2 @@
+run_id,status,data_candidates,mfc_candidates,data_paths,mfc_paths,experiment_date,issues
+19056A2,complete_validated_pair,1,1,19056A2_data.csv,19056A2_mfcSetpoints.csv,2019-02-25,

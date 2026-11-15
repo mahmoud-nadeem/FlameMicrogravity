@@ -1,0 +1,306 @@
+NASA ACME RAG CORPUS
+DATASET: PSI-22
+INVESTIGATION: E-FIELD Flames
+CHUNKS: 15
+SOURCE: rag_chunks.jsonl
+
+============================================================================
+CHUNK 1/15 | ID: PSI22-01
+TITLE: Research objective
+SECTION: research_objective
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Science Objectives
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: electric_field | ion_current | PSI-22 | ACME | NASA PSI
+SOURCE_IDS: SCI22
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/e-field-flames/
+
+CONTENT:
+E-FIELD Flames tests how electric forces acting on charged flame species alter non-premixed combustion. Principal phenomena include ion current, field-induced flow, flame geometry, stability and soot behavior.
+
+============================================================================
+CHUNK 2/15 | ID: PSI22-02
+TITLE: Electrode hardware
+SECTION: electrode_hardware
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Experiment Description
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: mesh | high_voltage | geometry | PSI-22 | ACME | NASA PSI
+SOURCE_IDS: SCI22
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/e-field-flames/
+
+CONTENT:
+The setup can place a high-voltage potential difference of up to 10 kV between a burner and a downstream circular mesh electrode. NASA notes testing with gas-jet and coflow configurations. Voltage is not numerically identical to electric-field strength unless electrode geometry is known.
+
+============================================================================
+CHUNK 3/15 | ID: PSI22-03
+TITLE: Ion wind mechanism
+SECTION: ion_wind_mechanism
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Experiment Description
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: ion_wind | transport | PSI-22 | ACME | NASA PSI
+SOURCE_IDS: SCI22
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/e-field-flames/
+
+CONTENT:
+Flame-generated ions respond to the applied electric field and can transfer momentum to neutral gas, creating an ion-driven flow. This modifies transport and flame structure even in reduced gravity. Effects depend on polarity, geometry, gas composition and other run conditions.
+
+============================================================================
+CHUNK 4/15 | ID: PSI22-04
+TITLE: Measured diagnostics
+SECTION: measured_diagnostics
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Science Objectives
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: measurements | data_availability | PSI-22 | ACME | NASA PSI
+SOURCE_IDS: SCI22
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/e-field-flames/
+
+CONTENT:
+NASA describes measurements of ion current, applied field and flame response, plus diagnostics related to flame size, soot, temperature and structure. Do not assume those variables all appear in the publicly listed experimental summary CSV.
+
+============================================================================
+CHUNK 5/15 | ID: PSI22-05
+TITLE: Observed ion-current behavior
+SECTION: observed_ion-current_behavior
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: E-FIELD slide, p.7
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: ion_current | flame_compactness | PSI-22 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+The NASA 2022 briefing reports a distinctive peak in ion current for particular microgravity flames, associated with compact flame configurations. The result is condition-specific and cannot be used as a universal optimal field setting.
+
+============================================================================
+CHUNK 6/15 | ID: PSI22-06
+TITLE: Stabilization of diluted flames
+SECTION: stabilization_of_diluted_flames
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: E-FIELD slide, p.7
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: dilution | stability | PSI-22 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+The same briefing describes stabilization of very dilute flames using comparatively weak electric fields. It is evidence of control potential, not proof that every weak field enhances safety or combustion efficiency in arbitrary hardware.
+
+============================================================================
+CHUNK 7/15 | ID: PSI22-07
+TITLE: Interpreting field strength
+SECTION: interpreting_field_strength
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: rag_policy
+EVIDENCE_LEVEL: methodological_guidance
+SOURCE_LOCATOR: Curatorial guidance
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: units | electric_potential | current | PSI-22 | ACME | NASA PSI
+
+CONTENT:
+Electric potential (V or kV), local electric-field intensity (V/m or kV/cm), applied polarity, mesh distance and ion current (A or µA) are different physical variables. Keep their original units and measurement provenance. Never compute field strength as voltage divided by an assumed gap.
+
+============================================================================
+CHUNK 8/15 | ID: PSI22-08
+TITLE: Table coverage caveat
+SECTION: table_coverage_caveat
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: external_inventory
+EVIDENCE_LEVEL: third_party_conflict
+SOURCE_LOCATOR: Secondary source inventories; conflicting reports
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: row_count | quality | PSI-22 | ACME | NASA PSI
+SOURCE_IDS: SECONDARY_ATLAS | SECONDARY_FREEFALL
+SOURCE_URLS: https://vlo0d.github.io/flame-atlas/methodology/ | https://muneer-ul-hassan.github.io/flame-in-freefall/
+
+CONTENT:
+Secondary compilers disagree on whether the PSI-22 published tabular representation contains 21 or 32 records. Until the actual file and version are available, classify each reported count by source, extraction date and observation unit.
+
+============================================================================
+CHUNK 9/15 | ID: PSI22-09
+TITLE: Application interpretation
+SECTION: application_interpretation
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Earth and Space Applications
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: emissions | applications | PSI-22 | ACME | NASA PSI
+SOURCE_IDS: SCI22
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/e-field-flames/
+
+CONTENT:
+NASA positions electric-field control of flame emissions and fuel-lean operation as a terrestrial combustion motivation. Potential spacecraft applications are secondary and not established safety qualifications.
+
+============================================================================
+CHUNK 10/15 | ID: PSI22-10
+TITLE: Cross-study limitation
+SECTION: cross-study_limitation
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: scientific_interpretation
+EVIDENCE_LEVEL: reasoned_not_measured
+SOURCE_LOCATOR: Scientific interpretation
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: cross_study | confounding | PSI-22 | ACME | NASA PSI
+
+CONTENT:
+A relation between applied electric field and flame stability in E-FIELD cannot be combined automatically with BRE fire-hazard outcomes or s-Flame extinction modes. The burner geometry and scientific endpoints differ.
+
+============================================================================
+CHUNK 11/15 | ID: PSI22-OPS
+TITLE: ISS operation periods
+SECTION: iss_operation_periods
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: source_synthesis
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Table 1, PDF p.3
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: timeline | on_orbit | PSI-22 | ACME | NASA PSI
+SOURCE_IDS: NTRS_PAPER
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf?attachment=true
+
+CONTENT:
+NASA’s ACME technical paper lists ISS operating intervals for E-FIELD Flames: 2018-03 to 2018-05 and 2018-09 to 2018-11. These are study-wide operating windows, not exact test times, and should not be used to date individual CSV records.
+
+============================================================================
+CHUNK 12/15 | ID: QA-009
+TITLE: FAQ: What does PSI-22 measure?
+SECTION: faq:_what_does_psi-22_measure?
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI22-01
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-22 | ACME | NASA PSI
+SOURCE_IDS: SCI22
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/e-field-flames/
+
+CONTENT:
+Question: What does PSI-22 measure?
+Answer: E-FIELD Flames explores ion current, electrical forcing and the resulting flame geometry, soot and stability behavior.
+
+============================================================================
+CHUNK 13/15 | ID: QA-010
+TITLE: FAQ: How much voltage can E-FIELD use?
+SECTION: faq:_how_much_voltage_can_e-field_use?
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI22-02
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-22 | ACME | NASA PSI
+SOURCE_IDS: SCI22
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/e-field-flames/
+
+CONTENT:
+Question: How much voltage can E-FIELD use?
+Answer: NASA describes potential differences up to 10 kV between burner and mesh electrode; field strength is a separate variable.
+
+============================================================================
+CHUNK 14/15 | ID: QA-011
+TITLE: FAQ: What is ion wind?
+SECTION: faq:_what_is_ion_wind?
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI22-03
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-22 | ACME | NASA PSI
+SOURCE_IDS: SCI22
+SOURCE_URLS: https://science.nasa.gov/biological-physical/investigations/e-field-flames/
+
+CONTENT:
+Question: What is ion wind?
+Answer: It is electrically induced bulk gas motion mediated by flame ions that transfer momentum to neutral gas.
+
+============================================================================
+CHUNK 15/15 | ID: QA-012
+TITLE: FAQ: Is maximum current equal to maximum flame size?
+SECTION: faq:_is_maximum_current_equal_to_maximum_flame_size?
+INVESTIGATION_ID: PSI-22
+INVESTIGATION_NAME: E-FIELD Flames
+RECORD_KIND: faq
+EVIDENCE_LEVEL: source_grounded
+SOURCE_LOCATOR: Retrieval guide grounded in PSI22-05
+DOI: 10.60555/se5a-8c73
+DOI_VERIFICATION: secondary_reported_pending_direct_resolution
+ACCESSED_AT: 2026-11-15
+CORPUS_VERSION: 1.0.0
+TAGS: faq | user_query | PSI-22 | ACME | NASA PSI
+SOURCE_IDS: NTRS_SLIDES
+SOURCE_URLS: https://ntrs.nasa.gov/api/citations/20220007191/downloads/ACME%20CSSCI%2020220509.pdf
+
+CONTENT:
+Question: Is maximum current equal to maximum flame size?
+Answer: No. NASA presents a case where a current peak corresponded to a compact microgravity flame, but this is not a general law.
+

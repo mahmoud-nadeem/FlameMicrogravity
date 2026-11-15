@@ -1,0 +1,19 @@
+summary_source_row,summary_date,flames_ignited_raw,summary_fuel_bottle_raw,summary_oxygen_conc_raw,run_id,run_date,run_inventory_status,link_status,link_basis,ambiguity_note
+2,2019-02-08,10,100% C2H4,21; 26.5; 40,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+3,2019-02-20,8,100% C2H4,26.5; 34,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+4,2019-02-25,8,50% C2H4,21; 26.5; 34; 40,19056A2,2019-02-25,complete_validated_pair,candidate_date_match,verified_run_metadata_calendar_date_equals_summary_calendar_date,DAY-LEVEL match only; does not establish run-to-flame correspondence
+5,2019-03-04,6,50% C2H4,26.5; 40,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+6,2019-03-07,6,50% C2H4,3400%,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+7,2019-03-11,7,50% C2H4,26.5; 34,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+8,2019-03-28,8,100%C2H4,26.5; 34,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+9,2019-04-01,0,100%C2H4,2100%,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+10,2019-04-04,9,100%C2H4,21; 26.5; 34,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+11,2020-09-03,13,100% C2H4,25; 34; 40,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+12,2020-10-17,13,100% C2H4,26.5; 34,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+13,2020-12-05,21,100% CH4,25; 34; 40,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+14,2020-12-04,18,100% CH4,25; 40,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+15,2020-12-11,12,50% C2H4,25; 40,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+16,2020-12-17,10,100% C2H4,34; 40,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+17,2020-12-23,17,100% C2H4,25; 34; 40,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+18,2021-01-20,15,100% C2H4,21; 26.5; 34,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
+19,2021-01-28,13,100% C2H4,25; 34; 40,,,,unmatched_summary_day,no_verified_local_run_on_summary_day,No local verified pair on this date; not evidence NASA run absent
