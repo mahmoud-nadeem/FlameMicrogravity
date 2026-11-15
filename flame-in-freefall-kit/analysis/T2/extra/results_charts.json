@@ -1,0 +1,70 @@
+[
+ {
+  "id": "saffire-peaks",
+  "title": "Highest post-igniter readings per sample",
+  "type": "bar",
+  "y": "temperature (°C)",
+  "labels": [
+   "98 S1",
+   "98 S2",
+   "99 S1",
+   "99 S2",
+   "99 S3",
+   "99 S4",
+   "99 S5",
+   "99 S6",
+   "99 S7",
+   "99 S8",
+   "99 S9",
+   "100 S1",
+   "100 S2"
+  ],
+  "datasets": [
+   {
+    "label": "sample-group thermocouple",
+    "data": [
+     1091.76,
+     24.88,
+     21.31,
+     21.31,
+     21.72,
+     21.72,
+     960.76,
+     843.39,
+     463.92,
+     85.87,
+     56.7,
+     1088.21,
+     20.04
+    ]
+   },
+   {
+    "label": "plume thermocouple",
+    "data": [
+     121.7,
+     94.4,
+     23.34,
+     62.83,
+     23.6,
+     23.75,
+     52.38,
+     23.95,
+     25.63,
+     97.26,
+     38.51,
+     95.64,
+     48.35
+    ]
+   }
+  ],
+  "findings": [
+   "F-T2-9801",
+   "F-T2-9802",
+   "F-T2-9901",
+   "F-T2-9909",
+   "F-T2-10001",
+   "F-T2-10002"
+  ],
+  "note": "Mohamed Shreif, from the Calibrated Data sheets of each sample's sensor workbook (PSI-98, PSI-99, PSI-100). Point readings from different thermocouples; times are from recording start. Labels: mission (PSI-98/99/100) and sample."
+ }
+]
