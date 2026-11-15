@@ -1,0 +1,40 @@
+{
+  "rows": 121,
+  "groups": 78,
+  "folds": "5 x GroupKFold(5), groups = test + its aged re-measurement",
+  "baseline": "median log diameter of the material in the training folds",
+  "baseline_mae_log": [
+    0.372,
+    0.089
+  ],
+  "ridge_mae_log": [
+    0.274,
+    0.027
+  ],
+  "baseline_typical_factor": 1.45,
+  "ridge_typical_factor": 1.32,
+  "features": [
+    "material_Kapton",
+    "material_Lampwick",
+    "material_Pyrell",
+    "material_Silicone",
+    "material_Teflon",
+    "mission_SAME",
+    "mission_SAME-R",
+    "vel_cm_s",
+    "rt_r0",
+    "log_aging"
+  ],
+  "coefficients_full_fit": {
+    "material_Kapton": -1.013,
+    "material_Lampwick": 0.42,
+    "material_Pyrell": 1.049,
+    "material_Silicone": 0.439,
+    "material_Teflon": -0.895,
+    "mission_SAME": 0.081,
+    "mission_SAME-R": -0.081,
+    "vel_cm_s": -0.05,
+    "rt_r0": 5.962,
+    "log_aging": 0.116
+  }
+}

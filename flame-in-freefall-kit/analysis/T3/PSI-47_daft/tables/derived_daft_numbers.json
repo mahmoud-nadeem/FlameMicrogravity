@@ -1,0 +1,229 @@
+{
+  "source_file": "PSI-47/Analyzed Data/PSI-47_Analyzed Data_DAFT Retrieved Data Summary.xls",
+  "timing_file": "PSI-47/Analyzed Data/PSI-47_Analyzed Data_flight data 063_TIMING.xls",
+  "tests": {
+    "1": {
+      "series": "DAFT-1,2 (2005)",
+      "ptrak_readings": 724,
+      "ptrak_zero_share": 0.182,
+      "ptrak_max_pt_cc": 524291.0,
+      "ptrak_max_excel_row": 325,
+      "dusttrak_readings": 771,
+      "dusttrak_zero_share": 0.943,
+      "dusttrak_max_mg_m3": 6.273,
+      "headers_ptrak_start": "10:57:08",
+      "headers_dusttrak_start": "11:48:52",
+      "dusttrak_minus_ptrak_clock_s": 3104,
+      "ptrak_second_highest_pt_cc": 2050.0
+    },
+    "2": {
+      "series": "DAFT-1,2 (2005)",
+      "ptrak_readings": 724,
+      "ptrak_zero_share": 0.131,
+      "ptrak_max_pt_cc": 45400.0,
+      "ptrak_max_excel_row": 537,
+      "dusttrak_readings": 778,
+      "dusttrak_zero_share": 0.847,
+      "dusttrak_max_mg_m3": 0.79,
+      "headers_ptrak_start": "14:36:50",
+      "headers_dusttrak_start": "15:28:04",
+      "dusttrak_minus_ptrak_clock_s": 3074,
+      "ptrak_second_highest_pt_cc": 43300.0
+    },
+    "3": {
+      "series": "DAFT-1,2 (2005)",
+      "ptrak_readings": 707,
+      "ptrak_zero_share": 0.396,
+      "ptrak_max_pt_cc": 10.0,
+      "ptrak_max_excel_row": 31,
+      "dusttrak_readings": 754,
+      "dusttrak_zero_share": 0.958,
+      "dusttrak_max_mg_m3": 1.024,
+      "headers_ptrak_start": "14:52:56",
+      "headers_dusttrak_start": "15:44:15",
+      "dusttrak_minus_ptrak_clock_s": 3079,
+      "ptrak_second_highest_pt_cc": 10.0
+    },
+    "4": {
+      "series": "DAFT-1,2 (2005)",
+      "ptrak_readings": 455,
+      "ptrak_zero_share": 0.695,
+      "ptrak_max_pt_cc": 76.0,
+      "ptrak_max_excel_row": 3,
+      "dusttrak_readings": 545,
+      "dusttrak_zero_share": 0.938,
+      "dusttrak_max_mg_m3": 0.837,
+      "headers_ptrak_start": "15:07:49",
+      "headers_dusttrak_start": "15:58:25",
+      "dusttrak_minus_ptrak_clock_s": 3036,
+      "ptrak_second_highest_pt_cc": 41.0
+    },
+    "5": {
+      "series": "DAFT-3 (2006)",
+      "ptrak_readings": 2330,
+      "ptrak_zero_share": 0.361,
+      "ptrak_max_pt_cc": 1730.0,
+      "ptrak_max_excel_row": 1953,
+      "dusttrak_readings": 2426,
+      "dusttrak_zero_share": 0.986,
+      "dusttrak_max_mg_m3": 0.031,
+      "headers_ptrak_start": "09:58:18",
+      "headers_dusttrak_start": "09:41:05",
+      "dusttrak_minus_ptrak_clock_s": -1033,
+      "ptrak_second_highest_pt_cc": 915.0
+    },
+    "6": {
+      "series": "DAFT-3 (2006)",
+      "ptrak_readings": 1187,
+      "ptrak_zero_share": 0.2,
+      "ptrak_max_pt_cc": 232000.0,
+      "ptrak_max_excel_row": 1068,
+      "dusttrak_readings": 271,
+      "dusttrak_zero_share": 0.199,
+      "dusttrak_max_mg_m3": 200.042,
+      "headers_ptrak_start": "10:04:56",
+      "headers_dusttrak_start": "10:04:46",
+      "dusttrak_minus_ptrak_clock_s": -10,
+      "ptrak_second_highest_pt_cc": 120000.0
+    },
+    "7": {
+      "series": "DAFT-3 (2006)",
+      "ptrak_readings": 2292,
+      "ptrak_zero_share": 0.259,
+      "ptrak_max_pt_cc": 137000.0,
+      "ptrak_max_excel_row": 2214,
+      "dusttrak_readings": 2365,
+      "dusttrak_zero_share": 0.501,
+      "dusttrak_max_mg_m3": 273.571,
+      "headers_ptrak_start": "15:19:04",
+      "headers_dusttrak_start": "15:02:19",
+      "dusttrak_minus_ptrak_clock_s": -1005,
+      "ptrak_second_highest_pt_cc": 121000.0
+    }
+  },
+  "test2_timing": {
+    "log_on_video_s": {
+      "ptrak": 1223.0,
+      "dusttrak": 1176.0
+    },
+    "velcro_offsets_s": [
+      47.0
+    ],
+    "velcro_rows": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "velcro_windows_ptrak_s": [
+      [
+        227.0,
+        266.0
+      ],
+      [
+        281.0,
+        307.0
+      ],
+      [
+        404.0,
+        486.0
+      ],
+      [
+        505.0,
+        548.0
+      ]
+    ]
+  },
+  "test2_aligned": {
+    "overlap_s": 724,
+    "both_positive": 92,
+    "spearman_rho": -0.024,
+    "p_value": 0.817
+  },
+  "test2_offset_sensitivity_30_80s": {
+    "max_abs_rho": 0.276,
+    "rho_by_offset": {
+      "30": -0.23,
+      "31": -0.276,
+      "32": -0.207,
+      "33": -0.193,
+      "34": -0.176,
+      "35": -0.179,
+      "36": -0.151,
+      "37": -0.139,
+      "38": -0.117,
+      "39": -0.172,
+      "40": -0.144,
+      "41": -0.1,
+      "42": -0.08,
+      "43": -0.051,
+      "44": -0.073,
+      "45": -0.014,
+      "46": 0.038,
+      "47": -0.024,
+      "48": -0.05,
+      "49": -0.118,
+      "50": -0.072,
+      "51": -0.163,
+      "52": -0.142,
+      "53": -0.171,
+      "54": -0.126,
+      "55": -0.132,
+      "56": -0.144,
+      "57": -0.113,
+      "58": -0.065,
+      "59": -0.051,
+      "60": -0.007,
+      "61": -0.067,
+      "62": -0.03,
+      "63": 0.013,
+      "64": -0.032,
+      "65": -0.08,
+      "66": -0.11,
+      "67": -0.128,
+      "68": -0.13,
+      "69": -0.118,
+      "70": -0.176,
+      "71": -0.167,
+      "72": -0.178,
+      "73": -0.198,
+      "74": -0.176,
+      "75": -0.121,
+      "76": -0.15,
+      "77": -0.151,
+      "78": -0.137,
+      "79": -0.118,
+      "80": -0.028
+    }
+  },
+  "test2_other_event_offsets_s": [
+    53.0,
+    54.0,
+    55.0,
+    58.0,
+    67.0,
+    72.0
+  ],
+  "nasa_paired_bags_2006": {
+    "bag1": {
+      "rows": 564,
+      "both_positive": 131,
+      "spearman_rho": 0.82
+    },
+    "bag2": {
+      "rows": 527,
+      "both_positive": 516,
+      "spearman_rho": 0.044
+    },
+    "bag3": {
+      "rows": 530,
+      "both_positive": 524,
+      "spearman_rho": 0.219
+    }
+  },
+  "nasa_paired_note_row3": "**Bag1 DustTrak started after P-Trak.  Zero-filled non-existent data."
+}

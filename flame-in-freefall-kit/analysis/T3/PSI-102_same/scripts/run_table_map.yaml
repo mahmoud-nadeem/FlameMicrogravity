@@ -1,0 +1,18 @@
+# Mapping for tools/build_run_table.py (decisions written 2026-11-14, logged in si_log.md).
+investigation_id: PSI-102
+slug: same
+sources:
+  - file: "PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv"
+    header_row: 1
+    run_id: "Sample #"
+    keep_raw: true
+    columns:
+      # Rows 6-9 hold text such as "Kapton: same conditions as 1-4" and leave the other cells empty.
+      # The text is kept as it is; the conditions of rows 2-5 are NOT copied to rows 6-9 (no guessing).
+      material_or_fuel: {from: "Sample Material"}
+      gravity_level: {value: microgravity_ISS, reason: "PSI page, Project: Flight Platform = International Space Station (ISS); the table has no per-row gravity column"}
+      flow_speed_value: {from: "Air Flow (cm/s)"}
+      flow_speed_unit: {value: "cm/s", reason: "unit in the column header 'Air Flow (cm/s)'"}
+    extra:
+      x_weight_loss_rate_mg_min: {from: "Weight loss rate (mg/min)"}
+      x_aging_duration_min: {from: "Aging Duration (minutes)"}

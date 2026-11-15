@@ -1,0 +1,21 @@
+# Mapping for tools/build_run_table.py (decisions written 2026-11-14, logged in si_log.md).
+investigation_id: PSI-101
+slug: same-r
+sources:
+  - file: "PSI-101/Experimental table/PSI-101_Experimental table_SAME-R.csv"
+    header_row: 1
+    run_id: "SAME Test #"           # test 57 appears twice (rows 57 and 75): flagged by the tool
+    keep_raw: true
+    columns:
+      material_or_fuel: {from: "Sample Type"}
+      gravity_level: {value: microgravity_ISS, reason: "every Date in the table (16-Jul to 9-Sep) falls inside the flight test window 16 July - 9 September 2010 stated in the PSI page Approach"}
+      flow_speed_value: {from: "Inlet velocity (cm/s)"}
+      flow_speed_unit: {value: "cm/s", reason: "unit in the column header 'Inlet velocity (cm/s)'"}
+      notes: {from: "Description"}
+    extra:
+      x_date_text: {from: "Date"}
+      x_rt_r0_ratio: {from: "Rt/R0", convert: none}
+      x_duration_s: {from: "Duration (sec)", convert: none}
+      x_primary_aging_time_s: {from: "Primary aging time (sec)", convert: none}
+      x_primary_mixing_time_s: {from: "Primary mixing time (sec)", convert: none}
+      x_net_aging_time_s: {from: "Net aging time (sec)", convert: none}

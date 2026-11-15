@@ -1,0 +1,189 @@
+{
+  "files": 44,
+  "tests": 45,
+  "tests_with_heating": 44,
+  "tests_without_heating": [
+    [
+      "PSI-101/Raw Data/PSI-101_Raw Data_HKPData_gmt235_1.csv",
+      63
+    ]
+  ],
+  "heating_s_range": [
+    51.0,
+    53.0
+  ],
+  "plume_temp_response_s_range": [
+    1.0,
+    7.0
+  ],
+  "definition": {
+    "baseline_window_s": [
+      -60,
+      -5
+    ],
+    "k_sd": 5.0,
+    "run_samples": 5,
+    "post_window_s": [
+      0,
+      900
+    ],
+    "floors": {
+      "plume_temp_c": 5.0,
+      "iss_obscuration_v": 0.01,
+      "iss_scatter_v": 0.02,
+      "ion_a_v": 0.02,
+      "ion_b_v": 0.05,
+      "dustrak_b_mg_m3": 0.05
+    }
+  },
+  "iss_scatter": {
+    "baseline_median_v": -0.185,
+    "tests_min_at_or_below_minus_6_2_v": 21,
+    "of_tests": 44,
+    "pinned_min_range_v": [
+      -6.275,
+      -6.243
+    ],
+    "pinned_seconds_within_0_01v_median": 45.0,
+    "pinned_seconds_within_0_01v_range": [
+      10,
+      432
+    ],
+    "pinned_tests": [
+      59,
+      60,
+      62,
+      65,
+      64,
+      66,
+      67,
+      68,
+      76,
+      78,
+      80,
+      82,
+      84,
+      87,
+      86,
+      91,
+      98,
+      99,
+      107,
+      106,
+      103
+    ],
+    "workbook_match": {
+      "tests_matched": 44,
+      "max_abs_workbook_plus_hkp_min_v": 2.786,
+      "spearman": -0.973
+    }
+  },
+  "smoke_arrival": {
+    "tests_all_three_responded": 41,
+    "of_tests": 44,
+    "median_response_s": {
+      "iss_scatter_v": 129.0,
+      "ion_b_v": 139.0,
+      "dustrak_b_mg_m3": 134.0
+    },
+    "response_s_range": {
+      "iss_scatter_v": [
+        52.0,
+        834.0
+      ],
+      "ion_b_v": [
+        61.0,
+        843.0
+      ],
+      "dustrak_b_mg_m3": [
+        47.0,
+        710.0
+      ]
+    },
+    "first_response_after_heating_end_tests": 40,
+    "first_response_after_heating_end_median_s": 77.0,
+    "first_response_after_heating_end_iqr_s": [
+      73.0,
+      95.0
+    ],
+    "first_channel_counts": {
+      "iss_scatter_v": 32,
+      "dustrak_b_mg_m3": 9
+    },
+    "median_spread_between_three_s": 9.0,
+    "robustness": [
+      {
+        "k_sd": 3,
+        "floor_factor": 1,
+        "run": 5,
+        "tests": 42,
+        "iss_scatter_first": 30,
+        "dustrak_b_first": 10,
+        "ion_b_first": 2
+      },
+      {
+        "k_sd": 5,
+        "floor_factor": 1,
+        "run": 5,
+        "tests": 41,
+        "iss_scatter_first": 32,
+        "dustrak_b_first": 9,
+        "ion_b_first": 0
+      },
+      {
+        "k_sd": 8,
+        "floor_factor": 1,
+        "run": 5,
+        "tests": 41,
+        "iss_scatter_first": 33,
+        "dustrak_b_first": 8,
+        "ion_b_first": 0
+      },
+      {
+        "k_sd": 5,
+        "floor_factor": 2,
+        "run": 5,
+        "tests": 41,
+        "iss_scatter_first": 27,
+        "dustrak_b_first": 14,
+        "ion_b_first": 0
+      },
+      {
+        "k_sd": 5,
+        "floor_factor": 0.5,
+        "run": 3,
+        "tests": 41,
+        "iss_scatter_first": 29,
+        "dustrak_b_first": 12,
+        "ion_b_first": 0
+      },
+      {
+        "k_sd": 10,
+        "floor_factor": 3,
+        "run": 10,
+        "tests": 39,
+        "iss_scatter_first": 27,
+        "dustrak_b_first": 12,
+        "ion_b_first": 0
+      }
+    ]
+  },
+  "obscuration_vs_scatter": {
+    "obscuration_baseline_median_v": 3.431,
+    "obscuration_peak_dev_median_v": -0.091,
+    "obscuration_peak_dev_range_v": [
+      -1.436,
+      0.002
+    ],
+    "obscuration_responded_tests": 30,
+    "scatter_peak_dev_median_v": -5.945,
+    "scatter_responded_tests": 43
+  },
+  "dustrak_a_column": {
+    "samples": 63083,
+    "zero_or_10000_to_20100": 57670,
+    "other_values": 5413,
+    "nonzero_min": 10009.0,
+    "nonzero_max": 22997.0
+  }
+}

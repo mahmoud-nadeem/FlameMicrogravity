@@ -1,0 +1,9 @@
+﻿investigation_id,run_id,source_file,source_row,material_or_fuel,gravity_level,oxygen_pct,pressure_kpa,flow_speed_value,flow_speed_unit,outcome_raw,outcome_norm,notes,x_weight_loss_rate_mg_min,x_aging_duration_min,raw_Sample #,raw_Sample Material,raw_Air Flow (cm/s),raw_Weight loss rate (mg/min),raw_Aging Duration (minutes)
+PSI-102,1,PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv,2,Teflon,microgravity_ISS,,,5.0,cm/s,,,,2,1,1,Teflon,5,2,1
+PSI-102,2,PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv,3,Teflon,microgravity_ISS,,,5.0,cm/s,,,,1,1,2,Teflon,5,1,1
+PSI-102,3,PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv,4,Teflon,microgravity_ISS,,,5.0,cm/s,,,,2,20,3,Teflon,5,2,20
+PSI-102,4,PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv,5,Teflon,microgravity_ISS,,,10.0,cm/s,,,,2,1,4,Teflon,10,2,1
+PSI-102,5,PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv,6,Kapton: same conditions as 1-4,microgravity_ISS,,,,cm/s,,,,,,5,Kapton: same conditions as 1-4,,,
+PSI-102,6,PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv,7,Silicone Rubber: same conditions as 1-4,microgravity_ISS,,,,cm/s,,,,,,6,Silicone Rubber: same conditions as 1-4,,,
+PSI-102,7,PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv,8,Lampwick: same conditions as 1-4,microgravity_ISS,,,,cm/s,,,,,,7,Lampwick: same conditions as 1-4,,,
+PSI-102,8,PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv,9,Dibutyl Phthalate: same conditions as 1-4,microgravity_ISS,,,,cm/s,,,,,,8,Dibutyl Phthalate: same conditions as 1-4,,,

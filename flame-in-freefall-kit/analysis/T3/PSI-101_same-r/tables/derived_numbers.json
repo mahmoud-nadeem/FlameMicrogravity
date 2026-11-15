@@ -1,0 +1,563 @@
+{
+  "source_file": "PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx",
+  "sheet": "Reduced Data with ISS Det",
+  "tests_in_sheet": 154,
+  "tests_by_mission_material": {
+    "SAME|DBP": 20,
+    "SAME|Kapton": 6,
+    "SAME|Lampwick": 6,
+    "SAME|Silicone": 7,
+    "SAME|Teflon": 6,
+    "SAME-R|Kapton": 30,
+    "SAME-R|Lampwick": 20,
+    "SAME-R|Pyrell": 20,
+    "SAME-R|Silicone": 22,
+    "SAME-R|Teflon": 17
+  },
+  "tests_with_size": 131,
+  "dbp_rows_without_size": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "other_rows_without_size": [
+    32,
+    41,
+    45
+  ],
+  "excluded_inconsistent_size_rows": [
+    47,
+    48,
+    145,
+    147,
+    149,
+    155
+  ],
+  "tests_with_consistent_size": 125,
+  "aging_sensitivity_inconsistent_rows_kept": {
+    "pairs": 48,
+    "grew": 46,
+    "median_growth": 1.5
+  },
+  "aging": {
+    "pairs": 44,
+    "grew": 42,
+    "median_growth": 1.46,
+    "iqr_growth": [
+      1.17,
+      1.74
+    ],
+    "aged_net_aging_s_range": [
+      218,
+      1964
+    ],
+    "wilcoxon_p": 1.5575096767861396e-11,
+    "by_material": {
+      "Kapton": {
+        "pairs": 12,
+        "median_growth": 1.52
+      },
+      "Lampwick": {
+        "pairs": 9,
+        "median_growth": 1.29
+      },
+      "Pyrell": {
+        "pairs": 8,
+        "median_growth": 1.63
+      },
+      "Silicone": {
+        "pairs": 10,
+        "median_growth": 1.65
+      },
+      "Teflon": {
+        "pairs": 5,
+        "median_growth": 1.17
+      }
+    },
+    "rows_unaged": [
+      23,
+      26,
+      33,
+      35,
+      37,
+      39,
+      43,
+      49,
+      51,
+      53,
+      55,
+      57,
+      60,
+      62,
+      69,
+      72,
+      74,
+      76,
+      79,
+      81,
+      83,
+      86,
+      88,
+      90,
+      92,
+      94,
+      99,
+      101,
+      103,
+      106,
+      109,
+      114,
+      116,
+      118,
+      120,
+      122,
+      125,
+      127,
+      129,
+      135,
+      137,
+      142,
+      150,
+      152
+    ],
+    "rows_aged": [
+      27,
+      28,
+      34,
+      36,
+      38,
+      40,
+      44,
+      50,
+      52,
+      54,
+      56,
+      58,
+      63,
+      64,
+      70,
+      73,
+      75,
+      77,
+      80,
+      82,
+      84,
+      87,
+      89,
+      91,
+      93,
+      95,
+      100,
+      102,
+      104,
+      110,
+      111,
+      115,
+      117,
+      119,
+      121,
+      123,
+      126,
+      128,
+      130,
+      138,
+      139,
+      143,
+      151,
+      153
+    ],
+    "shrank_rows": [
+      [
+        83,
+        84
+      ],
+      [
+        152,
+        153
+      ]
+    ]
+  },
+  "flow_matched_heater": [
+    {
+      "material": "Kapton",
+      "rt_r0": 1.48,
+      "n_low": 4,
+      "median_low": 0.207,
+      "n_8": 2,
+      "median_8": 0.118,
+      "rows_low": [
+        31,
+        53,
+        55,
+        57
+      ],
+      "rows_8": [
+        37,
+        43
+      ]
+    },
+    {
+      "material": "Lampwick",
+      "rt_r0": 1.245,
+      "n_low": 1,
+      "median_low": 0.185,
+      "n_8": 3,
+      "median_8": 0.116,
+      "rows_low": [
+        79
+      ],
+      "rows_8": [
+        68,
+        69,
+        72
+      ]
+    },
+    {
+      "material": "Lampwick",
+      "rt_r0": 1.28,
+      "n_low": 3,
+      "median_low": 0.295,
+      "n_8": 1,
+      "median_8": 0.124,
+      "rows_low": [
+        78,
+        81,
+        83
+      ],
+      "rows_8": [
+        74
+      ]
+    },
+    {
+      "material": "Pyrell",
+      "rt_r0": 1.22,
+      "n_low": 1,
+      "median_low": 0.14,
+      "n_8": 3,
+      "median_8": 0.207,
+      "rows_low": [
+        99
+      ],
+      "rows_8": [
+        86,
+        90,
+        97
+      ]
+    },
+    {
+      "material": "Pyrell",
+      "rt_r0": 1.23,
+      "n_low": 3,
+      "median_low": 0.259,
+      "n_8": 2,
+      "median_8": 0.304,
+      "rows_low": [
+        98,
+        101,
+        103
+      ],
+      "rows_8": [
+        88,
+        92
+      ]
+    },
+    {
+      "material": "Silicone",
+      "rt_r0": 1.35,
+      "n_low": 4,
+      "median_low": 0.406,
+      "n_8": 2,
+      "median_8": 0.245,
+      "rows_low": [
+        125,
+        127,
+        129,
+        133
+      ],
+      "rows_8": [
+        113,
+        116
+      ]
+    },
+    {
+      "material": "Teflon",
+      "rt_r0": 1.45,
+      "n_low": 3,
+      "median_low": 0.197,
+      "n_8": 1,
+      "median_8": 0.208,
+      "rows_low": [
+        150,
+        152,
+        154
+      ],
+      "rows_8": [
+        146
+      ]
+    }
+  ],
+  "baseline_by_material": {
+    "Kapton": {
+      "n": 4,
+      "median_um": 0.057,
+      "min_um": 0.049,
+      "max_um": 0.059,
+      "rt_r0": 1.38,
+      "median_temp_c": 422,
+      "rows": [
+        30,
+        33,
+        35,
+        39
+      ]
+    },
+    "Lampwick": {
+      "n": 3,
+      "median_um": 0.116,
+      "min_um": 0.11,
+      "max_um": 0.13,
+      "rt_r0": 1.245,
+      "median_temp_c": 263,
+      "rows": [
+        68,
+        69,
+        72
+      ]
+    },
+    "Pyrell": {
+      "n": 3,
+      "median_um": 0.207,
+      "min_um": 0.198,
+      "max_um": 0.22,
+      "rt_r0": 1.22,
+      "median_temp_c": 232,
+      "rows": [
+        86,
+        90,
+        97
+      ]
+    },
+    "Silicone": {
+      "n": 1,
+      "median_um": 0.244,
+      "min_um": 0.244,
+      "max_um": 0.244,
+      "rt_r0": 1.304,
+      "median_temp_c": 325,
+      "rows": [
+        112
+      ]
+    },
+    "Teflon": {
+      "n": 4,
+      "median_um": 0.093,
+      "min_um": 0.053,
+      "max_um": 0.163,
+      "rt_r0": 1.445,
+      "median_temp_c": 515,
+      "rows": [
+        141,
+        142,
+        144,
+        156
+      ]
+    }
+  },
+  "kapton_temperature": {
+    "n": 8,
+    "spearman_rho": 0.88,
+    "p": 0.0039,
+    "low_temp_range_um": [
+      0.049,
+      0.059
+    ],
+    "high_temp_range_um": [
+      0.088,
+      0.148
+    ],
+    "rows": [
+      30,
+      33,
+      35,
+      37,
+      39,
+      43,
+      49,
+      51
+    ]
+  },
+  "other_materials_temperature": {
+    "Lampwick": {
+      "n": 6,
+      "rho": 0.26,
+      "p": 0.623
+    },
+    "Pyrell": {
+      "n": 6,
+      "rho": 0.77,
+      "p": 0.072
+    },
+    "Silicone": {
+      "n": 9,
+      "rho": 0.33,
+      "p": 0.381
+    },
+    "Teflon": {
+      "n": 7,
+      "rho": 0.29,
+      "p": 0.535
+    }
+  },
+  "same_vs_same_r": [
+    {
+      "material": "Kapton",
+      "rt_r0": 1.38,
+      "SAME_um": [
+        0.094
+      ],
+      "SAME_rows": [
+        23
+      ],
+      "SAME_R_median_um": 0.057,
+      "SAME_R_n": 4,
+      "SAME_R_rows": [
+        30,
+        33,
+        35,
+        39
+      ]
+    },
+    {
+      "material": "Kapton",
+      "rt_r0": 1.48,
+      "SAME_um": [
+        0.219
+      ],
+      "SAME_rows": [
+        26
+      ],
+      "SAME_R_median_um": 0.118,
+      "SAME_R_n": 2,
+      "SAME_R_rows": [
+        37,
+        43
+      ]
+    },
+    {
+      "material": "Lampwick",
+      "rt_r0": 1.245,
+      "SAME_um": [
+        0.204
+      ],
+      "SAME_rows": [
+        60
+      ],
+      "SAME_R_median_um": 0.116,
+      "SAME_R_n": 3,
+      "SAME_R_rows": [
+        68,
+        69,
+        72
+      ]
+    },
+    {
+      "material": "Silicone",
+      "rt_r0": 1.327,
+      "SAME_um": [
+        0.227
+      ],
+      "SAME_rows": [
+        106
+      ],
+      "SAME_R_median_um": 0.189,
+      "SAME_R_n": 4,
+      "SAME_R_rows": [
+        114,
+        118,
+        131,
+        132
+      ]
+    },
+    {
+      "material": "Teflon",
+      "rt_r0": 1.445,
+      "SAME_um": [
+        0.187
+      ],
+      "SAME_rows": [
+        135
+      ],
+      "SAME_R_median_um": 0.093,
+      "SAME_R_n": 4,
+      "SAME_R_rows": [
+        141,
+        142,
+        144,
+        156
+      ]
+    }
+  ],
+  "iss_scatter": {
+    "tests": 131,
+    "at_or_above_6_2_v": 68,
+    "max_v": 6.294,
+    "spearman_vs_dustrak_b": 0.72
+  },
+  "model_gate": {
+    "rows": 121,
+    "groups": 78,
+    "folds": "5 x GroupKFold(5), groups = test + its aged re-measurement",
+    "baseline": "median log diameter of the material in the training folds",
+    "baseline_mae_log": [
+      0.372,
+      0.089
+    ],
+    "ridge_mae_log": [
+      0.274,
+      0.027
+    ],
+    "baseline_typical_factor": 1.45,
+    "ridge_typical_factor": 1.32,
+    "features": [
+      "material_Kapton",
+      "material_Lampwick",
+      "material_Pyrell",
+      "material_Silicone",
+      "material_Teflon",
+      "mission_SAME",
+      "mission_SAME-R",
+      "vel_cm_s",
+      "rt_r0",
+      "log_aging"
+    ],
+    "coefficients_full_fit": {
+      "material_Kapton": -1.013,
+      "material_Lampwick": 0.42,
+      "material_Pyrell": 1.049,
+      "material_Silicone": 0.439,
+      "material_Teflon": -0.895,
+      "mission_SAME": 0.081,
+      "mission_SAME-R": -0.081,
+      "vel_cm_s": -0.05,
+      "rt_r0": 5.962,
+      "log_aging": 0.116
+    }
+  }
+}

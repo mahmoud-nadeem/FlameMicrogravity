@@ -1,0 +1,61 @@
+{
+  "investigation_id": "PSI-101",
+  "title": "Smoke Aerosol Measurement Experiment-Reflight",
+  "acronym": "SAME-R",
+  "doi": "10.60555/2np7-jv14",
+  "license": "CC0-1.0",
+  "version": "4",
+  "sub_research_area": "Spacecraft Fire Safety",
+  "related_investigations": [
+    "PSI-102"
+  ],
+  "size_on_page": "5.87 GB",
+  "file_types_and_counts": {
+    "zip": 80,
+    "xls": 77,
+    "pptx": 76,
+    "csv": 45,
+    "pdf": 36,
+    "xlsx": 15,
+    "mp4": 8,
+    "tif": 3,
+    "ppt": 2,
+    "docx": 1,
+    "doc": 1
+  },
+  "has_experiment_table": "yes",
+  "objectives": "Determine the sizes and size distributions of smoke particles in microgravity and relate them to how the smoke is generated and transported, while improving particle-shape data and reducing measurement uncertainty. It repeats SAME because the SAME samples came back from space contaminated with foreign particles, which limited their use.",
+  "approach": "The SAME hardware was reused with improved sampling and diagnostic units. Five materials (Teflon, Kapton, cotton lampwick, silicone rubber and Pyrell) were heated below their ignition temperature, and the particles were measured with aerosol instruments and collected for electron microscopy.",
+  "publications": [
+    {
+      "title": "Smoke Aerosol Measurement Experiment-2: Comparison of Flight Experiment Results with Ground Test Results",
+      "link": "https://doi.org/10.2514/6.2013-3433"
+    },
+    {
+      "title": "Evaluation of Low-Gravity Smoke Particulate for Spacecraft Fire Detection",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Particle Morphology and Size Results from the Smoke Aerosol Measurement Experiment-2",
+      "link": "https://doi.org/10.2514/6.2012-3536"
+    },
+    {
+      "title": "Preliminary Results from the Smoke Aerosol Measurement Experiment - Reflight",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Detection of Smoke from Microgravity Fires",
+      "link": "unconfirmed"
+    },
+    {
+      "title": "Evaluation of spacecraft smoke detector performance in the low-gravity environment",
+      "link": "https://doi.org/10.1016/j.firesaf.2018.04.004"
+    }
+  ],
+  "verified_on": "2026-11-15 01:50 (Alexandria)",
+  "verified_by": "Mahmoud Nadeem (field-by-field check against the PSI page done with Claude on his instruction)",
+  "x_prefilled_from": "NASA PSI API, then checked against the PSI page on 2026-11-15",
+  "x_psi_page": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+  "x_page_check_notes": "Checked against the PSI API record on 2026-11-14 21:15 (version 4). The page's experimental-table counter shows 110 items; the CSV has 109 data rows.",
+  "x_text_origin": "objectives and approach: Mahmoud's own research summary (Arabic), written in English by Claude"
+}

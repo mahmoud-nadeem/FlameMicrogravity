@@ -1,0 +1,15 @@
+# Mapping for tools/build_run_table.py (decisions written 2026-11-14, logged in si_log.md).
+investigation_id: PSI-47
+slug: daft
+sources:
+  - file: "PSI-47/Experimental table/PSI-47_Experimental table_DAFT.csv"
+    header_row: 1
+    run_id: "Session Name"
+    keep_raw: true
+    columns:
+      material_or_fuel: {from: "Sample Material"}
+      gravity_level: {value: microgravity_ISS, reason: "Sampled Location column names ISS modules (Express rack 4, Port rack 6, Node 1)"}
+    extra:
+      x_day_text: {from: "Actual Day"}
+      x_hardware_text: {from: "Hardware Description"}
+      x_location_text: {from: "Sampled Location"}

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "F-T3-1",
+    "snippet": "Smoke particles kept growing after they formed: in 42 of 44 flight tests the same smoke was about 1.5 times larger after 4 to 33 minutes.",
+    "record_folder": "PSI-101_same-r",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx, sheet 'Reduced Data with ISS Det'",
+    "rows_or_page": "Excel rows of each pair (NN and NNa) in tables/derived_numbers.json -> aging (e.g. rows 35 -> 36, Kapton 61: 0.059 -> 0.109 um)",
+    "confidence": "high"
+  },
+  {
+    "id": "F-T3-2",
+    "snippet": "With weak air flow (0-2 cm/s), three of five materials made larger smoke particles than at 8 cm/s, at the same heater setting.",
+    "record_folder": "PSI-101_same-r",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx, sheet 'Reduced Data with ISS Det'",
+    "rows_or_page": "rows per group in tables/derived_numbers.json -> flow_matched_heater (e.g. Silicone low flow rows 125, 127, 129, 133 vs 8 cm/s rows 113, 116)",
+    "confidence": "medium"
+  },
+  {
+    "id": "F-T3-3",
+    "snippet": "The material matters: fresh smoke ranged from about 57 nm (Kapton) to about 207-244 nm (Pyrell, Silicone).",
+    "record_folder": "PSI-101_same-r",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx, sheet 'Reduced Data with ISS Det'",
+    "rows_or_page": "Kapton rows 30, 33, 35, 39; Teflon 141, 142, 144, 156; Lampwick 68, 69, 72; Pyrell 86, 90, 97; Silicone 112",
+    "confidence": "medium"
+  },
+  {
+    "id": "F-T3-4",
+    "snippet": "Hotter Kapton made larger particles: 49-59 nm at the low heater setting, 88-148 nm at the high one.",
+    "record_folder": "PSI-101_same-r",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx, sheet 'Reduced Data with ISS Det'",
+    "rows_or_page": "rows 30, 33, 35, 37, 39, 43, 47, 49, 51",
+    "confidence": "medium"
+  },
+  {
+    "id": "F-T3-5",
+    "snippet": "The 2007 and 2010 flights disagree: in all five matching comparisons the 2007 particles were larger, so the two flights must not be pooled.",
+    "record_folder": "PSI-101_same-r",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx, sheet 'Reduced Data with ISS Det'",
+    "rows_or_page": "SAME rows 23, 26, 60, 106, 135 vs SAME-R rows in tables/derived_numbers.json -> same_vs_same_r",
+    "confidence": "medium"
+  },
+  {
+    "id": "F-T3-6",
+    "snippet": "The station smoke detector's scatter signal hit the end of its range in about half of the flight tests.",
+    "record_folder": "PSI-101_same-r",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx, sheet 'Reduced Data with ISS Det'",
+    "rows_or_page": "column 'ISS Detector Scatter (volts)', all rows with a size result (tables/derived_same_results_flight_tests.csv)",
+    "confidence": "medium"
+  },
+  {
+    "id": "F-T3-15",
+    "snippet": "In the raw detector signal, 21 of 44 tests pinned at the bottom of the scatter channel's range for 10 to 432 seconds.",
+    "record_folder": "PSI-101_same-r",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-101/Raw Data/PSI-101_Raw Data_HKPData_*.csv (44 files), column ISSDetectorScatterMeasurement(Volts); PSI-101 results workbook, sheet 'Reduced Data with ISS Det'",
+    "rows_or_page": "minimum row per test in tables/derived_hkp_test_events.csv (column iss_scatter_min_row); workbook rows 37, 65, 72, 74, 76, 81, 83, 88, 92, 94, 97, 103, 114, 116, 118, 120, 122, 124, 125, 127, 132",
+    "confidence": "medium"
+  },
+  {
+    "id": "F-T3-16",
+    "snippet": "Smoke reached the sensors about two minutes after heating started, after the heater had already switched off: a property of the test hardware.",
+    "record_folder": "PSI-101_same-r",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-101/Raw Data/PSI-101_Raw Data_HKPData_*.csv (44 files)",
+    "rows_or_page": "heater-start row and response rows per test in tables/derived_hkp_test_events.csv (columns source_row and *_response_row)",
+    "confidence": "medium"
+  },
+  {
+    "id": "F-T3-18",
+    "snippet": "The same detector's obscuration channel barely moved while its scatter channel swung by almost 6 V.",
+    "record_folder": "PSI-101_same-r",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-101/Raw Data/PSI-101_Raw Data_HKPData_*.csv (44 files)",
+    "rows_or_page": "peak rows per test in tables/derived_hkp_test_events.csv (iss_obscuration_v_peak_row, iss_scatter_v_peak_row)",
+    "confidence": "medium"
+  },
+  {
+    "id": "F-T3-19",
+    "snippet": "One housekeeping column labelled as a DustTrak mass reading never holds plausible mass values and must not be used as mg/m3.",
+    "record_folder": "PSI-101_same-r",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-101/Raw Data/PSI-101_Raw Data_HKPData_*.csv (44 files)",
+    "rows_or_page": "all test rows; values per test in tables/derived_hkp_test_events.csv (column dustrak_a_values)",
+    "confidence": "high"
+  },
+  {
+    "id": "F-T3-8",
+    "snippet": "The SAME condition table (5/10 cm/s) does not match the flight records (2-8 cm/s): use the flight records.",
+    "record_folder": "PSI-102_same",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv; PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx, sheet 'Reduced Data with ISS Det'",
+    "rows_or_page": "table rows 2-9; workbook rows 3-139 where the flight column is 1",
+    "confidence": "high"
+  },
+  {
+    "id": "F-T3-11",
+    "snippet": "Both particle instruments logged in all seven DAFT tests, including a 2006 series the record title does not mention.",
+    "record_folder": "PSI-47_daft",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-47/Experimental table/PSI-47_Experimental table_DAFT.csv; PSI-47/Analyzed Data/PSI-47_Analyzed Data_DAFT Retrieved Data Summary.xls, sheet 'Headers'",
+    "rows_or_page": "table rows 2-3; Headers rows 1-20 (dates are Excel serials 38405, 38415, 38946, 38950)",
+    "confidence": "high"
+  },
+  {
+    "id": "F-T3-13",
+    "snippet": "In one bag the particle count changed by a factor of 3.2 while the mass reading changed by only 1.4.",
+    "record_folder": "PSI-47_daft",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-47/Analyzed Data/PSI-47_Analyzed Data_ISS_Daft_Aug21_0611zgy time hist.xls, sheet 'Data'",
+    "rows_or_page": "rows 8-19, columns 'P-Trak n/cm3' and 'DustTrak mg/m3' of Bag#3",
+    "confidence": "medium"
+  },
+  {
+    "id": "F-T3-14",
+    "snippet": "NASA reports the modified particle counter worked normally in microgravity; it cannot see particles above 2.5 um.",
+    "record_folder": "PSI-47_daft",
+    "label": "REPORTED BY NASA OR A PUBLICATION (PSI-47 page, Objectives and Approach)",
+    "source_file": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+    "rows_or_page": "page sections Objectives and Approach",
+    "confidence": "high"
+  },
+  {
+    "id": "F-T3-20",
+    "snippet": "The two DAFT instruments' clocks drift, so their logs cannot be lined up second by second.",
+    "record_folder": "PSI-47_daft",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-47/Analyzed Data/PSI-47_Analyzed Data_DAFT Retrieved Data Summary.xls, sheet 'Headers'; PSI-47/Analyzed Data/PSI-47_Analyzed Data_flight data 063_TIMING.xls, sheet 'TIMING'",
+    "rows_or_page": "Headers rows 5 and 16 (columns B-E and G-I); TIMING rows 7-22",
+    "confidence": "high"
+  },
+  {
+    "id": "F-T3-23",
+    "snippet": "We checked NASA's size table for rows that break a law of size statistics and found 6; we kept them out, and no conclusion changed.",
+    "record_folder": "PSI-101_same-r",
+    "label": "OBSERVED IN DATA",
+    "source_file": "PSI-101/Analyzed Data/PSI-101_Analyzed Data_SAME, SAME-R_Results.xlsx, sheet 'Reduced Data with ISS Det'",
+    "rows_or_page": "rows 47, 48, 145, 147, 149, 155 (data_log.md)",
+    "confidence": "high"
+  }
+]
