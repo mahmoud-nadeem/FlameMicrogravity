@@ -1,0 +1,3 @@
+# T4 limitations: verbatim from Mohammed Tamer's FLEX_analysis_findings.txt, FINDINGS 13-15
+
+Coverage limits: 31% of rows lack an extinction diameter; only 9 tests at 2-3 atm; no 'no ignition' results; so no official LOI can be extracted from this table. No SF6 results, no cool-flame stage data, no soot or temperature profiles in the table. The meaning of the F and R suffixes in test ids, the cause of 'Disruption', and each test's flow velocity are not in the table. Three planning documents give different envelopes and the suppressant lists differ between the PSI text, the Test Plan, a 2013 slide and the flight table: always name the document a range came from. Values read from plots are approximate (about +/-10%).
