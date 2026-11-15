@@ -19,7 +19,7 @@ class ReportReconciliationTests(unittest.TestCase):
   m.reconcile(self.table,self.out);self.assertIn('2020-10-05',(self.out/'cross_source_discrepancies.csv').read_text())
  def test_counts_and_scope(self):
   x=m.reconcile(self.table,self.out);self.assertEqual(x['flames_ignited_sum'],40);self.assertEqual(x['cross_source_differences'],4);self.assertEqual(x['report_internal_differences'],1)
-  s=(self.out/'report_reconciliation.md').read_text();self.assertIn('196 successful ignitions',s);self.assertIn('page 127',s)
+  s=(self.out/'report_reconciliation.md').read_text(encoding='utf-8');self.assertIn('196 successful ignitions',s);self.assertIn('page 127',s)
  def test_manifest_provenance(self):
   m.reconcile(self.table,self.out)
   with (self.out/'report_reference_manifest.csv').open() as f:rows=list(csv.DictReader(f))
@@ -42,7 +42,7 @@ class ReportReconciliationTests(unittest.TestCase):
   d=[r for r in diff if r['discrepancy_type']=='explained_historical_source_difference']
   self.assertEqual(len(d),1);self.assertEqual(d[0]['resolution_status'],'explained_by_report');self.assertEqual(d[0]['authoritative_explanation_pdf_page'],'23')
  def test_page29_196_and_scope(self):
-  m.reconcile(self.table,self.out);report=(self.out/'report_reconciliation.md').read_text()
+  m.reconcile(self.table,self.out);report=(self.out/'report_reconciliation.md').read_text(encoding='utf-8')
   for page in ('page 29','page 110','page 116','page 127'):self.assertIn(page,report)
   self.assertIn('196 successful ignitions',report);self.assertIn('132',report)
   self.assertIn('Apparent scope inconsistency unresolved',report)
