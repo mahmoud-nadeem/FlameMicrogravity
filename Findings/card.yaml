@@ -1,0 +1,55 @@
+# Investigation card for PSI-21 (ACME Coflow Laminar Diffusion Flame). Do NOT edit psi.json in this folder.
+id: PSI-21
+author: mohamed-gamal
+reviewed_by: []
+summary: >
+  The ACME Coflow Laminar Diffusion Flame (CLD) tests burned methane and ethylene jet flames, diluted with nitrogen,
+  in the Combustion Integrated Rack on the ISS, over 32 test days listed in the experiment table (2017 to 2021) with
+  344 flames ignited. Fuel concentration was varied between and during tests. Each test point has a 125 Hz record of flow
+  controllers, ion current, light sensors, thermocouples and radiometers plus the commanded flow set points; 385 test points
+  that have both files were summarised, and a flame was detected in 360 of them. The records support flame on/off and
+  radiation analysis of gas flames in microgravity.
+fuel_type: gas
+fuels: [methane, ethylene]     # CHECK: the 4 "Improved coflow" days list bottles labelled C2H4 and CH4, so probably the same two fuels
+sample: "Coflow laminar jet-diffusion burner in ACME hardware; burner size not confirmed from the files reviewed"
+hardware_family: ACME-CIR
+conditions:
+  o2_percent: null             # not recorded in the files reviewed
+  pressure_atm: null           # pressure channel exists in the data files but was not converted
+  flow_cm_s: null              # flows are recorded in volts of controller output
+  diluents: [N2]
+  gravity: [microgravity]
+  notes: "Fuel concentration (diluted with nitrogen, by volume) ranged from 0% to 100% across test days. Fuel controller full scale is 0.1 or 0.2 slpm (nitrogen basis) and the bypass controller 0.02 to 0.2 slpm; the fuel controller gas code takes the values 0, 2, 4, 5 and 6 (not decoded). The electric field was off in all 385 test points."
+varied:
+  - fuel concentration (nitrogen dilution), between tests and sometimes during tests
+  - fuel type (methane and ethylene test days)
+  - commanded fuel flow set point (0 to 5 V of controller output)
+constant:
+  - same modular ACME hardware in the Combustion Integrated Rack (per the challenge brief)
+  - 125 readings per second on 36 channels in every data file
+measurements:
+  - mass flow controllers (static mixer, bypass, fuel) and commanded set points
+  - ion current
+  - three photomultiplier tubes (PMTs)
+  - thermocouples (TCA to TCE, burner)
+  - radiometers
+  - electric-field voltage
+pillars: [prevention]          # CHECK: judgement
+tests:
+  count: 385                   # test points with both a data file and a set point file (the experiment table lists 344 flames ignited over 32 days)
+  with_processed_data: 385     # all 385 summarised in cld_testpoints.csv by cld_prepare.py
+data_readiness: per-test-time-series
+modeling_targets:
+  - "flame on and off time, flame duration (median 15.2 s where a flame was detected) and radiometer rise as a function of commanded fuel and nitrogen flow"
+limitations:
+  - "Flows and set points are in volts; physical units need the controller full scales and the gas codes, which are not decoded"
+  - "Flame detection uses a radiometer threshold chosen by the team (rise above 0.02 V), so it differs from the experiment table's count of flames ignited"
+  - "Thermocouples responded in only 1 of 385 test points"
+  - "Fuel concentration is known per test day only, not per test point; test day 18002 is not in the experiment table"
+  - "9 test points have no usable set point values; only test points with both a data file and a set point file were used"
+earth_applications: []
+sources:
+  - https://psi.nasa.gov/physci/repo/data/investigations/PSI-21
+  - https://doi.org/10.60555/23e1-9950           # DOI as listed in the team assignment sheet
+  - PSI-21_Experimental_table_CLD_Flame.csv
+  - cld_testpoints.csv                           # 385 test points summarised with cld_prepare.py from the *_data.csv and *_mfcSetpoints.csv files

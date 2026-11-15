@@ -1,0 +1,424 @@
+FINDINGS AND ANALYSIS
+NASA 'Flame in Freefall' challenge | Track T6 | Mohamed Gamal | November 15, 2026
+
+AI-assistance disclosure: the analysis and this file were produced with the help of an AI
+assistant (Claude). Every number is computed from the PSI tables by make_findings_txt.py; a
+teammate should review it before submission.
+
+Three sections follow, one per investigation: PSI-106 (SLICE), PSI-107 (SPICE) and PSI-21 (ACME
+CLD). Each has the data analysed, numbered findings (what, numbers, how computed, caveat), data
+quality, and limits. Finding IDs look like 106-F1.
+
+Contents
+  1. PSI-106  SLICE
+  2. PSI-107  SPICE
+  3. PSI-21   ACME CLD
+
+==================================================================================================
+SECTION 1 of 3.  PSI-106  SLICE  (Structure and Liftoff In Combustion Experiment)
+==================================================================================================
+
+Data analysed
+-------------
+  - 463 airflow velocity measurements from SLICE_BoundaryCondition.xlsx: 2009 X scan 85, 2009 Y
+    scan 128, 2012 X scan 150, 2012 Y scan 75, 2012 Z scan 25 (3 of them taken with the fan
+    closed).
+  - Scans are at 1 mm and 4 mm above the nozzle (X and Y directions) and a vertical (Z) profile at
+    (X, Y) = (9, 0) mm; the nozzle centre is the origin. Units are assumed to be cm/s and mm (the
+    sheet does not state them).
+  - 12 SLICE test days from the experiment table, 2012-02-09 to 2012-03-23.
+
+106-F1.  Directly above the nozzle the air is nearly stagnant, and it recovers with height.
+    What: The velocity at the nozzle centre (x = 0) is a small fraction of the largest velocity in
+    the same scan, for every fan reading. At 1 mm above the nozzle it is close to zero; at 4 mm it
+    is about a fifth to a third of the peak.
+    Numbers:
+    year  scan  height  fan readings  centre/peak min  centre/peak max
+    ----  ----  ------  ------------  ---------------  ---------------
+    2009  X     4 mm    7             19%              23%            
+    2009  Y     4 mm    7             27%              29%            
+    2012  X     1 mm    5             -1%              5%             
+    2012  Y     1 mm    5             -5%              9%             
+    How computed: For each scan and fan reading: velocity at position 0 divided by the maximum
+    velocity of that scan.
+    Caveat: Small negative values at 1 mm are probe noise around zero (the fan-closed baseline is
+    -0.85 to 0.77 cm/s). A flame model that assumes a flat coflow would overstate the air reaching
+    the flame base.
+
+106-F2.  The airflow around the nozzle is not symmetric: the +X side is faster than the -X side.
+    What: Close to the nozzle, velocity at +2 mm is 2.1 to 2.3 times the velocity at -2 mm (1 mm
+    above, 2012 data), and at +/-3 mm it is 1.3 to 1.8 times (4 mm above, 2009 data). By about 7
+    mm from the centre the two sides agree again.
+    Numbers:
+    data        positions   fan reading  +x (cm/s)  -x (cm/s)  ratio
+    ----------  ----------  -----------  ---------  ---------  -----
+    2012, 1 mm  +2 / -2 mm  55           14.4       6.2        2.33 
+    2012, 1 mm  +2 / -2 mm  80           37.0       17.5       2.11 
+    2012, 1 mm  +2 / -2 mm  98           48.9       23.3       2.10 
+    2012, 1 mm  +2 / -2 mm  120          63.1       30.6       2.07 
+    2012, 1 mm  +2 / -2 mm  139          74.9       36.4       2.06 
+    2009, 4 mm  +3 / -3 mm  56           11.6       9.2        1.26 
+    2009, 4 mm  +3 / -3 mm  65           18.4       12.6       1.46 
+    2009, 4 mm  +3 / -3 mm  82           33.1       21.5       1.54 
+    2009, 4 mm  +3 / -3 mm  98           48.2       28.5       1.69 
+    2009, 4 mm  +3 / -3 mm  115          63.1       35.7       1.77 
+    2009, 4 mm  +3 / -3 mm  131          73.4       42.2       1.74 
+    2009, 4 mm  +3 / -3 mm  139          79.7       46.4       1.72 
+    How computed: Velocities at mirrored positions from the X scans.
+    Caveat: The sheet does not say why. It could be the nozzle or housing geometry, probe
+    orientation or the flow entering the duct; the 'sensor flip' scan folder in PSI-106 may help.
+    Treat the profile as measured, not as axisymmetric.
+
+106-F3.  The peak velocity is set by the fan reading and does not depend on scan direction, height
+        or campaign.
+    What: At the two fan readings measured in both campaigns, the five scan sets agree on the peak
+    velocity within 7% (reading 98) and 5% (reading 139), so the sheet's statement that the 2009
+    and 2012 measurements agree well holds for the peaks. The peak rises linearly with the fan
+    reading: 0.79 cm/s per reading unit (R squared 0.990, 2009 X scan at 4 mm).
+    Numbers:
+    fan reading  peak velocity by scan set (cm/s)                                                          spread
+    -----------  ----------------------------------------------------------------------------------------  ------
+    98           2009 X 4mm: 56.8, 2009 Y 4mm: 53.6, 2009 Y 1mm: 53.1, 2012 X 1mm: 53.9, 2012 Y 1mm: 53.2  7%    
+    139          2009 X 4mm: 81.7, 2009 Y 4mm: 80.9, 2009 Y 1mm: 78.2, 2012 X 1mm: 81.8, 2012 Y 1mm: 77.9  5%    
+    How computed: Maximum velocity of each scan at the matching fan reading; straight-line fit of
+    peak against fan reading.
+    Caveat: Peaks only; the centre values differ between sets because they were taken at different
+    heights.
+
+106-F4.  At x = 9 mm the flow is uniform with height from 0 to 71 mm.
+    What: Velocity changes by at most 12% between heights of 0 and 71 mm at every fan reading, so
+    the strong structure is in the first few millimetres above the nozzle and not further up.
+    Numbers:
+    fan reading  velocity range (cm/s)  spread / mean
+    -----------  ---------------------  -------------
+    55           15.4 to 17.4           12.3%        
+    80           32.6 to 35.9           9.6%         
+    98           45.0 to 46.0           2.3%         
+    120          56.4 to 58.1           2.9%         
+    139          65.9 to 67.7           2.6%         
+    How computed: Vertical profile at (X, Y) = (9, 0) mm, five heights per fan reading (2012).
+    Caveat: Only one horizontal position and five heights; the profile above the nozzle centre was
+    not measured here.
+
+106-F5.  The fan calibration velocity (u2) is a different quantity from the velocities near the
+        nozzle.
+    What: At the same AIR display, the peak velocity measured near the nozzle is 1.8 to 4.7 times
+    the velocity given by the pre-launch calibration polynomial. The two should not be mixed: the
+    files do not say where u2 was measured.
+    Numbers:
+    data  fan reading  AIR display  u2 (cm/s)  measured peak (cm/s)  peak / u2
+    ----  -----------  -----------  ---------  --------------------  ---------
+    2009  56           13*          4.2        17.4                  4.2      
+    2009  65           18           10.0       25.8                  2.6      
+    2009  82           27           19.8       41.6                  2.1      
+    2009  98           36           28.9       56.8                  2.0      
+    2009  115          44           36.4       67.6                  1.9      
+    2009  131          52           43.3       79.7                  1.8      
+    2009  139          55           45.8       81.7                  1.8      
+    2012  55           13*          4.2        19.8                  4.7      
+    2012  80           26           18.7       41.7                  2.2      
+    2012  98           36           28.9       53.9                  1.9      
+    2012  120          46           38.2       70.0                  1.8      
+    2012  139          55           45.8       81.8                  1.8      
+    * outside the polynomial's valid range (AIR display 17 to 63).
+    How computed: u2 = -0.0044 x^2 + 1.2899 x - 11.828 (SLICE_fan_calibration_20140828.xls) with x
+    the AIR display; measured peak from the X scan (4 mm, 2009; 1 mm, 2012).
+    Caveat: The calibration summary also says SLICE flow degraded after smoke-point testing (soot
+    build-up), so the polynomial is not constant over the campaign. Use the boundary-condition
+    table for local velocity.
+
+106-F6.  SLICE has 12 test days; 7 of them use nitrogen-diluted fuel.
+    What: Fuel by day: C2H4 on 3, C2H6 on 1, CH4 on 8. Diluted fuel is 20% to 70% fuel.
+    Numbers:
+    date        GMT day  fuel       N2 diluted
+    ----------  -------  ---------  ----------
+    2012-02-09  40       100% CH4   no        
+    2012-02-13  44       40% CH4    yes       
+    2012-02-17  48       70% CH4    yes       
+    2012-02-20  51       20% C2H4   yes       
+    2012-02-27  58       100% CH4   no        
+    2012-03-01  61       40% CH4    yes       
+    2012-03-05  65       70% CH4    yes       
+    2012-03-09  69       100% C2H6  no        
+    2012-03-12  72       100% CH4   no        
+    2012-03-15  75       20% C2H4   yes       
+    2012-03-19  79       70% CH4    yes       
+    2012-03-23  83       100% C2H4  no        
+    How computed: Parsed from the SLICE experiment table (the date column also holds the notes).
+    Caveat: The table has no flame results, flows or nozzle information, so it only tells you what
+    was tested when.
+
+Limits and open questions (PSI-106)
+-----------------------------------
+  - No flame result (flame length, liftoff height, soot temperature) is in the files analysed;
+    those come from camera images that were not used.
+  - Units are assumed (cm/s, mm). Ratios in findings 1 to 3 do not depend on the unit.
+  - Positions were not sampled evenly, so the 'width' of the wake can only be read to about 1 mm.
+  - One nozzle size and one probe orientation; the cause of the +X/-X asymmetry is not
+    established.
+  - Open: where u2 was measured, and whether the 'sensor flip' and 'RandomPoints' scans explain
+    the asymmetry.
+
+==================================================================================================
+SECTION 2 of 3.  PSI-107  SPICE  (Smoke Point In Coflow Experiment)
+==================================================================================================
+
+Data analysed
+-------------
+  - The PSI-107 experiment table: 469 rows, 34 exact duplicates removed, 435 records, grouped into
+    147 flames (one ignition on one GMT day) over 11 test days (day 45 to 174).
+  - The table lists conditions only (fuel, nozzle, fuel rate, coflow air velocity, ignition and
+    flame-off times). It has no smoke-point or flame-length result, so everything below describes
+    what was run, not where smoke appeared.
+
+107-F1.  Fuel and nozzle are well crossed, except for methane.
+    What: 17 of 18 fuel-nozzle combinations were burned. The missing one is Methane on the 1.6002
+    mm nozzle. Methane has only 4 flames.
+    Numbers:
+    fuel           0.4064 mm  0.762 mm  1.6002 mm  total
+    -------------  ---------  --------  ---------  -----
+    50% Propylene  8          6         11         25   
+    75% Propylene  15         8         14         37   
+    Ethylene       6          8         9          23   
+    Methane        2          2         0          4    
+    Propane        6          4         10         20   
+    Propylene      16         10        12         38   
+    all            53         38        56         147  
+    How computed: Count of flames by fuel and nozzle diameter.
+    Caveat: Propylene appears at three strengths (100%, 75%, 50%); the balance gas of the blends
+    is not stated.
+
+107-F2.  Fuel is tied to test day, which matters for validating any model.
+    What: 7 of 11 test days burned a single fuel, and methane was burned only on day 168. Holding
+    out a whole test day for validation therefore also holds out whole fuels (or nearly), so day-
+    grouped validation will test extrapolation to a new fuel, not just a new run.
+    Numbers:
+    GMT day  flames  fuels                           
+    -------  ------  --------------------------------
+    45       14      Ethylene                        
+    48       14      Ethylene, Propane               
+    52       29      75% Propylene, Propane          
+    55       12      50% Propylene                   
+    58       21      Propylene                       
+    119      2       75% Propylene                   
+    136      8       75% Propylene                   
+    167      11      50% Propylene                   
+    168      9       50% Propylene, Ethylene, Methane
+    173      9       75% Propylene                   
+    174      18      75% Propylene, Propylene        
+    How computed: Fuels observed on each GMT day.
+    Caveat: This is a feature of how the campaign was run. Validate both by day and by random
+    flame, and say which.
+
+107-F3.  In 99 of 147 flames (67%) the fuel rate was changed during the burn.
+    What: Flames have up to 12 records. Among the 99 flames with a change, the last recorded fuel
+    rate is the highest in 46 and the lowest in 39 (14 are neither), so the changes do not run in
+    one direction. The earlier idea that fuel was simply stepped up until smoke appeared is not
+    supported by this table alone.
+    Numbers:
+    fuel           flames with a fuel-rate change  flames  share
+    -------------  ------------------------------  ------  -----
+    50% Propylene  20                              25      80%  
+    75% Propylene  29                              37      78%  
+    Ethylene       7                               23      30%  
+    Methane        0                               4       0%   
+    Propane        16                              20      80%  
+    Propylene      27                              38      71%  
+    all            99                              147     67%  
+    How computed: Minimum, maximum and last HC fuel rate per flame, from the experiment table.
+    Caveat: A flame is defined by ignition time, so 12 flames without a usable ignition time are
+    single records. Matching a result to a flame needs the smoke-point files and the time of each
+    step.
+
+107-F4.  Coflow air velocity spans 0.7 to 67.4 cm/s with 49 distinct settings.
+    What: The median is 29.8 cm/s. All three nozzles cover a similar range, so coflow velocity and
+    nozzle size are not confounded. 12 flames have no usable air velocity (blank, zero or negative
+    entries).
+    Numbers:
+    nozzle     flames with air velocity  min  median  max (cm/s)
+    ---------  ------------------------  ---  ------  ----------
+    0.4064 mm  45                        0.7  27.9    67.4      
+    0.762 mm   37                        7.2  27.9    61.8      
+    1.6002 mm  53                        9.1  36.4    66.5      
+    all        135                       0.7  29.8    67.4      
+    How computed: Air velocity per flame (first recorded value).
+    Caveat: Air velocity changes within a flame for some flames (see the 'n_values' column in
+    spice_flames.csv).
+
+107-F5.  Higher coflow velocity went with higher fuel rates; nozzle size showed no clear effect.
+    What: Across 134 flames, the highest HC fuel rate used in a flame rises with coflow velocity
+    (Spearman correlation 0.35, p < 0.001). In a log-log fit with fuel type as a factor (R squared
+    0.54) the exponent on coflow velocity is 0.35 +/- 0.13 (95%), while nozzle diameter is -0.15
+    +/- 0.15. Within ethylene alone the correlation with nozzle diameter is -0.59 (n = 22), a
+    small sample.
+    Numbers:
+    term             exponent  95% interval  reading                      
+    ---------------  --------  ------------  -----------------------------
+    coflow velocity  0.35      +/- 0.13      clearly positive             
+    nozzle diameter  -0.15     +/- 0.15      not distinguishable from zero
+    How computed: Ordinary least squares on ln(max HC fuel rate) with ln(nozzle), ln(coflow
+    velocity) and fuel dummies; flames with a fuel rate above zero and a known air velocity.
+    Caveat: This describes the fuel rates that were run. It is not the smoke point: those rates
+    may be where smoke appeared, or only what the operators set at each coflow. Treat it as
+    exploratory until the results are joined.
+
+107-F6.  Typical burn time is 87 s; ethylene flames burn shortest.
+    What: 129 flames have a burn time (3.56 hours in total, longest 655 s). Ethylene flames have a
+    median of 36 s against 72 s for propylene.
+    Numbers:
+    fuel           flames  median burn (s)  max burn (s)
+    -------------  ------  ---------------  ------------
+    Ethylene       22      36               655         
+    Propylene      32      72               208         
+    Propane        18      90               143         
+    50% Propylene  22      100              299         
+    Methane        4       102              133         
+    75% Propylene  31      120              323         
+    How computed: Flame-off time minus ignition time. Flames with a missing time are left out.
+    Caveat: 18 flames have no burn time. The table does not say why ethylene flames were shorter.
+
+107-F7.  12 conditions were run more than once; most repeat almost exactly.
+    What: For a condition repeated on the same day (same fuel, nozzle and coflow), the median
+    spread in maximum fuel rate between repeats is 1%. 2 of 12 repeated conditions differ by more
+    than 30% (61%, 64%).
+    How computed: Spread = (max - min) / mean of the highest fuel rate across repeated flames.
+    Caveat: Some repeats may be the same setting re-run after a problem; the table does not say.
+    Useful as a first estimate of run-to-run noise.
+
+Data quality (PSI-107)
+----------------------
+  - 34 exact duplicate rows removed; 8 records with zero or negative air velocity set to missing;
+    28 records have no usable air velocity in total.
+  - 12 flames have no usable ignition time (entries such as LOS, loss of signal), kept as separate
+    flames.
+  - 8 flames include a fuel rate of zero.
+
+Limits and open questions (PSI-107)
+-----------------------------------
+  - No smoke-point or flame-length result is attached. The Day 045 files
+    (Spice_Flight_Flamelength.xls, SmokePointReview-0g-3.xlsx) are the next place to look; the
+    script has attach_results() to join them.
+  - Findings 3 and 5 should be re-checked once results are joined.
+  - O2, pressure and the balance gas of the propylene blends are not recorded in this table.
+  - Next analysis: compare with published smoke-point scaling (the University of Maryland SPICE
+    thesis is a starting point) once flame lengths are available.
+
+==================================================================================================
+SECTION 3 of 3.  PSI-21  ACME CLD  (Coflow Laminar Diffusion Flame)
+==================================================================================================
+
+Data analysed
+-------------
+  - 385 test points that have both a data file (125 readings per second, 36 channels) and a set
+    point file, from 33 test days between 2017-11-15 and 2021-03-04.
+  - By year: 2017: 33 test points on 4 days, 2018: 300 test points on 25 days, 2021: 52 test
+    points on 4 days (no test points in this set from the years between).
+  - Flame on and off are detected from the centre radiometer; flows and set points are in volts.
+
+21-F1.  A flame was detected in 360 of 385 test points; almost every miss had no fuel commanded.
+    What: Of the 25 test points without a detected flame, 24 had a fuel set point of 0 V and 24
+    are from test day 18008, which looks like flow-controller checking (names such as
+    18008MFCA2_5). The exception is 18008B1: fuel was commanded for 134 s but measured fuel flow
+    was on for only 7.8 s. Among test points with fuel commanded, 99.7% produced a detectable
+    flame, which supports the radiometer detection rule.
+    Numbers:
+    group                     test points  flame detected  share 
+    ------------------------  -----------  --------------  ------
+    fuel set point above 0 V  351          350             99.7% 
+    fuel set point 0 V        25           1               4.0%  
+    no set point values       9            9               100.0%
+    all                       385          360             93.5% 
+    How computed: Maximum commanded fuel set point (volts) against the radiometer-based flame
+    flag.
+    Caveat: The detection threshold is our choice (peak rise above 0.02 V). Raw counts also differ
+    from the experiment table's 'flames ignited' (344), which is counted differently.
+
+21-F2.  The fuel controller's gas code lines up with the test type, which is a clue for decoding
+        it.
+    What: Code 4 and code 6 occur only on ethylene-based days; code 0 and code 2 on methane-based
+    days; code 5 only on improved-coflow days (which also use code 2). This pattern is consistent
+    with the codes naming the fuel gas, but it is a pattern, not a decoding.
+    Numbers:
+    fuel gas code  not in experiment table
+    -------------  -----------------------
+    0              32                     
+    2              165                    
+    4              88                     
+    5              25                     
+    6              75                     
+    How computed: Test points by fuel controller (MFCA3) gas code and test type from the
+    experiment table.
+    Caveat: The gas code table is not in the files reviewed. Confirm before converting volts to
+    physical flow.
+
+21-F3.  More fuel flow gives a stronger radiometer signal, and ethylene flames radiate more than
+        methane flames.
+    What: Across 350 flames the correlation between approximate fuel flow and peak radiometer rise
+    is 0.48.
+    Numbers:
+    test type                flames  median rise (V)  Spearman rho  log-log slope
+    -----------------------  ------  ---------------  ------------  -------------
+    not in experiment table  350     0.36             0.48          0.93         
+    How computed: Spearman correlation and a straight-line fit on logs of peak centre-radiometer
+    rise against approximate fuel flow (flames with a detected flame and fuel flow above zero).
+    Caveat: Fuel concentration, burner conditions and nitrogen flow also changed between test
+    days, so this is a tendency across the campaign, not a controlled comparison. Flow in slpm is
+    approximate (0 to 5 V assumed to span the full scale, no gas correction).
+
+21-F4.  Flames start about 34 s into the record and last a median of 15.2 s.
+    What: Flame start is 31.9 to 36.7 s (middle half) and duration 12.6 to 30.3 s, with a range of
+    0.6 to 106.2 s. The flame lasts a median of 60% of the time fuel flow is on, and duration
+    follows the commanded fuel time (Spearman 0.56), so how long a flame burns is set mostly by
+    how long fuel was commanded.
+    How computed: Flame on and off times are where the radiometer rise exceeds 25% of its peak.
+    Caveat: Measured on 125 Hz records of 21 to 244 s; the rule is ours and should be checked
+    against video.
+
+21-F5.  Thermocouples responded in 1 of 385 test points; the electric field was off in all of
+        them.
+    What: The one test point where a thermocouple moved is 18214K2 (range 1.71 V); in the rest the
+    maximum range is 0.0005 V. Ion current has a median range of 0.029 V (maximum 7.05 V). The
+    header field EField is 0 for every test point, yet the polarity code takes the values 0 (52
+    test points), 1 (170 test points), 2 (163 test points).
+    How computed: Range (max minus min) of each channel over the record.
+    Caveat: Use the radiometer and flow channels for analysis; thermocouples are not informative
+    in this set. The meaning of the polarity code is not documented in the files reviewed.
+
+21-F6.  Test points are unevenly spread over days; most days have 16 test points.
+    What: Test day 18008 has 33 test points, and 6 of 33 days have exactly 16. By test type: not
+    in experiment table 385 test points.
+    Numbers:
+    test day  type                     test points  flames detected
+    --------  -----------------------  -----------  ---------------
+    18008     not in experiment table  33           9              
+    18218     not in experiment table  18           18             
+    21050     not in experiment table  16           16             
+    18026     not in experiment table  16           16             
+    18011     not in experiment table  16           16             
+    18199     not in experiment table  16           16             
+    How computed: Test points per day (largest six shown).
+    Caveat: Validate any model by test day to avoid leakage between near-identical test points on
+    the same day.
+
+Data quality (PSI-21)
+---------------------
+  - 9 test points have no usable set point values (17319RAD1, 17319RAD2, 17319RAD3, 17319RAD4,
+    17342RAD02_1, 17356RAD01, 18003RAD1, 18011RAD01, 18011RAD02); all have names starting with RAD
+    and all show a flame.
+  - Test day 17319, 17324, 17342, 17356, 18002, 18003, 18005, 18008, 18011, 18022, 18026, 18032,
+    18039, 18043, 18053, 18145, 18151, 18177, 18186, 18192, 18199, 18214, 18218, 18235, 18239,
+    18241, 18249, 18253, 18257, 21041, 21046, 21050, 21062 is not in the experiment table.
+  - The data and set point files in the one test point checked in detail have clocks that differ
+    by several seconds, so they were not aligned by timestamp.
+  - Test points with only one of the two files were left out.
+
+Limits and open questions (PSI-21)
+----------------------------------
+  - Flows are in volts, converted only approximately; the gas code table and the controller scales
+    are needed.
+  - Fuel concentration is known per test day only, so flame response cannot be tied to
+    concentration per test point.
+  - Flame detection uses our radiometer threshold; compare a few records with video before relying
+    on it.
+  - Open: what the polarity code means, and why the electric field is recorded as off in every
+    test point.
