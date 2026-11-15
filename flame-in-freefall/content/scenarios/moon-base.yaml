@@ -1,0 +1,8 @@
+id: moon-base
+name: Moon base and pressurized rover (expected)
+o2_percent: [30, 100]
+pressure_psi: [4.3, 10.2]
+gravity: lunar
+habitats: [moon-base, pressurized-rover]
+source: "Challenge statement: intermediate atmosphere between a spacesuit and Earth's; likely 30% oxygen or greater at 10.2 psi or less."
+notes: "Upper oxygen bound and lower pressure bound are the spacesuit values, the outer limits the statement gives."

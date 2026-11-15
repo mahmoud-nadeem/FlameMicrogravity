@@ -1,0 +1,49 @@
+# Draft prepared by Mahmoud Nadeem on 14 Nov 2026 from the PSI API and the experimental table.
+# Owner (Khaled Adawi): verify every field against the PSI page, complete it, then remove these two lines.
+id: PSI-10
+author: adwi
+summary: >
+  ISS study (ACME hardware) of when spherical ethylene and propane flames start to form soot, for
+  normal flames burning in O2/N2 and inverse flames that blow oxygen into an ethylene atmosphere.
+  327 tests vary oxygen, pressure, dilution and flow, and 317 sensor logs record the runs. It holds
+  PSI's lowest-pressure tests (0.42 atm) and inverse flames with up to 85% oxygen.
+fuel_type: gas
+fuels: [ethylene, propane]
+sample: "Porous spherical burner"
+hardware_family: ACME-CIR
+conditions:
+  o2_percent: [19.8, 85]
+  pressure_atm: [0.42, 3.01]
+  flow_cm_s: null
+  diluents: [N2]
+  gravity: [microgravity]
+  notes: >
+    Ambient O2 19.8-40% in normal flames; 21-85% is the burner-stream O2 in inverse flames.
+    60 normal-flame tests ramped the fuel flow, and 11 inverse-flame tests list RAMP or LOW O2
+    instead of an oxygen value.
+varied:
+  - normal vs inverse flame
+  - oxygen fraction
+  - pressure
+  - fuel dilution and flow rate (stoichiometric mixture fraction Zst)
+constant:
+  - same ACME burner hardware in the Combustion Integrated Rack
+measurements:
+  - three photomultiplier tubes
+  - radiometers
+  - thermocouples
+  - ion current
+  - pressure transducers and mass-flow controllers
+  - cameras
+pillars: [prevention]
+tests:
+  count: 327
+data_readiness: per-test-time-series
+modeling_targets:
+  - radiometer level (soot radiation) from flow, Zst, oxygen and pressure
+limitations:
+  - "No outcome column (soot onset, extinction) in the experimental tables."
+  - "The PSI license field is empty for this investigation; cite the DOI and check terms."
+sources:
+  - https://psi.nasa.gov/physci/repo/data/investigations/PSI-10
+  - https://doi.org/10.60555/w4zy-bt45

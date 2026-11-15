@@ -1,0 +1,39 @@
+# Draft prepared by Mahmoud Nadeem on 14 Nov 2026 from the PSI API and the experimental table.
+# Owner (Khaled Adawi): verify every field against the PSI page, complete it, then remove these two lines.
+id: PSI-20
+author: adwi
+summary: >
+  ISS study (ACME hardware) that used gas-fed porous burners as stand-ins for burning solid
+  materials, to relate burning in still microgravity air to material properties. Over 18 test days
+  it ignited 194 ethylene or methane flames on 25 mm and 50 mm burners at 21-40% oxygen, the
+  closest PSI comes to material flammability above 22% oxygen.
+fuel_type: gas
+fuels: [ethylene, methane]
+sample: "Porous circular burners, 25 mm and 50 mm"
+hardware_family: ACME-CIR
+conditions:
+  o2_percent: [21, 40]
+  pressure_atm: null
+  flow_cm_s: null
+  diluents: [N2]
+  gravity: [microgravity]
+  notes: "Quiescent (still) atmosphere. Pressure is not tabulated; the objectives mention several pressures."
+varied:
+  - fuel and dilution (100% or 50% ethylene, methane)
+  - burner diameter
+  - ambient oxygen concentration
+constant:
+  - same ACME hardware in the Combustion Integrated Rack
+measurements:
+  - ACME sensor set (photomultipliers, radiometers, thermocouples, pressure, flows)
+  - cameras
+pillars: [prevention]
+tests:
+  count: 194
+data_readiness: per-test-time-series
+limitations:
+  - "The experimental table is one row per test day, not per flame."
+  - "Oxygen is a list per day ('26.5; 34'); two cells are typed '3400%' and '2100%'."
+sources:
+  - https://psi.nasa.gov/physci/repo/data/investigations/PSI-20
+  - https://doi.org/10.60555/vb93-3y72

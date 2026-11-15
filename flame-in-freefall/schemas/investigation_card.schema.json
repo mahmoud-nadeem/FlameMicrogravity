@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Curated investigation card (content/investigations/<PSI-ID>/card.yaml)",
+  "type": "object",
+  "required": ["id", "author", "summary", "fuel_type", "fuels", "sample", "hardware_family", "conditions",
+               "varied", "constant", "measurements", "pillars", "data_readiness", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^PSI-[0-9]+$"},
+    "author": {"type": "string", "pattern": "^[a-z0-9-]+$", "description": "member id"},
+    "reviewed_by": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9-]+$"}},
+    "summary": {"type": "string", "minLength": 80, "maxLength": 900, "description": "Plain language, 2-4 sentences"},
+    "fuel_type": {"type": "string", "enum": ["solid", "liquid-droplet", "gas", "smoke-aerosol", "dust-aerosol", "mixed"]},
+    "fuels": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "sample": {"type": "string", "description": "Shape and size of the sample or burner"},
+    "hardware_family": {"type": "string", "enum": ["ACME-CIR", "MDCA-CIR", "MSG-SPICE-duct", "MSG-other", "spacecraft-scale", "ground-modeling", "other"]},
+    "conditions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "o2_percent": {"$ref": "#/$defs/range_or_null"},
+        "pressure_atm": {"$ref": "#/$defs/range_or_null"},
+        "flow_cm_s": {"$ref": "#/$defs/range_or_null"},
+        "diluents": {"type": "array", "items": {"type": "string"}},
+        "gravity": {"type": "array", "items": {"type": "string", "enum": ["microgravity", "normal-gravity", "simulated-partial-gravity"]}, "minItems": 1},
+        "notes": {"type": "string"}
+      },
+      "required": ["o2_percent", "pressure_atm", "gravity"]
+    },
+    "varied": {"type": "array", "items": {"type": "string"}, "minItems": 1, "description": "What changed between tests"},
+    "constant": {"type": "array", "items": {"type": "string"}, "description": "What stayed the same"},
+    "measurements": {"type": "array", "items": {"type": "string"}, "minItems": 1, "description": "Sensors and diagnostics"},
+    "pillars": {"type": "array", "items": {"type": "string", "enum": ["prevention", "detection", "suppression"]}, "minItems": 1},
+    "tests": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {"count": {"type": "integer", "minimum": 0}, "with_processed_data": {"type": "integer", "minimum": 0}}
+    },
+    "data_readiness": {"type": "string", "enum": ["per-test-time-series", "processed-table", "raw-only", "metadata-only"]},
+    "modeling_targets": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "earth_applications": {"type": "array", "items": {"type": "string"}},
+    "sources": {"type": "array", "items": {"type": "string"}, "minItems": 1, "description": "URLs or DOIs actually used"}
+  },
+  "$defs": {
+    "range_or_null": {"oneOf": [{"type": "null"}, {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2}]}
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "PSI-100",
+  "title": "Spacecraft Fire Experiment-III",
+  "acronym": "SAFFIRE-III",
+  "doi": "10.60555/040q-4h36",
+  "doi_url": "https://doi.org/10.60555/040q-4h36",
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+  "license": "Creative Commons Zero v1.0 Universal",
+  "project_type": "Microgravity Investigation",
+  "platform": "International Space Station (ISS)",
+  "research_area": "Combustion Science",
+  "sub_area": "Spacecraft Fire Safety",
+  "hardware": "Saffire III enclosure in Cygnus",
+  "managing_center": "Glenn Research Center (GRC)",
+  "start_date": "04-18-2017",
+  "end_date": "",
+  "release_date": "18-Sep-2024",
+  "keywords": [
+    "SAFFIRE",
+    "Fire Safety",
+    "Surface Combustion",
+    "Smoldering",
+    "Flame Spread",
+    "low-gravity fire testing",
+    "flammability"
+  ],
+  "related": [
+    "PSI-99",
+    "PSI-98"
+  ],
+  "objective": "The objectives of this investigation were to:\n(1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+  "approach": "The Saffire-III experiments were performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. As a follow on to the Saffire 1 investigation, the Saffire III investigation also used SIBAL as the sample material. However, the experiments were conducted at a flow velocity of 30 cm/s compared to 20 cm/s during Saffire I. The flow was either concurrent or opposed.  Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked. Details related to samples and experimental parameters are provided in the Experimental Details file in the Science document folder.",
+  "hypothesis": "This investigation hypothesizes that due to large differences between fire behavior in normal and reduced gravity, the use of terrestrial fires and fire standards to design spacecraft fire safety systems presents an inherent risk to the vehicle because of the significant level of uncertainty. While this approach has been successful thus far, the uncertainty and risk will increase as exploration missions venture further from earth with considerably longer transit times for a safe return. There is a significant lack of microgravity data available for spacecraft designers on which to base their fire safety designs and procedures. To address this knowledge gap, this investigation proposed to conduct large-scale fire safety experiments in an expendable spacecraft without risk to a crew.",
+  "impacts": "The Saffire-I experiment provides a new way to study a realistic fire on an exploration vehicle, which has not been possible in the past because the risks are too high. Instruments on an unmanned cargo vessel measure oxygen, carbon dioxide, heat, pressure and flame growth, and two video cameras provide views of the flame. Results determine microgravity flammability limits for several spacecraft materials, help to validate NASA’s material selection criteria, and how microgravity and limited oxygen affect flame size. The investigation is crucial for the safety of current and future space missions. Studying fire in small, sealed environments such as the Cygnus cargo supply vehicle benefits fire safety and prevention efforts on Earth, including inside mines, airplanes, or submarines.",
+  "people": [
+    {
+      "name": "David L. Urban",
+      "affiliation": "NASA GRC",
+      "roles": [
+        "Principal Investigator (PI)"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Buoyant Effects on the Flammability of Silicone Samples Planned for the Spacecraft Fire Experiment (Saffire), 45th International Conference on Environmental Systems ICES-2015-[293] 12-16 July 2015, Bellevue, Washington",
+      "authors": "JE Niehaus, PV Ferkul, SA Gokoglu, GA Ruff",
+      "doi": ""
+    },
+    {
+      "title": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status",
+      "authors": "W Schoren, GA Ruff, DL Urban",
+      "doi": ""
+    },
+    {
+      "title": "Operation and Development Status of the Spacecraft Fire Experiments (Saffire), 46th International Conference on Environmental Systems (ICES), July 2016",
+      "authors": "https://ntrs.nasa.gov/citations/20170000230",
+      "doi": ""
+    }
+  ],
+  "total_size_bytes": 35210765052,
+  "files_listed": 87,
+  "file_categories": {
+    "Engineering Documents": {
+      "files": 2,
+      "bytes": 1737185
+    },
+    "Experimental table": {
+      "files": 1,
+      "bytes": 239
+    },
+    "Presentations": {
+      "files": 3,
+      "bytes": 10246234
+    },
+    "Raw Data": {
+      "files": 75,
+      "bytes": 35182666847
+    },
+    "Science Documents": {
+      "files": 5,
+      "bytes": 16106163
+    },
+    "metadata": {
+      "files": 1,
+      "bytes": 8384
+    }
+  },
+  "file_extensions": {
+    "zip": 68,
+    "pdf": 7,
+    "xlsx": 6,
+    "csv": 3,
+    "docx": 3
+  },
+  "experimental_tables": [
+    {
+      "file": "PSI-100_Experimental table_SAFFIRE-3.csv",
+      "rows": 2,
+      "columns": [
+        "Sample Number",
+        "Material",
+        "Sample Thickness",
+        "Sample Length",
+        "Sample Width",
+        "Air Flow",
+        "Direction",
+        "Camera 1",
+        "Camera 2"
+      ]
+    }
+  ],
+  "retrieved_at": "2026-11-14",
+  "source": "NASA Physical Sciences Informatics (PSI) repository API"
+}

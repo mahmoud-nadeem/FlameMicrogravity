@@ -1,0 +1,19 @@
+# Model card — copy to content/models/<model-id>/model.yaml
+# Put the exported artifact (predictions.json or model.onnx) in the same folder.
+id: model-id                   # must equal the folder name
+title: "What the model predicts"
+author: your-id
+investigations: [PSI-00]
+task: classification           # classification | regression | forecasting | anomaly-detection | clustering | segmentation
+target: "test outcome"
+inputs:
+  - {name: oxygen mole fraction, unit: "-", min: 0.12, max: 0.34}
+rows: 0                        # training rows
+validation: "5-fold CV grouped by test date"
+metrics: {macro_f1: 0.0}
+baseline: {majority_accuracy: 0.0}   # always compare with a trivial baseline
+artifact: predictions.json     # or model.onnx, or null
+notebook: notebooks/your-notebook.ipynb
+limitations:
+  - "Small sample; not validated outside the tested range"
+si_assisted: false

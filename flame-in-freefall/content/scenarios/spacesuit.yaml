@@ -1,0 +1,8 @@
+id: spacesuit
+name: Spacesuit
+o2_percent: [95, 100]
+pressure_psi: [4.0, 4.6]
+gravity: varies
+habitats: [spacesuit]
+source: "Challenge statement: spacesuits hold 100% oxygen at 4.3 psi."
+notes: "Small tolerance band around the stated point."

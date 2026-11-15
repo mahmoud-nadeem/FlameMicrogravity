@@ -1,0 +1,62 @@
+[
+  {
+    "id": "adwi",
+    "name": "Khaled Adawi",
+    "role": "Member",
+    "contributions": {
+      "cards": 2,
+      "findings": 0,
+      "models": 0
+    }
+  },
+  {
+    "id": "gamal",
+    "name": "Mohamed Gamal",
+    "role": "Member",
+    "contributions": {
+      "cards": 0,
+      "findings": 0,
+      "models": 0
+    }
+  },
+  {
+    "id": "mahmoud",
+    "name": "Mahmoud Nadeem",
+    "role": "Member",
+    "contributions": {
+      "cards": 1,
+      "findings": 1,
+      "models": 0
+    }
+  },
+  {
+    "id": "morgan",
+    "name": "Amr Morgan",
+    "role": "Member",
+    "contributions": {
+      "cards": 1,
+      "findings": 0,
+      "models": 0
+    }
+  },
+  {
+    "id": "shreif",
+    "name": "Mohamed Shreif",
+    "role": "Member",
+    "contributions": {
+      "cards": 0,
+      "findings": 0,
+      "models": 0
+    }
+  },
+  {
+    "id": "tamer",
+    "name": "Mohammed Tamer",
+    "role": "Team leader",
+    "contributions": {
+      "cards": 2,
+      "findings": 0,
+      "models": 0
+    }
+  }
+]

@@ -1,0 +1,5 @@
+# Member — copy to content/members/<your-id>.yaml (lowercase, dashes)
+id: your-id
+name: Your Name
+role: Member
+focus: "What you work on"

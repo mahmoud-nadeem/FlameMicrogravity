@@ -1,0 +1,84 @@
+{
+ "term": "combustion",
+ "exported_at": "2026-11-14T09:47:59.831Z",
+ "investigations": [
+  {
+   "id": "PSI-142",
+   "hit": {
+    "Accession": "PSI-142",
+    "Flight Platform": "Not Applicable",
+    "Keywords": "Cool Flame Transitions     Ground-based experiments     Counterflow flames     Extinction Limit",
+    "Related Investigations": "PSI-69"
+   },
+   "meta": {
+    "accession": "PSI-142",
+    "title": "Quantitative Studies of Cool Flame Transitions at Radiation / Stretch Extinction Using Counterflow Flames",
+    "investigationAcronym": "",
+    "doi": "10.60555/80qf-vj95",
+    "licenseName": "Creative Commons Zero v1.0 Universal",
+    "projectType": "Ground Investigation",
+    "flightProgram": "Not Applicable",
+    "researchArea": "Combustion Science",
+    "subResearchArea": "Spacecraft Fire Safety",
+    "experimentHardware": "Principal Investigator Laboratory Hardware",
+    "managingNasaCenter": "Glenn Research Center (GRC)",
+    "investigationStartDate": "08-01-2016",
+    "investigationEndDate": "07-31-2021",
+    "releaseDate": "18-Sep-2024",
+    "objective": "By using the Flame Extinguishment (FLEX) experimental data from the Physical Sciences Informatics (PSI) system of combustion science, the purpose of this grant was to conduct new simulations and ground-based experiments using ozone-sensitized counterflow flames.",
+    "approach": "Using the experimental conditions of FLEX flight, a comparative study of the oxygen concentration effects on the extinction limits of cool flames was conducted.",
+    "hypothesis": "",
+    "researchImpacts": "",
+    "contacts": [
+     {
+      "firstName": "Yiguang",
+      "lastName": "Ju",
+      "midInitials": "",
+      "affiliation": "Princeton University",
+      "email": "removed@example.org",
+      "phone": "",
+      "roles": [
+       {
+        "annotationValue": "Principal Investigator (PI)"
+       }
+      ]
+     }
+    ],
+    "publications": [
+     {
+      "authorList": "Ju Yiguang, Reuter Christopher B., Yehia Omar R., Farouk Tanvir I., Won Sang Hee",
+      "doi": "10.1016/j.pecs.2019.100787",
+      "title": "Dynamics of cool flames"
+     }
+    ],
+    "totalFileSize": 748117,
+    "version": 2
+   },
+   "files": [
+    [
+     "psi-data/PSI-142/metadata/PSI-142_metadata_PSI-164_Quantitative Studies.zip",
+     12158,
+     2
+    ],
+    [
+     "psi-data/PSI-142/Analyzed Data/PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx",
+     735232,
+     1
+    ],
+    [
+     "psi-data/PSI-142/Experimental table/PSI-142_Experimental table_Data Summary Table.csv",
+     727,
+     1
+    ]
+   ],
+   "tables": [
+    {
+     "key": "psi-data/PSI-142/Experimental table/PSI-142_Experimental table_Data Summary Table.csv",
+     "name": "PSI-142_Experimental table_Data Summary Table.csv",
+     "status": 200,
+     "text": "Data ID,Data Description,Reference Publication Link,Figure ID in Reference\r\n1,CFE limit with ozone,http://dx.doi.org/10.1016/j.combustflame.2017.01.028,4\r\n2,CFE limit without ozone,http://dx.doi.org/10.1016/j.combustflame.2017.01.028,5\r\n"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+id: PSI-101
+author: mahmoud
+summary: >
+  ISS glovebox experiment that heated five spacecraft materials (Kapton, silicone rubber, cotton
+  lampwick, Pyrell foam and Teflon) until they smoked, and read that smoke with the ISS and Space
+  Shuttle smoke detectors, two ionization detectors and reference particle instruments. 109 tests
+  report detector responses and particle-size results; it is PSI's most direct dataset for smoke
+  detector design in crew cabins.
+fuel_type: smoke-aerosol
+fuels: [Kapton, silicone rubber, cotton lampwick, Pyrell foam, Teflon]
+sample: "Electrically heated material sample; heater set by resistance ratio Rt/R0 = 1.22-1.48"
+hardware_family: MSG-other
+conditions:
+  o2_percent: null
+  pressure_atm: null
+  flow_cm_s: [0, 8.1]
+  gravity: [microgravity]
+  notes: "Cabin air in the glovebox; oxygen and pressure are not recorded in the experimental table."
+varied:
+  - material
+  - heater temperature (Rt/R0)
+  - inlet flow velocity
+  - smoke aging time before measurement
+constant:
+  - same detector set in the Microgravity Science Glovebox
+measurements:
+  - ISS smoke detector (obscuration and scatter)
+  - Space Shuttle smoke detector
+  - ionization detectors A and B
+  - P-Trak particle counter
+  - DustTrak photometers
+  - thermal precipitator samples for electron microscopy
+pillars: [detection]
+tests:
+  count: 109
+  with_processed_data: 109
+data_readiness: processed-table
+modeling_targets:
+  - material class from the detector-response pattern
+  - diameter of average mass from cheap detector signals
+  - smoke-onset time per detector (1 Hz logs)
+limitations:
+  - "Results workbook is an analyst file (43 sheets, two header rows)."
+  - "Not every detector ran in every test."
+  - "P-Trak uses -999 as a missing value in the 1 Hz logs."
+sources:
+  - https://psi.nasa.gov/physci/repo/data/investigations/PSI-101
+  - https://doi.org/10.60555/2np7-jv14

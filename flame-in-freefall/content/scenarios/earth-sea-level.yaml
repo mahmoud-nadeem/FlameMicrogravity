@@ -1,0 +1,8 @@
+id: earth-sea-level
+name: Earth sea-level air (reference)
+o2_percent: [20, 22]
+pressure_psi: [14.2, 15.2]
+gravity: earth
+habitats: [earth]
+source: "Challenge statement: Earth's sea-level pressure is 14.7 psi; air holds about 21% oxygen."
+notes: "A narrow band (±1 point O2, ±0.5 psi) so that tests run 'in air at 1 atm' count as matches."

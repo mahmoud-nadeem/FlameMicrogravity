@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Model card (content/models/<slug>/model.yaml)",
+  "type": "object",
+  "required": ["id", "title", "author", "investigations", "task", "target", "inputs", "rows", "validation", "metrics", "baseline", "limitations", "si_assisted"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "title": {"type": "string"},
+    "author": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "investigations": {"type": "array", "items": {"type": "string", "pattern": "^PSI-[0-9]+$"}, "minItems": 1},
+    "task": {"type": "string", "enum": ["classification", "regression", "forecasting", "anomaly-detection", "clustering", "segmentation"]},
+    "target": {"type": "string"},
+    "inputs": {
+      "type": "array", "minItems": 1,
+      "items": {"type": "object", "required": ["name"], "additionalProperties": false,
+                "properties": {"name": {"type": "string"}, "unit": {"type": "string"},
+                               "min": {"type": "number"}, "max": {"type": "number"}}}
+    },
+    "rows": {"type": "integer", "minimum": 1},
+    "validation": {"type": "string", "description": "e.g. 5-fold CV grouped by test date"},
+    "metrics": {"type": "object", "additionalProperties": {"type": "number"}, "minProperties": 1},
+    "baseline": {"type": "object", "additionalProperties": {"type": "number"}, "minProperties": 1},
+    "artifact": {"type": ["string", "null"], "description": "predictions.json or model.onnx inside the model folder"},
+    "notebook": {"type": "string"},
+    "limitations": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "si_assisted": {"type": "boolean"}
+  }
+}

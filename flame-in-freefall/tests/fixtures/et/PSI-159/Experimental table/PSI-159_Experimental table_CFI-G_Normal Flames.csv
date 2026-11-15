@@ -1,0 +1,4 @@
+Flame Type,Day,Fuel,Test,Cool flame?, XO2 before test,XO2  after test,approx p (bar),Xf,mHC (mg/s),TFP,Tad (K),Zst,Hot ignition,burn time (sec),Self-ext or flow term,Peak burner T (C ),Comments
+Normal,1,ethane,21088A1,,0.3939,0.389822946,0.9443956,1,2,No,2719.323211,0.102651783,Yes,50,SE,290.617198,
+Normal,5,propane,21200C1,,0.38,0.37,0.5066,1,2,No,2600,0.1,Yes,40,SE,250,
+Normal,5,propane,21200C2,,0.36,0.35,0.5066,1,2,No,2500,0.1,No,0,-,-,

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "earth-sea-level",
+    "name": "Earth sea-level air (reference)",
+    "o2_percent": [
+      20,
+      22
+    ],
+    "pressure_psi": [
+      14.2,
+      15.2
+    ],
+    "gravity": "earth",
+    "habitats": [
+      "earth"
+    ],
+    "source": "Challenge statement: Earth's sea-level pressure is 14.7 psi; air holds about 21% oxygen.",
+    "notes": "A narrow band (±1 point O2, ±0.5 psi) so that tests run 'in air at 1 atm' count as matches."
+  },
+  {
+    "id": "moon-base",
+    "name": "Moon base and pressurized rover (expected)",
+    "o2_percent": [
+      30,
+      100
+    ],
+    "pressure_psi": [
+      4.3,
+      10.2
+    ],
+    "gravity": "lunar",
+    "habitats": [
+      "moon-base",
+      "pressurized-rover"
+    ],
+    "source": "Challenge statement: intermediate atmosphere between a spacesuit and Earth's; likely 30% oxygen or greater at 10.2 psi or less.",
+    "notes": "Upper oxygen bound and lower pressure bound are the spacesuit values, the outer limits the statement gives."
+  },
+  {
+    "id": "spacesuit",
+    "name": "Spacesuit",
+    "o2_percent": [
+      95,
+      100
+    ],
+    "pressure_psi": [
+      4.0,
+      4.6
+    ],
+    "gravity": "varies",
+    "habitats": [
+      "spacesuit"
+    ],
+    "source": "Challenge statement: spacesuits hold 100% oxygen at 4.3 psi.",
+    "notes": "Small tolerance band around the stated point."
+  }
+]

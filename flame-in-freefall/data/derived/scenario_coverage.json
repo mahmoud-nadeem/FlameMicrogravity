@@ -1,0 +1,295 @@
+{
+  "earth-sea-level": {
+    "name": "Earth sea-level air (reference)",
+    "o2_frac": [
+      0.2,
+      0.22
+    ],
+    "pressure_atm": [
+      0.9662493195427326,
+      1.0342950462710943
+    ],
+    "investigations": {
+      "PSI-10": {
+        "acronym": "Flame Design",
+        "tests_with_o2": 316,
+        "tests_with_o2_and_pressure": 316,
+        "max_ambient_o2": 0.4,
+        "min_pressure_atm": 0.424607,
+        "by_mode": {
+          "ambient": {
+            "inside": 64,
+            "within_5pct": 71,
+            "outcomes_inside": {}
+          },
+          "burner-oxidizer": {
+            "inside": 2,
+            "within_5pct": 2,
+            "outcomes_inside": {}
+          }
+        }
+      },
+      "PSI-159": {
+        "acronym": "CFI-G",
+        "tests_with_o2": 333,
+        "tests_with_o2_and_pressure": 333,
+        "max_ambient_o2": 0.3997,
+        "min_pressure_atm": 0.488904,
+        "by_mode": {
+          "ambient": {
+            "inside": 27,
+            "within_5pct": 27,
+            "outcomes_inside": {
+              "Yes": 19,
+              "No": 8
+            }
+          },
+          "burner-oxidizer": {
+            "inside": 0,
+            "within_5pct": 2,
+            "outcomes_inside": {}
+          }
+        }
+      },
+      "PSI-25": {
+        "acronym": "BASS-II",
+        "tests_with_o2": 129,
+        "tests_with_o2_and_pressure": 0,
+        "max_ambient_o2": 0.222,
+        "min_pressure_atm": null,
+        "by_mode": {
+          "ambient": {
+            "inside": 0,
+            "within_5pct": 0,
+            "outcomes_inside": {}
+          }
+        }
+      },
+      "PSI-39": {
+        "acronym": "CFI",
+        "tests_with_o2": 87,
+        "tests_with_o2_and_pressure": 87,
+        "max_ambient_o2": 0.21,
+        "min_pressure_atm": 0.5,
+        "by_mode": {
+          "ambient": {
+            "inside": 28,
+            "within_5pct": 28,
+            "outcomes_inside": {}
+          }
+        }
+      },
+      "PSI-69": {
+        "acronym": "FLEX",
+        "tests_with_o2": 274,
+        "tests_with_o2_and_pressure": 273,
+        "max_ambient_o2": 0.34,
+        "min_pressure_atm": 0.6925,
+        "by_mode": {
+          "ambient": {
+            "inside": 49,
+            "within_5pct": 56,
+            "outcomes_inside": {
+              "Extinction": 29,
+              "Disruption": 15,
+              "Completion": 5
+            }
+          }
+        }
+      }
+    }
+  },
+  "moon-base": {
+    "name": "Moon base and pressurized rover (expected)",
+    "o2_frac": [
+      0.3,
+      1.0
+    ],
+    "pressure_atm": [
+      0.29259662493195426,
+      0.6940664126292868
+    ],
+    "investigations": {
+      "PSI-10": {
+        "acronym": "Flame Design",
+        "tests_with_o2": 316,
+        "tests_with_o2_and_pressure": 316,
+        "max_ambient_o2": 0.4,
+        "min_pressure_atm": 0.424607,
+        "by_mode": {
+          "ambient": {
+            "inside": 0,
+            "within_5pct": 0,
+            "outcomes_inside": {}
+          },
+          "burner-oxidizer": {
+            "inside": 18,
+            "within_5pct": 18,
+            "outcomes_inside": {}
+          }
+        }
+      },
+      "PSI-159": {
+        "acronym": "CFI-G",
+        "tests_with_o2": 333,
+        "tests_with_o2_and_pressure": 333,
+        "max_ambient_o2": 0.3997,
+        "min_pressure_atm": 0.488904,
+        "by_mode": {
+          "ambient": {
+            "inside": 20,
+            "within_5pct": 20,
+            "outcomes_inside": {
+              "Yes": 17,
+              "No": 3
+            }
+          },
+          "burner-oxidizer": {
+            "inside": 28,
+            "within_5pct": 28,
+            "outcomes_inside": {
+              "Yes": 24,
+              "No": 3,
+              "Flash": 1
+            }
+          }
+        }
+      },
+      "PSI-25": {
+        "acronym": "BASS-II",
+        "tests_with_o2": 129,
+        "tests_with_o2_and_pressure": 0,
+        "max_ambient_o2": 0.222,
+        "min_pressure_atm": null,
+        "by_mode": {
+          "ambient": {
+            "inside": 0,
+            "within_5pct": 0,
+            "outcomes_inside": {}
+          }
+        }
+      },
+      "PSI-39": {
+        "acronym": "CFI",
+        "tests_with_o2": 87,
+        "tests_with_o2_and_pressure": 87,
+        "max_ambient_o2": 0.21,
+        "min_pressure_atm": 0.5,
+        "by_mode": {
+          "ambient": {
+            "inside": 0,
+            "within_5pct": 0,
+            "outcomes_inside": {}
+          }
+        }
+      },
+      "PSI-69": {
+        "acronym": "FLEX",
+        "tests_with_o2": 274,
+        "tests_with_o2_and_pressure": 273,
+        "max_ambient_o2": 0.34,
+        "min_pressure_atm": 0.6925,
+        "by_mode": {
+          "ambient": {
+            "inside": 0,
+            "within_5pct": 17,
+            "outcomes_inside": {}
+          }
+        }
+      }
+    }
+  },
+  "spacesuit": {
+    "name": "Spacesuit",
+    "o2_frac": [
+      0.95,
+      1.0
+    ],
+    "pressure_atm": [
+      0.2721829069134458,
+      0.3130103429504627
+    ],
+    "investigations": {
+      "PSI-10": {
+        "acronym": "Flame Design",
+        "tests_with_o2": 316,
+        "tests_with_o2_and_pressure": 316,
+        "max_ambient_o2": 0.4,
+        "min_pressure_atm": 0.424607,
+        "by_mode": {
+          "ambient": {
+            "inside": 0,
+            "within_5pct": 0,
+            "outcomes_inside": {}
+          },
+          "burner-oxidizer": {
+            "inside": 0,
+            "within_5pct": 0,
+            "outcomes_inside": {}
+          }
+        }
+      },
+      "PSI-159": {
+        "acronym": "CFI-G",
+        "tests_with_o2": 333,
+        "tests_with_o2_and_pressure": 333,
+        "max_ambient_o2": 0.3997,
+        "min_pressure_atm": 0.488904,
+        "by_mode": {
+          "ambient": {
+            "inside": 0,
+            "within_5pct": 0,
+            "outcomes_inside": {}
+          },
+          "burner-oxidizer": {
+            "inside": 0,
+            "within_5pct": 0,
+            "outcomes_inside": {}
+          }
+        }
+      },
+      "PSI-25": {
+        "acronym": "BASS-II",
+        "tests_with_o2": 129,
+        "tests_with_o2_and_pressure": 0,
+        "max_ambient_o2": 0.222,
+        "min_pressure_atm": null,
+        "by_mode": {
+          "ambient": {
+            "inside": 0,
+            "within_5pct": 0,
+            "outcomes_inside": {}
+          }
+        }
+      },
+      "PSI-39": {
+        "acronym": "CFI",
+        "tests_with_o2": 87,
+        "tests_with_o2_and_pressure": 87,
+        "max_ambient_o2": 0.21,
+        "min_pressure_atm": 0.5,
+        "by_mode": {
+          "ambient": {
+            "inside": 0,
+            "within_5pct": 0,
+            "outcomes_inside": {}
+          }
+        }
+      },
+      "PSI-69": {
+        "acronym": "FLEX",
+        "tests_with_o2": 274,
+        "tests_with_o2_and_pressure": 273,
+        "max_ambient_o2": 0.34,
+        "min_pressure_atm": 0.6925,
+        "by_mode": {
+          "ambient": {
+            "inside": 0,
+            "within_5pct": 0,
+            "outcomes_inside": {}
+          }
+        }
+      }
+    }
+  }
+}

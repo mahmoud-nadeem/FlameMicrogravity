@@ -1,0 +1,35 @@
+# Investigation card — copy to content/investigations/<PSI-ID>/card.yaml
+# Fill every field from the PSI page, its experimental table and its documents.
+# Do NOT edit psi.json in the same folder: it is regenerated from the PSI API.
+id: PSI-00                     # must equal the folder name
+author: your-id                # your file name in content/members/
+reviewed_by: []                # member ids who checked this card
+summary: >                     # 2-4 plain-language sentences, 80-900 characters
+  What was burned, how, what was measured, and why it matters for fire safety.
+fuel_type: solid               # solid | liquid-droplet | gas | smoke-aerosol | dust-aerosol | mixed
+fuels: [PMMA]
+sample: "Shape and size of the sample or burner"
+hardware_family: MSG-SPICE-duct  # ACME-CIR | MDCA-CIR | MSG-SPICE-duct | MSG-other | spacecraft-scale | ground-modeling | other
+conditions:
+  o2_percent: [21, 21]         # [min, max] or null if not recorded
+  pressure_atm: [1.0, 1.0]     # [min, max] or null
+  flow_cm_s: null              # [min, max] or null
+  diluents: [N2]
+  gravity: [microgravity]      # microgravity | normal-gravity | simulated-partial-gravity
+  notes: "Anything a reader must know about these ranges"
+varied:                        # what changed between tests
+  - oxygen concentration
+constant:                      # what stayed the same
+  - same flow duct
+measurements:                  # sensors and diagnostics
+  - video
+pillars: [prevention]          # prevention | detection | suppression
+tests:
+  count: 0
+  with_processed_data: 0
+data_readiness: processed-table  # per-test-time-series | processed-table | raw-only | metadata-only
+modeling_targets: []
+limitations: []
+earth_applications: []
+sources:                       # pages and DOIs you actually used
+  - https://psi.nasa.gov/physci/repo/data/investigations/PSI-00

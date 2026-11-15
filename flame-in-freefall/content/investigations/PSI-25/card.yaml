@@ -1,0 +1,44 @@
+# Draft prepared by Mahmoud Nadeem on 14 Nov 2026 from the PSI API and the experimental table.
+# Owner (Amr Morgan): verify every field against the PSI page, complete it, then remove these two lines.
+id: PSI-25
+author: morgan
+summary: >
+  ISS glovebox experiment that burned solid samples (PMMA films, rods and slabs, cotton-fiberglass
+  SIBAL fabric and others) in a slow forced air flow to measure ignition, flame spread and
+  extinction. 129 tests record oxygen, CO2 and CO before and after each burn, and 296 flight videos
+  show the flames. Initial oxygen never exceeded 22.2%, so it says nothing directly about
+  Moon-base oxygen levels.
+fuel_type: solid
+fuels: [PMMA, SIBAL cotton-fiberglass fabric]
+sample: "Films, rods, slabs and fabric strips (51 sample descriptions)"
+hardware_family: MSG-SPICE-duct
+conditions:
+  o2_percent: [13.6, 22.2]
+  pressure_atm: null
+  flow_cm_s: null
+  gravity: [microgravity]
+  notes: "Air-flow settings are free text in the table; chamber pressure is not recorded."
+varied:
+  - material, thickness and geometry
+  - initial oxygen concentration
+  - air flow (fan setting)
+constant:
+  - SPICE flow duct inside the Microgravity Science Glovebox
+measurements:
+  - flight video
+  - radiometer
+  - O2, CO2 and CO concentrations before and after each burn
+pillars: [prevention]
+tests:
+  count: 129
+data_readiness: processed-table
+modeling_targets:
+  - flame area and spread rate from video
+  - CO and CO2 produced per burn
+limitations:
+  - "Air flow is free text ('5 down to ext')."
+  - "Final O2 spans 0.6-40.4%: extremes need checking against the PI reports."
+  - "No flame-spread-rate column; spread must be measured from video."
+sources:
+  - https://psi.nasa.gov/physci/repo/data/investigations/PSI-25
+  - https://doi.org/10.60555/4qc4-de67

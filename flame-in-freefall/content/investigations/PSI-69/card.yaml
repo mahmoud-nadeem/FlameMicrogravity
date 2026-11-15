@@ -1,0 +1,50 @@
+# Draft prepared by Mahmoud Nadeem on 14 Nov 2026 from the PSI API and the experimental table.
+# Owner (Mohammed Tamer): verify every field against the PSI page, complete it, then remove these two lines.
+id: PSI-69
+author: tamer
+summary: >
+  ISS study that ignited methanol and n-heptane droplets in oxygen-nitrogen atmospheres diluted
+  with CO2 or helium to find when a flame goes out. 274 tests record the outcome (extinction,
+  disruption or full burn-out) and 258 have frame-by-frame droplet and flame size data, making it
+  PSI's main dataset on gaseous fire suppression in microgravity.
+fuel_type: liquid-droplet
+fuels: [methanol, n-heptane]
+sample: "Single droplet, 1.1-4.7 mm initial diameter"
+hardware_family: MDCA-CIR
+conditions:
+  o2_percent: [12, 34]
+  pressure_atm: [0.69, 3.05]
+  flow_cm_s: null
+  diluents: [N2, CO2, He]
+  gravity: [microgravity]
+  notes: "Raw-data folders also hold xenon-diluted tests that are not in the experimental table."
+varied:
+  - fuel
+  - oxygen mole fraction
+  - diluent (N2, CO2 or He) and its fraction
+  - chamber pressure
+  - initial droplet diameter
+constant:
+  - same apparatus (Multi-user Droplet Combustion Apparatus in the Combustion Integrated Rack)
+measurements:
+  - droplet diameter and position, 30 frames/s
+  - flame diameter and standoff from the UV (LLUV) camera, 30 frames/s
+  - flame diameter and standoff from the colour camera, 30 frames/s
+  - chamber pressure and gas composition (test sheets)
+pillars: [suppression, prevention]
+tests:
+  count: 274
+  with_processed_data: 258
+data_readiness: per-test-time-series
+modeling_targets:
+  - test outcome (extinction / disruption / completion)
+  - flame extinction diameter
+  - burning-rate constant k (d-squared law)
+limitations:
+  - "Test 114 has pressure recorded as 0 mmHg (treat as missing)."
+  - "Column 'CO' is CO2; 'Burning rate; mm' is the burning-rate constant in mm^2/s."
+  - "Sooty heptane tests give noisy diameters; drifting droplets cut some series short."
+  - "Outcome classes are imbalanced: 186 extinction, 61 disruption, 27 completion."
+sources:
+  - https://psi.nasa.gov/physci/repo/data/investigations/PSI-69
+  - https://doi.org/10.60555/mbq8-0451

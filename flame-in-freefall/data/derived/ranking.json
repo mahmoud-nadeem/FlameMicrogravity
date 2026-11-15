@@ -1,0 +1,276 @@
+{
+  "weights": {
+    "envelope": 0.5,
+    "material": 0.3,
+    "readiness": 0.2
+  },
+  "material_scores": {
+    "solid": 1.0,
+    "smoke-aerosol": 0.9,
+    "mixed": 0.7,
+    "gas": 0.6,
+    "liquid-droplet": 0.6,
+    "dust-aerosol": 0.3
+  },
+  "readiness_scores": {
+    "per-test-time-series": 1.0,
+    "processed-table": 0.8,
+    "raw-only": 0.4,
+    "metadata-only": 0.1
+  },
+  "coverage_available": true,
+  "scenarios": {
+    "earth-sea-level": {
+      "name": "Earth sea-level air (reference)",
+      "ranking": [
+        {
+          "id": "PSI-10",
+          "score": 0.88,
+          "envelope": 1.0,
+          "material": 0.6,
+          "readiness": 1.0,
+          "why_envelope": "64 ambient-atmosphere tests inside the envelope",
+          "fuel_type": "gas",
+          "pillars": [
+            "prevention"
+          ],
+          "rank": 1
+        },
+        {
+          "id": "PSI-159",
+          "score": 0.88,
+          "envelope": 1.0,
+          "material": 0.6,
+          "readiness": 1.0,
+          "why_envelope": "27 ambient-atmosphere tests inside the envelope",
+          "fuel_type": "gas",
+          "pillars": [
+            "prevention"
+          ],
+          "rank": 2
+        },
+        {
+          "id": "PSI-69",
+          "score": 0.88,
+          "envelope": 1.0,
+          "material": 0.6,
+          "readiness": 1.0,
+          "why_envelope": "49 ambient-atmosphere tests inside the envelope",
+          "fuel_type": "liquid-droplet",
+          "pillars": [
+            "suppression",
+            "prevention"
+          ],
+          "rank": 3
+        },
+        {
+          "id": "PSI-25",
+          "score": 0.585,
+          "envelope": 0.25,
+          "material": 1.0,
+          "readiness": 0.8,
+          "why_envelope": "outside the envelope; proximity from card ranges (O2 only)",
+          "fuel_type": "solid",
+          "pillars": [
+            "prevention"
+          ],
+          "rank": 4
+        },
+        {
+          "id": "PSI-20",
+          "score": 0.505,
+          "envelope": 0.25,
+          "material": 0.6,
+          "readiness": 1.0,
+          "why_envelope": "outside the envelope; proximity from card ranges (O2 only)",
+          "fuel_type": "gas",
+          "pillars": [
+            "prevention"
+          ],
+          "rank": 5
+        },
+        {
+          "id": "PSI-101",
+          "score": 0.493,
+          "envelope": 0.125,
+          "material": 0.9,
+          "readiness": 0.8,
+          "why_envelope": "outside the envelope; proximity from card ranges (no O2 or pressure)",
+          "fuel_type": "smoke-aerosol",
+          "pillars": [
+            "detection"
+          ],
+          "rank": 6
+        }
+      ]
+    },
+    "moon-base": {
+      "name": "Moon base and pressurized rover (expected)",
+      "ranking": [
+        {
+          "id": "PSI-159",
+          "score": 0.88,
+          "envelope": 1.0,
+          "material": 0.6,
+          "readiness": 1.0,
+          "why_envelope": "20 ambient-atmosphere tests inside the envelope",
+          "fuel_type": "gas",
+          "pillars": [
+            "prevention"
+          ],
+          "rank": 1
+        },
+        {
+          "id": "PSI-10",
+          "score": 0.68,
+          "envelope": 0.6,
+          "material": 0.6,
+          "readiness": 1.0,
+          "why_envelope": "18 inverse-flame tests inside (oxygen from the burner)",
+          "fuel_type": "gas",
+          "pillars": [
+            "prevention"
+          ],
+          "rank": 2
+        },
+        {
+          "id": "PSI-69",
+          "score": 0.63,
+          "envelope": 0.5,
+          "material": 0.6,
+          "readiness": 1.0,
+          "why_envelope": "17 tests within 5% of the envelope edge",
+          "fuel_type": "liquid-droplet",
+          "pillars": [
+            "suppression",
+            "prevention"
+          ],
+          "rank": 3
+        },
+        {
+          "id": "PSI-25",
+          "score": 0.552,
+          "envelope": 0.185,
+          "material": 1.0,
+          "readiness": 0.8,
+          "why_envelope": "outside the envelope; proximity from card ranges (O2 only)",
+          "fuel_type": "solid",
+          "pillars": [
+            "prevention"
+          ],
+          "rank": 4
+        },
+        {
+          "id": "PSI-20",
+          "score": 0.505,
+          "envelope": 0.25,
+          "material": 0.6,
+          "readiness": 1.0,
+          "why_envelope": "outside the envelope; proximity from card ranges (O2 only)",
+          "fuel_type": "gas",
+          "pillars": [
+            "prevention"
+          ],
+          "rank": 5
+        },
+        {
+          "id": "PSI-101",
+          "score": 0.493,
+          "envelope": 0.125,
+          "material": 0.9,
+          "readiness": 0.8,
+          "why_envelope": "outside the envelope; proximity from card ranges (no O2 or pressure)",
+          "fuel_type": "smoke-aerosol",
+          "pillars": [
+            "detection"
+          ],
+          "rank": 6
+        }
+      ]
+    },
+    "spacesuit": {
+      "name": "Spacesuit",
+      "ranking": [
+        {
+          "id": "PSI-10",
+          "score": 0.546,
+          "envelope": 0.333,
+          "material": 0.6,
+          "readiness": 1.0,
+          "why_envelope": "outside the envelope; proximity from card ranges (O2 and pressure)",
+          "fuel_type": "gas",
+          "pillars": [
+            "prevention"
+          ],
+          "rank": 1
+        },
+        {
+          "id": "PSI-159",
+          "score": 0.523,
+          "envelope": 0.286,
+          "material": 0.6,
+          "readiness": 1.0,
+          "why_envelope": "outside the envelope; proximity from card ranges (O2 and pressure)",
+          "fuel_type": "gas",
+          "pillars": [
+            "prevention"
+          ],
+          "rank": 2
+        },
+        {
+          "id": "PSI-101",
+          "score": 0.493,
+          "envelope": 0.125,
+          "material": 0.9,
+          "readiness": 0.8,
+          "why_envelope": "outside the envelope; proximity from card ranges (no O2 or pressure)",
+          "fuel_type": "smoke-aerosol",
+          "pillars": [
+            "detection"
+          ],
+          "rank": 3
+        },
+        {
+          "id": "PSI-25",
+          "score": 0.489,
+          "envelope": 0.058,
+          "material": 1.0,
+          "readiness": 0.8,
+          "why_envelope": "outside the envelope; proximity from card ranges (O2 only)",
+          "fuel_type": "solid",
+          "pillars": [
+            "prevention"
+          ],
+          "rank": 4
+        },
+        {
+          "id": "PSI-20",
+          "score": 0.432,
+          "envelope": 0.105,
+          "material": 0.6,
+          "readiness": 1.0,
+          "why_envelope": "outside the envelope; proximity from card ranges (O2 only)",
+          "fuel_type": "gas",
+          "pillars": [
+            "prevention"
+          ],
+          "rank": 5
+        },
+        {
+          "id": "PSI-69",
+          "score": 0.42,
+          "envelope": 0.081,
+          "material": 0.6,
+          "readiness": 1.0,
+          "why_envelope": "outside the envelope; proximity from card ranges (O2 and pressure)",
+          "fuel_type": "liquid-droplet",
+          "pillars": [
+            "suppression",
+            "prevention"
+          ],
+          "rank": 6
+        }
+      ]
+    }
+  }
+}

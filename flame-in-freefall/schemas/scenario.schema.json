@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Habitat atmosphere scenario",
+  "type": "object",
+  "required": ["id", "name", "o2_percent", "pressure_psi", "source"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "name": {"type": "string"},
+    "o2_percent": {"$ref": "#/$defs/range", "description": "[min, max] oxygen by volume, %"},
+    "pressure_psi": {"$ref": "#/$defs/range", "description": "[min, max] total pressure, psi"},
+    "gravity": {"type": "string", "enum": ["microgravity", "lunar", "martian", "earth", "varies"]},
+    "habitats": {"type": "array", "items": {"$ref": "#/$defs/habitat"}},
+    "source": {"type": "string", "description": "Where the numbers come from"},
+    "notes": {"type": "string"}
+  },
+  "$defs": {
+    "range": {"type": "array", "items": {"type": "number", "minimum": 0}, "minItems": 2, "maxItems": 2},
+    "habitat": {"type": "string", "enum": ["spacecraft", "space-station", "moon-base", "pressurized-rover", "mars-base", "spacesuit", "earth"]}
+  }
+}

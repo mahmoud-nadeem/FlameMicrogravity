@@ -1,0 +1,1140 @@
+investigation,acronym,test_id,mode,fuel_type,fuel,o2_frac,p_atm,outcome
+PSI-69,FLEX,1,ambient,liquid-droplet,Methanol,0.21,0.996974,Disruption
+PSI-69,FLEX,2,ambient,liquid-droplet,Methanol,0.21,1.002632,Extinction
+PSI-69,FLEX,3,ambient,liquid-droplet,Methanol,0.21,1.005526,Extinction
+PSI-69,FLEX,4,ambient,liquid-droplet,Methanol,0.21,1.0,Extinction
+PSI-69,FLEX,5,ambient,liquid-droplet,Methanol,0.21,1.0,Extinction
+PSI-69,FLEX,6,ambient,liquid-droplet,Methanol,0.21,1.0,Extinction
+PSI-69,FLEX,7,ambient,liquid-droplet,Heptane,0.21,1.001711,Disruption
+PSI-69,FLEX,8,ambient,liquid-droplet,Heptane,0.21,1.003158,Disruption
+PSI-69,FLEX,9,ambient,liquid-droplet,Heptane,0.21,1.0,Disruption
+PSI-69,FLEX,10,ambient,liquid-droplet,Methanol,0.21,3.052237,Extinction
+PSI-69,FLEX,11,ambient,liquid-droplet,Methanol,0.21,3.051053,Extinction
+PSI-69,FLEX,12,ambient,liquid-droplet,Heptane,0.21,3.0525,Disruption
+PSI-69,FLEX,13,ambient,liquid-droplet,Methanol,0.21,2.729211,Extinction
+PSI-69,FLEX,14,ambient,liquid-droplet,Methanol,0.21,2.704737,Extinction
+PSI-69,FLEX,15,ambient,liquid-droplet,Methanol,0.21,2.719211,Extinction
+PSI-69,FLEX,16,ambient,liquid-droplet,Methanol,0.21,2.726447,Extinction
+PSI-69,FLEX,17,ambient,liquid-droplet,Methanol,0.21,2.033816,Disruption
+PSI-69,FLEX,18,ambient,liquid-droplet,Heptane,0.21,2.044474,Extinction
+PSI-69,FLEX,19,ambient,liquid-droplet,Heptane,0.34,0.709342,Disruption
+PSI-69,FLEX,20,ambient,liquid-droplet,Methanol,0.34,0.709868,Completion
+PSI-69,FLEX,21,ambient,liquid-droplet,Methanol,0.34,0.711316,Disruption
+PSI-69,FLEX,22,ambient,liquid-droplet,Methanol,0.34,0.711184,Disruption
+PSI-69,FLEX,23,ambient,liquid-droplet,Heptane,0.34,0.712895,Disruption
+PSI-69,FLEX,24,ambient,liquid-droplet,Heptane,0.34,0.714211,Disruption
+PSI-69,FLEX,25,ambient,liquid-droplet,Methanol,0.3,0.706974,Completion
+PSI-69,FLEX,26,ambient,liquid-droplet,Methanol,0.3,0.708421,Disruption
+PSI-69,FLEX,27,ambient,liquid-droplet,Heptane,0.3,0.711447,Disruption
+PSI-69,FLEX,28,ambient,liquid-droplet,Heptane,0.3,0.710132,Disruption
+PSI-69,FLEX,29,ambient,liquid-droplet,Methanol,0.3,1.009079,Completion
+PSI-69,FLEX,30,ambient,liquid-droplet,Methanol,0.3,1.012105,Extinction
+PSI-69,FLEX,31,ambient,liquid-droplet,Heptane,0.3,1.013816,Disruption
+PSI-69,FLEX,32,ambient,liquid-droplet,Heptane,0.3,1.014474,Completion
+PSI-69,FLEX,33,ambient,liquid-droplet,Methanol,0.21,1.005921,Extinction
+PSI-69,FLEX,34,ambient,liquid-droplet,Methanol,0.21,1.010132,Extinction
+PSI-69,FLEX,35,ambient,liquid-droplet,Heptane,0.21,1.010658,Extinction
+PSI-69,FLEX,36,ambient,liquid-droplet,Methanol,0.2,0.709211,Extinction
+PSI-69,FLEX,37,ambient,liquid-droplet,Methanol,0.34,0.703026,Disruption
+PSI-69,FLEX,38,ambient,liquid-droplet,Methanol,0.34,0.703158,Disruption
+PSI-69,FLEX,39,ambient,liquid-droplet,Heptane,0.34,0.703816,Disruption
+PSI-69,FLEX,40,ambient,liquid-droplet,Methanol,0.3,0.704079,Disruption
+PSI-69,FLEX,41,ambient,liquid-droplet,Methanol,0.3,0.703026,Disruption
+PSI-69,FLEX,42,ambient,liquid-droplet,Heptane,0.3,0.703947,Disruption
+PSI-69,FLEX,43,ambient,liquid-droplet,Heptane,0.3,0.703816,Disruption
+PSI-69,FLEX,44,ambient,liquid-droplet,Methanol,0.3,1.008947,Disruption
+PSI-69,FLEX,45,ambient,liquid-droplet,Methanol,0.3,1.010921,Extinction
+PSI-69,FLEX,46,ambient,liquid-droplet,Methanol,0.21,1.0125,Disruption
+PSI-69,FLEX,47,ambient,liquid-droplet,Heptane,0.21,1.013289,Completion
+PSI-69,FLEX,48,ambient,liquid-droplet,Methanol,0.21,1.011447,Disruption
+PSI-69,FLEX,49,ambient,liquid-droplet,Heptane,0.21,1.006447,Extinction
+PSI-69,FLEX,50,ambient,liquid-droplet,Heptane,0.21,1.013289,Extinction
+PSI-69,FLEX,51,ambient,liquid-droplet,Heptane,0.21,1.015,Completion
+PSI-69,FLEX,52,ambient,liquid-droplet,Heptane,0.3,1.014605,Disruption
+PSI-69,FLEX,53,ambient,liquid-droplet,Heptane,0.21,1.013421,Disruption
+PSI-69,FLEX,54,ambient,liquid-droplet,Methanol,0.2,0.712368,Extinction
+PSI-69,FLEX,55,ambient,liquid-droplet,Methanol,0.2,0.713947,Disruption
+PSI-69,FLEX,56,ambient,liquid-droplet,Heptane,0.2,0.715921,Completion
+PSI-69,FLEX,57,ambient,liquid-droplet,Heptane,0.2,0.716316,Extinction
+PSI-69,FLEX,58,ambient,liquid-droplet,Methanol,0.18,1.0175,Extinction
+PSI-69,FLEX,59,ambient,liquid-droplet,Methanol,0.18,1.012105,Extinction
+PSI-69,FLEX,60,ambient,liquid-droplet,Methanol,0.18,1.018026,Extinction
+PSI-69,FLEX,61,ambient,liquid-droplet,Methanol,0.18,1.018553,Extinction
+PSI-69,FLEX,62,ambient,liquid-droplet,Heptane,0.18,1.002368,Extinction
+PSI-69,FLEX,63,ambient,liquid-droplet,Heptane,0.18,1.01,Completion
+PSI-69,FLEX,64,ambient,liquid-droplet,Heptane,0.18,1.006053,Extinction
+PSI-69,FLEX,65,ambient,liquid-droplet,Methanol,0.15,1.007763,Extinction
+PSI-69,FLEX,66,ambient,liquid-droplet,Methanol,0.15,1.008947,Extinction
+PSI-69,FLEX,67,ambient,liquid-droplet,Methanol,0.15,1.010132,Extinction
+PSI-69,FLEX,68,ambient,liquid-droplet,Methanol,0.15,1.011579,Extinction
+PSI-69,FLEX,69,ambient,liquid-droplet,Heptane,0.14,1.009342,Completion
+PSI-69,FLEX,70,ambient,liquid-droplet,Heptane,0.15,1.001316,Extinction
+PSI-69,FLEX,71,ambient,liquid-droplet,Methanol,0.15,1.010921,Extinction
+PSI-69,FLEX,72,ambient,liquid-droplet,Heptane,0.15,1.006842,Completion
+PSI-69,FLEX,73,ambient,liquid-droplet,Heptane,0.15,1.001316,Extinction
+PSI-69,FLEX,74,ambient,liquid-droplet,Heptane,0.15,1.007763,Completion
+PSI-69,FLEX,75,ambient,liquid-droplet,Methanol,0.13,1.014211,Extinction
+PSI-69,FLEX,76,ambient,liquid-droplet,Methanol,0.13,1.0125,Extinction
+PSI-69,FLEX,77,ambient,liquid-droplet,Methanol,0.14,1.011053,Extinction
+PSI-69,FLEX,78,ambient,liquid-droplet,Methanol,0.14,1.007895,Extinction
+PSI-69,FLEX,79,ambient,liquid-droplet,Heptane,0.13,1.010658,Extinction
+PSI-69,FLEX,80,ambient,liquid-droplet,Heptane,0.13,1.013158,Extinction
+PSI-69,FLEX,81,ambient,liquid-droplet,Heptane,0.13,1.013421,Extinction
+PSI-69,FLEX,82,ambient,liquid-droplet,Methanol,0.13,1.006053,Extinction
+PSI-69,FLEX,83,ambient,liquid-droplet,Methanol,0.12,1.015789,Extinction
+PSI-69,FLEX,84,ambient,liquid-droplet,Methanol,0.12,1.009474,Extinction
+PSI-69,FLEX,85,ambient,liquid-droplet,Methanol,0.12,1.014737,Extinction
+PSI-69,FLEX,86,ambient,liquid-droplet,Methanol,0.12,1.013158,Extinction
+PSI-69,FLEX,87,ambient,liquid-droplet,Methanol,0.12,1.014737,Extinction
+PSI-69,FLEX,88,ambient,liquid-droplet,Methanol,0.25,0.707237,Disruption
+PSI-69,FLEX,89,ambient,liquid-droplet,Methanol,0.25,0.707105,Disruption
+PSI-69,FLEX,90,ambient,liquid-droplet,Methanol,0.25,0.709474,Disruption
+PSI-69,FLEX,91,ambient,liquid-droplet,Methanol,0.25,0.708289,Disruption
+PSI-69,FLEX,92,ambient,liquid-droplet,Heptane,0.25,0.705658,Disruption
+PSI-69,FLEX,93,ambient,liquid-droplet,Heptane,0.25,0.706974,Disruption
+PSI-69,FLEX,94,ambient,liquid-droplet,Heptane,0.24,0.702105,Extinction
+PSI-69,FLEX,95,ambient,liquid-droplet,Heptane,0.24,0.703158,Extinction
+PSI-69,FLEX,96,ambient,liquid-droplet,Heptane,0.24,0.703158,Disruption
+PSI-69,FLEX,97,ambient,liquid-droplet,Methanol,0.23,0.702895,Completion
+PSI-69,FLEX,98,ambient,liquid-droplet,Methanol,0.23,0.706711,Extinction
+PSI-69,FLEX,99,ambient,liquid-droplet,Methanol,0.23,0.703947,Extinction
+PSI-69,FLEX,100,ambient,liquid-droplet,Heptane,0.23,0.706184,Extinction
+PSI-69,FLEX,101,ambient,liquid-droplet,Heptane,0.23,0.708816,Extinction
+PSI-69,FLEX,102,ambient,liquid-droplet,Heptane,0.21,0.702895,Extinction
+PSI-69,FLEX,103,ambient,liquid-droplet,Heptane,0.21,0.703026,Extinction
+PSI-69,FLEX,104,ambient,liquid-droplet,Methanol,0.23,0.702763,Extinction
+PSI-69,FLEX,105,ambient,liquid-droplet,Methanol,0.23,0.703421,Disruption
+PSI-69,FLEX,106,ambient,liquid-droplet,Methanol,0.23,0.708289,Disruption
+PSI-69,FLEX,107,ambient,liquid-droplet,Methanol,0.23,0.703947,Disruption
+PSI-69,FLEX,108,ambient,liquid-droplet,Methanol,0.23,0.708289,Completion
+PSI-69,FLEX,109,ambient,liquid-droplet,Methanol,0.21,0.705921,Extinction
+PSI-69,FLEX,110,ambient,liquid-droplet,Methanol,0.21,0.706579,Extinction
+PSI-69,FLEX,111,ambient,liquid-droplet,Methanol,0.21,0.706447,Completion
+PSI-69,FLEX,112,ambient,liquid-droplet,Methanol,0.21,0.698289,Completion
+PSI-69,FLEX,113,ambient,liquid-droplet,Methanol,0.2,0.703421,Extinction
+PSI-69,FLEX,114,ambient,liquid-droplet,Methanol,0.2,,Extinction
+PSI-69,FLEX,115,ambient,liquid-droplet,Methanol,0.2,0.705,Extinction
+PSI-69,FLEX,116,ambient,liquid-droplet,Methanol,0.2,0.705658,Extinction
+PSI-69,FLEX,117,ambient,liquid-droplet,Heptane,0.2,0.698816,Extinction
+PSI-69,FLEX,118,ambient,liquid-droplet,Heptane,0.2,0.701053,Extinction
+PSI-69,FLEX,119,ambient,liquid-droplet,Heptane,0.18,0.700789,Extinction
+PSI-69,FLEX,120,ambient,liquid-droplet,Heptane,0.18,0.700658,Extinction
+PSI-69,FLEX,121,ambient,liquid-droplet,Methanol,0.18,0.6925,Extinction
+PSI-69,FLEX,122,ambient,liquid-droplet,Methanol,0.18,0.698947,Extinction
+PSI-69,FLEX,123,ambient,liquid-droplet,Methanol,0.18,0.7,Extinction
+PSI-69,FLEX,124,ambient,liquid-droplet,Methanol,0.18,0.700526,Extinction
+PSI-69,FLEX,125,ambient,liquid-droplet,Methanol,0.17,0.706842,Extinction
+PSI-69,FLEX,126,ambient,liquid-droplet,Methanol,0.17,0.705395,Extinction
+PSI-69,FLEX,127,ambient,liquid-droplet,Methanol,0.17,0.706184,Extinction
+PSI-69,FLEX,128,ambient,liquid-droplet,Methanol,0.17,0.706974,Extinction
+PSI-69,FLEX,129,ambient,liquid-droplet,Heptane,0.17,0.705526,Extinction
+PSI-69,FLEX,130,ambient,liquid-droplet,Heptane,0.17,0.706842,Extinction
+PSI-69,FLEX,131,ambient,liquid-droplet,Heptane,0.24,1.005132,Disruption
+PSI-69,FLEX,132,ambient,liquid-droplet,Heptane,0.24,1.006842,Disruption
+PSI-69,FLEX,133,ambient,liquid-droplet,Heptane,0.24,1.008816,Disruption
+PSI-69,FLEX,134,ambient,liquid-droplet,Heptane,0.24,1.009474,Extinction
+PSI-69,FLEX,135,ambient,liquid-droplet,Heptane,0.24,1.010789,Completion
+PSI-69,FLEX,136,ambient,liquid-droplet,Heptane,0.24,1.010658,Completion
+PSI-69,FLEX,137,ambient,liquid-droplet,Heptane,0.24,1.010789,Disruption
+PSI-69,FLEX,138,ambient,liquid-droplet,Heptane,0.24,1.011316,Disruption
+PSI-69,FLEX,139,ambient,liquid-droplet,Heptane,0.24,1.010526,Disruption
+PSI-69,FLEX,140,ambient,liquid-droplet,Methanol,0.15,0.701974,Extinction
+PSI-69,FLEX,141,ambient,liquid-droplet,Methanol,0.15,0.702763,Extinction
+PSI-69,FLEX,142,ambient,liquid-droplet,Methanol,0.15,0.703289,Extinction
+PSI-69,FLEX,143,ambient,liquid-droplet,Methanol,0.15,0.703553,Extinction
+PSI-69,FLEX,144,ambient,liquid-droplet,Methanol,0.2,1.0025,Extinction
+PSI-69,FLEX,145,ambient,liquid-droplet,Methanol,0.2,1.004605,Extinction
+PSI-69,FLEX,146,ambient,liquid-droplet,Methanol,0.2,1.007237,Extinction
+PSI-69,FLEX,147,ambient,liquid-droplet,Methanol,0.17,0.704868,Extinction
+PSI-69,FLEX,148,ambient,liquid-droplet,Heptane,0.2,1.005789,Disruption
+PSI-69,FLEX,149,ambient,liquid-droplet,Heptane,0.2,1.008158,Disruption
+PSI-69,FLEX,150,ambient,liquid-droplet,Heptane,0.2,1.01,Extinction
+PSI-69,FLEX,151,ambient,liquid-droplet,Methanol,0.18,1.003289,Completion
+PSI-69,FLEX,152,ambient,liquid-droplet,Methanol,0.18,1.006579,Extinction
+PSI-69,FLEX,153,ambient,liquid-droplet,Methanol,0.18,1.007368,Extinction
+PSI-69,FLEX,154,ambient,liquid-droplet,Heptane,0.18,1.003026,Extinction
+PSI-69,FLEX,155,ambient,liquid-droplet,Heptane,0.18,1.006447,Extinction
+PSI-69,FLEX,156,ambient,liquid-droplet,Heptane,0.18,1.0075,Completion
+PSI-69,FLEX,157,ambient,liquid-droplet,Methanol,0.16,1.002763,Extinction
+PSI-69,FLEX,158,ambient,liquid-droplet,Methanol,0.16,1.005789,Extinction
+PSI-69,FLEX,159,ambient,liquid-droplet,Methanol,0.16,1.007237,Extinction
+PSI-69,FLEX,160,ambient,liquid-droplet,Methanol,0.16,1.01,Extinction
+PSI-69,FLEX,161,ambient,liquid-droplet,Methanol,0.15,1.004342,Extinction
+PSI-69,FLEX,162,ambient,liquid-droplet,Methanol,0.15,1.005789,Extinction
+PSI-69,FLEX,163,ambient,liquid-droplet,Methanol,0.15,1.007763,Extinction
+PSI-69,FLEX,164,ambient,liquid-droplet,Methanol,0.15,1.008026,Extinction
+PSI-69,FLEX,165,ambient,liquid-droplet,Heptane,0.18,1.007105,Extinction
+PSI-69,FLEX,166,ambient,liquid-droplet,Methanol,0.14,1.001053,Extinction
+PSI-69,FLEX,167,ambient,liquid-droplet,Methanol,0.14,1.002105,Extinction
+PSI-69,FLEX,168,ambient,liquid-droplet,Methanol,0.21,1.004474,Disruption
+PSI-69,FLEX,169,ambient,liquid-droplet,Methanol,0.21,1.008026,Extinction
+PSI-69,FLEX,170,ambient,liquid-droplet,Methanol,0.21,1.008816,Extinction
+PSI-69,FLEX,171,ambient,liquid-droplet,Heptane,0.18,0.999868,Extinction
+PSI-69,FLEX,172,ambient,liquid-droplet,Heptane,0.18,1.002632,Extinction
+PSI-69,FLEX,173,ambient,liquid-droplet,Heptane,0.18,1.002763,Disruption
+PSI-69,FLEX,174,ambient,liquid-droplet,Heptane,0.24,0.699605,Disruption
+PSI-69,FLEX,175,ambient,liquid-droplet,Heptane,0.24,0.700132,Disruption
+PSI-69,FLEX,176,ambient,liquid-droplet,Methanol,0.24,0.706447,Extinction
+PSI-69,FLEX,177,ambient,liquid-droplet,Methanol,0.24,0.706579,Extinction
+PSI-69,FLEX,178,ambient,liquid-droplet,Heptane,0.23,0.702105,Extinction
+PSI-69,FLEX,179,ambient,liquid-droplet,Heptane,0.23,0.703158,Disruption
+PSI-69,FLEX,180,ambient,liquid-droplet,Heptane,0.19,0.997895,Extinction
+PSI-69,FLEX,181,ambient,liquid-droplet,Heptane,0.19,0.998816,Extinction
+PSI-69,FLEX,182,ambient,liquid-droplet,Heptane,0.19,0.998684,Disruption
+PSI-69,FLEX,183,ambient,liquid-droplet,Methanol,0.23,0.703158,Extinction
+PSI-69,FLEX,184,ambient,liquid-droplet,Methanol,0.23,0.704079,Extinction
+PSI-69,FLEX,185,ambient,liquid-droplet,Methanol,0.23,0.704211,Extinction
+PSI-69,FLEX,186,ambient,liquid-droplet,Methanol,0.23,0.705526,Extinction
+PSI-69,FLEX,187,ambient,liquid-droplet,Methanol,0.19,0.997368,Extinction
+PSI-69,FLEX,188,ambient,liquid-droplet,Methanol,0.19,0.9975,Extinction
+PSI-69,FLEX,189,ambient,liquid-droplet,Methanol,0.18,1.001579,Extinction
+PSI-69,FLEX,190,ambient,liquid-droplet,Methanol,0.18,1.006053,Extinction
+PSI-69,FLEX,191,ambient,liquid-droplet,Methanol,0.18,1.006974,Extinction
+PSI-69,FLEX,192,ambient,liquid-droplet,Methanol,0.17,0.999342,Extinction
+PSI-69,FLEX,193,ambient,liquid-droplet,Methanol,0.17,0.998816,Extinction
+PSI-69,FLEX,194,ambient,liquid-droplet,Heptane,0.17,0.989474,Extinction
+PSI-69,FLEX,195,ambient,liquid-droplet,Heptane,0.17,0.990132,Extinction
+PSI-69,FLEX,196,ambient,liquid-droplet,Heptane,0.2,0.997895,Extinction
+PSI-69,FLEX,197,ambient,liquid-droplet,Heptane,0.2,0.999737,Extinction
+PSI-69,FLEX,198,ambient,liquid-droplet,Heptane,0.2,1.000132,Disruption
+PSI-69,FLEX,199,ambient,liquid-droplet,Methanol,0.2,0.992105,Extinction
+PSI-69,FLEX,200,ambient,liquid-droplet,Methanol,0.2,0.994868,Extinction
+PSI-69,FLEX,201,ambient,liquid-droplet,Methanol,0.2,0.995921,Extinction
+PSI-69,FLEX,202,ambient,liquid-droplet,Methanol,0.21,1.000263,Extinction
+PSI-69,FLEX,203,ambient,liquid-droplet,Methanol,0.21,1.002105,Extinction
+PSI-69,FLEX,204,ambient,liquid-droplet,Heptane,0.21,0.995395,Disruption
+PSI-69,FLEX,205,ambient,liquid-droplet,Heptane,0.21,0.996447,Disruption
+PSI-69,FLEX,206,ambient,liquid-droplet,Heptane,0.21,1.000263,Disruption
+PSI-69,FLEX,207,ambient,liquid-droplet,Heptane,0.21,1.003553,Completion
+PSI-69,FLEX,208,ambient,liquid-droplet,Heptane,0.21,1.003816,Completion
+PSI-69,FLEX,209,ambient,liquid-droplet,Heptane,0.16,0.999737,Extinction
+PSI-69,FLEX,210,ambient,liquid-droplet,Heptane,0.16,0.999737,Extinction
+PSI-69,FLEX,211,ambient,liquid-droplet,Heptane,0.16,0.999868,Extinction
+PSI-69,FLEX,212,ambient,liquid-droplet,Heptane,0.15,1.005263,Extinction
+PSI-69,FLEX,213,ambient,liquid-droplet,Heptane,0.14,0.999737,Extinction
+PSI-69,FLEX,214,ambient,liquid-droplet,Heptane,0.14,0.999868,Extinction
+PSI-69,FLEX,215,ambient,liquid-droplet,Methanol,0.14,0.996842,Extinction
+PSI-69,FLEX,216,ambient,liquid-droplet,Methanol,0.14,0.997763,Extinction
+PSI-69,FLEX,217,ambient,liquid-droplet,Methanol,0.13,0.999211,Extinction
+PSI-69,FLEX,218,ambient,liquid-droplet,Methanol,0.13,1.000789,Extinction
+PSI-69,FLEX,219,ambient,liquid-droplet,Methanol,0.12,1.002105,Extinction
+PSI-69,FLEX,220,ambient,liquid-droplet,Methanol,0.12,1.0025,Extinction
+PSI-69,FLEX,221,ambient,liquid-droplet,Methanol,0.12,1.004868,Extinction
+PSI-69,FLEX,222,ambient,liquid-droplet,Methanol,0.2,0.998947,Extinction
+PSI-69,FLEX,223,ambient,liquid-droplet,Methanol,0.2,0.999474,Extinction
+PSI-69,FLEX,224,ambient,liquid-droplet,Heptane,0.2,0.993816,Completion
+PSI-69,FLEX,225,ambient,liquid-droplet,Methanol,0.19,0.991316,Extinction
+PSI-69,FLEX,226,ambient,liquid-droplet,Methanol,0.18,0.998947,Extinction
+PSI-69,FLEX,227,ambient,liquid-droplet,Methanol,0.18,1.000395,Extinction
+PSI-69,FLEX,228,ambient,liquid-droplet,Heptane,0.21,1.009737,Extinction
+PSI-69,FLEX,229,ambient,liquid-droplet,Heptane,0.21,1.010658,Disruption
+PSI-69,FLEX,230,ambient,liquid-droplet,Heptane,0.21,1.012105,Extinction
+PSI-69,FLEX,231,ambient,liquid-droplet,Heptane,0.19,0.998421,Disruption
+PSI-69,FLEX,232,ambient,liquid-droplet,Heptane,0.18,1.004868,Extinction
+PSI-69,FLEX,233,ambient,liquid-droplet,Heptane,0.18,1.007763,Completion
+PSI-69,FLEX,234,ambient,liquid-droplet,Heptane,0.18,1.008553,Completion
+PSI-69,FLEX,235,ambient,liquid-droplet,Heptane,0.17,0.999079,Extinction
+PSI-69,FLEX,236,ambient,liquid-droplet,Heptane,0.17,0.999079,Extinction
+PSI-69,FLEX,237,ambient,liquid-droplet,Heptane,0.17,0.999474,Disruption
+PSI-69,FLEX,238,ambient,liquid-droplet,Heptane,0.17,0.999737,Completion
+PSI-69,FLEX,239,ambient,liquid-droplet,Methanol,0.17,0.992368,Extinction
+PSI-69,FLEX,240,ambient,liquid-droplet,Methanol,0.17,0.996053,Extinction
+PSI-69,FLEX,241,ambient,liquid-droplet,Methanol,0.16,0.999868,Extinction
+PSI-69,FLEX,242,ambient,liquid-droplet,Methanol,0.16,1.001316,Extinction
+PSI-69,FLEX,243,ambient,liquid-droplet,Heptane,0.16,0.997237,Extinction
+PSI-69,FLEX,244,ambient,liquid-droplet,Methanol,0.15,0.994211,Extinction
+PSI-69,FLEX,245,ambient,liquid-droplet,Methanol,0.15,0.995658,Extinction
+PSI-69,FLEX,246,ambient,liquid-droplet,Methanol,0.14,0.998947,Extinction
+PSI-69,FLEX,247,ambient,liquid-droplet,Methanol,0.14,0.999737,Extinction
+PSI-69,FLEX,248,ambient,liquid-droplet,Methanol,0.13,1.004605,Extinction
+PSI-69,FLEX,249,ambient,liquid-droplet,Heptane,0.24,0.702632,Extinction
+PSI-69,FLEX,250,ambient,liquid-droplet,Heptane,0.23,0.700263,Completion
+PSI-69,FLEX,251,ambient,liquid-droplet,Methanol,0.24,0.703026,Extinction
+PSI-69,FLEX,252,ambient,liquid-droplet,Methanol,0.24,0.703421,Disruption
+PSI-69,FLEX,253,ambient,liquid-droplet,Methanol,0.23,0.699605,Extinction
+PSI-69,FLEX,254,ambient,liquid-droplet,Methanol,0.23,0.699737,Disruption
+PSI-69,FLEX,255,ambient,liquid-droplet,Methanol,0.21,0.699868,Extinction
+PSI-69,FLEX,256,ambient,liquid-droplet,Methanol,0.21,0.698947,Extinction
+PSI-69,FLEX,257,ambient,liquid-droplet,Methanol,0.21,0.698947,Extinction
+PSI-69,FLEX,258,ambient,liquid-droplet,Heptane,0.21,0.696842,Extinction
+PSI-69,FLEX,259,ambient,liquid-droplet,Heptane,0.21,0.696053,Extinction
+PSI-69,FLEX,260,ambient,liquid-droplet,Heptane,0.2,0.700658,Extinction
+PSI-69,FLEX,261,ambient,liquid-droplet,Heptane,0.2,0.7,Extinction
+PSI-69,FLEX,262,ambient,liquid-droplet,Methanol,0.2,0.694211,Extinction
+PSI-69,FLEX,263,ambient,liquid-droplet,Methanol,0.2,0.694605,Extinction
+PSI-69,FLEX,264,ambient,liquid-droplet,Methanol,0.18,0.700526,Extinction
+PSI-69,FLEX,265,ambient,liquid-droplet,Methanol,0.18,0.701184,Extinction
+PSI-69,FLEX,266,ambient,liquid-droplet,Methanol,0.18,0.701579,Extinction
+PSI-69,FLEX,267,ambient,liquid-droplet,Heptane,0.18,0.694737,Extinction
+PSI-69,FLEX,268,ambient,liquid-droplet,Heptane,0.18,0.697763,Extinction
+PSI-69,FLEX,269,ambient,liquid-droplet,Heptane,0.17,0.700263,Extinction
+PSI-69,FLEX,270,ambient,liquid-droplet,Heptane,0.17,0.700658,Completion
+PSI-69,FLEX,271,ambient,liquid-droplet,Methanol,0.17,0.697895,Extinction
+PSI-69,FLEX,272,ambient,liquid-droplet,Methanol,0.17,0.699342,Extinction
+PSI-69,FLEX,273,ambient,liquid-droplet,Heptane,0.21,1.006184,Extinction
+PSI-69,FLEX,274,ambient,liquid-droplet,Heptane,0.21,1.008158,Extinction
+PSI-39,CFI,1206,ambient,liquid-droplet,C12H26,0.21,1.0,
+PSI-39,CFI,1207,ambient,liquid-droplet,C12H26,0.21,1.0,
+PSI-39,CFI,1208,ambient,liquid-droplet,C12H26,0.21,1.0,
+PSI-39,CFI,1209,ambient,liquid-droplet,C12H26,0.21,1.0,
+PSI-39,CFI,1210,ambient,liquid-droplet,C12H26,0.21,1.0,
+PSI-39,CFI,1211,ambient,liquid-droplet,C12H26,0.21,1.0,
+PSI-39,CFI,1213,ambient,liquid-droplet,C12H26,0.17,1.0,
+PSI-39,CFI,1215,ambient,liquid-droplet,C12H26,0.17,1.0,
+PSI-39,CFI,1216,ambient,liquid-droplet,C12H26,0.17,1.0,
+PSI-39,CFI,1217,ambient,liquid-droplet,C12H26,0.17,1.0,
+PSI-39,CFI,1218,ambient,liquid-droplet,C12H26,0.21,1.0,
+PSI-39,CFI,1219,ambient,liquid-droplet,C12H26,0.21,1.0,
+PSI-39,CFI,1220,ambient,liquid-droplet,C12H26,0.21,1.0,
+PSI-39,CFI,1221,ambient,liquid-droplet,C12H26,0.21,1.0,
+PSI-39,CFI,1222,ambient,liquid-droplet,C12H26,0.21,1.0,
+PSI-39,CFI,1223,ambient,liquid-droplet,C12H26,0.21,1.25,
+PSI-39,CFI,1224,ambient,liquid-droplet,C12H26,0.21,1.25,
+PSI-39,CFI,1225,ambient,liquid-droplet,C12H26,0.21,1.25,
+PSI-39,CFI,1226,ambient,liquid-droplet,C12H26,0.21,1.25,
+PSI-39,CFI,1227,ambient,liquid-droplet,C12H26,0.21,2.0,
+PSI-39,CFI,1228,ambient,liquid-droplet,C12H26,0.21,2.0,
+PSI-39,CFI,1229,ambient,liquid-droplet,C12H26,0.21,2.0,
+PSI-39,CFI,1285,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1286,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1287,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1288,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1289,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1295,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1296,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1297,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1290,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1291,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1292,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1293,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1294,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1300,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1301,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1310,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.25,
+PSI-39,CFI,1311,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.25,
+PSI-39,CFI,1312,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.25,
+PSI-39,CFI,1313,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.25,
+PSI-39,CFI,1314,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.25,
+PSI-39,CFI,1320,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,2.0,
+PSI-39,CFI,1321,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,2.0,
+PSI-39,CFI,1322,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,2.0,
+PSI-39,CFI,1323,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,2.0,
+PSI-39,CFI,1328,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.17,3.0,
+PSI-39,CFI,1329,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.17,3.0,
+PSI-39,CFI,1330,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.17,3.0,
+PSI-39,CFI,1331,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.17,3.0,
+PSI-39,CFI,1332,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.17,3.0,
+PSI-39,CFI,1335,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,3.0,
+PSI-39,CFI,1336,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,3.0,
+PSI-39,CFI,1337,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,3.0,
+PSI-39,CFI,1338,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,3.0,
+PSI-39,CFI,1340,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.21,5.0,
+PSI-39,CFI,1341,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,5.0,
+PSI-39,CFI,1342,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,5.0,
+PSI-39,CFI,1346,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,0.75,
+PSI-39,CFI,1347,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,0.75,
+PSI-39,CFI,1348,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,0.75,
+PSI-39,CFI,1349,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,0.75,
+PSI-39,CFI,1356,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,0.5,
+PSI-39,CFI,1357,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,0.5,
+PSI-39,CFI,1358,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,0.5,
+PSI-39,CFI,1362,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1363,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1364,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1365,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1366,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1367,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.21,3.0,
+PSI-39,CFI,1368,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.21,3.0,
+PSI-39,CFI,1369,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.21,3.0,
+PSI-39,CFI,1373,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.21,3.0,
+PSI-39,CFI,1374,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.21,3.0,
+PSI-39,CFI,1383,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1384,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1386,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1387,ambient,liquid-droplet,[.60]/[.40] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1285,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1286,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1287,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1288,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1289,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.17,1.0,
+PSI-39,CFI,1295,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1296,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.21,1.0,
+PSI-39,CFI,1297,ambient,liquid-droplet,[.75]/[.25] C12H26/iso-dodecane,0.21,1.0,
+PSI-159,CFI-G,21088A1,ambient,gas,ethane,0.3939,0.932046,Yes
+PSI-159,CFI-G,21088 B1,ambient,gas,ethane,0.389823,0.932046,Yes
+PSI-159,CFI-G,21088 C1,ambient,gas,ethane,0.386321,0.932046,Yes
+PSI-159,CFI-G,21088 D1,ambient,gas,ethane,0.382905,0.932046,Yes
+PSI-159,CFI-G,21088 F1,ambient,gas,ethane,0.380427,0.932046,Yes
+PSI-159,CFI-G,21088 G1,ambient,gas,ethane,0.379858,0.932046,Yes
+PSI-159,CFI-G,21088 H1,ambient,gas,ethane,0.376135,0.932046,Yes
+PSI-159,CFI-G,21088 J1,ambient,gas,ethane,0.373392,0.932046,Yes
+PSI-159,CFI-G,21088 K1,ambient,gas,ethane,0.369578,0.932046,Yes
+PSI-159,CFI-G,21088 H2,ambient,gas,ethane,0.36455,0.932046,Yes
+PSI-159,CFI-G,21088 M4,ambient,gas,ethane,0.2101,1.000049,Yes
+PSI-159,CFI-G,21088 L1,ambient,gas,ethane,0.209639,1.000049,Yes
+PSI-159,CFI-G,21088 N1,ambient,gas,ethane,0.1802,1.000049,Yes
+PSI-159,CFI-G,21088 P1,ambient,gas,ethane,0.179686,1.000049,Yes
+PSI-159,CFI-G,21102A1,ambient,gas,50% butane,0.3957,1.000049,Yes
+PSI-159,CFI-G,21102 C1,ambient,gas,50% butane,0.393032,1.000049,Yes
+PSI-159,CFI-G,21102 B1,ambient,gas,50% butane,0.390548,1.000049,Yes
+PSI-159,CFI-G,21102 C2,ambient,gas,50% butane,0.388126,1.000049,Yes
+PSI-159,CFI-G,21102 C3,ambient,gas,50% butane,0.386222,1.000049,Yes
+PSI-159,CFI-G,21102 C4,ambient,gas,50% butane,0.382509,1.000049,No
+PSI-159,CFI-G,21102 C5,ambient,gas,50% butane,0.382509,1.000049,Yes
+PSI-159,CFI-G,21102 C6,ambient,gas,50% butane,0.381212,1.000049,No
+PSI-159,CFI-G,21102 C7,ambient,gas,50% butane,0.381212,1.000049,Yes
+PSI-159,CFI-G,21102 C8,ambient,gas,50% butane,0.380669,1.000049,No
+PSI-159,CFI-G,21102 M1,ambient,gas,50% butane,0.2341,1.000049,Yes
+PSI-159,CFI-G,21102 M2,ambient,gas,50% butane,0.233649,1.000049,Yes
+PSI-159,CFI-G,21102 M3,ambient,gas,50% butane,0.233255,1.000049,No
+PSI-159,CFI-G,21102 M4,ambient,gas,50% butane,0.233255,1.000049,No
+PSI-159,CFI-G,21102 M5,ambient,gas,50% butane,0.233255,1.000049,No
+PSI-159,CFI-G,21102 M6,ambient,gas,50% butane,0.233255,1.000049,No
+PSI-159,CFI-G,21106A4,ambient,gas,50% butane,0.3926,0.500025,Yes
+PSI-159,CFI-G,21106 B1,ambient,gas,50% butane,0.384639,0.500025,Yes
+PSI-159,CFI-G,21106 C1,ambient,gas,50% butane,0.377171,0.500025,Yes
+PSI-159,CFI-G,21106 D1,ambient,gas,50% butane,0.369281,0.500025,Yes
+PSI-159,CFI-G,21106 F1,ambient,gas,50% butane,0.358532,0.500025,Yes
+PSI-159,CFI-G,21106 F2,ambient,gas,50% butane,0.354241,0.500025,No
+PSI-159,CFI-G,21106 F3,ambient,gas,50% butane,0.354241,0.500025,Yes
+PSI-159,CFI-G,21106 F4,ambient,gas,50% butane,0.353757,0.500025,No
+PSI-159,CFI-G,21106 F5,ambient,gas,50% butane,0.352938,0.500025,No
+PSI-159,CFI-G,21106 G6,ambient,gas,50% butane,0.2097,0.500025,Yes
+PSI-159,CFI-G,21106 G7,ambient,gas,50% butane,0.208586,0.500025,Yes
+PSI-159,CFI-G,21106 G9,ambient,gas,50% butane,0.207474,0.500025,Yes
+PSI-159,CFI-G,21106 H1,ambient,gas,50% butane,0.206695,0.500025,No
+PSI-159,CFI-G,21106 H2,ambient,gas,50% butane,0.206695,0.500025,No
+PSI-159,CFI-G,21112A1,ambient,gas,propane,0.3954,0.932046,Yes
+PSI-159,CFI-G,21112 A2,ambient,gas,propane,0.394045,0.932046,Yes
+PSI-159,CFI-G,21112 A3,ambient,gas,propane,0.391274,0.932046,Yes
+PSI-159,CFI-G,21112 A4,ambient,gas,propane,0.386795,0.932046,Yes
+PSI-159,CFI-G,21112 A5,ambient,gas,propane,0.379544,0.932046,Yes
+PSI-159,CFI-G,21112 C1,ambient,gas,propane,0.377664,0.932046,Yes
+PSI-159,CFI-G,21112 C2,ambient,gas,propane,0.377096,0.932046,Yes
+PSI-159,CFI-G,21112 A6,ambient,gas,propane,0.376528,0.932046,Yes
+PSI-159,CFI-G,21112 C3,ambient,gas,propane,0.366423,0.932046,No
+PSI-159,CFI-G,21112 C4,ambient,gas,propane,0.366423,0.932046,No
+PSI-159,CFI-G,21112 C5,ambient,gas,propane,0.366423,0.932046,No
+PSI-159,CFI-G,21112 C6,ambient,gas,propane,0.366423,0.932046,No
+PSI-159,CFI-G,21112 F1,ambient,gas,propane,0.2125,1.000049,No
+PSI-159,CFI-G,21112 F2,ambient,gas,propane,0.2125,1.000049,Yes
+PSI-159,CFI-G,21112 F3,ambient,gas,propane,0.212225,1.000049,Yes
+PSI-159,CFI-G,21112 F4,ambient,gas,propane,0.212005,1.000049,Yes
+PSI-159,CFI-G,21112 F5,ambient,gas,propane,0.211798,1.000049,No
+PSI-159,CFI-G,21112 H1,ambient,gas,propane,0.211798,1.000049,Yes
+PSI-159,CFI-G,21112 H2,ambient,gas,propane,0.211592,1.000049,Yes
+PSI-159,CFI-G,21112 H3,ambient,gas,propane,0.211403,1.000049,No
+PSI-159,CFI-G,21125A1,ambient,gas,30% butane,0.3945,1.000049,No
+PSI-159,CFI-G,21125 A2,ambient,gas,30% butane,0.3945,1.000049,Yes
+PSI-159,CFI-G,21125 A3,ambient,gas,30% butane,0.394119,1.000049,No
+PSI-159,CFI-G,21125 A4,ambient,gas,30% butane,0.394119,1.000049,No
+PSI-159,CFI-G,21125 A5,ambient,gas,30% butane,0.394119,1.000049,No
+PSI-159,CFI-G,21125 A6,ambient,gas,30% butane,0.394119,1.000049,No
+PSI-159,CFI-G,21125 A7,ambient,gas,30% butane,0.394119,1.000049,No
+PSI-159,CFI-G,21125 A8,ambient,gas,30% butane,0.394119,1.000049,No
+PSI-159,CFI-G,21125 A9,ambient,gas,30% butane,0.394119,1.000049,No
+PSI-159,CFI-G,21125 H1,ambient,gas,30% butane,0.394119,1.000049,No
+PSI-159,CFI-G,21125 H2,ambient,gas,30% butane,0.394119,1.000049,No
+PSI-159,CFI-G,21125 H3,ambient,gas,30% butane,0.394119,1.000049,No
+PSI-159,CFI-G,21125 H4,ambient,gas,30% butane,0.394119,1.000049,No
+PSI-159,CFI-G,21125 J1,ambient,gas,30% butane,0.394119,1.000049,No
+PSI-159,CFI-G,21125 H5,ambient,gas,30% butane,0.394119,1.000049,No
+PSI-159,CFI-G,21125 K1,ambient,gas,30% butane,0.394119,1.000049,Yes
+PSI-159,CFI-G,21125 K2,ambient,gas,30% butane,0.389157,1.000049,Yes
+PSI-159,CFI-G,21125 K3,ambient,gas,30% butane,0.384376,1.000049,Yes
+PSI-159,CFI-G,21125 D1,ambient,gas,30% butane,0.2111,1.000049,Yes
+PSI-159,CFI-G,21125 D2,ambient,gas,30% butane,0.211072,1.000049,Yes
+PSI-159,CFI-G,21125 D3,ambient,gas,30% butane,0.211045,1.000049,No
+PSI-159,CFI-G,21125 D4,ambient,gas,30% butane,0.211045,1.000049,No
+PSI-159,CFI-G,21125 D5,ambient,gas,30% butane,0.211045,1.000049,No
+PSI-159,CFI-G,21125 D6,ambient,gas,30% butane,0.211045,1.000049,No
+PSI-159,CFI-G,21130A1,ambient,gas,30% propane,0.2107,2.000099,Yes
+PSI-159,CFI-G,21130 A2,ambient,gas,30% propane,0.210685,2.000099,Yes
+PSI-159,CFI-G,21130 A3,ambient,gas,30% propane,0.210654,2.000099,No
+PSI-159,CFI-G,21130 A4,ambient,gas,30% propane,0.210654,2.000099,No
+PSI-159,CFI-G,21130 A5,ambient,gas,30% propane,0.210654,2.000099,Yes
+PSI-159,CFI-G,21130 A6,ambient,gas,30% propane,0.210623,2.000099,No
+PSI-159,CFI-G,21130 A7,ambient,gas,30% propane,0.210623,2.000099,No
+PSI-159,CFI-G,21130 A8,ambient,gas,30% propane,0.210623,2.000099,No
+PSI-159,CFI-G,21130 A9,ambient,gas,30% propane,0.210623,2.000099,Yes
+PSI-159,CFI-G,21130 M1,ambient,gas,30% propane,0.210616,2.000099,Yes
+PSI-159,CFI-G,21130 M2,ambient,gas,30% propane,0.210503,2.000099,Yes
+PSI-159,CFI-G,21130 M3,ambient,gas,30% propane,0.210241,2.000099,Yes
+PSI-159,CFI-G,21130 G1,ambient,gas,30% propane,0.2167,3.000148,No
+PSI-159,CFI-G,21130 G2,ambient,gas,30% propane,0.2167,3.000148,Yes
+PSI-159,CFI-G,21130 G3,ambient,gas,30% propane,0.21669,3.000148,Yes
+PSI-159,CFI-G,21130 G4,ambient,gas,30% propane,0.216669,3.000148,No
+PSI-159,CFI-G,21130 G5,ambient,gas,30% propane,0.216669,3.000148,No
+PSI-159,CFI-G,21130 G6,ambient,gas,30% propane,0.216669,3.000148,Yes
+PSI-159,CFI-G,21130 G7,ambient,gas,30% propane,0.216664,3.000148,Yes
+PSI-159,CFI-G,21130 N1,ambient,gas,30% propane,0.216661,3.000148,Yes
+PSI-159,CFI-G,21130 N2,ambient,gas,30% propane,0.216586,3.000148,Yes
+PSI-159,CFI-G,21130 N3,ambient,gas,30% propane,0.216435,3.000148,Yes
+PSI-159,CFI-G,21130 N4,ambient,gas,30% propane,0.216404,3.000148,Yes
+PSI-159,CFI-G,21130 N5,ambient,gas,30% propane,0.216372,3.000148,No
+PSI-159,CFI-G,21137A1,ambient,gas,30% propane,0.3996,1.000049,Yes
+PSI-159,CFI-G,21137 A2,ambient,gas,30% propane,0.397259,1.000049,Yes
+PSI-159,CFI-G,21137 A3,ambient,gas,30% propane,0.394769,1.000049,Yes
+PSI-159,CFI-G,21137 B1,ambient,gas,30% propane,0.389509,1.000049,Yes
+PSI-159,CFI-G,21137 B2,ambient,gas,30% propane,0.371242,1.000049,Yes
+PSI-159,CFI-G,21137 A4,ambient,gas,30% propane,0.357499,1.000049,Yes
+PSI-159,CFI-G,21137 A5,ambient,gas,30% propane,0.355684,1.000049,Yes
+PSI-159,CFI-G,21137 A6,ambient,gas,30% propane,0.353678,1.000049,Yes
+PSI-159,CFI-G,21137 A7,ambient,gas,30% propane,0.352403,1.000049,Yes
+PSI-159,CFI-G,21137 D1,ambient,gas,30% propane,0.21,1.000049,Yes
+PSI-159,CFI-G,21137 D2,ambient,gas,30% propane,0.209134,1.000049,Yes
+PSI-159,CFI-G,21137 C1,ambient,gas,30% propane,0.208928,1.000049,Yes
+PSI-159,CFI-G,21153A1,ambient,gas,30% ethane,0.3887,0.500025,Yes
+PSI-159,CFI-G,21153 A2,ambient,gas,30% ethane,0.3759,0.500025,Yes
+PSI-159,CFI-G,21153 A3,ambient,gas,30% ethane,0.363879,0.500025,Yes
+PSI-159,CFI-G,21153 F1,ambient,gas,30% ethane,0.340808,0.500025,Yes
+PSI-159,CFI-G,21153 A4,ambient,gas,30% ethane,0.334934,0.500025,Yes
+PSI-159,CFI-G,21153 A5,ambient,gas,30% ethane,0.332446,0.500025,Yes
+PSI-159,CFI-G,21153 C1,ambient,gas,30% ethane,0.3985,2.000099,Yes
+PSI-159,CFI-G,21153 C2,ambient,gas,30% ethane,0.396626,2.000099,Yes
+PSI-159,CFI-G,21153 C3,ambient,gas,30% ethane,0.394842,2.000099,Yes
+PSI-159,CFI-G,21153 G1,ambient,gas,30% ethane,0.39198,2.000099,Yes
+PSI-159,CFI-G,21153 C4,ambient,gas,30% ethane,0.388939,2.000099,Yes
+PSI-159,CFI-G,21153 C5,ambient,gas,30% ethane,0.384152,2.000099,Yes
+PSI-159,CFI-G,21153 C6,ambient,gas,30% ethane,0.383585,2.000099,Yes
+PSI-159,CFI-G,21153 C7,ambient,gas,30% ethane,0.382061,2.000099,Yes
+PSI-159,CFI-G,21162A1,ambient,gas,30% ethane,0.3997,1.000049,Yes
+PSI-159,CFI-G,21162 A2,ambient,gas,30% ethane,0.394967,1.000049,Yes
+PSI-159,CFI-G,21162 A3,ambient,gas,30% ethane,0.390018,1.000049,Yes
+PSI-159,CFI-G,21162 B1,ambient,gas,30% ethane,0.379326,1.000049,Yes
+PSI-159,CFI-G,21162 A4,ambient,gas,30% ethane,0.372086,1.000049,Yes
+PSI-159,CFI-G,21162 C1,ambient,gas,30% ethane,0.21,1.000049,Yes
+PSI-159,CFI-G,21162 C2,ambient,gas,30% ethane,0.20962,1.000049,Yes
+PSI-159,CFI-G,21162 C3,ambient,gas,30% ethane,0.20929,1.000049,Yes
+PSI-159,CFI-G,21162 C4,ambient,gas,30% ethane,0.208929,1.000049,Yes
+PSI-159,CFI-G,21162 C5,ambient,gas,30% ethane,0.20839,1.000049,Yes
+PSI-159,CFI-G,21162 D1,ambient,gas,30% ethane,0.207541,1.000049,Yes
+PSI-159,CFI-G,21162 F1,ambient,gas,30% ethane,0.207221,1.000049,No
+PSI-159,CFI-G,21162 F2,ambient,gas,30% ethane,0.207221,1.000049,Yes
+PSI-159,CFI-G,21174 A1,ambient,gas,30% butane,0.3886,0.500025,Yes
+PSI-159,CFI-G,21174 A2,ambient,gas,30% butane,0.383172,0.500025,Yes
+PSI-159,CFI-G,21174 A3,ambient,gas,30% butane,0.378522,0.500025,Yes
+PSI-159,CFI-G,21174 A4,ambient,gas,30% butane,0.372052,0.500025,Yes
+PSI-159,CFI-G,21174 B1,ambient,gas,30% butane,0.35544,0.500025,Yes
+PSI-159,CFI-G,21174 C1,ambient,gas,30% butane,0.3985,2.000099,Yes
+PSI-159,CFI-G,21174 C2,ambient,gas,30% butane,0.396546,2.000099,Yes
+PSI-159,CFI-G,21174 C3,ambient,gas,30% butane,0.395373,2.000099,Yes
+PSI-159,CFI-G,21174 C4,ambient,gas,30% butane,0.394311,2.000099,Yes
+PSI-159,CFI-G,21174 D1,ambient,gas,30% butane,0.392492,2.000099,Yes
+PSI-159,CFI-G,21174 F1,ambient,gas,30% butane,0.390816,2.000099,Yes
+PSI-159,CFI-G,21174 C5,ambient,gas,30% butane,0.389606,2.000099,Yes
+PSI-159,CFI-G,21174 C6,ambient,gas,30% butane,0.389263,2.000099,Yes
+PSI-159,CFI-G,21174 F2,ambient,gas,30% butane,0.385474,2.000099,Yes
+PSI-159,CFI-G,21174 F3,ambient,gas,30% butane,0.38475,2.000099,Yes
+PSI-159,CFI-G,21174 F4,ambient,gas,30% butane,0.384056,2.000099,Yes
+PSI-159,CFI-G,21291 A1,ambient,gas,30% butane,0.3993,2.000099,Yes
+PSI-159,CFI-G,21291 C1,ambient,gas,30% butane,0.394233,2.000099,Yes
+PSI-159,CFI-G,21291 C2,ambient,gas,30% butane,0.389271,2.000099,Yes
+PSI-159,CFI-G,21291 B1,ambient,gas,30% butane,0.388319,2.000099,Yes
+PSI-159,CFI-G,21291 H1,ambient,gas,30% butane,0.387191,2.000099,Yes
+PSI-159,CFI-G,21291 H2,ambient,gas,30% butane,0.386174,2.000099,Yes
+PSI-159,CFI-G,21291 D1,ambient,gas,30% butane,0.3978,1.000049,Yes
+PSI-159,CFI-G,21291 G1,ambient,gas,30% butane,0.394947,1.000049,Yes
+PSI-159,CFI-G,21291 G2,ambient,gas,30% butane,0.388455,1.000049,Yes
+PSI-159,CFI-G,21291 J1,ambient,gas,30% butane,0.385436,1.000049,Yes
+PSI-159,CFI-G,21291 J2,ambient,gas,30% butane,0.382657,1.000049,Yes
+PSI-159,CFI-G,21291 J3,ambient,gas,30% butane,0.380784,1.000049,Yes
+PSI-159,CFI-G,21196 A1,burner-oxidizer,gas,ethane,0.21,1.085616,No
+PSI-159,CFI-G,21196 A2,burner-oxidizer,gas,ethane,0.21,1.085616,Yes
+PSI-159,CFI-G,21196 F1,burner-oxidizer,gas,ethane,0.15,1.088872,Yes
+PSI-159,CFI-G,21196 H1,burner-oxidizer,gas,ethane,0.12,1.088872,No
+PSI-159,CFI-G,21196 J1,burner-oxidizer,gas,ethane,0.135,1.088872,Flash
+PSI-159,CFI-G,21196 F2,burner-oxidizer,gas,ethane,0.15,1.088872,Yes
+PSI-159,CFI-G,21196 F3,burner-oxidizer,gas,ethane,0.15,1.088872,Flash
+PSI-159,CFI-G,21196 F4,burner-oxidizer,gas,ethane,0.15,1.088872,Flash
+PSI-159,CFI-G,21196 F5,burner-oxidizer,gas,ethane,0.15,1.088872,Flash
+PSI-159,CFI-G,21196 F6,burner-oxidizer,gas,ethane,0.15,1.088872,Yes
+PSI-159,CFI-G,21196 K1,burner-oxidizer,gas,ethane,0.15,0.488904,Flash
+PSI-159,CFI-G,21196 L1,burner-oxidizer,gas,ethane,0.21,0.488904,Flash
+PSI-159,CFI-G,21196 L2,burner-oxidizer,gas,ethane,0.21,0.488904,Yes
+PSI-159,CFI-G,21196 M1,burner-oxidizer,gas,ethane,0.3,0.488904,Flash
+PSI-159,CFI-G,21196 M2,burner-oxidizer,gas,ethane,0.3,0.488904,Yes
+PSI-159,CFI-G,21196 M2_1,burner-oxidizer,gas,ethane,0.3,0.488904,Yes
+PSI-159,CFI-G,21202 A1,burner-oxidizer,gas,ethane,0.85,2.177745,No
+PSI-159,CFI-G,21202 A2,burner-oxidizer,gas,ethane,0.85,2.177745,Yes
+PSI-159,CFI-G,21202 A3,burner-oxidizer,gas,ethane,0.85,2.177745,Yes
+PSI-159,CFI-G,21202 A4,burner-oxidizer,gas,ethane,0.85,2.177745,Yes
+PSI-159,CFI-G,21202 H1,burner-oxidizer,gas,ethane,0.85,2.177745,Yes
+PSI-159,CFI-G,21202 H2,burner-oxidizer,gas,ethane,0.85,2.177745,Yes
+PSI-159,CFI-G,21202 H3,burner-oxidizer,gas,ethane,0.85,2.177745,Yes
+PSI-159,CFI-G,21202 H4,burner-oxidizer,gas,ethane,0.85,2.177745,Yes
+PSI-159,CFI-G,21202 J1,burner-oxidizer,gas,ethane,0.85,2.177745,Yes
+PSI-159,CFI-G,21202 K1,burner-oxidizer,gas,ethane,0.85,1.088872,Yes
+PSI-159,CFI-G,21202 K2,burner-oxidizer,gas,ethane,0.85,1.088872,Yes
+PSI-159,CFI-G,21202 L1,burner-oxidizer,gas,ethane,0.85,1.088872,Yes
+PSI-159,CFI-G,21209 A1,burner-oxidizer,gas,ethane,0.85,0.544436,Yes
+PSI-159,CFI-G,21209 A2,burner-oxidizer,gas,ethane,0.85,0.544436,No
+PSI-159,CFI-G,21209 A3,burner-oxidizer,gas,ethane,0.85,0.544436,Yes
+PSI-159,CFI-G,21209 B1,burner-oxidizer,gas,ethane,0.85,0.544436,Yes
+PSI-159,CFI-G,21209 A4,burner-oxidizer,gas,ethane,0.85,0.544436,Yes
+PSI-159,CFI-G,21209 H1,burner-oxidizer,gas,ethane,0.5,0.544436,Yes
+PSI-159,CFI-G,21209 J1,burner-oxidizer,gas,ethane,0.3,0.544436,Yes
+PSI-159,CFI-G,21209 F1,burner-oxidizer,gas,ethane,0.21,0.544436,Yes
+PSI-159,CFI-G,21209 F2,burner-oxidizer,gas,ethane,0.21,0.544436,Yes
+PSI-159,CFI-G,21209 F3,burner-oxidizer,gas,ethane,0.21,0.544436,Yes
+PSI-159,CFI-G,21209 B2,burner-oxidizer,gas,ethane,0.85,0.544436,Yes
+PSI-159,CFI-G,21209 K1,burner-oxidizer,gas,ethane,0.18,0.544436,Yes
+PSI-159,CFI-G,21216 A1,burner-oxidizer,gas,ethane,0.85,3.266617,Yes
+PSI-159,CFI-G,21216 A2,burner-oxidizer,gas,ethane,0.85,3.266617,Yes
+PSI-159,CFI-G,21216 A3,burner-oxidizer,gas,ethane,0.85,3.266617,Yes
+PSI-159,CFI-G,21216 A4,burner-oxidizer,gas,ethane,0.85,3.266617,Yes
+PSI-159,CFI-G,21216 A5,burner-oxidizer,gas,ethane,0.85,3.266617,Flash
+PSI-159,CFI-G,21216 A6,burner-oxidizer,gas,ethane,0.85,3.266617,Yes
+PSI-159,CFI-G,21216 B1,burner-oxidizer,gas,ethane,0.85,3.266617,Yes
+PSI-159,CFI-G,21216 C1,burner-oxidizer,gas,ethane,0.5,3.266617,Yes
+PSI-159,CFI-G,21216 F1,burner-oxidizer,gas,ethane,0.21,3.266617,Yes
+PSI-159,CFI-G,21216 H1,burner-oxidizer,gas,ethane,0.85,1.088872,Yes
+PSI-159,CFI-G,21216 H2,burner-oxidizer,gas,ethane,0.85,1.088872,Yes
+PSI-159,CFI-G,21216 J1,burner-oxidizer,gas,ethane,0.5,1.088872,Yes
+PSI-159,CFI-G,21216 K1,burner-oxidizer,gas,ethane,0.21,1.088872,Yes
+PSI-159,CFI-G,21222 A1,burner-oxidizer,gas,propane,0.85,3.266617,Yes
+PSI-159,CFI-G,21222 A2,burner-oxidizer,gas,propane,0.85,3.266617,Yes
+PSI-159,CFI-G,21222 A3,burner-oxidizer,gas,propane,0.85,3.266617,Yes
+PSI-159,CFI-G,21222 A4,burner-oxidizer,gas,propane,0.85,3.266617,Yes
+PSI-159,CFI-G,21222 A5,burner-oxidizer,gas,propane,0.85,3.266617,Yes
+PSI-159,CFI-G,21222 B1,burner-oxidizer,gas,propane,0.85,3.266617,Yes
+PSI-159,CFI-G,21222 C1,burner-oxidizer,gas,propane,0.5,3.266617,Yes
+PSI-159,CFI-G,21222 C2,burner-oxidizer,gas,propane,0.5,3.266617,Yes
+PSI-159,CFI-G,21222 F1,burner-oxidizer,gas,propane,0.21,3.266617,Yes
+PSI-159,CFI-G,21222 F2,burner-oxidizer,gas,propane,0.21,3.266617,No
+PSI-159,CFI-G,21228 A1,burner-oxidizer,gas,propane,0.85,2.177745,Yes
+PSI-159,CFI-G,21228 A2,burner-oxidizer,gas,propane,0.85,2.177745,Yes
+PSI-159,CFI-G,21228 A3,burner-oxidizer,gas,propane,0.85,2.177745,Yes
+PSI-159,CFI-G,21228 A4,burner-oxidizer,gas,propane,0.85,2.177745,Yes
+PSI-159,CFI-G,21228 B1,burner-oxidizer,gas,propane,0.85,2.177745,Yes
+PSI-159,CFI-G,21228 C1,burner-oxidizer,gas,propane,0.5,2.177745,Yes
+PSI-159,CFI-G,21228 C2,burner-oxidizer,gas,propane,0.5,2.177745,Yes
+PSI-159,CFI-G,21228 C3,burner-oxidizer,gas,propane,0.5,2.177745,Yes
+PSI-159,CFI-G,21228 C4,burner-oxidizer,gas,propane,0.5,2.177745,Yes
+PSI-159,CFI-G,21228 F1,burner-oxidizer,gas,propane,0.21,2.177745,Yes
+PSI-159,CFI-G,21228 H1,burner-oxidizer,gas,propane,0.85,1.088872,Yes
+PSI-159,CFI-G,21228 H2,burner-oxidizer,gas,propane,0.85,1.088872,Yes
+PSI-159,CFI-G,21228 J1,burner-oxidizer,gas,propane,0.85,1.088872,Yes
+PSI-159,CFI-G,21228 K1,burner-oxidizer,gas,propane,0.5,1.088872,Yes
+PSI-159,CFI-G,21228 K2,burner-oxidizer,gas,propane,0.5,1.088872,Yes
+PSI-159,CFI-G,21228 L1,burner-oxidizer,gas,propane,0.21,1.088872,Yes
+PSI-159,CFI-G,21228 L2,burner-oxidizer,gas,propane,0.21,1.088872,Yes
+PSI-159,CFI-G,21235 A1,burner-oxidizer,gas,propane,0.85,1.088872,Yes
+PSI-159,CFI-G,21235 A2,burner-oxidizer,gas,propane,0.85,1.088872,Yes
+PSI-159,CFI-G,21235 C1,burner-oxidizer,gas,propane,0.5,1.088872,Yes
+PSI-159,CFI-G,21235 F1,burner-oxidizer,gas,propane,0.21,1.088872,Yes
+PSI-159,CFI-G,21235 F2,burner-oxidizer,gas,propane,0.21,1.088872,No
+PSI-159,CFI-G,21235 H1,burner-oxidizer,gas,propane,0.18,1.088872,Yes
+PSI-159,CFI-G,21235 J1,burner-oxidizer,gas,propane,0.19,1.088872,Yes
+PSI-159,CFI-G,21235 B1,burner-oxidizer,gas,propane,0.85,1.088872,Yes
+PSI-159,CFI-G,21235 K1,burner-oxidizer,gas,propane,0.85,0.544436,Yes
+PSI-159,CFI-G,21235 L1,burner-oxidizer,gas,propane,0.85,0.544436,Yes
+PSI-159,CFI-G,21242 A1,burner-oxidizer,gas,propane,0.85,0.544436,Yes
+PSI-159,CFI-G,21242 P1,burner-oxidizer,gas,propane,0.3,0.544436,Yes
+PSI-159,CFI-G,21242 F2,burner-oxidizer,gas,propane,0.21,0.544436,No
+PSI-159,CFI-G,21242 F3,burner-oxidizer,gas,propane,0.21,0.544436,No
+PSI-159,CFI-G,21242 F4,burner-oxidizer,gas,propane,0.21,0.544436,No
+PSI-159,CFI-G,21242 P2,burner-oxidizer,gas,propane,0.3,0.544436,No
+PSI-159,CFI-G,21256 A1,burner-oxidizer,gas,butane,0.85,2.177745,Yes
+PSI-159,CFI-G,21256 A2,burner-oxidizer,gas,butane,0.85,2.177745,Yes
+PSI-159,CFI-G,21256 A3,burner-oxidizer,gas,butane,0.85,2.177745,Yes
+PSI-159,CFI-G,21256 A4,burner-oxidizer,gas,butane,0.85,2.177745,Yes
+PSI-159,CFI-G,21256 A5,burner-oxidizer,gas,butane,0.85,2.177745,Yes
+PSI-159,CFI-G,21256 C1,burner-oxidizer,gas,butane,0.5,2.177745,Yes
+PSI-159,CFI-G,21256 F1,burner-oxidizer,gas,butane,0.21,2.177745,Yes
+PSI-159,CFI-G,21256 B1,burner-oxidizer,gas,butane,0.85,2.177745,Yes
+PSI-159,CFI-G,21256 C2,burner-oxidizer,gas,butane,0.5,2.177745,Yes
+PSI-159,CFI-G,21256 H1,burner-oxidizer,gas,butane,0.85,2.177745,Yes
+PSI-159,CFI-G,21256 H2,burner-oxidizer,gas,butane,0.85,2.177745,Yes
+PSI-159,CFI-G,21256 H3,burner-oxidizer,gas,butane,0.85,2.177745,Yes
+PSI-159,CFI-G,21256 H4,burner-oxidizer,gas,butane,0.85,2.177745,Yes
+PSI-159,CFI-G,21256 H5,burner-oxidizer,gas,butane,0.85,2.177745,Yes
+PSI-159,CFI-G,21256 K1,burner-oxidizer,gas,butane,0.5,2.177745,Yes
+PSI-159,CFI-G,21256 M1,burner-oxidizer,gas,butane,0.21,2.177745,Yes
+PSI-159,CFI-G,21256 J1,burner-oxidizer,gas,butane,0.85,2.177745,Yes
+PSI-159,CFI-G,21265 A1,burner-oxidizer,gas,butane,0.85,3.266617,Yes
+PSI-159,CFI-G,21265 A2,burner-oxidizer,gas,butane,0.85,3.266617,Yes
+PSI-159,CFI-G,21265 A3,burner-oxidizer,gas,butane,0.85,3.266617,Yes
+PSI-159,CFI-G,21265 A4,burner-oxidizer,gas,butane,0.85,3.266617,Yes
+PSI-159,CFI-G,21265 A5,burner-oxidizer,gas,butane,0.85,3.266617,Yes
+PSI-159,CFI-G,21265 C1,burner-oxidizer,gas,butane,0.5,3.266617,Yes
+PSI-159,CFI-G,21265 C2,burner-oxidizer,gas,butane,0.5,3.266617,Yes
+PSI-159,CFI-G,21265 C3,burner-oxidizer,gas,butane,0.5,3.266617,Yes
+PSI-159,CFI-G,21265 F1,burner-oxidizer,gas,butane,0.21,3.266617,Yes
+PSI-159,CFI-G,21265 F2,burner-oxidizer,gas,butane,0.21,3.266617,Yes
+PSI-159,CFI-G,21265 F3,burner-oxidizer,gas,butane,0.21,3.266617,No
+PSI-159,CFI-G,21265 F4,burner-oxidizer,gas,butane,0.21,3.266617,No
+PSI-159,CFI-G,21265 H1,burner-oxidizer,gas,butane,0.4,3.266617,Yes
+PSI-159,CFI-G,21265 H2,burner-oxidizer,gas,butane,0.4,3.266617,Yes
+PSI-159,CFI-G,21265 J1,burner-oxidizer,gas,butane,0.7,3.266617,Yes
+PSI-159,CFI-G,21265 K1,burner-oxidizer,gas,butane,0.45,3.266617,Yes
+PSI-159,CFI-G,21265 H3,burner-oxidizer,gas,butane,0.4,3.266617,Yes
+PSI-159,CFI-G,21270 A1,burner-oxidizer,gas,butane,0.85,1.088872,Yes
+PSI-159,CFI-G,21270 A2,burner-oxidizer,gas,butane,0.85,1.088872,Yes
+PSI-159,CFI-G,21270 A3,burner-oxidizer,gas,butane,0.85,1.088872,Yes
+PSI-159,CFI-G,21270 A4,burner-oxidizer,gas,butane,0.85,1.088872,Yes
+PSI-159,CFI-G,21270 C1,burner-oxidizer,gas,butane,0.5,1.088872,Yes
+PSI-159,CFI-G,21270 H1,burner-oxidizer,gas,butane,0.85,1.088872,Yes
+PSI-159,CFI-G,21270 H2,burner-oxidizer,gas,butane,0.85,1.088872,Yes
+PSI-159,CFI-G,21270 H3,burner-oxidizer,gas,butane,0.85,1.088872,Yes
+PSI-159,CFI-G,21270 H4,burner-oxidizer,gas,butane,0.85,1.088872,Yes
+PSI-159,CFI-G,21270 H5,burner-oxidizer,gas,butane,0.85,1.088872,Yes
+PSI-159,CFI-G,21277 A1,burner-oxidizer,gas,butane,0.85,0.544436,Yes
+PSI-159,CFI-G,21277 H1,burner-oxidizer,gas,butane,0.5,0.544436,Yes
+PSI-159,CFI-G,21277 J1,burner-oxidizer,gas,butane,0.21,0.544436,No
+PSI-159,CFI-G,21277 K1,burner-oxidizer,gas,butane,0.3,0.544436,No
+PSI-159,CFI-G,21277 K2,burner-oxidizer,gas,butane,0.3,0.544436,Yes
+PSI-159,CFI-G,21277 J2,burner-oxidizer,gas,butane,0.21,0.544436,No
+PSI-159,CFI-G,21277 C1,burner-oxidizer,gas,butane,0.85,0.544436,Yes
+PSI-159,CFI-G,21277 C2,burner-oxidizer,gas,butane,0.85,0.544436,Yes
+PSI-159,CFI-G,21277 L1,burner-oxidizer,gas,butane,0.5,0.544436,Yes
+PSI-159,CFI-G,21277 F1,burner-oxidizer,gas,butane,0.85,0.544436,Yes
+PSI-159,CFI-G,21277 F2,burner-oxidizer,gas,butane,0.85,0.544436,Yes
+PSI-159,CFI-G,21277 M1,burner-oxidizer,gas,butane,0.85,0.544436,Yes
+PSI-159,CFI-G,21277 N1,burner-oxidizer,gas,butane,0.5,0.544436,Yes
+PSI-159,CFI-G,21277 P1,burner-oxidizer,gas,butane,0.3,0.544436,Yes
+PSI-10,Flame Design,19115A1,ambient,gas,C2H4,0.207128,1.011844,
+PSI-10,Flame Design,19115D2,ambient,gas,C2H4,0.206169,1.013205,
+PSI-10,Flame Design,19115B1,ambient,gas,C2H4,0.205663,1.013885,
+PSI-10,Flame Design,19115B2,ambient,gas,C2H4,0.204939,1.013205,
+PSI-10,Flame Design,19115F1,ambient,gas,C2H4,0.204318,1.013885,
+PSI-10,Flame Design,19115G1,ambient,gas,C2H4,0.203864,1.013885,
+PSI-10,Flame Design,19115K1,ambient,gas,C2H4,0.203461,1.014566,
+PSI-10,Flame Design,19115L1,ambient,gas,C2H4,0.202822,1.015927,
+PSI-10,Flame Design,19115N1,ambient,gas,C2H4,0.201883,1.015246,
+PSI-10,Flame Design,19115M4,ambient,gas,C2H4,0.201357,1.015927,
+PSI-10,Flame Design,19115Q1,ambient,gas,C2H4,0.200867,1.016607,
+PSI-10,Flame Design,19123A1,ambient,gas,C2H4,0.209829,1.002998,
+PSI-10,Flame Design,19123A2,ambient,gas,C2H4,0.209192,1.007761,
+PSI-10,Flame Design,19123A3,ambient,gas,C2H4,0.208581,1.008442,
+PSI-10,Flame Design,19123A4,ambient,gas,C2H4,0.207973,1.013205,
+PSI-10,Flame Design,19123C1,ambient,gas,C2H4,0.20738,1.009122,
+PSI-10,Flame Design,19123F1,ambient,gas,C2H4,0.20667,1.011844,
+PSI-10,Flame Design,19123F2,ambient,gas,C2H4,0.206084,1.012524,
+PSI-10,Flame Design,19123F3,ambient,gas,C2H4,0.205485,1.013885,
+PSI-10,Flame Design,19123K1,ambient,gas,C2H4,0.204908,1.014566,
+PSI-10,Flame Design,19123B1,ambient,gas,C2H4,0.204429,1.015927,
+PSI-10,Flame Design,19123D1,ambient,gas,C2H4,0.203807,1.016607,
+PSI-10,Flame Design,19123J1,ambient,gas,C2H4,0.203228,1.017288,
+PSI-10,Flame Design,19123L1,ambient,gas,C2H4,0.202551,1.018649,
+PSI-10,Flame Design,19123L2,ambient,gas,C2H4,0.201833,1.019329,
+PSI-10,Flame Design,19123L3,ambient,gas,C2H4,0.201123,1.019329,
+PSI-10,Flame Design,19123L4,ambient,gas,C2H4,0.200536,1.02001,
+PSI-10,Flame Design,19123L5,ambient,gas,C2H4,0.200108,1.02001,
+PSI-10,Flame Design,19123L6,ambient,gas,C2H4,0.199796,1.02001,
+PSI-10,Flame Design,19123L7,ambient,gas,C2H4,0.199416,1.019329,
+PSI-10,Flame Design,19137A1,ambient,gas,C2H4,0.210188,1.003678,
+PSI-10,Flame Design,19137B1,ambient,gas,C2H4,0.209521,1.003678,
+PSI-10,Flame Design,19137C1,ambient,gas,C2H4,0.208724,1.005039,
+PSI-10,Flame Design,19137D1,ambient,gas,C2H4,0.208021,1.00572,
+PSI-10,Flame Design,19137F1,ambient,gas,C2H4,0.207275,1.007081,
+PSI-10,Flame Design,19137F2,ambient,gas,C2H4,0.206583,1.007761,
+PSI-10,Flame Design,19137F3,ambient,gas,C2H4,0.205935,1.009122,
+PSI-10,Flame Design,19137G1,ambient,gas,C2H4,0.205363,1.009803,
+PSI-10,Flame Design,19137H1,ambient,gas,C2H4,0.204891,1.011164,
+PSI-10,Flame Design,19137J1,ambient,gas,C2H4,0.204442,1.011164,
+PSI-10,Flame Design,19137K1,ambient,gas,C2H4,0.204017,1.010483,
+PSI-10,Flame Design,19137K2,ambient,gas,C2H4,0.203628,1.011164,
+PSI-10,Flame Design,19137L1,ambient,gas,C2H4,0.203231,1.011164,
+PSI-10,Flame Design,19137L2,ambient,gas,C2H4,0.202842,1.011164,
+PSI-10,Flame Design,19137L3,ambient,gas,C2H4,0.202393,1.012524,
+PSI-10,Flame Design,19137L4,ambient,gas,C2H4,0.201997,1.013205,
+PSI-10,Flame Design,19137L5,ambient,gas,C2H4,0.201642,1.012524,
+PSI-10,Flame Design,19137L6,ambient,gas,C2H4,0.20133,1.012524,
+PSI-10,Flame Design,19137L7,ambient,gas,C2H4,0.20088,1.013205,
+PSI-10,Flame Design,19137L8,ambient,gas,C2H4,0.200458,1.013885,
+PSI-10,Flame Design,19142G1,ambient,gas,C2H4,0.396946,1.007761,
+PSI-10,Flame Design,19142G2,ambient,gas,C2H4,0.389986,1.012524,
+PSI-10,Flame Design,19142G3,ambient,gas,C2H4,0.383798,1.016607,
+PSI-10,Flame Design,19142F1,ambient,gas,C2H4,0.378755,1.02001,
+PSI-10,Flame Design,19142J2,ambient,gas,C2H4,0.373169,1.025453,
+PSI-10,Flame Design,19142G4,ambient,gas,C2H4,0.378721,0.988708,
+PSI-10,Flame Design,19142G5,ambient,gas,C2H4,0.375587,0.99143,
+PSI-10,Flame Design,19142J3,ambient,gas,C2H4,0.373429,0.99143,
+PSI-10,Flame Design,19150A1,ambient,gas,C2H4,0.398237,1.004359,
+PSI-10,Flame Design,19150A3,ambient,gas,C2H4,0.397053,1.007081,
+PSI-10,Flame Design,19150A4,ambient,gas,C2H4,0.395465,1.010483,
+PSI-10,Flame Design,19150A5,ambient,gas,C2H4,0.39264,1.015246,
+PSI-10,Flame Design,19150B2,ambient,gas,C2H4,0.38895,1.02137,
+PSI-10,Flame Design,19150C1,ambient,gas,C2H4,0.38628,1.024773,
+PSI-10,Flame Design,19150B3,ambient,gas,C2H4,0.382817,1.029536,
+PSI-10,Flame Design,19150D2,ambient,gas,C2H4,0.380058,1.032938,
+PSI-10,Flame Design,19150F1,ambient,gas,C2H4,0.371069,1.042465,
+PSI-10,Flame Design,19150G2,ambient,gas,C2H4,0.370409,1.042465,
+PSI-10,Flame Design,19150H1,ambient,gas,C2H4,0.365615,1.042465,
+PSI-10,Flame Design,19150J1,ambient,gas,C2H4,0.361749,1.047228,
+PSI-10,Flame Design,19150G3,ambient,gas,C2H4,0.358338,1.047228,
+PSI-10,Flame Design,19150N1,ambient,gas,C2H4,0.300281,1.002318,
+PSI-10,Flame Design,19150S1,ambient,gas,C2H4,0.294019,1.009122,
+PSI-10,Flame Design,19156B2,ambient,gas,C2H4,0.388966,1.013205,
+PSI-10,Flame Design,19156B4,ambient,gas,C2H4,0.387865,1.015246,
+PSI-10,Flame Design,19156K1,ambient,gas,C2H4,0.379703,1.028856,
+PSI-10,Flame Design,19156C1,ambient,gas,C2H4,0.376922,1.031577,
+PSI-10,Flame Design,19156C2,ambient,gas,C2H4,0.374961,1.030897,
+PSI-10,Flame Design,19156C3,ambient,gas,C2H4,0.370676,1.030897,
+PSI-10,Flame Design,19156J1,ambient,gas,C2H4,0.373448,1.026134,
+PSI-10,Flame Design,19156J2,ambient,gas,C2H4,0.3704,1.026134,
+PSI-10,Flame Design,19156J3,ambient,gas,C2H4,0.368535,1.026134,
+PSI-10,Flame Design,19156J4,ambient,gas,C2H4,0.36593,1.026134,
+PSI-10,Flame Design,19156J5,ambient,gas,C2H4,0.364457,1.025453,
+PSI-10,Flame Design,19156J6,ambient,gas,C2H4,0.362735,1.024773,
+PSI-10,Flame Design,19156J7,ambient,gas,C2H4,0.360923,1.024773,
+PSI-10,Flame Design,19171D1,ambient,gas,C2H4,0.39435,1.002998,
+PSI-10,Flame Design,19171D2,ambient,gas,C2H4,0.386571,1.002998,
+PSI-10,Flame Design,19171D3,ambient,gas,C2H4,0.381345,1.003678,
+PSI-10,Flame Design,19171D4,ambient,gas,C2H4,0.378554,1.002998,
+PSI-10,Flame Design,19171D5,ambient,gas,C2H4,0.373907,1.002998,
+PSI-10,Flame Design,19171S1,ambient,gas,C2H4,0.369543,1.003678,
+PSI-10,Flame Design,19171B1,ambient,gas,C2H4,0.378874,1.007761,
+PSI-10,Flame Design,19171B3,ambient,gas,C2H4,0.372136,1.017968,
+PSI-10,Flame Design,19171J1,ambient,gas,C2H4,0.365352,1.028856,
+PSI-10,Flame Design,19171J2,ambient,gas,C2H4,0.36258,1.030897,
+PSI-10,Flame Design,19171J3,ambient,gas,C2H4,0.361427,1.030897,
+PSI-10,Flame Design,19171J4,ambient,gas,C2H4,0.359595,1.031577,
+PSI-10,Flame Design,19175A2,ambient,gas,C2H4,0.39839,1.258171,
+PSI-10,Flame Design,19175A3,ambient,gas,C2H4,0.397248,1.260212,
+PSI-10,Flame Design,19175A4,ambient,gas,C2H4,0.390983,1.260212,
+PSI-10,Flame Design,19175B1,ambient,gas,C2H4,0.388733,1.260892,
+PSI-10,Flame Design,19175B4,ambient,gas,C2H4,0.387591,1.262253,
+PSI-10,Flame Design,19175B5,ambient,gas,C2H4,0.384887,1.264295,
+PSI-10,Flame Design,19175B6,ambient,gas,C2H4,0.389437,1.249325,
+PSI-10,Flame Design,19175B7,ambient,gas,C2H4,0.38785,1.25749,
+PSI-10,Flame Design,19175B8,ambient,gas,C2H4,0.38596,1.253407,
+PSI-10,Flame Design,19175B9,ambient,gas,C2H4,0.383986,1.256129,
+PSI-10,Flame Design,19175N1,ambient,gas,C2H4,0.382547,1.25749,
+PSI-10,Flame Design,19175N2,ambient,gas,C2H4,0.379403,1.260212,
+PSI-10,Flame Design,19175N3,ambient,gas,C2H4,0.377442,1.260212,
+PSI-10,Flame Design,19182G1,ambient,gas,C2H4,0.398542,1.25749,
+PSI-10,Flame Design,19182G2,ambient,gas,C2H4,0.396833,1.260212,
+PSI-10,Flame Design,19182G3,ambient,gas,C2H4,0.395221,1.262934,
+PSI-10,Flame Design,19182G6,ambient,gas,C2H4,0.393608,1.266336,
+PSI-10,Flame Design,19182G7,ambient,gas,C2H4,0.392269,1.269058,
+PSI-10,Flame Design,19182G8,ambient,gas,C2H4,0.390189,1.27178,
+PSI-10,Flame Design,19182G9,ambient,gas,C2H4,0.388151,1.274502,
+PSI-10,Flame Design,19182N1,ambient,gas,C2H4,0.386276,1.276543,
+PSI-10,Flame Design,19182N2,ambient,gas,C2H4,0.389021,1.273141,
+PSI-10,Flame Design,19182N3,ambient,gas,C2H4,0.387585,1.275182,
+PSI-10,Flame Design,19182A1,ambient,gas,C2H4,0.385704,1.276543,
+PSI-10,Flame Design,19182C1,ambient,gas,C2H4,0.384814,1.279265,
+PSI-10,Flame Design,19182C2,ambient,gas,C2H4,0.382594,1.284028,
+PSI-10,Flame Design,19182N4,ambient,gas,C2H4,0.380272,1.288791,
+PSI-10,Flame Design,19182F1,ambient,gas,C2H4,0.37843,1.290152,
+PSI-10,Flame Design,19189A1,ambient,gas,C2H4,0.398598,1.255449,
+PSI-10,Flame Design,19189A2,ambient,gas,C2H4,0.395842,1.27178,
+PSI-10,Flame Design,19189A3,ambient,gas,C2H4,0.394925,1.268377,
+PSI-10,Flame Design,19189D1,ambient,gas,C2H4,0.394013,1.27246,
+PSI-10,Flame Design,19189A4,ambient,gas,C2H4,0.391506,1.279945,
+PSI-10,Flame Design,19189D2,ambient,gas,C2H4,0.390873,1.281987,
+PSI-10,Flame Design,19189D3,ambient,gas,C2H4,0.390078,1.284028,
+PSI-10,Flame Design,19189H1,ambient,gas,C2H4,0.387709,1.290152,
+PSI-10,Flame Design,19189J1,ambient,gas,C2H4,0.387159,1.290833,
+PSI-10,Flame Design,19189J2,ambient,gas,C2H4,0.383237,1.292874,
+PSI-10,Flame Design,19189J3,ambient,gas,C2H4,0.379652,1.294235,
+PSI-10,Flame Design,19189K1,ambient,gas,C2H4,0.37598,1.294915,
+PSI-10,Flame Design,19189K2,ambient,gas,C2H4,0.372525,1.295596,
+PSI-10,Flame Design,19189K3,ambient,gas,C2H4,0.369302,1.296276,
+PSI-10,Flame Design,19189P1,ambient,gas,C2H4,0.365498,1.296957,
+PSI-10,Flame Design,19196A1,ambient,gas,C2H4,0.395566,1.254768,
+PSI-10,Flame Design,19196A2,ambient,gas,C2H4,0.394454,1.256129,
+PSI-10,Flame Design,19196A3,ambient,gas,C2H4,0.392203,1.258851,
+PSI-10,Flame Design,19196B1,ambient,gas,C2H4,0.390755,1.260892,
+PSI-10,Flame Design,19196B2,ambient,gas,C2H4,0.389783,1.261573,
+PSI-10,Flame Design,19196B3,ambient,gas,C2H4,0.388259,1.262253,
+PSI-10,Flame Design,19196B4,ambient,gas,C2H4,0.386588,1.262934,
+PSI-10,Flame Design,19196C1,ambient,gas,C2H4,0.384642,1.264295,
+PSI-10,Flame Design,19196C2,ambient,gas,C2H4,0.383088,1.264975,
+PSI-10,Flame Design,19196D1,ambient,gas,C2H4,0.386116,1.262934,
+PSI-10,Flame Design,19196D2,ambient,gas,C2H4,0.38427,1.262934,
+PSI-10,Flame Design,19196F1,ambient,gas,C2H4,0.382215,1.262253,
+PSI-10,Flame Design,19196N1,ambient,gas,C2H4,0.381649,1.263614,
+PSI-10,Flame Design,19200A1,ambient,gas,C2H4,0.394713,1.002318,
+PSI-10,Flame Design,19200A2,ambient,gas,C2H4,0.392546,1.004359,
+PSI-10,Flame Design,19200A3,ambient,gas,C2H4,0.391981,1.004359,
+PSI-10,Flame Design,19200A4,ambient,gas,C2H4,0.390566,1.00572,
+PSI-10,Flame Design,19200A5,ambient,gas,C2H4,0.388965,1.0064,
+PSI-10,Flame Design,19200A6,ambient,gas,C2H4,0.386954,1.007761,
+PSI-10,Flame Design,19200A7,ambient,gas,C2H4,0.384497,1.011164,
+PSI-10,Flame Design,19200A8,ambient,gas,C2H4,0.382567,1.012524,
+PSI-10,Flame Design,19200K1,ambient,gas,C2H4,0.299433,1.001637,
+PSI-10,Flame Design,19200H1,ambient,gas,C2H4,0.29743,1.002998,
+PSI-10,Flame Design,19200H2,ambient,gas,C2H4,0.293952,1.005039,
+PSI-10,Flame Design,19200H3,ambient,gas,C2H4,0.289423,1.012524,
+PSI-10,Flame Design,19206A1,ambient,gas,C2H4,0.209913,1.002998,
+PSI-10,Flame Design,19206A5,ambient,gas,C2H4,0.208976,1.0064,
+PSI-10,Flame Design,19206G1,ambient,gas,C2H4,0.208214,1.007761,
+PSI-10,Flame Design,19206G2,ambient,gas,C2H4,0.207381,1.008442,
+PSI-10,Flame Design,19206G3,ambient,gas,C2H4,0.206772,1.008442,
+PSI-10,Flame Design,19206G4,ambient,gas,C2H4,0.206182,1.008442,
+PSI-10,Flame Design,19206G5,ambient,gas,C2H4,0.20546,1.008442,
+PSI-10,Flame Design,19206L2,ambient,gas,C2H4,0.204523,1.009122,
+PSI-10,Flame Design,19206L3,ambient,gas,C2H4,0.203933,1.009803,
+PSI-10,Flame Design,19206L4,ambient,gas,C2H4,0.203433,1.010483,
+PSI-10,Flame Design,19206L6,ambient,gas,C2H4,0.20288,1.010483,
+PSI-10,Flame Design,19206G7,ambient,gas,C2H4,0.202246,1.011164,
+PSI-10,Flame Design,19206K1,ambient,gas,C2H4,0.201524,1.011164,
+PSI-10,Flame Design,19206K2,ambient,gas,C2H4,0.201046,1.011844,
+PSI-10,Flame Design,19206G8,ambient,gas,C2H4,0.200582,1.011844,
+PSI-10,Flame Design,19206G9,ambient,gas,C2H4,0.200486,1.011164,
+PSI-10,Flame Design,19206N1,ambient,gas,C2H4,0.199859,1.011844,
+PSI-10,Flame Design,19206H1,ambient,gas,C2H4,0.199689,1.011164,
+PSI-10,Flame Design,19206H2,ambient,gas,C2H4,0.199163,1.011164,
+PSI-10,Flame Design,19206H3,ambient,gas,C2H4,0.198596,1.011844,
+PSI-10,Flame Design,19206H4,ambient,gas,C2H4,0.198048,1.011844,
+PSI-10,Flame Design,21301A1,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301A2,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301A3,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301A4,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301A5,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301A6,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301C1,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301C2,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301D1,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301D2,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301A7,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301A8,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301A9,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301H1,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301H2,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301H3,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301J1,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301J2,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301J3,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21301J4,ambient,gas,C3H8,0.4,0.931973,
+PSI-10,Flame Design,21328A1,burner-oxidizer,gas,C2H4,0.370828,0.998235,
+PSI-10,Flame Design,21328A2,burner-oxidizer,gas,C2H4,0.371286,1.001637,
+PSI-10,Flame Design,21328D1,burner-oxidizer,gas,C2H4,0.212319,1.003678,
+PSI-10,Flame Design,21328N1,burner-oxidizer,gas,C2H4,0.849978,0.949242,
+PSI-10,Flame Design,21328N2,burner-oxidizer,gas,C2H4,0.849978,0.950603,
+PSI-10,Flame Design,21328N3,burner-oxidizer,gas,C2H4,0.849978,0.951964,
+PSI-10,Flame Design,21328N4,burner-oxidizer,gas,C2H4,0.849978,0.952644,
+PSI-10,Flame Design,21328N5,burner-oxidizer,gas,C2H4,0.849978,0.953324,
+PSI-10,Flame Design,21328P1,burner-oxidizer,gas,C2H4,0.401933,0.954005,
+PSI-10,Flame Design,21340A1,burner-oxidizer,gas,C2H4,0.849978,0.998235,
+PSI-10,Flame Design,21340A2,burner-oxidizer,gas,C2H4,0.849978,1.000276,
+PSI-10,Flame Design,21340B1,burner-oxidizer,gas,C2H4,0.564864,1.002318,
+PSI-10,Flame Design,21340B2,burner-oxidizer,gas,C2H4,0.565263,1.004359,
+PSI-10,Flame Design,21340C1,burner-oxidizer,gas,C2H4,0.355416,1.0064,
+PSI-10,Flame Design,21340C2,burner-oxidizer,gas,C2H4,0.355856,1.007761,
+PSI-10,Flame Design,21340C3,burner-oxidizer,gas,C2H4,0.289768,1.009803,
+PSI-10,Flame Design,21340C4,burner-oxidizer,gas,C2H4,0.29137,1.011844,
+PSI-10,Flame Design,21340C5,burner-oxidizer,gas,C2H4,0.293991,1.013885,
+PSI-10,Flame Design,21340C6,burner-oxidizer,gas,C2H4,0.291244,1.015246,
+PSI-10,Flame Design,21340C7,burner-oxidizer,gas,C2H4,0.294876,1.016607,
+PSI-10,Flame Design,21340M1,burner-oxidizer,gas,C2H4,0.849978,0.999596,
+PSI-10,Flame Design,21340M2,burner-oxidizer,gas,C2H4,0.469396,1.001637,
+PSI-10,Flame Design,21349A1,burner-oxidizer,gas,C2H4,0.849978,0.424607,
+PSI-10,Flame Design,21349B1,burner-oxidizer,gas,C2H4,0.849978,0.425287,
+PSI-10,Flame Design,21349D2,burner-oxidizer,gas,C2H4,0.212289,0.426648,
+PSI-10,Flame Design,21349D3,burner-oxidizer,gas,C2H4,0.252908,0.428009,
+PSI-10,Flame Design,21349M1,burner-oxidizer,gas,C2H4,0.345371,0.998915,
+PSI-10,Flame Design,21349M2,burner-oxidizer,gas,C2H4,0.262286,1.001637,
+PSI-10,Flame Design,21349M3,burner-oxidizer,gas,C2H4,0.212467,1.003678,
+PSI-10,Flame Design,21349M7,burner-oxidizer,gas,C2H4,0.500492,1.038382,
+PSI-10,Flame Design,21349N1,burner-oxidizer,gas,C2H4,0.502028,0.501499,
+PSI-10,Flame Design,21349N2,burner-oxidizer,gas,C2H4,0.319652,0.504221,
+PSI-10,Flame Design,21349N3,burner-oxidizer,gas,C2H4,0.212379,0.507623,
+PSI-10,Flame Design,21349N4,burner-oxidizer,gas,C2H4,0.212017,0.515789,
+PSI-10,Flame Design,21361A1,burner-oxidizer,gas,C2H4,0.849978,1.000276,
+PSI-10,Flame Design,21361B1,burner-oxidizer,gas,C2H4,0.849978,1.002318,
+PSI-10,Flame Design,21361C1,burner-oxidizer,gas,C2H4,0.433409,1.003678,
+PSI-10,Flame Design,21361C2,burner-oxidizer,gas,C2H4,0.43383,1.007081,
+PSI-10,Flame Design,21361D1,burner-oxidizer,gas,C2H4,0.269972,1.009803,
+PSI-10,Flame Design,21361D2,burner-oxidizer,gas,C2H4,0.270381,1.013205,
+PSI-10,Flame Design,21361F1,burner-oxidizer,gas,C2H4,0.849978,0.998915,
+PSI-10,Flame Design,21361F2,burner-oxidizer,gas,C2H4,0.849978,1.000276,
+PSI-10,Flame Design,21361F3,burner-oxidizer,gas,C2H4,0.849978,1.001637,
+PSI-10,Flame Design,21361F4,burner-oxidizer,gas,C2H4,0.849978,1.002318,
+PSI-10,Flame Design,21361F5,burner-oxidizer,gas,C2H4,0.849978,1.003678,
+PSI-10,Flame Design,21361F6,burner-oxidizer,gas,C2H4,0.849978,1.003678,
+PSI-10,Flame Design,21361G1,burner-oxidizer,gas,C2H4,0.569603,1.003678,
+PSI-10,Flame Design,21361G2,burner-oxidizer,gas,C2H4,0.571963,1.00572,
+PSI-10,Flame Design,21361G3,burner-oxidizer,gas,C2H4,0.572032,1.007081,
+PSI-10,Flame Design,21361G4,burner-oxidizer,gas,C2H4,0.364248,1.007761,
+PSI-10,Flame Design,21361G5,burner-oxidizer,gas,C2H4,0.366163,1.009122,
+PSI-10,Flame Design,21361M1,burner-oxidizer,gas,C2H4,0.434719,0.999596,
+PSI-10,Flame Design,21361M2,burner-oxidizer,gas,C2H4,0.271103,1.001637,
+PSI-10,Flame Design,21361M3,burner-oxidizer,gas,C2H4,0.849978,1.002998,
+PSI-10,Flame Design,22018A1,burner-oxidizer,gas,C2H4,0.849978,0.998235,
+PSI-10,Flame Design,22018B1,burner-oxidizer,gas,C2H4,0.849978,1.000276,
+PSI-10,Flame Design,22018C1,burner-oxidizer,gas,C2H4,0.568658,1.000957,
+PSI-10,Flame Design,22018D1,burner-oxidizer,gas,C2H4,0.455719,1.001637,
+PSI-10,Flame Design,22018F1,burner-oxidizer,gas,C2H4,0.365417,1.002998,
+PSI-10,Flame Design,22018G1,burner-oxidizer,gas,C2H4,0.849978,0.998915,
+PSI-10,Flame Design,22018G2,burner-oxidizer,gas,C2H4,0.849978,1.000957,
+PSI-10,Flame Design,22018G3,burner-oxidizer,gas,C2H4,0.849978,1.002318,
+PSI-10,Flame Design,22018H2,burner-oxidizer,gas,C2H4,0.497149,1.003678,
+PSI-10,Flame Design,22018J1,burner-oxidizer,gas,C2H4,0.318172,1.0064,
+PSI-10,Flame Design,22018J2,burner-oxidizer,gas,C2H4,0.849978,1.011164,
+PSI-10,Flame Design,22018J4,burner-oxidizer,gas,C2H4,0.460992,1.011844,
+PSI-10,Flame Design,22024A1,burner-oxidizer,gas,C2H4,0.849978,0.999596,
+PSI-10,Flame Design,22024A2,burner-oxidizer,gas,C2H4,0.849978,1.001637,
+PSI-10,Flame Design,22024B1,burner-oxidizer,gas,C2H4,0.849978,1.002998,
+PSI-10,Flame Design,22024C1,burner-oxidizer,gas,C2H4,0.644458,1.004359,
+PSI-10,Flame Design,22024D1,burner-oxidizer,gas,C2H4,0.411996,1.005039,
+PSI-10,Flame Design,22024F1,burner-oxidizer,gas,C2H4,0.25627,1.007081,
+PSI-10,Flame Design,22024G1,burner-oxidizer,gas,C2H4,0.849978,0.499458,
+PSI-10,Flame Design,22024H1,burner-oxidizer,gas,C2H4,0.849978,0.500819,
+PSI-10,Flame Design,22024J1,burner-oxidizer,gas,C2H4,0.64389,0.501499,
+PSI-10,Flame Design,22024K1,burner-oxidizer,gas,C2H4,0.411584,0.502179,
+PSI-10,Flame Design,22024L1,burner-oxidizer,gas,C2H4,0.25608,0.504221,
+PSI-10,Flame Design,22024L2,burner-oxidizer,gas,C2H4,0.327365,0.505582,
+PSI-10,Flame Design,22024L3,burner-oxidizer,gas,C2H4,0.413276,0.507623,
+PSI-10,Flame Design,22024H2,burner-oxidizer,gas,C2H4,0.849978,0.508304,
+PSI-10,Flame Design,22027B1,burner-oxidizer,gas,C2H4,0.849978,2.998107,
+PSI-10,Flame Design,22027B2,burner-oxidizer,gas,C2H4,0.849978,2.999468,
+PSI-10,Flame Design,22027B3,burner-oxidizer,gas,C2H4,0.849978,3.000829,
+PSI-10,Flame Design,22027B5,burner-oxidizer,gas,C2H4,0.849978,3.00287,
+PSI-10,Flame Design,22027B6,burner-oxidizer,gas,C2H4,0.849978,3.00355,
+PSI-10,Flame Design,22027B7,burner-oxidizer,gas,C2H4,0.849978,3.004911,
+PSI-10,Flame Design,22027D1,burner-oxidizer,gas,C2H4,0.491262,3.005592,
+PSI-10,Flame Design,22027D2,burner-oxidizer,gas,C2H4,0.849978,3.007633,
+PSI-10,Flame Design,22027D3,burner-oxidizer,gas,C2H4,0.849978,2.998107,
+PSI-10,Flame Design,22027D4,burner-oxidizer,gas,C2H4,0.849978,2.998107,
+PSI-10,Flame Design,22027D5,burner-oxidizer,gas,C2H4,0.849978,2.998107,
+PSI-10,Flame Design,22027D6,burner-oxidizer,gas,C2H4,0.849978,2.999468,
+PSI-10,Flame Design,22027C1,burner-oxidizer,gas,C2H4,0.498055,3.000148,
+PSI-10,Flame Design,22027C2,burner-oxidizer,gas,C2H4,0.31857,3.00219,
+PSI-10,Flame Design,22035A1,burner-oxidizer,gas,C2H4,0.849978,1.971293,
+PSI-10,Flame Design,22035B1,burner-oxidizer,gas,C2H4,0.849978,1.971973,
+PSI-10,Flame Design,22035C1,burner-oxidizer,gas,C2H4,0.569104,1.974014,
+PSI-10,Flame Design,22035D1,burner-oxidizer,gas,C2H4,0.45589,1.974695,
+PSI-10,Flame Design,22035D3,burner-oxidizer,gas,C2H4,0.455328,1.974014,
+PSI-10,Flame Design,22035F1,burner-oxidizer,gas,C2H4,0.364788,1.977417,
+PSI-10,Flame Design,22035G1,burner-oxidizer,gas,C2H4,0.290628,1.978097,
+PSI-10,Flame Design,22035G2,burner-oxidizer,gas,C2H4,0.849978,1.979458,
+PSI-10,Flame Design,22035J1,burner-oxidizer,gas,C2H4,0.849978,0.499458,
+PSI-10,Flame Design,22035J2,burner-oxidizer,gas,C2H4,0.849978,0.50354,
+PSI-10,Flame Design,22035J3,burner-oxidizer,gas,C2H4,0.849978,0.506943,
+PSI-10,Flame Design,22035J4,burner-oxidizer,gas,C2H4,0.849978,0.507623,
+PSI-10,Flame Design,22035J5,burner-oxidizer,gas,C2H4,0.849978,0.508984,
+PSI-10,Flame Design,22035J6,burner-oxidizer,gas,C2H4,0.849978,0.510345,
+PSI-10,Flame Design,22035J7,burner-oxidizer,gas,C2H4,0.849978,0.512386,
+PSI-25,BASS-II,B1,ambient,solid,100 micron PMMA film   2 cm wide,0.222,,
+PSI-25,BASS-II,B2,ambient,solid,200 micron PMMA film   2 cm wide,0.222,,
+PSI-25,BASS-II,B3,ambient,solid,100 micron film   2 cm wide,0.222,,
+PSI-25,BASS-II,B4,ambient,solid,300 micron PMMA film   2 cm wide,0.222,,
+PSI-25,BASS-II,B5,ambient,solid,200 micron  2 cm wide,0.222,,
+PSI-25,BASS-II,B6,ambient,solid,2 cm 0.1 mm PMMA film,0.21,,
+PSI-25,BASS-II,B7,ambient,solid,400 micron film   2 cm wide,0.222,,
+PSI-25,BASS-II,B8,ambient,solid,2 cm   0.2 mm PMMA film,0.21,,
+PSI-25,BASS-II,B9,ambient,solid,2 cm   0.1 mm PMMA film,0.21,,
+PSI-25,BASS-II,B10,ambient,solid,1 cm   0.2 mm PMMA film,0.21,,
+PSI-25,BASS-II,B11,ambient,solid,2 cm   0.2 mm PMMA film,0.21,,
+PSI-25,BASS-II,B12,ambient,solid,300 micron film   2 cm wide,0.222,,
+PSI-25,BASS-II,B13,ambient,solid,2 cm   0.4 mm thick film,0.21,,
+PSI-25,BASS-II,B14,ambient,solid,1 cm wide 200 micron thick PMMA,0.15,,
+PSI-25,BASS-II,B15,ambient,solid,2 cm   0.1 mm PMMA film,0.21,,
+PSI-25,BASS-II,B16,ambient,solid,2 cm 100 micron thick PMMA,0.173,,
+PSI-25,BASS-II,B17,ambient,solid,1 cm wide 200 micron thick PMMA,0.175,,
+PSI-25,BASS-II,B18,ambient,solid,1 cm wide 200 micron thick PMMA,0.174,,
+PSI-25,BASS-II,B19,ambient,solid,2 cm 100 micron thick PMMA,0.173,,
+PSI-25,BASS-II,B20,ambient,solid,2 cm 100 micron thick PMMA,0.174,,
+PSI-25,BASS-II,B21,ambient,solid,1 cm wide 200 micron thick PMMA,0.208,,
+PSI-25,BASS-II,B22,ambient,solid,1 cm wide 200 micron thick PMMA,0.207,,
+PSI-25,BASS-II,F1,ambient,solid,Nomex natural (nomex III),0.222,,
+PSI-25,BASS-II,F2,ambient,solid,Nomex natural (nomex III),0.21,,
+PSI-25,BASS-II,F3,ambient,solid,Nomex natural (nomex III),0.217,,
+PSI-25,BASS-II,F4,ambient,solid,Japan Wax candle,0.174,,
+PSI-25,BASS-II,M1,ambient,solid,1 mm thick PMMA   1 sided   2 cm,0.222,,
+PSI-25,BASS-II,M2,ambient,solid,3 mm thick PMMA 1 sided    2 cm wide,0.222,,
+PSI-25,BASS-II,M3,ambient,solid,2 cm wide   5 mm thick 1 sided PMMA,0.208,,
+PSI-25,BASS-II,M4,ambient,solid,5 mm thick PMMA   2 cm wide,0.218,,
+PSI-25,BASS-II,M5,ambient,solid,3 mm thick PMMA   2 sided   2 cm thick,0.222,,
+PSI-25,BASS-II,M6,ambient,solid,1 mm thick PMMA   2 cm wide,0.218,,
+PSI-25,BASS-II,M7,ambient,solid,1 cm wide PMMA 1 mm thick,0.189,,
+PSI-25,BASS-II,M8,ambient,solid,1 cm wide PMMA 2 mm thick,0.191,,
+PSI-25,BASS-II,M9,ambient,solid,1 cm wide PMMA 3 mm thick,0.18,,
+PSI-25,BASS-II,M10,ambient,solid,4 mm thick   1 cm wide PMMA slab,0.201,,
+PSI-25,BASS-II,M11,ambient,solid,1 cm wide PMMA 5 mm thick,0.2,,
+PSI-25,BASS-II,M12,ambient,solid,2 mm thick PMMA   2 cm wide,0.217,,
+PSI-25,BASS-II,M13,ambient,solid,4 mm thick PMMA   2 cm wide,0.208,,
+PSI-25,BASS-II,M14,ambient,solid,2mm thick PMMA   1 sided   2 cm wide,0.222,,
+PSI-25,BASS-II,M15,ambient,solid,2 cm   4 mm 1 sided PMMA slab,0.21,,
+PSI-25,BASS-II,M16,ambient,solid,1 mm thick PMMA   2 cm wide,0.192,,
+PSI-25,BASS-II,M17,ambient,solid,2 cm wide PMMA 2 mm thick,0.188,,
+PSI-25,BASS-II,M18,ambient,solid,2 cm wide PMMA 3 mm thick,0.179,,
+PSI-25,BASS-II,M19,ambient,solid,4 mm thick   2 cm 2ide PMMA slab,0.19,,
+PSI-25,BASS-II,M20,ambient,solid,5 mm thick PMMA   2 cm wide,0.18,,
+PSI-25,BASS-II,O1,ambient,solid,"1/4"" clear rod",0.222,,
+PSI-25,BASS-II,O2,ambient,solid,"1/4"" clear rod",0.222,,
+PSI-25,BASS-II,O3a,ambient,solid,"1/4"" clear rod",0.18,,
+PSI-25,BASS-II,O3b,ambient,solid,"1/4"" clear rod",0.18,,
+PSI-25,BASS-II,O4,ambient,solid,"3/8""clear rod",0.148,,
+PSI-25,BASS-II,O5a,ambient,solid,"1/2"" clear PMMA rod",0.151,,
+PSI-25,BASS-II,O5b,ambient,solid,"1/2"" clear PMMA rod",0.142,,
+PSI-25,BASS-II,O6,ambient,solid,"1/4"" clear rod",0.167,,
+PSI-25,BASS-II,O7,ambient,solid,"1/4"" clear rod",0.16,,
+PSI-25,BASS-II,O8a,ambient,solid,"1/4"" clear rod",0.157,,
+PSI-25,BASS-II,O8b,ambient,solid,"1/4"" clear rod",0.155,,
+PSI-25,BASS-II,O9,ambient,solid,"1/4"" clear rod",0.15,,
+PSI-25,BASS-II,O10,ambient,solid,"1/4"" clear rod",0.167,,
+PSI-25,BASS-II,O11,ambient,solid,"1/4"" black rod",0.154,,
+PSI-25,BASS-II,O12,ambient,solid,"3/8"" clear rod",0.136,,
+PSI-25,BASS-II,O13a,ambient,solid,"1/2"" clear PMMA rod",0.159,,
+PSI-25,BASS-II,O13b,ambient,solid,"1/2"" clear PMMA rod",0.146,,
+PSI-25,BASS-II,O14,ambient,solid,"1/4"" black rod",0.163,,
+PSI-25,BASS-II,O15a,ambient,solid,"3/8"" clear rod",0.171,,
+PSI-25,BASS-II,O15b,ambient,solid,"3/8"" clear rod",0.167,,
+PSI-25,BASS-II,O16,ambient,solid,"3/8""clear rod",0.145,,
+PSI-25,BASS-II,O17,ambient,solid,"1/4"" clear rod",0.151,,
+PSI-25,BASS-II,O18,ambient,solid,"1/4"" clear rod",0.152,,
+PSI-25,BASS-II,O19,ambient,solid,"1/4"" clear rod",0.153,,
+PSI-25,BASS-II,O20,ambient,solid,"1/4"" clear rod",0.165,,
+PSI-25,BASS-II,O21,ambient,solid,"3/8"" clear rod",0.159,,
+PSI-25,BASS-II,O22,ambient,solid,"1/2"" clear rod",0.154,,
+PSI-25,BASS-II,P1,ambient,solid,"1/4"" black rod",0.177,,
+PSI-25,BASS-II,P2,ambient,solid,"1/4"" black rod",0.174,,
+PSI-25,BASS-II,P3a,ambient,solid,"1/4"" clear rod",0.177,,
+PSI-25,BASS-II,P3b,ambient,solid,1/4 clear rod,0.174,,
+PSI-25,BASS-II,P4,ambient,solid,"3/8"" black rod",0.185,,
+PSI-25,BASS-II,P5,ambient,solid,"0.5"" black rod",0.193,,
+PSI-25,BASS-II,P6,ambient,solid,"1/4"" black rod",0.189,,
+PSI-25,BASS-II,P8,ambient,solid,"3/8"" black rod",0.164,,
+PSI-25,BASS-II,P9,ambient,solid,"0.5"" black rod",0.176,,
+PSI-25,BASS-II,P10,ambient,solid,"1/4"" black rod",0.17,,
+PSI-25,BASS-II,P12,ambient,solid,"3/8"" black rod",0.175,,
+PSI-25,BASS-II,P13a,ambient,solid,"0.5"" black rod",0.207,,
+PSI-25,BASS-II,P13b,ambient,solid,"0.5"" black rod",0.206,,
+PSI-25,BASS-II,P14,ambient,solid,1/4 blac rod,0.184,,
+PSI-25,BASS-II,P15,ambient,solid,1/4 black rod,0.18,,
+PSI-25,BASS-II,P16,ambient,solid,"1/4"" black rod",0.182,,
+PSI-25,BASS-II,P17,ambient,solid,"1/4""  black rod",0.168,,
+PSI-25,BASS-II,P18,ambient,solid,"1/4"" black rod",0.2,,
+PSI-25,BASS-II,P19,ambient,solid,"1/4"" black rod",0.175,,
+PSI-25,BASS-II,P20,ambient,solid,"1/4"" black rod",0.19,,
+PSI-25,BASS-II,P21a,ambient,solid,1/4 black rod,0.163,,
+PSI-25,BASS-II,P21b,ambient,solid,"1/4"" black rod",0.163,,
+PSI-25,BASS-II,P22a,ambient,solid,"3/8"" black rod",0.208,,
+PSI-25,BASS-II,P22b,ambient,solid,"3/8"" black rod",0.2,,
+PSI-25,BASS-II,P23,ambient,solid,"3/8"" black rod",0.182,,
+PSI-25,BASS-II,P24,ambient,solid,"3/8"" black rod",0.19,,
+PSI-25,BASS-II,P25,ambient,solid,"3/8"" clear rod",0.209,,
+PSI-25,BASS-II,T1,ambient,solid,2 cm SIBAL,0.185,,
+PSI-25,BASS-II,T2,ambient,solid,2 cm SIBAL,0.185,,
+PSI-25,BASS-II,T3,ambient,solid,4 cm spherical section,0.172,,
+PSI-25,BASS-II,T4,ambient,solid,2 cm SIBAL,0.187,,
+PSI-25,BASS-II,T5,ambient,solid,2 cm SIBAL,0.188,,
+PSI-25,BASS-II,T6,ambient,solid,2 cm SIBAL,0.188,,
+PSI-25,BASS-II,T7,ambient,solid,4 cm spherical section,0.173,,
+PSI-25,BASS-II,T9,ambient,solid,2 cm SIBAL,0.164,,
+PSI-25,BASS-II,T10,ambient,solid,2 cm SIBAL,0.164,,
+PSI-25,BASS-II,T11,ambient,solid,2 cm SIBAL,0.171,,
+PSI-25,BASS-II,T12,ambient,solid,2 cm SIBAL,0.168,,
+PSI-25,BASS-II,T13,ambient,solid,2 cm SIBAL,0.175,,
+PSI-25,BASS-II,T14,ambient,solid,2 cm SIBAL,0.169,,
+PSI-25,BASS-II,T15,ambient,solid,2 cm SIBAL,0.187,,
+PSI-25,BASS-II,T16,ambient,solid,2 cm SIBAL,0.176,,
+PSI-25,BASS-II,T17,ambient,solid,2 cm SIBAL,0.169,,
+PSI-25,BASS-II,T18,ambient,solid,2 cm SIBAL,0.174,,
+PSI-25,BASS-II,T19,ambient,solid,1 cm SIBAL,0.172,,
+PSI-25,BASS-II,T20,ambient,solid,1 cm SIBAL,0.172,,
+PSI-25,BASS-II,T21,ambient,solid,1 cm SIBAL,0.172,,
+PSI-25,BASS-II,T22,ambient,solid,1 cm SIBAL,0.171,,
+PSI-25,BASS-II,T23,ambient,solid,2 cm Sibal   moved igniter,0.172,,
+PSI-25,BASS-II,T24,ambient,solid,1 cm SIBAL   top side ign,0.182,,
+PSI-25,BASS-II,T25,ambient,solid,2 cm SIBAL,0.208,,
+PSI-25,BASS-II,T26,ambient,solid,2 cm SIBAL,0.208,,
+PSI-25,BASS-II,T27,ambient,solid,1 cm SIBAL,0.207,,
+PSI-25,BASS-II,T28a,ambient,solid,1 cm SIBAL,0.207,,
+PSI-25,BASS-II,T28b,ambient,solid,1 cm SIBAL,0.207,,
+PSI-25,BASS-II,T29,ambient,solid,1 cm SIBAL,0.207,,
