@@ -62,6 +62,6 @@ kit's `.gitignore` already excludes).
 
 ## Current coverage (from `docs/DATASET_INVENTORY.md`)
 
-23 NASA PSI datasets: 19 assigned to six tracks, 4 unassigned ground studies. Findings on the site (98): T1 (12), T2 (13, SAFFIRE I-III), T3 (23), T4 (23, PSI-69 FLEX), T5 (6, PSI-20 BRE), T6 (21: SLICE, SPICE, ACME CLD).
+23 NASA PSI datasets: 19 assigned to six tracks, 4 unassigned ground studies. Findings on the site (111): T1 (12), T2 (13, SAFFIRE I-III), T3 (23), T4 (23, PSI-69 FLEX), T5 (19: Flame Design, BRE, E-FIELD, s-Flame), T6 (21: SLICE, SPICE, ACME CLD).
 RAG corpora exist for 18 datasets: T1, T2 (SAFFIRE), T3, T4 (FLEX, FLEX-2 incl. Tamer's rag_corpus_flex2 in `fif-dashboard/rag/PSI-68_FLEX_II/`, CFI, CFI-G), T5 (BRE, E-FIELD, s-Flame, Flame Design)
 and part of T6 (SPICE, SLICE). None yet for ACME CLD (PSI-21) or the four unassigned studies. Conflicts are in the inventory.
